@@ -23,10 +23,11 @@ by all users.
 ## Before you begin
 
 Before you work through the steps in this guide, make sure you complete the
-steps in [Setting up the database](Setting-up-the-database).
+steps in
+[Setting up the database](/docs/getting-started/setting-up-the-database).
 
 1.  Configure database values. Use the same values you used in
-    [Setting up the database](Setting-up-the-database).
+    [Setting up the database](/docs/getting-started/setting-up-the-database).
 
     ```shell
     export DB_NAME=cuebot_local
@@ -63,10 +64,10 @@ steps in [Setting up the database](Setting-up-the-database).
         export DB_HOST_IN_DOCKER=<IP address of the database host machine>
         ```
 
-    NOTE: If you are running Docker on Linux and your database is running
+    {{% alert title="Note" %}}If you are running Docker on Linux and your database is running
     directly on the host machine, you will likely need to start your Cuebot
     container with `--net=host` in order to connect to the database. This
-    configuration is outside of the scope of this guide.
+    configuration is outside of the scope of this guide.{{% /alert %}}
 
 ## Installing and running Cuebot
 
@@ -88,8 +89,9 @@ To download and run the Cuebot Docker image:
 
 ### Option 2: Build and run the Cuebot Docker image from source
 
-Make sure you've [checked out the source code](Checking-out-the-source-code) and
-your current directory is the root of the checked out source.
+Make sure you've
+[checked out the source code](/docs/getting-started/checking-out-the-source-code)
+and your current directory is the root of the checked out source.
 
 To build and run the Cuebot Docker image:
 
@@ -135,8 +137,9 @@ from the latest release's Assets.
 
 ### Option 4: Build from source
 
-Make sure you've [checked out the source code](Checking-out-the-source-code) and
-your current directory is the root of the checked out source.
+Make sure you've
+[checked out the source code](/docs/getting-started/checking-out-the-source-code)
+and your current directory is the root of the checked out source.
 
 1.  You must have a Java Runtime Environment (JRE) installed with which to run
     the JAR file. Java 8+ is supported for OpenCue.

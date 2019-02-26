@@ -48,7 +48,8 @@ PostgreSQL.
 
 1.  To make things easier, install a Postgres client:
 
-    IMPORTANT: Run the following commands *on the host machine*.
+    {{% alert color="warning" title="Important" %}}Run the following commands
+    *on the host machine*.{{% /alert %}}
 
     On yum-based Linux you can run
 
@@ -65,7 +66,8 @@ PostgreSQL.
 1.  Finally, export the `DB_HOST` environment variable, which is used in the
     rest of this guide by fetching the IP address of your Postgres container:
 
-    IMPORTANT: Run the following commands *on the host machine*.
+    {{% alert color="warning" title="Important"%}}Run the following commands
+    *on the host machine*.{{% /alert %}}
 
     ```shell
     export DB_HOST=$(docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $PG_CONTAINER)
@@ -171,14 +173,16 @@ To create a database:
     docker exec -it --user=postgres $PG_CONTAINER psql -c "ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL PRIVILEGES ON TABLES TO $DB_USER" $DB_NAME
     ```
 
-    IMPORTANT: `ALTER DEFAULT PRIVILEGES` will grant privileges for any tables
-    created **in the future**. If you need to revisit this step after your
-    database has already been populated, you can run the following similar
-    command to grant privileges on all **existing** tables:
+    {{% alert color="warning" title="Important" %}}`ALTER DEFAULT PRIVILEGES` will
+    grant privileges for any tables created **in the future**. If you need to
+    revisit this step after your database has already been populated, you can run
+    the following similar command to grant privileges on all **existing**
+    tables:
 
     ```shell
     psql -c "GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO $DB_USER" $DB_NAME
     ```
+    {{% /alert %}}
 
 ## Populate the database
 
@@ -222,7 +226,8 @@ schema will be published as new migrations, which allows your database
 administrator to safely apply the schema changes without needing to do a full
 rebuild of the database.
 
-You need to [check out the source code](Checking-out-the-source-code). The rest
+You need to
+[check out the source code](/docs/getting-started/checking-out-the-source-code). The rest
 of this section assumes your current directory is the root of the checked out
 source.
 

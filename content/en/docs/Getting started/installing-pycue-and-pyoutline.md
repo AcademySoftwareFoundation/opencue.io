@@ -20,7 +20,8 @@ construct its job submissions.
 
 PyCue requires a Cuebot deployment to communicate with. Ask the admin of your
 OpenCue deployment what your Cuebot hostname is. If you're the admin, you can
-follow [Deploying Cuebot](Deploying-Cuebot) to create your Cuebot instance.
+follow [Deploying Cuebot](/docs/getting-started/deploying-cuebot) to create
+your Cuebot instance.
 
 You also need the Python `pip` and `virtualenv` tools. Use of a virtual
 environment isn't strictly necessary but is recommended to avoid conflicts with
@@ -72,8 +73,9 @@ rm -rf "$PYOUTLINE_DIR"
 
 ### Option 2: Installing from source
 
-Make sure you've [checked out the source code](Checking-out-the-source-code) and
-your current directory is the root of the checked out source.
+Make sure you've
+[checked out the source code](/docs/getting-started/checking-out-the-source-code)
+and your current directory is the root of the checked out source.
 
 Install PyCue:
 

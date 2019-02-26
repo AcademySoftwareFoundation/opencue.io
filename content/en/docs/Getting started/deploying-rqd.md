@@ -23,7 +23,7 @@ RQD.
 ## Before you begin
 
 Before you start to work through this guide, complete the steps in
-[Deploying Cuebot](Deploying-Cuebot).
+[Deploying Cuebot](/docs/getting-started/deploying-cuebot).
 
 Make sure you also complete the following steps:
 
@@ -57,7 +57,8 @@ Make sure you also complete the following steps:
     **If you're running RQD directly on the host** (Options 3 and 4 below), no
     further action is required. This guide assumes that the filesystem is
     already available on that host. For example, if you plan to run
-    [CueGUI](Installing-CueGUI) and [CueSubmit](Installing-CueSubmit) on the
+    [CueGUI](/docs/getting-started/installing-cuegui) and
+    [CueSubmit](/docs/getting-started/installing-cuesubmit) on the
     same host, all components can use the local filesystem for this purpose.
 
 1.  On macOS you might also need to
@@ -116,12 +117,13 @@ rqd
 
 ### Option 4: Installing and running from source
 
-Make sure you've [checked out the source code](Checking-out-the-source-code) and
-your current directory is the root of the checked out source.
+Make sure you've
+[checked out the source code](/docs/getting-started/checking-out-the-source-code)
+and your current directory is the root of the checked out source.
 
-NOTE: You need the `pip` and `virtualenv` tools. Use of a virtual environment
-isn't strictly necessary but is recommended to avoid conflicts with other
-installed Python libraries.
+{{% alert title="Note" %}}You need the `pip` and `virtualenv` tools. Use
+of a virtual environment isn't strictly necessary but is recommended to
+avoid conflicts with other installed Python libraries.{{% /alert %}}
 
 ```shell
 virtualenv venv

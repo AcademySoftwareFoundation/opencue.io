@@ -20,7 +20,7 @@ Admins use CueGUI to:
 ## Before you begin
 
 1.  Before you start to work through this guide, complete the steps in
-    [Installing PyCue and PyOutline](Installing-PyCue-and-PyOutline).
+    [Installing PyCue and PyOutline](/docs/getting-started/installing-pycue-and-pyoutline).
 
 1.  You need the same Cuebot hostname that you used to configure PyCue in this
     guide as well. If you don't know the Cuebot hostname, check with your
@@ -48,10 +48,11 @@ To install CueGUI:
 1.  To install the required Python packages, create an isolated Python
     environment:
 
-    NOTE: Use of a virtual environment is not strictly necessary but is
-    recommended to avoid conflicts with other locally installed Python
-    libraries. If you already created a virtual environment in which to install
-    PyCue, skip this step and use PyCue's environment for the following steps.
+    {{% alert title="Note" %}}Use of a virtual environment is not strictly
+    necessary but is recommended to avoid conflicts with other locally installed
+    Python libraries. If you already created a virtual environment in which to
+    install PyCue, skip this step and use PyCue's environment for the following
+    steps.{{% /alert %}}
 
     ```shell
     virtualenv venv
@@ -96,8 +97,9 @@ To install a published release:
 
 ### Option 2: Install from source
 
-Make sure you've [checked out the source code](Checking-out-the-source-code) and
-your current directory is the root of the checked out source.
+Make sure you've
+[checked out the source code](/docs/getting-started/checking-out-the-source-code)
+and your current directory is the root of the checked out source.
 
 ```shell
 pip install -r requirements.txt

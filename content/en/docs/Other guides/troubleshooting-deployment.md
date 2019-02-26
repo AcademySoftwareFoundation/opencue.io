@@ -53,7 +53,7 @@ To troubleshoot this type of error message:
 
 1.  **Make sure your PostgreSQL server is up and the PostgreSQL service is
     running.** The verification process differs depending on
-    [how you deployed your PostgreSQL server](Setting-up-the-database).
+    [how you deployed your PostgreSQL server](/docs/getting-started/setting-up-the-database).
 
 1.  **Test networking from Cuebot.** Make sure that your networking is
     configured as intended by running a network test without PostgreSQL. You can
@@ -134,7 +134,7 @@ To troubleshoot this type of error message:
 1.  **Check your Cuebot configuration.** Database parameters are passed to the
     Cuebot via command-line args to the Cuebot JAR file. Depending on your
     deployment method this might be passed multiple ways. For more details, see
-    [Deploying Cuebot](Deploying-Cuebot).
+    [Deploying Cuebot](/docs/getting-started/deploying-cuebot).
 
     Make sure that Cuebot is configured to use the same database parameters you
     used in the rest of these debugging steps, such as hostname, user, and
@@ -156,9 +156,9 @@ To troubleshoot this type of error message:
 
 1.  **Make sure your Cuebot server is up and that the Cuebot software is
     running.** The process here differs depending on
-    [how you deployed your Cuebot server](Deploying-Cuebot). If you deployed
-    Cuebot within a Docker container, make sure the container is running and
-    healthy.
+    [how you deployed your Cuebot server](/docs/getting-started/deploying-cuebot).
+    If you deployed Cuebot within a Docker container, make sure the container is
+    running and healthy.
 
 1.  **Test networking from RQD.** Make sure that your networking is configured
     as intended by running a network test between the RQD host and the Cuebot
@@ -183,7 +183,8 @@ To troubleshoot this type of error message:
 
 1.  **Check the RQD environment.** RQD uses the `CUEBOT_HOSTNAME` environment
     variable to determine which Cuebot server to connect to. The method of
-    checking this depends on [how you deployed your RQD hosts](Deploying-RQD).
+    checking this depends on
+    [how you deployed your RQD hosts](/docs/getting-started/deploying-rqd).
 
     For example, if you deployed RQD in a Docker container, you can inspect the
     container:

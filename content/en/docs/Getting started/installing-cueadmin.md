@@ -15,7 +15,7 @@ and provides a thin layer over the OpenCue Python API.
 ## Before you begin
 
 Before you start to work through this guide, complete the steps in
-[Installing PyCue and PyOutline](Installing-PyCue-and-PyOutline).
+[Installing PyCue and PyOutline](/docs/getting-started/installing-pycue-and-pyoutline).
 
 You need the same Cuebot hostname that you used to configure PyCue in this guide
 as well. If you don't know the Cuebot hostname, check with your OpenCue admin.
@@ -84,7 +84,7 @@ The above example command lists all shows from a Cuebot instance running on
 ### Option 2: Installing from source
 
 Make sure you've
-[checked out the source code](Checking-out-the-source-code)
+[checked out the source code](/docs/getting-started/checking-out-the-source-code)
 and your current directory is the root of the checked out source.
 
 ```shell

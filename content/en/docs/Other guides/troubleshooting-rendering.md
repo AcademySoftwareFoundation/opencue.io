@@ -18,10 +18,10 @@ compatible host, so check the following:
 -   The job's facility and layer tags match the host's allocation. A host's
     allocation determines both its facility and default tags. To fix this issue,
     you can change the host's allocation in
-    [CueGUI's Monitor Host plugin](CueGUI-reference#Managing-hosts).
+    [CueGUI's Monitor Host plugin](/docs/reference/cuegui-reference#managing-hosts).
 
     For more detail on the terms facility, layer, allocation, and how they
-    relate to each other, see the [Glossary](Glossary).
+    relate to each other, see the [Glossary](/docs/concepts/glossary).
 
 -   The hosts satisfy the job's minimum resource requirements. You can check a
     job's resource requirements in CueGUI's Monitor Job Details plugin. If your
@@ -30,5 +30,5 @@ compatible host, so check the following:
 
 ## Failing frames
 
-[Use CueGUI](CueGUI-reference#Viewing-logs) to look at the frame logs, which
+[Use CueGUI](/docs/reference/cuegui-reference#viewing-logs) to look at the frame logs, which
 provides more detail on the failure.
