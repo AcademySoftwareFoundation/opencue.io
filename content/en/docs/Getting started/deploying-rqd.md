@@ -1,0 +1,160 @@
+---
+title: "Deploying RQD"
+linkTitle: "Deploying RQD"
+weight: 5
+date: 2019-02-22
+description: >
+  Deploy RQD to all OpenCue render hosts 
+---
+
+RQD is a software client that runs on all hosts doing work for an OpenCue
+deployment.
+
+RQD's responsibilities include:
+
+-   Registering the host with Cuebot.
+-   Receiving instructions about what work to do.
+-   Monitoring the worker processes it launches and reporting on results.
+
+RQD uses [gRPC](https://grpc.io/) to communicate with Cuebot. It also runs its
+own gRPC server, which is called by the Cuebot client to send instructions to
+RQD.
+
+## Before you begin
+
+Before you start to work through this guide, complete the steps in
+[Deploying Cuebot](/docs/getting-started/deploying-cuebot).
+
+Make sure you also complete the following steps:
+
+1.  You must provide RQD with the hostname or IP of the Cuebot.
+
+    -   **If you also installed Cuebot in a container**, fetch the container IP:
+
+        ```shell
+        export CUEBOT_HOSTNAME=$(docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <name of Cuebot container>)
+        ```
+
+    -   **If your Cuebot is running on a different machine**, use that machine's
+        hostname or IP:
+
+        ```shell
+        export CUEBOT_HOSTNAME=<hostname or IP of the Cuebot machine>
+        ```
+
+1.  RQD needs access to the filesystem where render assets are stored and log
+    files are written. In a large-scale deployment a shared filesystem such as
+    NFS is often used for this purpose.
+
+    **If you're running RQD in a Docker container** (Options 1 and 2 below),
+    define `CUE_FS_ROOT` and ensure the directory exists:
+
+    ```shell
+    CUE_FS_ROOT=/shots
+    mkdir -p "$CUE_FS_ROOT"
+    ```
+
+    **If you're running RQD directly on the host** (Options 3 and 4 below), no
+    further action is required. This guide assumes that the filesystem is
+    already available on that host. For example, if you plan to run
+    [CueGUI](/docs/getting-started/installing-cuegui) and
+    [CueSubmit](/docs/getting-started/installing-cuesubmit) on the
+    same host, all components can use the local filesystem for this purpose.
+
+1.  On macOS you might also need to
+    [increase Docker's RAM limit](https://docs.docker.com/docker-for-mac/#advanced).
+
+### Option 1: Downloading and running RQD from DockerHub
+
+To download and run the pre-built Docker image from DockerHub:
+
+```shell
+docker pull opencue/rqd
+docker run -td --name rqd01 --env CUEBOT_HOSTNAME=${CUEBOT_HOSTNAME} --volume "${CUE_FS_ROOT}:${CUE_FS_ROOT}" opencue/rqd
+```
+
+### Option 2: Building and running RQD from source
+
+To build and run the RQD Docker image from source:
+
+```shell
+docker build -t opencue/rqd -f rqd/Dockerfile .
+docker run -td --name rqd01 --env CUEBOT_HOSTNAME=${CUEBOT_HOSTNAME} --volume "${CUE_FS_ROOT}:${CUE_FS_ROOT}" opencue/rqd
+```
+
+### Option 3: Installing from the published release
+
+To manually install from the published release:
+
+Download the RQD tarball from
+[the OpenCue GitHub releases page](https://github.com/imageworks/OpenCue/releases).
+
+You need the `pip` and `virtualenv` tools. Use of a virtual environment is not
+strictly necessary but is recommended to avoid conflicts with other installed
+Python libraries.
+
+```shell
+export RQD_TARBALL="<path to RQD tar.gz>"
+export RQD_DIR=$(basename "${RQD_TARBALL}" .tar.gz)
+tar xvzf "$RQD_TARBALL"
+virtualenv venv
+source venv/bin/activate
+cd "$RQD_DIR"
+pip install -r requirements.txt
+python setup.py install
+cd ..
+rm -rf "$RQD_DIR"
+```
+
+An `rqd` executable should now be available in your `PATH`.
+
+This inherits the `CUEBOT_HOSTNAME` environment variable you set earlier in this
+guide.
+
+```shell
+rqd
+```
+
+### Option 4: Installing and running from source
+
+Make sure you've
+[checked out the source code](/docs/getting-started/checking-out-the-source-code)
+and your current directory is the root of the checked out source.
+
+{{% alert title="Note" %}}You need the `pip` and `virtualenv` tools. Use
+of a virtual environment isn't strictly necessary but is recommended to
+avoid conflicts with other installed Python libraries.{{% /alert %}}
+
+```shell
+virtualenv venv
+source venv/bin/activate
+pip install -r requirements.txt
+cd proto
+python -m grpc_tools.protoc -I=. --python_out=../rqd/rqd/compiled_proto --grpc_python_out=../rqd/rqd/compiled_proto ./*.proto
+cd ../rqd
+python setup.py install
+```
+
+An `rqd` executable should now be available in your `PATH`.
+
+This inherits the `CUEBOT_HOSTNAME` environment variable you set earlier in this
+guide.
+
+```shell
+rqd
+```
+
+## Verifying your install
+
+The following log entries illustrate the expected RQD output, indicating it has
+started up:
+
+```
+2019-01-31 00:41:51,905 WARNING   rqd3-__main__   RQD Starting Up
+2019-01-31 00:41:52,941 WARNING   rqd3-rqcore     RQD Started
+```
+
+## What's next?
+
+*   [Installing PyCue and PyOutline](/docs/getting-started/installing-pycue-and-pyoutline)
+*   [Installing CueAdmin](/docs/getting-started/installing-cueadmin)

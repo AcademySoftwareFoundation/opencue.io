@@ -1,5 +1,5 @@
 ---
-title: "Docsy Blog"
+title: "OpenCue Blog"
 linkTitle: "Blog"
 menu:
   main:
