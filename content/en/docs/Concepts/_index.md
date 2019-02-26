@@ -1,7 +1,7 @@
 ---
 title: "Concepts"
 linkTitle: "Concepts"
-weight: 4
+weight: 1
 description: >
   A short lead descripton about this section page. Text here can also be **bold** or _italic_ and can even be split over multiple paragraphs.
 ---

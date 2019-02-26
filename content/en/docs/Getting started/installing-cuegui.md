@@ -1,0 +1,139 @@
+---
+title: "Installing CueGUI"
+linkTitle: "Installing CueGUI"
+weight: 6
+date: 2019-02-22
+description: >
+  Install CueGUI to monitor, manage, and troubleshoot jobs
+---
+
+This guide shows you how to install CueGUI.
+
+Users use CueGUI to monitor and manage OpenCue jobs.
+
+Admins use CueGUI to:
+
+*   Troubleshoot jobs.
+*   Assign render processors to jobs.
+*   Manage cue priorities.
+
+## Before you begin
+
+1.  Before you start to work through this guide, complete the steps in
+    [Installing PyCue and PyOutline](Installing-PyCue-and-PyOutline).
+
+1.  You need the same Cuebot hostname that you used to configure PyCue in this
+    guide as well. If you don't know the Cuebot hostname, check with your
+    OpenCue admin. After you know this, set the `CUEBOT_HOSTNAME_OR_IP`
+    environment variable:
+
+    ```shell
+    export CUEBOT_HOSTNAME_OR_IP=localhost
+    ```
+
+1.  To follow the instructions in this guide, you'll need the following
+    software:
+
+    *   [Python](https://www.python.org/)
+    *   [pip](https://pypi.org/project/pip/) Python package manager
+    *   [virtualenv](https://pypi.org/project/virtualenv/) tool
+
+## Installing CueGUI
+
+CueGUI is written in Python. To run CueGUI, you install a series of dependencies
+and configure a virtual environment for the Python code to run inside.
+
+To install CueGUI:
+
+1.  To install the required Python packages, create an isolated Python
+    environment:
+
+    NOTE: Use of a virtual environment is not strictly necessary but is
+    recommended to avoid conflicts with other locally installed Python
+    libraries. If you already created a virtual environment in which to install
+    PyCue, skip this step and use PyCue's environment for the following steps.
+
+    ```shell
+    virtualenv venv
+    ```
+
+1.  Evaluate the commands in the `activate` file in your current shell:
+
+    TIP: To review the contents of the `activate` file, run `cat activate`.
+
+    ```shell
+    source venv/bin/activate
+    ```
+
+### Option 1: Install a published release
+
+To install a published release:
+
+1.  Visit the
+    [OpenCue releases page](https://github.com/imageworks/OpenCue/releases).
+
+1.  Download the cuegui tarball from the latest release's Assets.
+
+1.  Run the following commands in a terminal to install a `cuegui` executable in
+    the `PATH` of your environment:
+
+    ```shell
+    export CUEGUI_TAR="<path to cuegui tar.gz>"
+    export CUEGUI_DIR=$(basename "$CUEGUI_TAR" .tar.gz)
+    tar xvzf "$CUEGUI_TAR"
+    cd "$CUEGUI_DIR"
+    pip install -r requirements.txt
+    python setup.py install
+    cd ..
+    rm -rf "$CUEGUI_DIR"
+    ```
+
+1.  Run CueGUI:
+
+    ```shell
+    CUEBOT_HOSTS=$CUEBOT_HOSTNAME_OR_IP cuegui
+    ```
+
+### Option 2: Install from source
+
+Make sure you've [checked out the source code](Checking-out-the-source-code) and
+your current directory is the root of the checked out source.
+
+```shell
+pip install -r requirements.txt
+cd cuegui
+```
+
+You can either install CueGUI from here, and run the `cuegui` executable that
+gets created:
+
+```shell
+python setup.py install
+cd ..
+CUEBOT_HOSTS=$CUEBOT_HOSTNAME_OR_IP cuegui
+```
+
+OR you can run the software directly, without installing:
+
+```shell
+CUEBOT_HOSTS=$CUEBOT_HOSTNAME_OR_IP python ./cuegui
+```
+
+The CueGUI executable launches.
+
+## Configuring and verifying the install
+
+If this is your first time starting CueGUI you can expect to see a blank screen.
+To add panels to your layout and view information about your OpenCue deployment,
+access the **Views/Plugins** menu.
+
+For example, to display a list of shows in your database and some information
+about them, click **Views/Plugins** > **Cuecommander** > **Shows**.
+
+The CueGUI Shows window appears:
+
+![CueGUI Shows view](/docs/images/cuegui_shows.png)
+
+## What's next?
+
+*   [Installing CueSubmit](/docs/getting-started/installing-cuesubmit)
