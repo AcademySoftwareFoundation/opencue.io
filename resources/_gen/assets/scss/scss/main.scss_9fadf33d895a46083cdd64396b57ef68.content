@@ -12274,7 +12274,8 @@ readers do not read off random characters that represent icons */
     min-height: 650px; } }
 
 .td-cover-logo {
-  margin-right: 0.5em; }
+  margin-right: 0.5em;
+  height: 90px; }
 
 .td-cover-block {
   position: relative;
