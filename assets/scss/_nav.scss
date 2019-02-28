@@ -39,9 +39,11 @@
         }
 
         svg {
-            display: inline-block;
-	    position: absolute;
-            margin: -5px 0 0 -20px;
+	    display: inline-block;
+            position: absolute;
+            top: 10px;
+            left: 120px;
+            z-index: 33;
             height: 40px;
         }
     }

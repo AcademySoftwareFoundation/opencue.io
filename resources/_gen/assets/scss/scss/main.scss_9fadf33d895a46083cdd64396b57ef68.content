@@ -11979,7 +11979,9 @@ readers do not read off random characters that represent icons */
     .td-navbar .navbar-brand svg {
       display: inline-block;
       position: absolute;
-      margin: -5px 0 0 -20px;
+      top: 10px;
+      left: 120px;
+      z-index: 33;
       height: 40px; }
   .td-navbar .nav-link {
     text-transform: none;
