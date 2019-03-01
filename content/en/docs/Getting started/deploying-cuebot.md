@@ -64,10 +64,11 @@ steps in
         export DB_HOST_IN_DOCKER=<IP address of the database host machine>
         ```
 
-    {{% alert title="Note" %}}If you are running Docker on Linux and your database is running
-    directly on the host machine, you will likely need to start your Cuebot
-    container with `--net=host` in order to connect to the database. This
-    configuration is outside of the scope of this guide.{{% /alert %}}
+    {{% alert title="Note" color="info"%}}If you are running Docker on Linux
+    and your database is running directly on the host machine, you will likely
+    need to start your Cuebot container with `--net=host` in order to connect
+    to the database. This configuration is outside of the scope of this
+    guide.{{% /alert %}}
 
 ## Installing and running Cuebot
 

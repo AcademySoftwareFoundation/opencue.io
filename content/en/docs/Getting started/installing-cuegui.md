@@ -48,11 +48,11 @@ To install CueGUI:
 1.  To install the required Python packages, create an isolated Python
     environment:
 
-    {{% alert title="Note" %}}Use of a virtual environment is not strictly
-    necessary but is recommended to avoid conflicts with other locally installed
-    Python libraries. If you already created a virtual environment in which to
-    install PyCue, skip this step and use PyCue's environment for the following
-    steps.{{% /alert %}}
+    {{% alert title="Note" color="info"%}}Use of a virtual environment isn't
+    strictly necessary but is recommended to avoid conflicts with other locally
+    installed Python libraries. If you already created a virtual environment in
+    which to install PyCue, skip this step and use PyCue's environment for the
+    following steps.{{% /alert %}}
 
     ```shell
     virtualenv venv
