@@ -27,7 +27,7 @@ You also need the Python `pip` and `virtualenv` tools. Use of a virtual
 environment isn't strictly necessary but is recommended to avoid conflicts with
 other installed Python libraries.
 
-{{% alert title="Note" %}}If you install PyCue into a virtual environment,
+{{% alert title="Note" color="info"%}}If you install PyCue into a virtual environment,
 other tools which make use of PyCue must run within the same
 environment.{{% /alert %}}
 
@@ -114,7 +114,7 @@ import outline
 The expected output of `show.name()` is a list of the shows present in your
 OpenCue database:
 
-{{% alert title="Note" %}}The exact contents of the list might be different,
+{{% alert title="Note" color="info" %}}The exact contents of the list might be different,
 depending on the contents of your database.{{% /alert %}}
 
 ```

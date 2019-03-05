@@ -121,9 +121,10 @@ Make sure you've
 [checked out the source code](/docs/getting-started/checking-out-the-source-code)
 and your current directory is the root of the checked out source.
 
-{{% alert title="Note" %}}You need the `pip` and `virtualenv` tools. Use
-of a virtual environment isn't strictly necessary but is recommended to
-avoid conflicts with other installed Python libraries.{{% /alert %}}
+{{% alert title="Note" color="info"%}}You need the `pip` and `virtualenv`
+tools. Use of a virtual environment isn't strictly necessary but is
+recommended to avoid conflicts with other installed Python
+libraries.{{% /alert %}}
 
 ```shell
 virtualenv venv
