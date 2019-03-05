@@ -118,7 +118,7 @@ CUEBOT_HOSTS=$CUEBOT_HOSTNAME_OR_IP cuegui
 OR you can run the software directly, without installing:
 
 ```shell
-CUEBOT_HOSTS=$CUEBOT_HOSTNAME_OR_IP python ./cuegui
+CUEBOT_HOSTS=$CUEBOT_HOSTNAME_OR_IP python -m cuegui
 ```
 
 The CueGUI executable launches.
