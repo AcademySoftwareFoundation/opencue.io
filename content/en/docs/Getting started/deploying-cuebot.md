@@ -57,8 +57,8 @@ steps in
         export DB_HOST_IN_DOCKER=host.docker.internal
         ```
 
-    -   **If your database is running on a different machine**, specify the
-        IP address of the host for your database:
+    -   **If your database is running on a different machine**, specify the IP
+        address of the host for your database:
 
         ```shell
         export DB_HOST_IN_DOCKER=<IP address of the database host machine>
@@ -148,7 +148,7 @@ and your current directory is the root of the checked out source.
     On CentOS this can be installed using `yum`:
 
     ```shell
-    sudo yum install java-1.8.0-openjdk
+    sudo yum install java-1.8.0-openjdk java-1.8.0-openjdk-devel
     ```
 
     On macOS you can use Homebrew:
