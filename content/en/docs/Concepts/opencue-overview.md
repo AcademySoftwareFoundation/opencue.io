@@ -1,10 +1,7 @@
 ---
 title: "OpenCue overview"
-linkTitle: "What is OpenCue?"
+linkTitle: "OpenCue overview"
 weight: 1
-menu:
-  main:
-    weight: 10
 ---
 
 ## What is OpenCue?
