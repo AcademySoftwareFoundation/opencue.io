@@ -3,11 +3,7 @@ title: "Reference"
 linkTitle: "Reference"
 weight: 5
 description: >
-  A short lead descripton about this section page. Text here can also be **bold** or _italic_ and can even be split over multiple paragraphs.
+  Reference guides for OpenCue tools and interfaces for all users
 ---
 
-This is the section landing page.
-
-* Summarize
-* Your section
-* Here
+*   [CueGUI reference](/docs/reference/cuegui-reference)
