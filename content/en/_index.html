@@ -6,30 +6,35 @@ linkTitle = "OpenCue"
 
 {{< blocks/cover title="OpenCue" image_anchor="top" height="max">}}
 <div class="mx-auto">
-	<a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/docs" >}}">
+	<p class="lead mt-5">Open source render management</p>
+	<a class="btn btn-lg btn-primary mr-3 mb-4" href="/docs/getting-started/">
 		Learn more <i class="fas fa-arrow-alt-circle-right ml-2"></i>
 	</a>
-	<a class="btn btn-lg btn-secondary mr-3 mb-4" href="https://github.com/imageworks/OpenCue">
+	<a class="btn btn-lg btn-dark mr-3 mb-4" href="https://github.com/imageworks/OpenCue">
 		Contribute <i class="fab fa-github ml-2 "></i>
 	</a>
-	<div class="mx-auto mt-5">
-		{{< blocks/link-down color="light" >}}
-	</div>
 </div>
 {{< /blocks/cover >}}
 
+<div class="banner">
+	<div class="banner-image">
+		<img src="opencue-robots.png" alt="Robots posing with speakers and OpenCue logo">
+	</div>
+	<div class="banner-text">
+		<h1>High-scale rendering</h1>
+		<p>OpenCue provides features to manage rendering jobs at high-scale</p>
+	</div>
+</div>
 
-{{% blocks/lead color="primary" %}}
-An open source render management system
-
-{{% /blocks/lead %}}
-
-{{< blocks/lead color="secondary" >}}
+{{< blocks/lead color="dark" >}}
 <h1>What is OpenCue?</h1>
-<p>OpenCue is an open source render management system. You can use
-OpenCue in visual effects and animation production to break down
-complex jobs into individual tasks.</p>
+<p>OpenCue is an open source render management system. You can use OpenCue
+	in visual effects and animation production to break down complex jobs
+	into individual tasks. You can submit jobs to a configurable dispatch
+	queue that allocates the necessary computational resources.</p>
 {{% /blocks/lead %}}
+
+
 {{< blocks/section color="primary" >}}
 {{% blocks/feature icon="fas fa-film" title="Built for visual effects and animation"%}}
 Sony Imageworks in-house render manager used on hundreds of films.
@@ -61,4 +66,3 @@ Want to contribute to OpenCue? New users are always welcome!
 {{% /blocks/feature %}}
 
 {{< /blocks/section >}}
-

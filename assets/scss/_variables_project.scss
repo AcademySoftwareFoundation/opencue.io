@@ -1,3 +1,4 @@
+
 /*
 
 Add styles or override variables from the theme here.
@@ -17,3 +18,73 @@ $navbar-dark-color: rgba($black, 0.75);
 $navbar-dark-hover-color: rgba($black, 0.5);
 $navbar-dark-active-color: $black;
 $navbar-dark-disabled-color: rgba($black, 0.25);
+
+// Front page cover
+
+.lead p {
+  font-weight: 400;
+  color: $secondary; }
+
+// Front page banner
+
+.banner {
+  margin: 3em 1em;
+  text-align: center;
+}
+  .banner > .banner-image {
+    margin-bottom: 2em; 
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 65%;
+  }
+  .banner > .banner-text {
+    margin-bottom: auto;
+    margin-top: auto;
+  }
+  .banner > .banner-text h1 {
+    font-size: 2em;
+  }
+  .banner > .banner-text p {
+    font-family: inherit;
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+.banner-image {
+  display: block;
+  max-width: 55%;
+}
+  .banner-image img {
+    display: block;
+    height: auto; 
+    width: 100%;
+  }
+
+@media screen and (min-width: 480px) {
+  .banner {
+    text-align: center;
+  }
+    .banner > .banner-image {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+@media screen and (min-width: 769px) {
+  .banner {
+    display: flex;
+  }
+    .banner > .banner-image {
+      display: block;
+      max-width: 100%;
+    }
+    .banner > .banner-image > img {
+      margin: 0 auto;
+      max-width: 80%;
+    }
+    .banner > .banner-text {
+      flex-basis: 60%;
+      text-align: left;
+    }
+  }
