@@ -8,9 +8,6 @@ Add styles or override variables from the theme here.
   font-weight: 400;
   color: #000; }
 
-a.btn-secondary:hover {
-  background-color: #fff; }
-
 .banner {
   margin: 3em 1em;
   text-align: center; }
