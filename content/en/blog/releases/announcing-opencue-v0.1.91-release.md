@@ -5,7 +5,8 @@ date: 2019-02-27
 description: "OpenCue v0.1.91 release notes"
 ---
 
-v0.1.91 of OpenCue includes the following changes and updates:
+[v0.1.91 of OpenCue](https://github.com/imageworks/OpenCue/releases/tag/v0.1.91)
+includes the following changes and updates:
 
 *   Cuebot writes warn and error messages to stdout
     [#191](https://github.com/imageworks/OpenCue/pull/191).
