@@ -1,6 +1,6 @@
 ---
 title: "Announcing the release of OpenCue v0.1.96"
-linkTitle: "Version v0.1.96 release"
+linkTitle: "v0.1.96 release"
 date: 2019-03-07
 description: "OpenCue v0.1.96 release notes"
 ---
