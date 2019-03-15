@@ -123,4 +123,4 @@ depending on the contents of your database.{{% /alert %}}
 
 ## What's next?
 
-*   [Setting up the database](/docs/getting-started/setting-up-the-database)
+*   [Installing CueGUI](/docs/getting-started/installing-cuegui)
