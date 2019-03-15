@@ -41,7 +41,7 @@ To submit a job to OpenCue:
 
 1.  Select a **Show**.
 
-    A show is a group of related jobs to be processsed. Jobs submitted to
+    A show is a group of related jobs to be processsed. Jobs you submit to
     OpenCue exist within a show.
 
 1.  Enter a **Shot**, which is a series of uninterupted frames you need to
