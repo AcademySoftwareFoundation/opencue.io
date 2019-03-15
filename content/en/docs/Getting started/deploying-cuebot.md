@@ -20,11 +20,19 @@ management tasks, including:
 A typical OpenCue deployment runs a single instance of Cuebot, which is shared
 by all users.
 
+## Hardware requirements
+
+A Cuebot server requires a mimimum of 6GB of memory.
+
 ## Before you begin
 
 Before you work through the steps in this guide, make sure you complete the
 steps in
 [Setting up the database](/docs/getting-started/setting-up-the-database).
+
+A Cuebot server requires a mimimum of 6GB of memory.
+
+Make sure you also complete the following steps:
 
 1.  Configure database values. Use the same values you used in
     [Setting up the database](/docs/getting-started/setting-up-the-database).

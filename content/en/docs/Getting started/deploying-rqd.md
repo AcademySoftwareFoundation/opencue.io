@@ -20,6 +20,13 @@ RQD uses [gRPC](https://grpc.io/) to communicate with Cuebot. It also runs its
 own gRPC server, which is called by the Cuebot client to send instructions to
 RQD.
 
+## Hardware requirements
+
+Each RQD host must meet the following minimum system requirements:
+
+-   A single physical CPU core.
+-   A minimum of 2GB of free memory.
+
 ## Before you begin
 
 Before you start to work through this guide, complete the steps in
