@@ -7,11 +7,12 @@ description: >
   Submit rendering jobs to OpenCue from CueSubmit
 ---
 
-This guide describes how to submit a job to OpenCue using CueSubmit and
-configure relevant rendering settings. A job is a collection of layers, which
-is sent as a script to the queue to be processed on remote cores. Each job
-can contain one or more layers, which are sub-jobs in an outline script job.
-Each layer contains a frame range and a command to execute.
+This guide describes how to submit a job to OpenCue using the stand-alone
+version of CueSubmit and configure relevant rendering settings. A job is a
+collection of layers, which is sent as a script to the queue to be processed
+on remote cores. Each job can contain one or more layers, which are sub-jobs
+in an outline script job. Each layer contains a frame range and a command to
+execute.
 
 ## Before you begin
 
@@ -22,11 +23,10 @@ Make sure your OpenCue admin has
 
 To submit a job to OpenCue:
 
-1.  Run CueSubmit.
+1.  Start CueSubmit.
 
     {{% alert title="Note" color="info"%}}The instructions for running
-    CueSubmit vary depending on the installation method and whether you're
-    running a CueSubmit plug-in. To learn more, see
+    CueSubmit vary depending on the installation method. To learn more, see
     [Installing CueSubmit](/docs/getting-started/installing-cuesubmit)
     or contact your OpenCue admin.{{% /alert %}}
 
@@ -41,8 +41,8 @@ To submit a job to OpenCue:
 
 1.  Select a **Show**.
 
-    A show is a group of related work to be done. Jobs submitted to OpenCue
-    exist within a show
+    A show is a group of related jobs to be done. Jobs submitted to OpenCue
+    exist within a show.
 
 1.  Enter a **Shot**, which is a series of uninterupted frames you need to
     render.
@@ -61,7 +61,7 @@ To submit a job to OpenCue:
 
     A frame spec consists of a start time, an optional end time, a step,
     and an interleave. To add multiple ranges together, separate them
-    by commas.
+    by commas. For detailed examples of the frame spec syntax, click **?**.
 
 1.  Set **Job Type** to either **Shell** or the name of the software package
     you're using for this layer in the job.
