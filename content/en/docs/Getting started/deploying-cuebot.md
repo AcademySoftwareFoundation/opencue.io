@@ -22,7 +22,7 @@ by all users.
 
 ## System requirements
 
-A Cuebot server requires a mimimum of 6GB of memory.
+A Cuebot server requires a mimimum of 6GB of RAM.
 
 ## Before you begin
 
