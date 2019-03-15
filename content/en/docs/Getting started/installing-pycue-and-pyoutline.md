@@ -1,7 +1,7 @@
 ---
 title: "Installing PyCue and PyOutline"
 linkTitle: "Installing PyCue and PyOutline"
-weight: 2
+weight: 5
 date: 2019-02-22
 description: >
   Install the OpenCue Python API and related Python library
@@ -123,4 +123,4 @@ depending on the contents of your database.{{% /alert %}}
 
 ## What's next?
 
-*   [Installing CueGUI](/docs/getting-started/installing-cuegui)
+*   [Setting up the database](/docs/getting-started/setting-up-the-database)

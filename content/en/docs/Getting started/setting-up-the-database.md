@@ -1,7 +1,7 @@
 ---
 title: "Setting up the database"
 linkTitle: "Setting up the database"
-weight: 3
+weight: 1
 date: 2019-02-22
 description: >
   Set up the OpenCue database

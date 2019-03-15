@@ -1,7 +1,7 @@
 ---
 title: "Deploying RQD"
 linkTitle: "Deploying RQD"
-weight: 5
+weight: 3
 date: 2019-02-22
 description: >
   Deploy RQD to all OpenCue render hosts 
@@ -157,5 +157,5 @@ started up:
 
 ## What's next?
 
-*   [Installing PyCue and PyOutline](/docs/getting-started/installing-pycue-and-pyoutline)
-*   [Installing CueAdmin](/docs/getting-started/installing-cueadmin)
+*   [Checking out the source
+    code](/docs/getting-started/checking-out-the-source-code)

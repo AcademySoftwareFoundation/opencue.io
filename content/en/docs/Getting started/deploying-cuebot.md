@@ -1,7 +1,7 @@
 ---
 title: "Deploying Cuebot"
 linkTitle: "Deploying Cuebot"
-weight: 4
+weight: 2
 date: 2019-02-22
 description: >
   Deploy Cuebot to a server from source or a Docker image
