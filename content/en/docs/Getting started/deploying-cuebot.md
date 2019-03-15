@@ -20,7 +20,7 @@ management tasks, including:
 A typical OpenCue deployment runs a single instance of Cuebot, which is shared
 by all users.
 
-## Hardware requirements
+## System requirements
 
 A Cuebot server requires a mimimum of 6GB of memory.
 
