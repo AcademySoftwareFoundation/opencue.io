@@ -170,4 +170,5 @@ Nuke should now contain a new menu item "Render > Render on OpenCue".
 
 ## What's next?
 
+*   [Installing CueAdmin](/docs/getting-started/installing-cueadmin)
 *   [CueGUI reference](/docs/reference/cuegui-reference)

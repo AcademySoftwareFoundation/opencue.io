@@ -1,7 +1,7 @@
 ---
 title: "Checking out the source code"
 linkTitle: "Checking out the source code"
-weight: 1
+weight: 4
 date: 2019-02-22
 description: >
   Check out the OpenCue source code

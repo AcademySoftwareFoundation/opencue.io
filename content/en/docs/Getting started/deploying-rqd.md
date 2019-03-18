@@ -1,7 +1,7 @@
 ---
 title: "Deploying RQD"
 linkTitle: "Deploying RQD"
-weight: 5
+weight: 3
 date: 2019-02-22
 description: >
   Deploy RQD to all OpenCue render hosts 
@@ -19,6 +19,13 @@ RQD's responsibilities include:
 RQD uses [gRPC](https://grpc.io/) to communicate with Cuebot. It also runs its
 own gRPC server, which is called by the Cuebot client to send instructions to
 RQD.
+
+## System requirements
+
+Each RQD host must meet the following minimum system requirements:
+
+-   A single physical CPU core
+-   2GB RAM
 
 ## Before you begin
 
@@ -157,5 +164,5 @@ started up:
 
 ## What's next?
 
-*   [Installing PyCue and PyOutline](/docs/getting-started/installing-pycue-and-pyoutline)
-*   [Installing CueAdmin](/docs/getting-started/installing-cueadmin)
+*   [Checking out the source
+    code](/docs/getting-started/checking-out-the-source-code)
