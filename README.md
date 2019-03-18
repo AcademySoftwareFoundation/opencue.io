@@ -29,7 +29,7 @@ site structure and styling. The OpenCue website is managed and hosted on
 [Netlify](https://www.netlify.com/).
 
 OpenCue documentation is written in Markdown. To publish the site, we run Hugo
-to  generate HTML content.
+to generate HTML content.
 
 ### Proposing changes
 
