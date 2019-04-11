@@ -8,7 +8,7 @@ description: "OpenCue v0.1.107 release notes"
 [v0.1.107 of OpenCue](https://github.com/imageworks/OpenCue/releases/tag/v0.1.107)
 includes the following changes and updates:
 
-*   [Pull request #226](https://github.com/imageworks/OpenCue/pull/250) - 
+*   [Pull request #226](https://github.com/imageworks/OpenCue/pull/226) - 
     Renamed PyOutline wrappers to follow OpenCue naming convention.
 *   [Issue #248](https://github.com/imageworks/OpenCue/issues/248) -
     You can now configure the location of log directories by setting the `CUE_FRAME_LOG_DIR` environment
