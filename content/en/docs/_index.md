@@ -10,4 +10,3 @@ description: >
 *   [User guides](/docs/user-guides)
 *   [Other guides](/docs/other-guides)
 *   [Reference](/docs/reference)
-*   [Contribution guidelines](/docs/contribution-guidelines)
