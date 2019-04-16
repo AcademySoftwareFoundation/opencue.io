@@ -41,14 +41,18 @@ To submit a job to OpenCue:
 
 1.  Select a **Show**.
 
-    A show is a group of related jobs to be processsed. Jobs you submit to
-    OpenCue exist within a show.
+    A show is a group of related jobs for OpenCue to process. Jobs you submit
+    to OpenCue exist within the context of a show.
 
 1.  Enter the name for the **Shot** to send to OpenCue.
 
     A shot is a series of uninterupted frames you need to render. Choose a
     shot name that describes the shot that this job relates to, such as
-    ts_04, short for 'Title sequence 4'.
+    `ts_04`, short for 'Title sequence 4'.
+    
+    The following screenshot illustrates a completed job info form:
+    
+    [!CueSubmit job info form](/docs/images/cuesubmit_job_info.png)
 
 1.  Enter a **Layer Name** to name the first layer in your job.
 
@@ -76,7 +80,7 @@ To submit a job to OpenCue:
     ```
     
     In this example, based on the frame padding `#####`, OpenCue writes the
-    output for frame 325 on disk as file `ts_04.00325.jpg`.
+    output for frame 325 on disk, as file `ts_04.00325.jpg`.
 
 1.  In **Frame Spec**, enter the range of frames you want to process.
 
@@ -90,9 +94,15 @@ To submit a job to OpenCue:
 1.  Select the required **Services** from the available list for your job.
 
     OpenCue matches jobs with machines, based on the selected service.
+    
+    The following screenshot illustrates a completed layer info form:
+
+    [!CueSubmit layer info](/docs/images/cuesubmit_layer_info.png)
 
 1.  Review the summary information in **Submission Details** to verify your
-    settings.
+    settings, as illustrated by the following screenshot:
+    
+    [!CueSubmit submission details summary](/docs/images/cuesubmit_submission_details.png)
 
 1.  Optionally, to add more layers to this job, click **+**.
 
