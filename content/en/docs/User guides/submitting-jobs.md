@@ -44,18 +44,39 @@ To submit a job to OpenCue:
     A show is a group of related jobs to be processsed. Jobs you submit to
     OpenCue exist within a show.
 
-1.  Enter a **Shot**, which is a series of uninterupted frames you need to
-    render.
+1.  Enter the name for the **Shot** to send to OpenCue.
+
+    A shot is a series of uninterupted frames you need to render. Choose a
+    shot name that describes the shot that this job relates to, such as
+    ts_04, short for 'Title sequence 4'.
 
 1.  Enter a **Layer Name** to name the first layer in your job.
 
     {{% alert title="Note" color="info"%}}Layer names must contain more than
     3 characters and contain no spaces.{{% /alert %}}
+    
+    Choose a layer name that describes the task the layer is performing,
+    such as 'rendering' or 'compositing'.
 
 1.  In **Command to Run**, enter the shell command you want to run to render
     the layer.
 
-    The command depends on the rendering software you're running.
+    The command depends on the rendering software you're running. You can
+    specify the frame number in the command to run at render time by
+    specifying the `#IFRAME#` variable. For example, to render a range of
+    frames using the 3D creation suite Blender, you can specify a command
+    to run simiar to the following:
+    
+    ```bash
+    /usr/local/blender/blender -b \
+      -noaudio <path-blender-file>.blend \
+      -o /renderoutput/ts_04.##### \
+      -F JPEG \
+      -f #IFRAME#
+    ```
+    
+    In this example, based on the frame padding `#####`, OpenCue writes the
+    output for frame 325 on disk as file `ts_04.00325.jpg`.
 
 1.  In **Frame Spec**, enter the range of frames you want to process.
 
@@ -67,6 +88,8 @@ To submit a job to OpenCue:
     you're using for this layer in the job.
 
 1.  Select the required **Services** from the available list for your job.
+
+    OpenCue matches jobs with machines, based on the selected service.
 
 1.  Review the summary information in **Submission Details** to verify your
     settings.
