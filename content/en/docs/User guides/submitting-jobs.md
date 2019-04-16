@@ -52,7 +52,7 @@ To submit a job to OpenCue:
     
     The following screenshot illustrates a completed job info form:
     
-    [!CueSubmit job info form](/docs/images/cuesubmit_job_info.png)
+    ![CueSubmit job info form](/docs/images/cuesubmit_job_info.png)
 
 1.  Enter a **Layer Name** to name the first layer in your job.
 
@@ -97,12 +97,12 @@ To submit a job to OpenCue:
     
     The following screenshot illustrates a completed layer info form:
 
-    [!CueSubmit layer info](/docs/images/cuesubmit_layer_info.png)
+    ![CueSubmit layer info](/docs/images/cuesubmit_layer_info.png)
 
 1.  Review the summary information in **Submission Details** to verify your
     settings, as illustrated by the following screenshot:
     
-    [!CueSubmit submission details summary](/docs/images/cuesubmit_submission_details.png)
+    ![CueSubmit submission details summary](/docs/images/cuesubmit_submission_details.png)
 
 1.  Optionally, to add more layers to this job, click **+**.
 
