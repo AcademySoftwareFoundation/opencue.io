@@ -8,19 +8,18 @@ description: >
 ---
 
 This guide describes how to monitor your OpenCue jobs from the CueGUI app
-and configure plugins for viewing jobs details.
+and configure plugins for viewing job details.
 
 After you submit a job to OpenCue, you can monitor the progress of the
-individual frames and layers in the jon from the CueGUI app on your
+individual frames and layers in the job from the CueGUI app on your
 workstation. CueGUI supports the following *views* to monitor and manage
 job status:
 
 *   *Cuetopia* includes plugins for monitoring jobs and individual job
     details.
-*   *Cuecommaner* includes plugins for for monitoring your OpenCue
-    system. System administrators typically run the Cuecommander
-    view to monitor and manage OpenCue infrastructure, such as rendering
-    hosts.
+*   *Cuecommaner* includes plugins for monitoring your OpenCue system.
+    System administrators typically run the Cuecommander view to monitor
+    and manage OpenCue infrastructure, such as rendering hosts.
 *   *Other* includes plugins for viewing logs and attributes.
 
 This guide explains how to use the Cuetopia view to monitor jobs. To
@@ -66,7 +65,8 @@ You also need to configure the Cuetopia view.
     This adds the *Monitor Job Details* plugin to the Cuetopia view,
     alongside the Monitor Jobs view:
     
-    ![Cuetopia Monitor Jobs and Monitor Jobs Details plugins](/docs/images/cuetopia_job_details_view.png)
+    ![Cuetopia Monitor Jobs and Monitor Jobs Details
+    plugins](/docs/images/cuetopia_job_details_view.png)
     
     
 1.  Optionally, you can add additional plugins from the Cuecommander and Other
@@ -84,7 +84,8 @@ To monitor a job:
     {{% alert title="Note" color="info"%}}To autoload your own jobs, check
     the **Autoload Mine** box.{{% /alert %}}
 
-    ![Search for jobs by show name or username, or auto-load your jobs.](/docs/images/cuegui_search.png)
+    ![Search for jobs by show name or username, or auto-load your
+    jobs.](/docs/images/cuegui_search.png)
     
     Cuetopia displays a list of jobs in the search results.
 
@@ -94,13 +95,15 @@ To monitor a job:
     Cuetopia displays a list of the frames associated with the job and their
     status:
 
-    ![Monitoring the status of individual job frames](/docs/images/cuetopia_monitor_job.png)
+    ![Monitoring the status of individual job
+    frames](/docs/images/cuetopia_monitor_job.png)
 
 ## Un-monitoring jobs
 
 You can unmonitor all or some of the jobs in the Monitor Jobs plugin:
     
-![Unmonitor all or some of the jobs listed in the Monitor Jobs plugin](/docs/images/cuetopia_unmonitor_jobs.png)
+![Unmonitor all or some of the jobs listed in the Monitor Jobs
+plugin](/docs/images/cuetopia_unmonitor_jobs.png)
     
 *   To unmonitor all finished jobs, click **Finished**.
 *   To unmonitor all jobs, click **All**.
@@ -108,7 +111,8 @@ You can unmonitor all or some of the jobs in the Monitor Jobs plugin:
     1.  Select the jobs you want to unmonitor in the Monitor Jobs plugin.
     1.  Click the following button:
     
-        ![Unmonitor selected jobs](/docs/images/cuetopia_unmonitor_selected.png)
+        ![Unmonitor selected
+        jobs](/docs/images/cuetopia_unmonitor_selected.png)
 
 
 ## What's next?
