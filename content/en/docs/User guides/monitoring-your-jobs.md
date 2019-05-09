@@ -11,8 +11,9 @@ This guide describes how to monitor your OpenCue jobs from the CueGUI app
 and configure plugins for viewing jobs details.
 
 After you submit a job to OpenCue, you can monitor the progress of the
-indivdual frames and layers from the CueGUI app on your workstation.
-CueGUI supports the following *views* to monitor and manage job status:
+indivdual frames and layers in the jon from the CueGUI app on your
+workstation. CueGUI supports the following *views* to monitor and manage
+job status:
 
 *   *Cuetopia* includes plugins for monitoring jobs and individual job
     details.
