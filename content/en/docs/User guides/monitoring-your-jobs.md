@@ -64,8 +64,7 @@ You also need to configure the Cuetopia view.
 1.  Click **Views/Plugins** > **Cuetopia** > **Monitor Job Details**.
 
     This adds the *Monitor Job Details* plugin to the Cuetopia view,
-    alongside the Monitor Jobs view, as illustrated by the following
-    screenshot:
+    alongside the Monitor Jobs view:
     
     ![Cuetopia Monitor Jobs and Monitor Jobs Details plugins](/docs/images/cuetopia_job_details_view.png)
     
@@ -89,13 +88,13 @@ To monitor a job:
     
     Cuetopia displays a list of jobs in the search results.
 
-1.  Double-click the job name to view the details of the job in the Monitor
+1.  Select the name of a job to view the details of the job in the Monitor
     Job Details plugin.
     
     Cuetopia displays a list of the frames associated with the job and their
     status:
 
-    ![Monitoring the status of individual job frames](/docs/images/cuetopia_moinitor_job.png)
+    ![Monitoring the status of individual job frames](/docs/images/cuetopia_monitor_job.png)
 
 ## Unmonitoring jobs
 
