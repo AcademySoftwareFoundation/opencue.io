@@ -110,5 +110,5 @@ To submit a job to OpenCue:
 
 ## What's next?
 
--   [Troubleshooting rendering](/docs/other-guides/troubleshooting-rendering)
+-   [Monitoring your jobs](/docs/user-guides/monitoring-your-jobs/)
  
