@@ -11,26 +11,26 @@ This guide describes how to monitor your OpenCue jobs from the CueGUI app
 and configure plugins for viewing jobs details.
 
 After you submit a job to OpenCue, you can monitor the progress of the
-indivdual frames and layers in the jon from the CueGUI app on your
+individual frames and layers in the jon from the CueGUI app on your
 workstation. CueGUI supports the following *views* to monitor and manage
 job status:
 
 *   *Cuetopia* includes plugins for monitoring jobs and individual job
     details.
 *   *Cuecommaner* includes plugins for for monitoring your OpenCue
-    system. System administratos typically run the Cuecommander
+    system. System administrators typically run the Cuecommander
     view to monitor and manage OpenCue infrastructure, such as rendering
     hosts.
 *   *Other* includes plugins for viewing logs and attributes.
 
-This guide expains how to use the Cuetopia view to monitor jobs. To
+This guide explains how to use the Cuetopia view to monitor jobs. To
 learn more about the features available in CueGUI, see
 [CueGUI reference](/docs/reference/cuegui-reference/).
 
 ## Before you begin
 
 Make sure you are familiar with the steps for
-[submiting jobs](/docs/user-guides/submitting-jobs/).
+[submitting jobs](/docs/user-guides/submitting-jobs/).
 
 You also need to configure the Cuetopia view.
 
@@ -96,7 +96,7 @@ To monitor a job:
 
     ![Monitoring the status of individual job frames](/docs/images/cuetopia_monitor_job.png)
 
-## Unmonitoring jobs
+## Un-monitoring jobs
 
 You can unmonitor all or some of the jobs in the Monitor Jobs plugin:
     
