@@ -8,6 +8,10 @@ Add styles or override variables from the theme here.
   font-weight: 400;
   color: #000; }
 
+p {
+  margin-left: 1em;
+  margin-right: 1em; }
+
 .banner {
   margin: 3em 1em;
   text-align: center; }
@@ -29,7 +33,9 @@ Add styles or override variables from the theme here.
   font-family: inherit;
   font-size: 1.5em;
   font-weight: 500;
-  line-height: 1.2; }
+  line-height: 1.2;
+  margin-left: 0;
+  margin-right: 0; }
 
 .banner-image {
   display: block;

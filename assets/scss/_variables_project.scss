@@ -24,6 +24,11 @@ $navbar-dark-disabled-color: rgba($black, 0.25);
 .lead p {
   font-weight: 400;
   color: $secondary; }
+  
+p {
+  margin-left: 1em;
+  margin-right: 1em;
+}
 
 // Front page banner
 
@@ -49,6 +54,8 @@ $navbar-dark-disabled-color: rgba($black, 0.25);
     font-size: 1.5em;
     font-weight: 500;
     line-height: 1.2;
+    margin-left: 0;
+    margin-right: 0;
   }
 
 .banner-image {
@@ -62,6 +69,7 @@ $navbar-dark-disabled-color: rgba($black, 0.25);
   }
 
 @media screen and (min-width: 480px) {
+
   .banner {
     text-align: center;
   }
