@@ -17,7 +17,7 @@ deployment from the command line.
 
 Show the help message and exit.
 
-## General Options
+## General options
 
 ### `-server HOSTNAME [HOSTNAME ...]`
 
@@ -34,3 +34,5 @@ Turn on verbose logging.
 ### `-force`
 
 Force operations that usually require confirmation.
+
+## Query options
