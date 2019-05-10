@@ -13,25 +13,29 @@ deployment from the command line.
 
 ## Optional arguments
 
-`-h` and `--help`           
+### `-h` and `--help`           
 
-> Show the help message and exit.
+    Show the help message and exit.
 
 ## General options
 
-`-server HOSTNAME [HOSTNAME ...]`
+### `-server` 
 
-> Specify cuebot addres(s).
+Arguments: `HOSTNAME [HOSTNAME ...]`
+
+Specify cuebot addres(s).
   
-`-facility CODE`
+### `-facility`
 
-> Specify the facility code.
+Arguments: `CODE`
 
-`-verbose` and `-v`
+Specify the facility code.
 
-> Turn on verbose logging.
+### `-verbose` and `-v`
 
-`-force`
+Turn on verbose logging.
+
+###  `-force`
 
 Force operations that usually require confirmation.
 
