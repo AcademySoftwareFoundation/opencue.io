@@ -291,6 +291,7 @@ Delete hosts
 ### `-safe-reboot`
 
 Lock and reboot hosts when idle
+
 ### `-repair`
 
 Sets hosts into the repair state.
@@ -298,13 +299,9 @@ Sets hosts into the repair state.
 ### `-fixed`
 
 Sets hosts into Up state.
+
 ### `-thread`
 
 Arguments: `{auto,all,variable}`
 
 Set the host's thread mode.
-### `-os`
-
-Arguments: `{}`
-
-Set the host's operating system.
