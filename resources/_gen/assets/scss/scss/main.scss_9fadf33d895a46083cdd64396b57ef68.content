@@ -36,11 +36,10 @@ p {
 .banner-image {
   display: block;
   max-width: 55%; }
-
-.banner-image img {
-  display: block;
-  height: auto;
-  width: 100%; }
+  .banner-image img {
+    display: block;
+    height: auto;
+    width: 100%; }
 
 @media screen and (min-width: 480px) {
   .banner {

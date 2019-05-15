@@ -66,12 +66,12 @@ p {
 .banner-image {
   display: block;
   max-width: 55%;
-}
-
-.banner-image img {
-  display: block;
-  height: auto; 
-  width: 100%;
+  
+  img {
+    display: block;
+    height: auto; 
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -85,22 +85,22 @@ p {
 }
 
 @media screen and (min-width: 769px) {
-	.banner {
-		display: flex;
-		.banner-image {
-			display: block;
-			max-width: 100%;
-		}
-	}
+  .banner {
+    display: flex;
+    .banner-image {
+	display: block;
+	max-width: 100%;
+    }
+  }
 
-	.banner-image > img {
-		margin: 0 auto;
-		max-width: 80%;
-	}
+  .banner-image > img {
+    margin: 0 auto;
+    max-width: 80%;
+  }
 
-	.banner-text {
-		flex-basis: 60%;
-		text-align: left;
-	}
+  .banner-text {
+    flex-basis: 60%;
+    text-align: left;
+  }
 }
 
