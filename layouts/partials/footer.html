@@ -1,6 +1,21 @@
 {{ $links := .Site.Params.links }}
 <footer class="bg-dark py-5 row d-print-none">
   <div class="container-fluid mx-sm-5">
+  	<div class="text-center">
+      <img src="/images/aswf_aqua.png" alt="Academy Software Foundation logo"><br>
+      <small class="text-white">Documentation Distributed under CC BY 4.0</small><br>
+      <small class="text-white">LF Projects, LLC uses various trademarks.
+      For our trademark, privacy and antitrust policies, code of conduct,
+      and terms of use, please click the applicable link below or see
+      <a href="https://www.lfprojects.org">https://www.lfprojects.org</a>.</small><br>
+      {{ with .Site.Params.privacy_policy }}<small class="ml-1 text-white">
+      <a href="https://lfprojects.org/policies/trademark-policy/">Trademark Policy</a> |
+      <a href="{{ . }}">{{ T "footer_privacy_policy" }}</a> |
+      <a href="https://lfprojects.org/policies/privacy-policy/">Antitrust Policy</a> |
+      <a href="https://lfprojects.org/policies/code-of-conduct/">Code of Conduct</a> |
+      <a href="https://lfprojects.org/policies/terms-of-use/">Terms of Use</a></small>{{ end }}
+      {{ with .Site.GetPage "about" }}<p class="mt-2"><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}
+    </div>
     <div class="row">
       <div class="col-6 col-sm-4 text-xs-center order-sm-2">
         {{ with $links }}
@@ -17,9 +32,7 @@
         {{ end }}
       </div>
       <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
-        {{ with .Site.Params.copyright }}<small class="text-white">&copy; {{ now.Year}} {{ .}} <br>{{ "Documentation Distributed under CC BY 4.0" }}{{ end }}
-        {{ with .Site.Params.privacy_policy }}<small class="ml-1"><a href="{{ . }}">{{ T "footer_privacy_policy" }}</a></small>{{ end }}
-        {{ with .Site.GetPage "about" }}<p class="mt-2"><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}
+        {{ with .Site.Params.copyright }}<small class="text-white">&copy; {{ now.Year}} {{ .}} {{ end }}</small><br>
       </div>
     </div>
   </div>
