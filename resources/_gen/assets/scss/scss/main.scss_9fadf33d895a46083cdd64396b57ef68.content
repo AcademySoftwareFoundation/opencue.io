@@ -12343,10 +12343,10 @@ readers do not read off random characters that represent icons */
   position: relative; }
 
 footer {
-  min-height: 150px; }
-  @media (max-width: 991.98px) {
-    footer {
-      min-height: 200px; } }
+  padding-bottom: 20px; }
+  footer img {
+    height: 50px;
+    margin-bottom: 10px; }
 
 @media (min-width: 768px) {
   .td-offset-anchor:target {
@@ -12360,5 +12360,13 @@ footer {
     margin-top: -5rem;
     height: 5rem;
     visibility: hidden; } }
+
+/*
+
+Nothing defined here. The Hugo project that uses this theme can override Bootstrap by adding a file to:
+
+assets/scss/_styles_project.scss
+
+*/
 
 /*# sourceMappingURL=main.css.map */
