@@ -4,6 +4,15 @@ Add styles or override variables from the theme here.
 
 */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i");
+footer div {
+  padding-left: 1em;
+  padding-right: 1em; }
+
+footer img {
+  height: 50px;
+  margin-bottom: 20px;
+  margin-top: 20px; }
+
 .lead p {
   font-weight: 400;
   color: #000; }
@@ -12343,10 +12352,10 @@ readers do not read off random characters that represent icons */
   position: relative; }
 
 footer {
-  padding-bottom: 20px; }
-  footer img {
-    height: 50px;
-    margin-bottom: 10px; }
+  min-height: 150px; }
+  @media (max-width: 991.98px) {
+    footer {
+      min-height: 200px; } }
 
 @media (min-width: 768px) {
   .td-offset-anchor:target {
@@ -12360,13 +12369,5 @@ footer {
     margin-top: -5rem;
     height: 5rem;
     visibility: hidden; } }
-
-/*
-
-Nothing defined here. The Hugo project that uses this theme can override Bootstrap by adding a file to:
-
-assets/scss/_styles_project.scss
-
-*/
 
 /*# sourceMappingURL=main.css.map */
