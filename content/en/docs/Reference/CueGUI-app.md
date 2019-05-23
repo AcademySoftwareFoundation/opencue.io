@@ -1,6 +1,6 @@
 ---
-title: "CueGUI reference"
-linkTitle: "CueGUI reference"
+title: "CueGUI app"
+linkTitle: "CueGUI app"
 date: 2019-02-22
 description: >
   Interacting with CueGUI
