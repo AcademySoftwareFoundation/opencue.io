@@ -7,7 +7,7 @@ description: >
   Submit and launch OpenCue jobs
 ---
 
-This page lists the arguments and flags you can specifiy for the `pycuerun`
+This page lists the arguments and flags you can specify for the `pycuerun`
 command. You can run `pycuerun` to launch OpenCue outline jobs and frames.
 To submit a job to OpenCue, you must first create an outline script.
 
@@ -53,7 +53,7 @@ Enable verbose output.
 
 Turn on debugging.
 
-## Devlopment options
+## Development options
 
 ### `-v VERSION` and `--version=VERSION`
 
