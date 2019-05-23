@@ -8,3 +8,4 @@ description: >
 
 *   [cueadmin](/docs/reference/commands/cueadmin)
 *   [CueGUI reference](/docs/reference/cuegui-reference)
+*   [pycuerun](/docs/reference/commands/pycuerun)
