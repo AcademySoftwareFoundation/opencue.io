@@ -1,6 +1,6 @@
 ---
-title: "pycuerun"
-linkTitle: "pycuerun"
+title: "pycuerun command"
+linkTitle: "pycuerun command"
 date: 2019-05-23
 weight: 3
 description: >
