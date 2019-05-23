@@ -2,6 +2,7 @@
 title: "CueGUI app"
 linkTitle: "CueGUI app"
 date: 2019-02-22
+weight: 1
 description: >
   Interacting with CueGUI
 ---
