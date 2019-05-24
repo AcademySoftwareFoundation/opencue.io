@@ -55,6 +55,6 @@ the following skills:
 ## Contact us
 
 To contact the OpenCue development team, email us at
-<opencue-dev@googlegroups.com>.
+<opencue-dev@lists.aswf.io>.
 
 The OpenCue team
