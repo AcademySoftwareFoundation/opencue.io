@@ -6,5 +6,6 @@ description: >
   Reference guides for OpenCue tools and interfaces for all users
 ---
 
-*   [cueadmin](/docs/reference/commands/cueadmin)
-*   [CueGUI reference](/docs/reference/cuegui-reference)
+*   [CueGUI app](/docs/reference/cuegui-app)
+*   [cueadmin command](/docs/reference/commands/cueadmin)
+*   [pycuerun command](/docs/reference/commands/pycuerun)

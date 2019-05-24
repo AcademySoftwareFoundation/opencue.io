@@ -1,6 +1,6 @@
 ---
-title: "cueadmin"
-linkTitle: "cueadmin"
+title: "cueadmin command"
+linkTitle: "cueadmin command"
 date: 2019-05-10
 weight: 2
 description: >
