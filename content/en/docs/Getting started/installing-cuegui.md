@@ -17,6 +17,9 @@ Admins use CueGUI to:
 *   Assign render processors to jobs.
 *   Manage cue priorities.
 
+CueGUI is a standalone PySide application. It runs locally on the user's workstation; all users
+within your OpenCue deployment who want to use it will need it available on their workstations. 
+
 ## Before you begin
 
 1.  Before you start to work through this guide, complete the steps in

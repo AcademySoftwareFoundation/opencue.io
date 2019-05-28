@@ -16,6 +16,10 @@ specification XML, allowing you to construct complex jobs with Python code
 instead of working directly with XML. PyOutline is used by CueSubmit to
 construct its job submissions.
 
+PyCue and PyOutline will need to be available on all systems which want to make use of
+these libraries. This includes all systems which will run tools such as CueGUI and
+CueSubmit which depend on them. 
+
 ## Before you begin
 
 PyCue requires a Cuebot deployment to communicate with. Ask the admin of your
