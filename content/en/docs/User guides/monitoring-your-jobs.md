@@ -37,7 +37,7 @@ You also need to configure CueGUI.
 
 {{% alert title="Note" color="info"%}}You can review the logs for a job,
 either in the CueGUI app or in an external text editor. To view job logs
-in an external text editor, set your EDITOR environment variable.
+in an external text editor, set your `EDITOR` environment variable.
 Alternatively, you can set the `Constants.DEFAULT_EDITOR` variable to
 configure an external text editor.{{% /alert %}}
 
