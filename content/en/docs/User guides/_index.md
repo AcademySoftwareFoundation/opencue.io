@@ -9,3 +9,4 @@ description: >
 ---
 
 *   [Submitting jobs](/docs/user-guides/submitting-jobs)
+*   [Monitoring your jobs](/docs/user-guides/monitoring-your-jobs)
