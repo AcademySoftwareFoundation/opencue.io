@@ -23,6 +23,8 @@ by all users.
 
 ## System requirements
 
+To plan your installation of Cuebot, consider the following requirements:
+
 *   A Cuebot server requires a mimimum of 6GB of RAM.
 *   Cuebot functions best when it has a low-latency connection to the
     [OpenCue database](/docs/getting-started/setting-up-the-database). We recommend that you
