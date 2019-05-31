@@ -19,6 +19,21 @@ $navbar-dark-hover-color: rgba($black, 0.5);
 $navbar-dark-active-color: $black;
 $navbar-dark-disabled-color: rgba($black, 0.25);
 
+// Site footer
+
+footer {
+  div {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  img {
+    height: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+}
+
 // Front page cover
 
 .lead p {
@@ -88,8 +103,8 @@ p {
   .banner {
     display: flex;
     .banner-image {
-	display: block;
-	max-width: 100%;
+      display: block;
+      max-width: 100%;
     }
   }
 
