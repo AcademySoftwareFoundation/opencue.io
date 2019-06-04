@@ -10,6 +10,18 @@ description: >
 This page describes how to install and set up a
 [PostgreSQL](https://www.postgresql.org/) database for use with OpenCue.
 
+OpenCue supports a single database per deployment, which serves as the single source of truth
+within your deployment.
+
+## System requirements
+
+[Cuebot](/docs/getting-started/deploying-cuebot) servers are the only
+component that access the database directly. All other components, such as
+[PyCue](/docs/getting-started/installing-pycue-and-pyoutline), interact with the
+database indirectly via the Cuebot's gRPC API. For this reason, make sure Cuebot
+has a low-latency connection to the database, either by running both on the same
+machine or on the same local network.
+
 ## Before you begin
 
 To follow the instructions in this guide, you'll need the following software:
