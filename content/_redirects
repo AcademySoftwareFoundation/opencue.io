@@ -1,0 +1,7 @@
+# Redirects for opencue.io
+# For more info, see https://www.netlify.com/docs/redirects/
+
+# Handle 404 errors
+# For more info, see https://www.netlify.com/docs/redirects/#custom-404
+
+/* /404.html 404
