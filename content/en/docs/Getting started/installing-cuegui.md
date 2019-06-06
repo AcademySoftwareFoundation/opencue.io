@@ -124,20 +124,9 @@ OR you can run the software directly, without installing:
 CUEBOT_HOSTS=$CUEBOT_HOSTNAME_OR_IP python -m cuegui
 ```
 
-The CueGUI executable launches.
+The CueGUI executable launches and the Cuetopia window appears:
 
-## Configuring and verifying the install
-
-If this is your first time starting CueGUI you can expect to see a blank screen.
-To add panels to your layout and view information about your OpenCue deployment,
-access the **Views/Plugins** menu.
-
-For example, to display a list of shows in your database and some information
-about them, click **Views/Plugins** > **Cuecommander** > **Shows**.
-
-The CueGUI Shows window appears:
-
-![CueGUI Shows view](/docs/images/cuegui_shows.png)
+![CueGUI Cuetopia window](/docs/images/cuetopia_default_verify.png)
 
 ## What's next?
 
