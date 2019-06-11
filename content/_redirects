@@ -2,7 +2,7 @@
 # For more info, see https://www.netlify.com/docs/redirects/
 
 # Redirect default Netlify subdomain to primary domain
-https://elated-haibt-1b47ff.netlify.com/* https://opencue.io/:splat 301!
+https://elated-haibt-1b47ff.netlify.com/* https://www.opencue.io/:splat 301!
 
 # Handle 404 errors
 # For more info, see https://www.netlify.com/docs/redirects/#custom-404
