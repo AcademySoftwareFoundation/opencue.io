@@ -17,13 +17,13 @@ repository in a browser.
 
 ## Option 1: Cloning the repository
 
-The [OpenCue Git repository](https://github.com/imageworks/OpenCue) is hosted on
+The [OpenCue Git repository](https://github.com/AcademySoftwareFoundation/OpenCue) is hosted on
 GitHub.
 
 To check out the repository locally, run the following `git` command:
 
 ```shell
-git clone https://github.com/imageworks/OpenCue.git
+git clone https://github.com/AcademySoftwareFoundation/OpenCue.git
 ```
 
 If you use GitHub already and you've
@@ -38,7 +38,7 @@ git clone git@github.com:imageworks/OpenCue.git
 
 To download an archive ZIP file of the OpenCue Git repository:
 
-1.  Visit the [OpenCue Git repository](https://github.com/imageworks/OpenCue) on
+1.  Visit the [OpenCue Git repository](https://github.com/AcademySoftwareFoundation/OpenCue) on
     GitHub.
 1.  Click **Clone or download**.
 1.  Click **Download ZIP**.

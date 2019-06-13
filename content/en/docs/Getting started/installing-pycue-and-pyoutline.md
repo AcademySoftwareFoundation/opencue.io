@@ -44,7 +44,7 @@ install the library directly from source.
 ### Option 1: Installing a published release
 
 To install a published release, visit the
-[OpenCue releases page](https://github.com/imageworks/OpenCue/releases) and
+[OpenCue releases page](https://github.com/AcademySoftwareFoundation/OpenCue/releases) and
 download the `pycue` and `pyoutline` tarballs from the list of assets for the
 latest release.
 

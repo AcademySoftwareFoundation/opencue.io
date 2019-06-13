@@ -94,7 +94,7 @@ docker run -td --name rqd01 --env CUEBOT_HOSTNAME=${CUEBOT_HOSTNAME} --volume "$
 To manually install from the published release:
 
 Download the RQD tarball from
-[the OpenCue GitHub releases page](https://github.com/imageworks/OpenCue/releases).
+[the OpenCue GitHub releases page](https://github.com/AcademySoftwareFoundation/OpenCue/releases).
 
 You need the `pip` and `virtualenv` tools. Use of a virtual environment is not
 strictly necessary but is recommended to avoid conflicts with other installed

@@ -66,7 +66,7 @@ inside.
 ### Option 1: Installing a published release
 
 1.  Visit the
-    [OpenCue releases page](https://github.com/imageworks/OpenCue/releases).
+    [OpenCue releases page](https://github.com/AcademySoftwareFoundation/OpenCue/releases).
 
 1.  Download the cuesubmit tarball from the latest release's Assets.
 

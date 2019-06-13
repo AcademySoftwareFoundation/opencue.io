@@ -56,7 +56,7 @@ inside.
 ### Option 1: Installing a published release
 
 Visit the
-[OpenCue releases page](https://github.com/imageworks/OpenCue/releases) and
+[OpenCue releases page](https://github.com/AcademySoftwareFoundation/OpenCue/releases) and
 download the cueadmin tarball from the latest release's Assets.
 
 ```shell

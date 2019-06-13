@@ -200,7 +200,7 @@ To create a database:
 
 ### Option 1: Download the published schema
 
-Visit https://github.com/imageworks/OpenCue/releases and download the SQL files
+Visit https://github.com/AcademySoftwareFoundation/OpenCue/releases and download the SQL files
 from the latest release's Assets. There should be two - a `schema` file and a
 `demo_data` file.
 
