@@ -38,7 +38,7 @@ git clone git@github.com:imageworks/OpenCue.git
 
 To download an archive ZIP file of the OpenCue Git repository:
 
-1.  Visit the [OpenCue Git repository](https://github.com/imageworks/OpenCue) on
+1.  Visit the [OpenCue Git repository](https://github.com/AcademySoftwareFoundation/OpenCue) on
     GitHub.
 1.  Click **Clone or download**.
 1.  Click **Download ZIP**.
