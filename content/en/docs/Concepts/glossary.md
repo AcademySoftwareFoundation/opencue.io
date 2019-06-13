@@ -24,11 +24,11 @@ The processing units that make up a *proc*.
 A nickname for the entire queuing system, which also prefixes the names of
 OpenCue rendering tools, such as *CueGUI* and *Cuebot*.
 
-## CueAdmin
+## cueadmin
 
-CueAdmin is the OpenCue command-line client. You run this client to administer
-an OpenCue deployment. It's written in Python and provides a thin layer over the
-OpenCue Python API, *PyCue*.
+`cueadmin` is the OpenCue command-line client. You run this client to
+administer an OpenCue deployment. It's written in Python and provides a thin
+layer over the OpenCue Python API, *PyCue*.
 
 ## Cuebot
 
@@ -95,7 +95,7 @@ execute a *frame*.
 ## PyCue
 
 PyCue is the OpenCue Python API. OpenCue client-side Python tools, such as
-*CueGUI* and *CueAdmin*, all use PyCue for communicating with your OpenCue
+*CueGUI* and `*cueadmin*`, all use PyCue for communicating with your OpenCue
 deployment.
 
 ## PyOutline
