@@ -1,4 +1,4 @@
-baseURL = "https://opencue.io"
+baseURL = "https://www.opencue.io"
 title = "OpenCue"
 
 enableRobotsTXT = true
