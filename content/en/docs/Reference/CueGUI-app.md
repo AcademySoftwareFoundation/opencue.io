@@ -108,7 +108,7 @@ available actions. Some of the common actions include:
 *   Restarting the host
 *   Changing the tags on the host
 *   Changing the allocation associated with the host
-*   Locking/Unlocking the host
+*   Locking/ unlocking the host
 
 ## Managing services
 
