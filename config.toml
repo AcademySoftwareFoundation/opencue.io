@@ -1,4 +1,4 @@
-baseURL = "https://opencue.io"
+baseURL = "https://www.opencue.io"
 title = "OpenCue"
 
 enableRobotsTXT = true
@@ -85,7 +85,7 @@ time_format_blog = "02.01.2006"
 [params]
 copyright = "Copyright Contributors to the OpenCue Project"
 privacy_policy = "https://lfprojects.org/policies/privacy-policy/"
-github_repo = "https://github.com/imageworks/opencue.io"
+github_repo = "https://github.com/AcademySoftwareFoundation/opencue.io"
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
 # gcs_engine_id = "011737558837375720776:fsdu1nryfng"
@@ -127,7 +127,7 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
 [[params.links.developer]]
 	name = "GitHub"
-	url = "https://github.com/imageworks/OpenCue"
+	url = "https://github.com/AcademySoftwareFoundation/OpenCue"
 	icon = "fab fa-github"
         desc = "Development takes place here!"
 # [[params.links.developer]]
