@@ -14,7 +14,7 @@ run, to propose changes to the OpenCue documentation.
 ### Before you begin
 
 To learn about the process for contributing to OpenCue, see
-[Contributing to OpenCue](https://github.com/imageworks/OpenCue/blob/master/CONTRIBUTING.md)
+[Contributing to OpenCue](https://github.com/AcademySoftwareFoundation/OpenCue/blob/master/CONTRIBUTING.md)
 on the primary OpenCue repository. This page provides additional help and
 information about contributing to the OpenCue documentation.
 
@@ -49,7 +49,7 @@ To set up a local copy of the OpenCue website:
 1.  Clone the opencue.io repository:
 
     ```shell
-    git clone https://github.com/imageworks/opencue.io.git
+    git clone https://github.com/AcademySoftwareFoundation/opencue.io.git
     ```
 
 1.  Change to the `opencue.io` directory:
