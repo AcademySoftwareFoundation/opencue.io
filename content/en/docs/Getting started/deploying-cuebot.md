@@ -124,7 +124,7 @@ To build and run the Cuebot Docker image:
 
 ### Option 3: Manually install from the published release
 
-Visit https://github.com/imageworks/OpenCue/releases and download the cuebot JAR
+Visit https://github.com/AcademySoftwareFoundation/OpenCue/releases and download the cuebot JAR
 from the latest release's Assets.
 
 1.  You must have a Java Runtime Environment (JRE) installed with which to run
