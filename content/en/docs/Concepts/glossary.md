@@ -4,7 +4,7 @@ linkTitle: "Glossary"
 weight: 2
 date: 2019-02-22
 description: >
-  OpenCue glossary of common terms
+  Glossary of common OpenCue terms
 ---
 
 This page defines common terminology for OpenCue.
