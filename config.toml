@@ -88,7 +88,7 @@ privacy_policy = "https://lfprojects.org/policies/privacy-policy/"
 github_repo = "https://github.com/AcademySoftwareFoundation/opencue.io"
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
-# gcs_engine_id = "011737558837375720776:fsdu1nryfng"
+gcs_engine_id = "006268731659284851556:qwtylsm1rlc"
 
 # User interface configuration
 [params.ui]
