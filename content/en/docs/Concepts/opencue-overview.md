@@ -2,6 +2,9 @@
 title: "OpenCue overview"
 linkTitle: "OpenCue overview"
 weight: 1
+date: 2019-02-22
+description: >
+  An introduction to OpenCue
 ---
 
 ## What is OpenCue?

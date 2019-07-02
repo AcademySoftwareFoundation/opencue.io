@@ -4,7 +4,7 @@ linkTitle: "CueGUI app"
 date: 2019-02-22
 weight: 1
 description: >
-  Interacting with CueGUI
+  Interact with CueGUI
 ---
 
 This page describes the main functions of CueGUI, the OpenCue graphical user
