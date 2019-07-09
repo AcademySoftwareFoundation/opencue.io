@@ -18,3 +18,5 @@ For more information, and to add the session to your agenda, visit the
 For more details on all the Birds of a Feather sessions hosted by
 the ASWF on July 30 and to RSVP, see the
 [full schedule](https://www.aswf.io/siggraph2019/).
+
+We look forward to meeting you!
