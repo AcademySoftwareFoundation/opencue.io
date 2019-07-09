@@ -22,6 +22,8 @@ database indirectly via the Cuebot's gRPC API. For this reason, make sure Cuebot
 has a low-latency connection to the database, either by running both on the same
 machine or on the same local network.
 
+OpenCue supports versions 9 or greater of the PostgreSQL database.
+
 ## Before you begin
 
 To follow the instructions in this guide, you'll need the following software:
