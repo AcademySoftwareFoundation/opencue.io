@@ -3,5 +3,6 @@ set -e
 
 git submodule update --init --recursive
 
+# Run hugo
 hugo
 
