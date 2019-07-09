@@ -10,7 +10,7 @@ theme = ["docsy"]
 enableGitInfo = true
 
 # Language settings
-contentDir = "content/en"
+contentDir = "content"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 # Useful when translating.
@@ -86,6 +86,7 @@ time_format_blog = "02.01.2006"
 copyright = "Copyright Contributors to the OpenCue Project"
 privacy_policy = "https://lfprojects.org/policies/privacy-policy/"
 github_repo = "https://github.com/AcademySoftwareFoundation/opencue.io"
+github_project_repo = "https://github.com/AcademySoftwareFoundation/OpenCue"
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
 gcs_engine_id = "006268731659284851556:qwtylsm1rlc"
