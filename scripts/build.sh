@@ -6,7 +6,7 @@ git submodule update --init --recursive
 
 # Create a temporary file with a copy of all of the contents up to
 # the matching string
-sed -e '/<!---/q' content/en/contributing/contribute-to-documentation.md \
+sed -n -e '/<!---/q' content/en/contributing/contribute-to-documentation.md \
 	> content/en/contributing/contribute-to-documentation.tmp
 
 # Append a copy of everything from the second file
