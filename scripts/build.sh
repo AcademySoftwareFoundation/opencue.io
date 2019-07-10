@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 set -e
 
 # Fetch the currently configured version of the Hugo theme (Docsy)
