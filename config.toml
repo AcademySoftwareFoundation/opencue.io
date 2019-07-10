@@ -41,6 +41,10 @@ pygmentsStyle = "tango"
     name = "Blog"
     weight = -100
     url = "/blog/"
+[[menu.main]]
+    name = "Contributing"
+    weight = -99
+    url = "/contributing/"
 
  # First one is picked as the Twitter card image if not set on page.
  #images = ["images/project-illustration.png"]

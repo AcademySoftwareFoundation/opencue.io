@@ -8,6 +8,8 @@ documentation and website. We welcome contributions to the docs.
 
 ## Contributing to the documentation
 
+<!---DO NOT MODIFY THIS LINE--->
+
 This section describes the process you need to follow, and the tools you need to
 run, to propose changes to the OpenCue documentation.
 
