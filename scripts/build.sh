@@ -2,15 +2,15 @@
 set -e
 
 # Fetch the currently configured version of the Hugo theme (Docsy)
-# git submodule update --init --recursive
+git submodule update --init --recursive
 
 # Create a temporary file with a copy of all of the contents up to
-# the match string
+# the matching string
 sed -e '/<!---/q' content/en/contributing/contribute-to-documentation.md \
 	> content/en/contributing/contribute-to-documentation.tmp
 
-# Append a copy of everything from the second file a match string
-# after to the temporary file
+# Append a copy of everything from the second file
+# after the matching string to the temporary file
 sed -n -e '/<!---/,$p' README.md \
 	>> content/en/contributing/contribute-to-documentation.tmp
 
@@ -18,4 +18,5 @@ sed -n -e '/<!---/,$p' README.md \
 mv content/en/contributing/contribute-to-documentation.tmp \
 	content/en/contributing/contribute-to-documentation.md
 
+# Build the site
 hugo
