@@ -2,7 +2,7 @@
 set -e
 
 # Fetch the currently configured version of the Hugo theme (Docsy)
-git submodule update --init --recursive
+# git submodule update --init --recursive
 
 # Create a temporary file with a copy of all of the contents up to
 # the match string
