@@ -154,8 +154,12 @@ To install the database:
 
 After you've installed PostgreSQL, you must create a database.
 
-This assumes your current OS user ($USER) is a db superuser of the same name,
-and that you are able to log in without a password.
+{{% alert title="Note" color="info"%}}The following instructions assume you're
+using a PostgreSQL superuser role with the same name as $USER, your current
+operating system user, and that this role doesn't require a password. For the
+command to create a role, see step 3 of
+[Installing on Linux](#installing-on-linux) in this guide. When installing using
+Homebrew on macOS, this step is automatically done for you.{{% /alert %}}
 
 To create a database:
 
