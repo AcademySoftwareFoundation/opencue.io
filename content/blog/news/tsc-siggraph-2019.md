@@ -10,9 +10,9 @@ The OpenCue Technical Steering Committee (TSC) will be meeting at SIGGRAPH 2019.
 The TSC holds regular meetings to discuss project direction and vote on important issues.
 This upcoming meeting at SIGGRAPH, like all of the TSC meetings, is open to the public.
 
-The main goal of this TSC meeting will be to sync after Tuesday's Birds of a Feather
-session to discuss what we learned and how those discussions might impact the project
-roadmap.
+The main goal of this TSC meeting will be to sync after Tuesday's
+[Birds of a Feather session](/blog/2019/07/08/opencue-roadmap-at-siggraph/) to discuss what
+we learned and how those discussions might impact the project roadmap.
 
 **When:**
 Wednesday, July 31st, 2019
@@ -22,8 +22,10 @@ Wednesday, July 31st, 2019
 **Where:**
 JW Marriott, Olympic 3
 
-This event is also posted on the opencue-dev calendar. (Group membership is required to view
-that calendar, but anyone can join. If you're interested in OpenCue development that
-group is a good place to watch!)
+This event is also posted on the
+[opencue-dev calendar](https://lists.aswf.io/g/opencue-dev/viewevent?eventid=494955&calstart=2019-07-31).
+(Group membership is required to view that calendar, but anyone can join. If you're interested
+in OpenCue development that group is a good place to watch!)
 
-As with all TSC meetings, notes will be taken and later posted to the OpenCue repository.
+As with all TSC meetings, notes will be taken and later posted to the
+[OpenCue repository](https://github.com/AcademySoftwareFoundation/OpenCue/tree/master/tsc/meetings).
