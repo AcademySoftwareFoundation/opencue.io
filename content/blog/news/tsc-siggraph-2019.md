@@ -15,12 +15,11 @@ The main goal of this TSC meeting will be to sync after Tuesday's
 we learned and how those discussions might impact the project roadmap.
 
 **When:**
-Wednesday, July 31st, 2019
-10:00am to 11:00am
-(UTC-07:00) America/Los Angeles
+- Wednesday, July 31st, 2019
+- 10:00am to 11:00am (UTC-07:00) America/Los Angeles
 
 **Where:**
-JW Marriott, Olympic 3
+- JW Marriott, Olympic 3
 
 This event is also posted on the
 [opencue-dev calendar](https://lists.aswf.io/g/opencue-dev/viewevent?eventid=494955&calstart=2019-07-31).
