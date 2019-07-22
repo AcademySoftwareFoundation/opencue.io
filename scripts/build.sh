@@ -2,7 +2,8 @@
 
 set -e
 
-# Fetch the currently configured version of the Hugo theme (Docsy)
+# The Hugo theme (Docsy) is configured as a submodule.
+# Recursively update and initilaize all Git submodules.
 git submodule update --init --recursive
 
 # Build the site
