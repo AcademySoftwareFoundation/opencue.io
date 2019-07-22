@@ -1,6 +1,6 @@
 [build]
   publish = "public"
-  command = "hugo"
+  command = "./scripts/build.sh"
 
 [context.deploy-preview.environment]
   HUGO_VERSION = "0.54.0"
