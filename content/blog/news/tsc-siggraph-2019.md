@@ -1,7 +1,7 @@
 ---
 title: "OpenCue Steering Committee at SIGGRAPH"
 linkTitle: "OpenCue Steering Committee at SIGGRAPH"
-date: 2019-07-08
+date: 2019-07-22
 description: "The OpenCue Technical Steering Committee will be meeting at SIGGRAPH 2019"
 ---
 
