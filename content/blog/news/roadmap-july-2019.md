@@ -1,5 +1,5 @@
 ---
-title: "OpenCue roadmap at SIGGRAPH"
+title: "OpenCue Birds of a Feather at SIGGRAPH"
 linkTitle: "OpenCue roadmap at SIGGRAPH"
 date: 2019-07-08
 description: "Learn more about the OpenCue roadmap at SIGGRAPH 2019"
