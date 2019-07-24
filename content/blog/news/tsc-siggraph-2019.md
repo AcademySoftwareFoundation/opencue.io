@@ -23,7 +23,7 @@ file or in person.
 
 ## Attending the TSC
 
-To attend the TSC, make a note of the following details in your diary:
+To attend the TSC, make a note of the following details:
 
 **Date:** Wednesday, July 31st, 2019<br>
 **Time:** 10:00am to 11:00am (UTC-07:00) America/Los Angeles<br>
