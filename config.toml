@@ -76,8 +76,8 @@ description = "OpenCue is an open source render management system."
 languageName ="English"
 # Weight used for sorting.
 weight = 1
-time_format_default = "02.01.2006"
-time_format_blog = "02.01.2006"
+time_format_default = "Monday, January 2, 2006"
+time_format_blog = "Monday, January 2, 2006"
 
 
 # Everything below this are Site Params
