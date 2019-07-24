@@ -25,9 +25,9 @@ file or in person.
 
 To attend the TSC, make a note of the following details:
 
-**Date:** Wednesday, July 31st, 2019<br>
-**Time:** 10:00am to 11:00am (UTC-07:00) America/Los Angeles<br>
-**Location:** JW Marriott, Olympic 3
+- **Date:** Wednesday, July 31st, 2019
+- **Time:** 10:00am to 11:00am (UTC-07:00) America/Los Angeles
+- **Location:** JW Marriott, Olympic 3
 
 This event is also posted on the
 [opencue-dev calendar](https://lists.aswf.io/g/opencue-dev/viewevent?eventid=494955&calstart=2019-07-31).
