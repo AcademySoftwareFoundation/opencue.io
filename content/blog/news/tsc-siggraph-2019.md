@@ -26,7 +26,9 @@ file or in person.
 To attend the TSC, make a note of the following details in your diary:
 
 **Date:** Wednesday, July 31st, 2019
+
 **Time:** 10:00am to 11:00am (UTC-07:00) America/Los Angeles
+
 **Location:** JW Marriott, Olympic 3
 
 This event is also posted on the
