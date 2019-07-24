@@ -4,7 +4,7 @@ linkTitle: "OpenCue Birds of a Feather at SIGGRAPH"
 date: 2019-07-08
 description: "Learn more about the OpenCue roadmap at SIGGRAPH 2019"
 aliases:
-    - opencue-roadmap-at-siggraph/
+    - /blog/2019/07/08/opencue-roadmap-at-siggraph/
 ---
 
 If you're attending SIGGRAPH 2019 in Los Angeles, you can learn more about
