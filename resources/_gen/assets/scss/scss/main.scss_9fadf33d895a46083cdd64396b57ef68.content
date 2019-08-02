@@ -21,6 +21,9 @@ p {
   margin-left: 1em;
   margin-right: 1em; }
 
+img.td-cover-logo {
+  margin-right: 10px; }
+
 .banner {
   margin: 3em 1em;
   text-align: center; }
