@@ -27,7 +27,7 @@ if [[ -f ${BUILD_DIR}/CONTRIBUTING.md ]]; then
   cd ..
 
   # Update the publication date for the page
-  sed -i '' '4s/20[0-9]\{2\}-[0-9]\{1,2\}-[0-9]\{1,2\}/'${LAST_UPDATE}'/' contributing.tmp
+  sed -i '4s/20[0-9]\{2\}-[0-9]\{1,2\}-[0-9]\{1,2\}/'${LAST_UPDATE}'/' contributing.tmp
 
   tail -n +2 ${BUILD_DIR}/CONTRIBUTING.md >> contributing.tmp
 
