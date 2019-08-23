@@ -24,11 +24,13 @@ To apply a migration:
 
 1. Stop Cuebot, by either killing the Cuebot process or stopping its container.
 
-1. Run the `flyway` command to execute the migrations, using the credentials from the original
+. Run the `flyway` command to execute the migrations, using the credentials from the original
 [database installation](/docs/getting-started/setting-up-the-database). Run this from the root
 folder of the OpenCue repo.
     ```shell
     flyway -url=jdbc:postgresql://$DB_HOST/$DB_NAME -user=$USER -n -locations=filesystem:cuebot/src/main/resources/conf/ddl/postgres/migrations migrate
     ``` 
+
+1. Update Cuebot by following the installation instructions on [Deploying Cuebot](/docs/getting-started/deploying-cuebot).
 
 1. Restart Cuebot.
