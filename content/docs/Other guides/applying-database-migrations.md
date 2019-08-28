@@ -4,33 +4,48 @@ linkTitle: "Applying database migrations"
 weight: 1
 date: 2019-08-22
 description: >
-  How to apply new database migrations
+  Apply new database migrations
 ---
 
-This page describes how to apply new database migrations when necessary.
+This page describes how to apply new database migrations when necessary. This
+guide is intended for OpenCue system admins.
 
-## What is a database migration and why do I need one
+Occasionally changes in OpenCue also require an update to the database schema.
+When this happens, the development team add the schema changes as a new
+*migration*. The migration contains raw SQL and only includes the parts of
+the schema that have changed. You can apply and safely roll back the migration
+using the database management tool of your choice. This guide describes how to
+apply the migration using [flyway](https://flywaydb.org/).
 
-Occasionally developers will make code changes that require the database schema to be updated. When
-this happens the schema changes will be added as a new "migration". The migration contains raw SQL
-and only the parts of the schema that have changed. The migration can be applied and safely rolled
-back using the database management tool of your choice. This example uses
-[flyway](https://flywaydb.org/).
+When you update Cuebot, you must also apply any new migrations to ensure the
+Cuebot code matches the correct database schema. Changes that require a
+database migration are noted in the
+[OpenCue release notes](https://www.opencue.io/blog/releases/).
 
-When updating Cuebot it is important to apply any new migrations to ensure the Cuebot code matches
-the correct database schema. These changes will also be flagged in the release notes.
+## Applying a migration
 
 To apply a migration:
 
-1. Stop Cuebot, by either killing the Cuebot process or stopping its container.
+1.  Stop Cuebot, by either killing the Cuebot process or stopping its
+    container.
 
-. Run the `flyway` command to execute the migrations, using the credentials from the original
-[database installation](/docs/getting-started/setting-up-the-database). Run this from the root
-folder of the OpenCue repo.
+1.  To execute the migrations, you run the `flyway` command and supply the
+    credentials from the original
+    [database installation](/docs/getting-started/setting-up-the-database).
+    Run the `flyway` from the root folder of the OpenCue repo:
+
     ```shell
     flyway -url=jdbc:postgresql://$DB_HOST/$DB_NAME -user=$USER -n -locations=filesystem:cuebot/src/main/resources/conf/ddl/postgres/migrations migrate
     ``` 
 
-1. Update Cuebot by following the installation instructions on [Deploying Cuebot](/docs/getting-started/deploying-cuebot).
+1.  To update Cuebot to the version that corresponds to the database changes,
+    follow the installation instructions in
+    [Deploying Cuebot](/docs/getting-started/deploying-cuebot).
 
-1. Restart Cuebot.
+1.  Restart Cuebot.
+
+## What's next?
+
+*   To stay up to date on changes that might require database migrations,
+    subscribe to the RSS feed for the
+    [OpenCue release notes](https://www.opencue.io/blog/releases/).
