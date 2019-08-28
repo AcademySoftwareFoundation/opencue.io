@@ -38,7 +38,8 @@ To apply a migration:
     flyway -url=jdbc:postgresql://$DB_HOST/$DB_NAME -user=$USER -n -locations=filesystem:cuebot/src/main/resources/conf/ddl/postgres/migrations migrate
     ``` 
 
-1.  Update Cuebot by following the installation instructions on
+1.  To update Cuebot to the version that corresponds to the database changes,
+    follow the installation instructions in
     [Deploying Cuebot](/docs/getting-started/deploying-cuebot).
 
 1.  Restart Cuebot.
