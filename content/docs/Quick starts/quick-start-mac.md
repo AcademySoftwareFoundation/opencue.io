@@ -42,6 +42,7 @@ must do one of the following:
 
 1.  Download and unzip the
     [OpenCue source code ZIP file](https://github.com/AcademySoftwareFoundation/OpenCue/archive/master.zip).
+
 1.  If you have the `git` command installed on your machine, you can clone
     the repository:
 
