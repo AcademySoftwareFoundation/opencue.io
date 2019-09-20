@@ -1,7 +1,7 @@
 ---
 title: "Concepts"
 linkTitle: "Concepts"
-weight: 1
+weight: 2
 description: >
   Conceptual guides for all users to introduce OpenCue
 ---
