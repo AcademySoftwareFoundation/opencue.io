@@ -1,7 +1,7 @@
 ---
 title: "Quick start for macOS"
 linkTitle: "Quick start for macOS"
-weight: 1
+weight: 2
 date: 2019-09-04
 description: >
   Try OpenCue in the sandbox environment on macOS
