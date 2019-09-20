@@ -73,12 +73,13 @@ To deploy the OpenCue sandbox environment:
 
         sudo gpasswd -a $USER docker
 
-1.  Docker Compose will mount the logging volume for the RQD rendering server
-    on the host operating system under `/tmp/rqd/logs`. To create the mount
-    point with the required permissions, run the following command:
+1.  Docker Compose mounts the logging volume for the RQD rendering server on
+    the host operating system under `/tmp/rqd/logs`. To create the mount point
+    with the required permissions, run the following command:
 
-    {{% alert title="Note" color="info"%}}If you skip this step, the mount
-	point might incorrectly be owned by the root account.{{% /alert %}}
+    {{% alert title="Note" color="info"%}}If you skip this step, the root
+    account of the host operating system might incorrectly own the mount point
+    directory.{{% /alert %}}
 
         mkdir -p /tmp/rqd/logs
 
