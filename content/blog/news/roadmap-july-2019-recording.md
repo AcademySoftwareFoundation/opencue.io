@@ -22,5 +22,5 @@ The Birds of a Feather session included the following topics and sections:
 
 {{% alert title="Note" color="info"%}}Approximately the first 15 minutes of
 questions aren't audible on the recording but the answers are recorded and
-captioned. From approximately 23 minutes into the recording the questions are
+captioned. From approximately 23 minutes into the recording, the questions are
 audible.{{% /alert %}}
