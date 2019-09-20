@@ -1,10 +1,10 @@
 ---
-title: "Quick start for macOS"
-linkTitle: "Quick start for macOS"
+title: "Quick start for Linux"
+linkTitle: "Quick start for Linux"
 weight: 1
-date: 2019-09-04
+date: 2019-09-020
 description: >
-  Try OpenCue in the sandbox environment on macOS
+  Try OpenCue in the sandbox environment on Linux
 ---
 
 OpenCue is an open source render management system. You can use
@@ -30,12 +30,7 @@ You must have the following software installed on your machine:
 *   [Docker](https://docs.docker.com/install/)
 *   [Docker Compose](https://docs.docker.com/compose/install/)
 
-{{% alert title="Note" color="info"%}}Docker compose is included in the
-desktop installation of Docker on macOS.{{% /alert %}}
-
-You must allocate a minimum of 6 GB of memory to Docker. To learn
-how to update the memory limit on macOS, see
-[Get started with Docker Desktop for Mac](https://docs.docker.com/docker-for-mac/#advanced).
+You must allocate a minimum of 6 GB of memory to Docker.
 
 If you don't already have a recent local copy of the OpenCue source code, you
 must do one of the following:
@@ -72,7 +67,20 @@ with the `docker-compose` command.
 
 To deploy the OpenCue sandbox environment:
 
-1.  Start the Terminal app.
+1.  Open a Terminal window.
+
+1.  If you haven't already, add your user account to the `docker` group:
+
+        sudo gpasswd -a $USER docker
+
+1.  Docker Compose will mount the logging volume for the RQD rendering server
+    on the host operating system under `/tmp/rqd/logs`. To create the mount
+    point with the required permissions, run the following command:
+
+    {{% alert title="Note" color="info"%}}If you skip this step, the mount
+	point might incorrectly be owned by the root account.{{% /alert %}}
+
+        mkdir -p /tmp/rqd/logs
 
 1.  Change to the root of the OpenCue source code directory:
 
