@@ -87,6 +87,7 @@ time_format_blog = "Monday, January 2, 2006"
 # Everything below this are Site Params
 
 [params]
+description = "OpenCue is an open source render management system."
 copyright = "Copyright Contributors to the OpenCue Project"
 privacy_policy = "https://lfprojects.org/policies/privacy-policy/"
 github_repo = "https://github.com/AcademySoftwareFoundation/opencue.io"
