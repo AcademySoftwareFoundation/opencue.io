@@ -1,10 +1,10 @@
 ---
-title: "Quick start for macOS"
-linkTitle: "Quick start for macOS"
-weight: 2
-date: 2019-09-04
+title: "Quick start for Linux"
+linkTitle: "Quick start for Linux"
+weight: 1
+date: 2019-09-020
 description: >
-  Try OpenCue in the sandbox environment on macOS
+  Try OpenCue in the sandbox environment on Linux
 ---
 
 OpenCue is an open source render management system. You can use
@@ -30,20 +30,13 @@ You must have the following software installed on your machine:
 *   [Docker](https://docs.docker.com/install/)
 *   [Docker Compose](https://docs.docker.com/compose/install/)
 
-{{% alert title="Note" color="info"%}}Docker compose is included in the
-desktop installation of Docker on macOS.{{% /alert %}}
-
-You must allocate a minimum of 6 GB of memory to Docker. To learn
-how to update the memory limit on macOS, see
-[Get started with Docker Desktop for Mac](https://docs.docker.com/docker-for-mac/#advanced).
-
 If you don't already have a recent local copy of the OpenCue source code, you
 must do one of the following:
 
 1.  Download and unzip the
     [OpenCue source code ZIP file](https://github.com/AcademySoftwareFoundation/OpenCue/archive/master.zip).
 
-1.  If you have the `git` command installed on your machine, you can clone
+2.  If you have the `git` command installed on your machine, you can clone
     the repository:
 
         git clone https://github.com/AcademySoftwareFoundation/OpenCue.git
@@ -72,13 +65,27 @@ with the `docker-compose` command.
 
 To deploy the OpenCue sandbox environment:
 
-1.  Start the Terminal app.
+1.  Open a Terminal window.
 
-1.  Change to the root of the OpenCue source code directory:
+2.  If you haven't already, add your user account to the `docker` group:
+
+        sudo gpasswd -a $USER docker
+
+3.  Docker Compose mounts the logging volume for the RQD rendering server on
+    the host operating system under `/tmp/rqd/logs`. To create the mount point
+    with the required permissions, run the following command:
+
+    {{% alert title="Note" color="info"%}}If you skip this step, the root
+    account of the host operating system might incorrectly own the mount point
+    directory.{{% /alert %}}
+
+        mkdir -p /tmp/rqd/logs
+
+4.  Change to the root of the OpenCue source code directory:
 
         cd OpenCue
 
-2.  To deploy the OpenCue sandbox environment, export the `CUE_FRAME_LOG_DIR`
+5.  To deploy the OpenCue sandbox environment, export the `CUE_FRAME_LOG_DIR`
     environment variable:
 
     {{% alert title="Note" color="info"%}}You must export all environment
@@ -86,12 +93,12 @@ To deploy the OpenCue sandbox environment:
 
         export CUE_FRAME_LOG_DIR=/tmp/rqd/logs
 
-3.  To specify a password for the database, export the `POSTGRES_PASSWORD`
+6.  To specify a password for the database, export the `POSTGRES_PASSWORD`
     environment variable:
 
         export POSTGRES_PASSWORD=<REPLACE-WITH-A-PASSWORD>
 
-4.  To deploy the sandbox environment, run the `docker-compose` command:
+7.  To deploy the sandbox environment, run the `docker-compose` command:
 
         docker-compose --project-directory . -f sandbox/docker-compose.yml up
 
@@ -167,7 +174,7 @@ Terminal window:
 
 2.  The Cuebot docker container is forwarding the gRPC ports to your
     localhost, so you can connect to it as `localhost`:
-    
+
         export CUEBOT_HOSTS=localhost
 
 3.  To verify the successful installation of the sandbox environment, as well
