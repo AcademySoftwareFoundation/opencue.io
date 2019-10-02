@@ -69,7 +69,7 @@ The back end storage is provisioned as follows:
     *   Some SSD for caching
 *   Connected to the database server over NFS
 
-The current dataset occupies approximately 1.2 TB (Including historical data)
+The current dataset occupies approximately 1.2 TB, including historical data.
 
 ## See also
 
