@@ -51,7 +51,7 @@ Figure 1. Cue3 infrastructure components
 
 Each CueBot VM is provisioned as follows:
 
-*   Managed via VSphere platform
+*   Managed via vSphere platform
 *   Allocated 4-core CPUs (Intel Xeon L5640 running at 2.3 GHz)
 *   Allocated 8 GB RAM
 
