@@ -12,7 +12,7 @@ production infrastructure. Cue3 is the original name for OpenCue prior to open
 sourcing the project. This case study is aimed at system admins and other
 professionals planning to install OpenCue. When planning a production
 deployment of OpenCue, you can review this case study alongside the [OpenCue
-getting started guide]().
+getting started guide](/docs/getting-started/).
 
 ## Before you begin
 
