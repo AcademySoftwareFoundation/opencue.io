@@ -33,10 +33,11 @@ The production deployment consists of the following components:
     servers
 *   A database server, known as CueDB, which stores data over a Network File
     System (NFS)
-*   A render farm consisting of:
-    *   3,300 render nodes, which are equivalent to OpenCue render hosts
+*   A render farm consisting of between 2,500 and 4,000 render nodes,
+    including:
+    *   Dedicated render nodes, which are equivalent to OpenCue render hosts
         running [RQD](/docs/concepts/glossary/#rqd)
-    *   1,000 artist workstations
+    *   Artist workstations, also running RQD
 *   A 10 Gb/s network
 
 From their workstations, artists submit jobs to Cue3 through a cluster of
