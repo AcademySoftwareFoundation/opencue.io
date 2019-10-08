@@ -5,7 +5,7 @@ date: 2019-07-24
 description: "OpenCue v0.2.65 release notes"
 ---
 
-[v0.2.65 of OpenCue](https://github.com/AcademySoftwareFoundation/OpenCue/releases/tag/v0.2.65)
+[v0.2.65 of OpenCue](https://github.com/AcademySoftwareFoundation/OpenCue/releases/tag/0.2.65)
 includes the following changes and updates:
 
 *   Added Blender as an option to CueSubmit in [#381](https://github.com/AcademySoftwareFoundation/OpenCue/pull/378).

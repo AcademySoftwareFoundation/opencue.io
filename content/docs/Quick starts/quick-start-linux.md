@@ -44,8 +44,8 @@ must do one of the following:
 ## Deploying the OpenCue sandbox environment
 
 You deploy the sandbox environment using
-[Docker Compose]([https://docs.docker.com/compose/]), which runs the
-following containers:
+[Docker Compose]([https://docs.docker.com/compose/]), which downloads and runs
+the images of the following containers from Docker Hub:
 
 *   a PostgresSQL database
 *   a Cuebot server
@@ -53,6 +53,9 @@ following containers:
 
 {{% alert title="Note" color="info"%}}In a production OpenCue deployment,
 you might run many hundreds of RQD rendering servers.{{% /alert %}}
+
+Docker Compose downloads images of Cuebot and RQD corresponding to the latest
+release of OpenCue. 
 
 The Docker Compose deployment process also configures the database and applies
 any database migrations. The deployment process creates a `db-data` directory
@@ -67,11 +70,11 @@ To deploy the OpenCue sandbox environment:
 
 1.  Open a Terminal window.
 
-2.  If you haven't already, add your user account to the `docker` group:
+1.  If you haven't already, add your user account to the `docker` group:
 
         sudo gpasswd -a $USER docker
 
-3.  Docker Compose mounts the logging volume for the RQD rendering server on
+1.  Docker Compose mounts the logging volume for the RQD rendering server on
     the host operating system under `/tmp/rqd/logs`. To create the mount point
     with the required permissions, run the following command:
 
@@ -81,11 +84,11 @@ To deploy the OpenCue sandbox environment:
 
         mkdir -p /tmp/rqd/logs
 
-4.  Change to the root of the OpenCue source code directory:
+1.  Change to the root of the OpenCue source code directory:
 
         cd OpenCue
 
-5.  To deploy the OpenCue sandbox environment, export the `CUE_FRAME_LOG_DIR`
+1.  To deploy the OpenCue sandbox environment, export the `CUE_FRAME_LOG_DIR`
     environment variable:
 
     {{% alert title="Note" color="info"%}}You must export all environment
@@ -93,12 +96,12 @@ To deploy the OpenCue sandbox environment:
 
         export CUE_FRAME_LOG_DIR=/tmp/rqd/logs
 
-6.  To specify a password for the database, export the `POSTGRES_PASSWORD`
+1.  To specify a password for the database, export the `POSTGRES_PASSWORD`
     environment variable:
 
         export POSTGRES_PASSWORD=<REPLACE-WITH-A-PASSWORD>
 
-7.  To deploy the sandbox environment, run the `docker-compose` command:
+1.  To deploy the sandbox environment, run the `docker-compose` command:
 
         docker-compose --project-directory . -f sandbox/docker-compose.yml up
 
@@ -144,14 +147,28 @@ To install the OpenCue client packages:
 
         virtualenv venv
 
-2.  Activate the `venv` virtual environment:
+1.  Activate the `venv` virtual environment:
 
         source venv/bin/activate
 
-3.  Install the Python dependencies and client packages in the `venv` virtual
+1.  To install the lastest versions of the OpenCue client packages, you must
+    configure the installation script with the version number. You can look up
+    the version numbers for
+    [OpenCue releases on GitHub](https://github.com/AcademySoftwareFoundation/OpenCue/releases).
+
+        export VERSION=0.2.65
+
+1.  Install the Python dependencies and client packages in the `venv` virtual
     environment:
 
-        sandbox/install-clients.sh
+        sandbox/install-client-archives.sh
+
+    {{% alert title="Note" color="info"%}}Alternatively, you can install the
+    client packages from your local clone of the source code. However, the
+    latest version of the OpenCue source code might include changes that are
+    incompatible with the pre-build OpenCue images of Cuebot and RQD on
+    Docker Hub used in the sanbox environment. To install from source, run the
+    `sandbox/sandbox/install-client-sources.sh` script.{{% /alert %}}
 
 ## Testing the sandbox environment
 
@@ -172,12 +189,12 @@ Terminal window:
 
         export OL_CONFIG=pyoutline/etc/outline.cfg
 
-2.  The Cuebot docker container is forwarding the gRPC ports to your
+1.  The Cuebot docker container is forwarding the gRPC ports to your
     localhost, so you can connect to it as `localhost`:
 
         export CUEBOT_HOSTS=localhost
 
-3.  To verify the successful installation of the sandbox environment, as well
+1.  To verify the successful installation of the sandbox environment, as well
     as the connection between the client packages and sandbox, you can run the
     `cueadmin` command-line tool. To list the hosts in the sandbox
     environment, run the following `cueadmin` command:
@@ -189,7 +206,7 @@ Terminal window:
         Host            Load NIMBY freeMem  freeSwap freeMcp   Cores Mem   Idle             Os       Uptime   State  Locked    Alloc      Thread 
         172.18.0.5      52   False 24.2G    0K       183.1G    2.0   25.5G [ 2.00 / 25.5G ] Linux    00:04    UP     OPEN      local.general AUTO
 
-4.  Launch the CueSubmit app for submitting jobs:
+1.  Launch the CueSubmit app for submitting jobs:
 
     {{% alert title="Note" color="info"%}}The OpenCue sandbox environment
     doesn't include any rendering software. To experiment with the user
@@ -197,7 +214,7 @@ Terminal window:
 
         cuesubmit &
 
-5.  Launch the CueGUI app for monitoring jobs:
+1.  Launch the CueGUI app for monitoring jobs:
 
         cuegui &
 
@@ -210,11 +227,11 @@ from the second shell:
 
         docker-compose --project-directory . -f sandbox/docker-compose.yml stop
 
-2.  To free up storage space, delete the containers:
+1.  To free up storage space, delete the containers:
 
         docker-compose --project-directory . -f sandbox/docker-compose.yml rm
 
-3.  To delete the virtual environment for the Python client packages:
+1.  To delete the virtual environment for the Python client packages:
 
         rm -rf venv
 
