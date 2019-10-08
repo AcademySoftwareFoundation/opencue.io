@@ -162,7 +162,7 @@ To install the OpenCue client packages:
     client packages from your local clone of the source code. However, the
     latest version of the OpenCue source code might include changes that are
     incompatible with the prebuilt OpenCue images of Cuebot and RQD on
-    Docker Hub used in the sanbox environment. To install from source, run
+    Docker Hub used in the sandbox environment. To install from source, run
     `sandbox/install-client-sources.sh`.{{% /alert %}}
 
 ## Testing the sandbox environment
