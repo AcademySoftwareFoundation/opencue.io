@@ -29,6 +29,7 @@ You must have the following software installed on your machine:
 *   The Python [virtualenv tool](https://pypi.org/project/virtualenv/)
 *   [Docker](https://docs.docker.com/install/)
 *   [Docker Compose](https://docs.docker.com/compose/install/)
+*   The `wget` command
 
 {{% alert title="Note" color="info"%}}Docker compose is included in the
 desktop installation of Docker on macOS.{{% /alert %}}
@@ -36,6 +37,10 @@ desktop installation of Docker on macOS.{{% /alert %}}
 You must allocate a minimum of 6 GB of memory to Docker. To learn
 how to update the memory limit on macOS, see
 [Get started with Docker Desktop for Mac](https://docs.docker.com/docker-for-mac/#advanced).
+
+To install the `wget` command, you can use [Homebrew](https://brew.sh/):
+
+    brew install wget
 
 If you don't already have a recent local copy of the OpenCue source code, you
 must do one of the following:
