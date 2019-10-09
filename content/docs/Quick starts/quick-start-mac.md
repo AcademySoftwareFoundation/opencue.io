@@ -29,6 +29,7 @@ You must have the following software installed on your machine:
 *   The Python [virtualenv tool](https://pypi.org/project/virtualenv/)
 *   [Docker](https://docs.docker.com/install/)
 *   [Docker Compose](https://docs.docker.com/compose/install/)
+*   The `wget` command
 
 {{% alert title="Note" color="info"%}}Docker compose is included in the
 desktop installation of Docker on macOS.{{% /alert %}}
@@ -36,6 +37,10 @@ desktop installation of Docker on macOS.{{% /alert %}}
 You must allocate a minimum of 6 GB of memory to Docker. To learn
 how to update the memory limit on macOS, see
 [Get started with Docker Desktop for Mac](https://docs.docker.com/docker-for-mac/#advanced).
+
+To install the `wget` command, you can use [Homebrew](https://brew.sh/):
+
+    brew install wget
 
 If you don't already have a recent local copy of the OpenCue source code, you
 must do one of the following:
@@ -78,7 +83,7 @@ To deploy the OpenCue sandbox environment:
 
         cd OpenCue
 
-2.  To deploy the OpenCue sandbox environment, export the `CUE_FRAME_LOG_DIR`
+1.  To deploy the OpenCue sandbox environment, export the `CUE_FRAME_LOG_DIR`
     environment variable:
 
     {{% alert title="Note" color="info"%}}You must export all environment
@@ -86,12 +91,12 @@ To deploy the OpenCue sandbox environment:
 
         export CUE_FRAME_LOG_DIR=/tmp/rqd/logs
 
-3.  To specify a password for the database, export the `POSTGRES_PASSWORD`
+1.  To specify a password for the database, export the `POSTGRES_PASSWORD`
     environment variable:
 
         export POSTGRES_PASSWORD=<REPLACE-WITH-A-PASSWORD>
 
-4.  To deploy the sandbox environment, run the `docker-compose` command:
+1.  To deploy the sandbox environment, run the `docker-compose` command:
 
         docker-compose --project-directory . -f sandbox/docker-compose.yml up
 
@@ -137,14 +142,28 @@ To install the OpenCue client packages:
 
         virtualenv venv
 
-2.  Activate the `venv` virtual environment:
+1.  Activate the `venv` virtual environment:
 
         source venv/bin/activate
 
-3.  Install the Python dependencies and client packages in the `venv` virtual
+1.  To install the lastest versions of the OpenCue client packages, you must
+    configure the installation script with the version number. You can look up
+    the version numbers for
+    [OpenCue releases on GitHub](https://github.com/AcademySoftwareFoundation/OpenCue/releases).
+
+        export VERSION=0.2.65
+
+1.  Install the Python dependencies and client packages in the `venv` virtual
     environment:
 
-        sandbox/install-clients.sh
+        sandbox/install-client-archives.sh
+
+    {{% alert title="Note" color="info"%}}Alternatively, you can install the
+    client packages from your local clone of the source code. However, the
+    latest version of the OpenCue source code might include changes that are
+    incompatible with the prebuilt OpenCue images of Cuebot and RQD on
+    Docker Hub used in the sandbox environment. To install from source, run
+    `sandbox/install-client-sources.sh`.{{% /alert %}}
 
 ## Testing the sandbox environment
 
@@ -165,12 +184,12 @@ Terminal window:
 
         export OL_CONFIG=pyoutline/etc/outline.cfg
 
-2.  The Cuebot docker container is forwarding the gRPC ports to your
+1.  The Cuebot docker container is forwarding the gRPC ports to your
     localhost, so you can connect to it as `localhost`:
     
         export CUEBOT_HOSTS=localhost
 
-3.  To verify the successful installation of the sandbox environment, as well
+1.  To verify the successful installation of the sandbox environment, as well
     as the connection between the client packages and sandbox, you can run the
     `cueadmin` command-line tool. To list the hosts in the sandbox
     environment, run the following `cueadmin` command:
@@ -182,7 +201,7 @@ Terminal window:
         Host            Load NIMBY freeMem  freeSwap freeMcp   Cores Mem   Idle             Os       Uptime   State  Locked    Alloc      Thread 
         172.18.0.5      52   False 24.2G    0K       183.1G    2.0   25.5G [ 2.00 / 25.5G ] Linux    00:04    UP     OPEN      local.general AUTO
 
-4.  Launch the CueSubmit app for submitting jobs:
+1.  Launch the CueSubmit app for submitting jobs:
 
     {{% alert title="Note" color="info"%}}The OpenCue sandbox environment
     doesn't include any rendering software. To experiment with the user
@@ -190,7 +209,7 @@ Terminal window:
 
         cuesubmit &
 
-5.  Launch the CueGUI app for monitoring jobs:
+1.  Launch the CueGUI app for monitoring jobs:
 
         cuegui &
 
@@ -203,11 +222,11 @@ from the second shell:
 
         docker-compose --project-directory . -f sandbox/docker-compose.yml stop
 
-2.  To free up storage space, delete the containers:
+1.  To free up storage space, delete the containers:
 
         docker-compose --project-directory . -f sandbox/docker-compose.yml rm
 
-3.  To delete the virtual environment for the Python client packages:
+1.  To delete the virtual environment for the Python client packages:
 
         rm -rf venv
 
