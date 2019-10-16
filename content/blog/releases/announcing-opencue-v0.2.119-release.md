@@ -13,7 +13,7 @@ run the database migrations to update an existing database. For more
 information see
 [OpenCue Limits functionality](https://lists.aswf.io/g/opencue-user/topic/opencue_limits_functionality/34376378).
 
-To learn how to install and configure OpenCue, see [Getting Started](/docs/getting-started/).
+To learn how to install and configure OpenCue, see [Getting started](/docs/getting-started/).
 
 *   Added unit tests for `cuerqd.py` in
     [#490](https://github.com/AcademySoftwareFoundation/OpenCue/pull/490).
