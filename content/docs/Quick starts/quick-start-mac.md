@@ -209,15 +209,62 @@ Terminal window:
 
 1.  Launch the CueSubmit app for submitting jobs:
 
-    {{% alert title="Note" color="info"%}}The OpenCue sandbox environment
-    doesn't include any rendering software. To experiment with the user
-    interface, you can execute simple command-line scripts.{{% /alert %}}
-
         cuesubmit &
 
-1.  Launch the CueGUI app for monitoring jobs:
+    The following screenshot illustrates the layout of CueSubmit as a
+    standalone app:
+
+    ![The default CueSubmit window](/docs/images/cuesubmit_quickstart.png) 
+
+1.  By default, the OpenCue sandbox environment doesn't include any rendering
+    software. To experiment with the user interface, you can execute simple
+    command-line shell scripts.
+
+    To execute a command-line shell script:
+
+    * For **Job Name**, type `HelloWorld`.
+    * For **User Name**, type `test-user`.
+    * For **Shot**, type `test-shot`.
+    * For **Layer Name**, type `test-layer`.
+    * For **Command To Run**, type the following command:
+
+    ```bash
+    echo "Output from frame: #IFRAME#; layer: #LAYER#; job: #JOB#"
+    ```
+
+    * For **Frame Spec**, type `1-10`.
+
+    This job consists of 10 frames, which each run a simple `echo` command.
+    For each frame, the `echo` command prints the frame number, layer name,
+    and job name using replacement tokens such as `#IFRAME#` and `#JOB#`.
+
+1.  To submit the job to OpenCue, click **Submit**.
+
+1.  Launch the CueGUI Cuetopia app for monitoring jobs:
 
         cuegui &
+
+    The following screenshot illustrates the layout of CueGUI Cuetopia
+    monitoring app:
+
+    ![The default CueGUI Cuetopia window](/docs/images/cuegui_quickstart.png) 
+
+1.  Click **Load**.
+
+    CueGUI displays the job name `testing-test-shot-test-user_helloworld` in
+    the list of jobs.
+
+1.  Double-click the job name.
+
+    CueGUI displays the list of frames in the job.
+
+1.  After OpenCue marks the status of a frame as `SUCCEEDED`, click the
+    corresponding row in the list of frames.
+
+1.  In the LogView view, review the log output for the job to verify the frame
+    produced output similar to the following:
+
+        Output from frame: 9; layer: test_layer; job: testing-test-shot-test-user_helloworld
 
 ## Stopping and deleting the sandbox environment
 
