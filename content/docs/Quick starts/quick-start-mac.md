@@ -75,6 +75,12 @@ remove this directory. If you need to start from scratch with a fresh
 database, remove the contents of this directory and restart the containers
 with the `docker-compose` command.
 
+Docker Compose mounts volumes for the RQD rendering server on the host
+operating system under `/tmp/rqd/logs` and `/tmp/rqd/shots`. RQD saves logs
+to the `logs` directory. You specify the `shots` directory to save RQD output
+when creating OpenCue jobs. On macOS, the `docker-compose` command
+automatically creates the mount points for you.
+
 To deploy the OpenCue sandbox environment:
 
 1.  Start the Terminal app.
