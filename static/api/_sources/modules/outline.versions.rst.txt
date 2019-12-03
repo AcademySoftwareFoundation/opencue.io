@@ -1,0 +1,24 @@
+outline.versions package
+========================
+
+Submodules
+----------
+
+outline.versions.main module
+----------------------------
+
+.. automodule:: outline.versions.main
+    :members:
+
+outline.versions.session module
+-------------------------------
+
+.. automodule:: outline.versions.session
+    :members:
+
+
+Module contents
+---------------
+
+.. automodule:: outline.versions
+    :members:

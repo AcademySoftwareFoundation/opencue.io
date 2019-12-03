@@ -1,0 +1,24 @@
+outline.backend package
+=======================
+
+Submodules
+----------
+
+outline.backend.cue module
+--------------------------
+
+.. automodule:: outline.backend.cue
+    :members:
+
+outline.backend.local module
+----------------------------
+
+.. automodule:: outline.backend.local
+    :members:
+
+
+Module contents
+---------------
+
+.. automodule:: outline.backend
+    :members:

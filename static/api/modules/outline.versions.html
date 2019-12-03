@@ -1,0 +1,324 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>outline.versions package &mdash; OpenCue 0.1234 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="OpenCue 0.1234 documentation" href="../index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> OpenCue
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <!-- Local TOC -->
+                <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">outline.versions package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-outline.versions.main">outline.versions.main module</a></li>
+<li><a class="reference internal" href="#module-outline.versions.session">outline.versions.session module</a></li>
+<li><a class="reference internal" href="#module-outline.versions">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">OpenCue</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>outline.versions package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/modules/outline.versions.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="outline-versions-package">
+<h1>outline.versions package<a class="headerlink" href="#outline-versions-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-outline.versions.main">
+<span id="outline-versions-main-module"></span><h2>outline.versions.main module<a class="headerlink" href="#module-outline.versions.main" title="Permalink to this headline">¶</a></h2>
+<p>Versions is a method for versioning python modules.</p>
+<dl class="function">
+<dt id="outline.versions.main.require">
+<code class="descclassname">outline.versions.main.</code><code class="descname">require</code><span class="sig-paren">(</span><em>module</em>, <em>version='latest'</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.versions.main.require" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds the given module/version into the repository.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="outline.versions.main.unrequire">
+<code class="descclassname">outline.versions.main.</code><code class="descname">unrequire</code><span class="sig-paren">(</span><em>module</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.versions.main.unrequire" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes the given module from the repository</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="outline.versions.main.get_version">
+<code class="descclassname">outline.versions.main.</code><code class="descname">get_version</code><span class="sig-paren">(</span><em>module</em>, <em>default='latest'</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.versions.main.get_version" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the currently loaded version of the given module</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="outline.versions.main.set_repos">
+<code class="descclassname">outline.versions.main.</code><code class="descname">set_repos</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.versions.main.set_repos" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the versions repository path.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="outline.versions.main.get_repos">
+<code class="descclassname">outline.versions.main.</code><code class="descname">get_repos</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.versions.main.get_repos" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the repository path.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="outline.versions.main.get_session">
+<code class="descclassname">outline.versions.main.</code><code class="descname">get_session</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.versions.main.get_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the singleton session instance.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="outline.versions.main.set_module_repos">
+<code class="descclassname">outline.versions.main.</code><code class="descname">set_module_repos</code><span class="sig-paren">(</span><em>module</em>, <em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.versions.main.set_module_repos" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the repository path for a specific module</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-outline.versions.session">
+<span id="outline-versions-session-module"></span><h2>outline.versions.session module<a class="headerlink" href="#module-outline.versions.session" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="outline.versions.session.Session">
+<em class="property">class </em><code class="descclassname">outline.versions.session.</code><code class="descname">Session</code><a class="headerlink" href="#outline.versions.session.Session" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Session class handles creation of the versioning session.</p>
+<dl class="method">
+<dt id="outline.versions.session.Session.clean">
+<code class="descname">clean</code><span class="sig-paren">(</span><em>shutil_ptr</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.versions.session.Session.clean" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unloads all modules.
+&#64;type shutil_ptr: shutil module
+&#64;param shutil_ptr: reference to the shutil module. Only needed for Py2.7 compatibility.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.versions.session.Session.get_path">
+<code class="descname">get_path</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.versions.session.Session.get_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the path to the session tmp dir.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.versions.session.Session.get_version">
+<code class="descname">get_version</code><span class="sig-paren">(</span><em>module</em>, <em>default='latest'</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.versions.session.Session.get_version" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the loaded version or default value if one
+is not loaded.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.versions.session.Session.is_module_loaded">
+<code class="descname">is_module_loaded</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.versions.session.Session.is_module_loaded" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return true if the given module is loaded.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.versions.session.Session.require">
+<code class="descname">require</code><span class="sig-paren">(</span><em>module</em>, <em>version</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.versions.session.Session.require" title="Permalink to this definition">¶</a></dt>
+<dd><p>Symlinks a module into the session’s temp dir.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.versions.session.Session.unrequire">
+<code class="descname">unrequire</code><span class="sig-paren">(</span><em>module</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.versions.session.Session.unrequire" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes a module from the module list.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="outline.versions.session.Settings">
+<em class="property">class </em><code class="descclassname">outline.versions.session.</code><code class="descname">Settings</code><a class="headerlink" href="#outline.versions.session.Settings" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-outline.versions">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-outline.versions" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Academy Software Foundation.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> and ❤️  using a custom <a href="https://github.com/LinxiFan/Sphinx-theme">theme</a> based on <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.1234',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/language_data.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

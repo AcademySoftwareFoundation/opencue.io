@@ -1,0 +1,2075 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>outline package &mdash; OpenCue 0.1234 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="OpenCue 0.1234 documentation" href="../index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> OpenCue
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <!-- Local TOC -->
+                <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">outline package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#module-outline">Module contents</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-outline.config">outline.config module</a></li>
+<li><a class="reference internal" href="#module-outline.constants">outline.constants module</a></li>
+<li><a class="reference internal" href="#module-outline.cuerun">outline.cuerun module</a></li>
+<li><a class="reference internal" href="#module-outline.depend">outline.depend module</a></li>
+<li><a class="reference internal" href="#module-outline.event">outline.event module</a></li>
+<li><a class="reference internal" href="#module-outline.exception">outline.exception module</a></li>
+<li><a class="reference internal" href="#module-outline.executor">outline.executor module</a></li>
+<li><a class="reference internal" href="#module-outline.io">outline.io module</a></li>
+<li><a class="reference internal" href="#module-outline.layer">outline.layer module</a></li>
+<li><a class="reference internal" href="#module-outline.loader">outline.loader module</a></li>
+<li><a class="reference internal" href="#module-outline.session">outline.session module</a></li>
+<li><a class="reference internal" href="#module-outline.util">outline.util module</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">OpenCue</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>outline package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/modules/outline.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="outline-package">
+<h1>outline package<a class="headerlink" href="#outline-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="outline.backend.html">outline.backend package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="outline.backend.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outline.backend.html#module-outline.backend.cue">outline.backend.cue module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outline.backend.html#module-outline.backend.local">outline.backend.local module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outline.backend.html#module-outline.backend">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="outline.modules.html">outline.modules package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="outline.modules.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outline.modules.html#module-outline.modules.shell">outline.modules.shell module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outline.modules.html#module-outline.modules">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="outline.plugins.html">outline.plugins package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="outline.plugins.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outline.plugins.html#module-outline.plugins.local">outline.plugins.local module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outline.plugins.html#module-outline.plugins.manager">outline.plugins.manager module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outline.plugins.html#module-outline.plugins">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="outline.versions.html">outline.versions package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="outline.versions.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outline.versions.html#module-outline.versions.main">outline.versions.main module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outline.versions.html#module-outline.versions.session">outline.versions.session module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="outline.versions.html#module-outline.versions">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="module-outline">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-outline" title="Permalink to this headline">¶</a></h2>
+<p>Outline is a library for scripting shell commands to
+be executed over a frame range.  Typically these shell
+commands would be executed in parallel on a render farm.</p>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-outline.config">
+<span id="outline-config-module"></span><h2>outline.config module<a class="headerlink" href="#module-outline.config" title="Permalink to this headline">¶</a></h2>
+<p>Outline configuration</p>
+</div>
+<div class="section" id="module-outline.constants">
+<span id="outline-constants-module"></span><h2>outline.constants module<a class="headerlink" href="#module-outline.constants" title="Permalink to this headline">¶</a></h2>
+<p>Outline constants and enumerations.</p>
+</div>
+<div class="section" id="module-outline.cuerun">
+<span id="outline-cuerun-module"></span><h2>outline.cuerun module<a class="headerlink" href="#module-outline.cuerun" title="Permalink to this headline">¶</a></h2>
+<p>Outline launching and frame execution utlities.</p>
+<dl class="class">
+<dt id="outline.cuerun.OutlineLauncher">
+<em class="property">class </em><code class="descclassname">outline.cuerun.</code><code class="descname">OutlineLauncher</code><span class="sig-paren">(</span><em>outline</em>, <em>**args</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.cuerun.OutlineLauncher" title="Permalink to this definition">¶</a></dt>
+<dd><p>The OutlineLauncher class encapsulates all of the possible
+settings that can be used to launch an outline as well
+as serialize() and launch() methods which call into the
+supplied backend module</p>
+<p>To launch an outline:
+launcher = OutlineLauncher(ol)
+launcher.set_flag(“pause”, True)
+launcher.set_flag(“range”, “1-10”)
+launcher.launch()</p>
+<dl class="method">
+<dt id="outline.cuerun.OutlineLauncher.get">
+<code class="descname">get</code><span class="sig-paren">(</span><em>key</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.cuerun.OutlineLauncher.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the value of a launch flag.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.cuerun.OutlineLauncher.get_flag">
+<code class="descname">get_flag</code><span class="sig-paren">(</span><em>key</em>, <em>default=None</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.cuerun.OutlineLauncher.get_flag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the value of a launch flag.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.cuerun.OutlineLauncher.get_outline">
+<code class="descname">get_outline</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.cuerun.OutlineLauncher.get_outline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the outline file to be launched.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.cuerun.OutlineLauncher.launch">
+<code class="descname">launch</code><span class="sig-paren">(</span><em>use_pycuerun=True</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.cuerun.OutlineLauncher.launch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Launch the outline.  If the outline is not setup to launch
+it will be setup automatically.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.cuerun.OutlineLauncher.serialize">
+<code class="descname">serialize</code><span class="sig-paren">(</span><em>use_pycuerun=True</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.cuerun.OutlineLauncher.serialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serialize and return the outline.  If the outline is not
+setup to launch it will be setup automatically.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.cuerun.OutlineLauncher.set_flag">
+<code class="descname">set_flag</code><span class="sig-paren">(</span><em>key</em>, <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.cuerun.OutlineLauncher.set_flag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the value of a launch flag.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.cuerun.OutlineLauncher.setup">
+<code class="descname">setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.cuerun.OutlineLauncher.setup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Setup the outline for launch.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="outline.cuerun.CuerunOptionParser">
+<em class="property">class </em><code class="descclassname">outline.cuerun.</code><code class="descname">CuerunOptionParser</code><span class="sig-paren">(</span><em>**args</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.cuerun.CuerunOptionParser" title="Permalink to this definition">¶</a></dt>
+<dd><p>A subclass of Python’s standard OptionParser, this class provides
+a way to version the standard pycuerun arguments.  If a new argument
+is added that is only relevant to version 1.1, then it should only
+show up in version 1.1.</p>
+<dl class="method">
+<dt id="outline.cuerun.CuerunOptionParser.add_plugin_option">
+<code class="descname">add_plugin_option</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.cuerun.CuerunOptionParser.add_plugin_option" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add an entry to the Plugin group of the option parser.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.cuerun.CuerunOptionParser.handle_standard_options">
+<code class="descname">handle_standard_options</code><span class="sig-paren">(</span><em>options</em>, <em>args</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.cuerun.CuerunOptionParser.handle_standard_options" title="Permalink to this definition">¶</a></dt>
+<dd><p>Handle standard options common to all cuerun based scripts.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.cuerun.CuerunOptionParser.options_to_args">
+<code class="descname">options_to_args</code><span class="sig-paren">(</span><em>options</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.cuerun.CuerunOptionParser.options_to_args" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert an OptionParser namespace into a dictionary.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.cuerun.CuerunOptionParser.setup_frame_range">
+<code class="descname">setup_frame_range</code><span class="sig-paren">(</span><em>options</em>, <em>frange=None</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.cuerun.CuerunOptionParser.setup_frame_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Setup the frame range for the given job.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="outline.cuerun.launch">
+<code class="descclassname">outline.cuerun.</code><code class="descname">launch</code><span class="sig-paren">(</span><em>ol</em>, <em>use_pycuerun=True</em>, <em>**args</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.cuerun.launch" title="Permalink to this definition">¶</a></dt>
+<dd><p>A simple convinience method for launching an outline script with
+the most common options.  If you need additional options,
+use the OutlineLauncher class.</p>
+<p>Arguments:</p>
+<blockquote>
+<div><ul class="simple">
+<li>B{range}: The frame range in string format. (1-10)</li>
+<li>B{pause}: Whether or not to launch the job paused.</li>
+<li>B{wait}: Wait on the job to complete.</li>
+<li>B{test}: Wait on the job to complete but thrown an exception if
+any frames fail.</li>
+<li>B{backend}: Sets the queing system backend.  See L{config} for the
+default queueing system.</li>
+</ul>
+</div></blockquote>
+<p>&#64;type ol: L{Outline}
+&#64;param ol: The outline file to launch.
+&#64;type use_pycuerun: bool
+&#64;param use_pycuerun: True will wrap the command using pycuerun</p>
+<p>&#64;type args: keyword arguments
+&#64;param args: A dictionary of keyword arguments that control launch</p>
+<blockquote>
+<div>parameters.</div></blockquote>
+</dd></dl>
+
+</div>
+<div class="section" id="module-outline.depend">
+<span id="outline-depend-module"></span><h2>outline.depend module<a class="headerlink" href="#module-outline.depend" title="Permalink to this headline">¶</a></h2>
+<p>Class for storing dependency data.</p>
+<dl class="class">
+<dt id="outline.depend.Depend">
+<em class="property">class </em><code class="descclassname">outline.depend.</code><code class="descname">Depend</code><span class="sig-paren">(</span><em>depend_er</em>, <em>depend_on</em>, <em>depend_type='FRAME_BY_FRAME'</em>, <em>propigate=False</em>, <em>any_frame=False</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.depend.Depend" title="Permalink to this definition">¶</a></dt>
+<dd><p>A dependency</p>
+<dl class="method">
+<dt id="outline.depend.Depend.get_depend_on_layer">
+<code class="descname">get_depend_on_layer</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.depend.Depend.get_depend_on_layer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the layer to depend on.</p>
+<p>&#64;rtype: L{Layer}
+&#64;return: The layer that is being depended on.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.depend.Depend.get_dependant_layer">
+<code class="descname">get_dependant_layer</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.depend.Depend.get_dependant_layer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the dependant layer.</p>
+<p>&#64;rtype: L{Layer}
+&#64;return: The layer that is depending.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.depend.Depend.get_type">
+<code class="descname">get_type</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.depend.Depend.get_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>The type of depend.</p>
+<p>&#64;rtype: str
+&#64;return: The type of dependency.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.depend.Depend.is_any_frame">
+<code class="descname">is_any_frame</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.depend.Depend.is_any_frame" title="Permalink to this definition">¶</a></dt>
+<dd><p>If any-frame is true only a single frame in the entire
+layer has to complete for the whole dependency to be satisfied.</p>
+<p>&#64;rtype: boolean
+&#64;return: True if the depend is an any frame depend.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.depend.Depend.is_propigated">
+<code class="descname">is_propigated</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.depend.Depend.is_propigated" title="Permalink to this definition">¶</a></dt>
+<dd><p>A propigated dependency is propigated to to others layers
+automatically.  For example when a L{Layer} A depends on L{Layer} B through
+a propigated dependency, then setting up a dependency from L{Layer} C to
+L{Layer} A would automatically create a depend from L{Layer} C to L{Layer} B.</p>
+<p>Depends that are automatically setup between L{LayerPreProcess} and
+a L{Layer} are propigated dependencies.</p>
+<p>&#64;rtype: boolean
+&#64;return: True if he depend is propigated, false if it is not.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="outline.depend.DependType">
+<em class="property">class </em><code class="descclassname">outline.depend.</code><code class="descname">DependType</code><a class="headerlink" href="#outline.depend.DependType" title="Permalink to this definition">¶</a></dt>
+<dd><p>A class to represent a dependency between layers.</p>
+<dl class="docutils">
+<dt>There are three types of dependencies:</dt>
+<dd><ul class="first last simple">
+<li><dl class="first docutils">
+<dt>FrameByFrame <span class="classifier-delimiter">:</span> <span class="classifier">Where each frame of one layer depends on</span></dt>
+<dd>the corresponding frame of another layer.</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>LayerOnLayer <span class="classifier-delimiter">:</span> <span class="classifier">Where all frames of one layer depend on all</span></dt>
+<dd>frames of another layer.</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>PreviousFrame <span class="classifier-delimiter">:</span> <span class="classifier">Where each frame in one layer depend on</span></dt>
+<dd>the previous frame of another layer.</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="outline.depend.parse_require_str">
+<code class="descclassname">outline.depend.</code><code class="descname">parse_require_str</code><span class="sig-paren">(</span><em>require</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.depend.parse_require_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse a require string and returns its components. 
+A require string is short hand for defining dependencies
+which contains the layer_name:depend_type.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-outline.event">
+<span id="outline-event-module"></span><h2>outline.event module<a class="headerlink" href="#module-outline.event" title="Permalink to this headline">¶</a></h2>
+<p>The outline event handler controls firing events to listeners.</p>
+<dl class="class">
+<dt id="outline.event.EventHandler">
+<em class="property">class </em><code class="descclassname">outline.event.</code><code class="descname">EventHandler</code><span class="sig-paren">(</span><em>component</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.event.EventHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>EventHandler keeps track of who is listening for which events.</p>
+<dl class="method">
+<dt id="outline.event.EventHandler.add_event_listener">
+<code class="descname">add_event_listener</code><span class="sig-paren">(</span><em>event_type</em>, <em>callback</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.event.EventHandler.add_event_listener" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds an event listener for the given type and
+callback function.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.event.EventHandler.get_event_listeners">
+<code class="descname">get_event_listeners</code><span class="sig-paren">(</span><em>event_type</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.event.EventHandler.get_event_listeners" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return all the callback functions registered with
+a particular event type.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="outline.event.LaunchEvent">
+<em class="property">class </em><code class="descclassname">outline.event.</code><code class="descname">LaunchEvent</code><span class="sig-paren">(</span><em>event_type</em>, <em>cuerun</em>, <em>**args</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.event.LaunchEvent" title="Permalink to this definition">¶</a></dt>
+<dd><p>A job launch event type.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="outline.event.LayerEvent">
+<em class="property">class </em><code class="descclassname">outline.event.</code><code class="descname">LayerEvent</code><span class="sig-paren">(</span><em>event_type</em>, <em>layer</em>, <em>**args</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.event.LayerEvent" title="Permalink to this definition">¶</a></dt>
+<dd><p>A LayerEvent occurs within a layer.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-outline.exception">
+<span id="outline-exception-module"></span><h2>outline.exception module<a class="headerlink" href="#module-outline.exception" title="Permalink to this headline">¶</a></h2>
+<p>Outline exception hierarchy</p>
+<dl class="exception">
+<dt id="outline.exception.OutlineException">
+<em class="property">exception </em><code class="descclassname">outline.exception.</code><code class="descname">OutlineException</code><a class="headerlink" href="#outline.exception.OutlineException" title="Permalink to this definition">¶</a></dt>
+<dd><p>A General outline base exception.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="outline.exception.LayerException">
+<em class="property">exception </em><code class="descclassname">outline.exception.</code><code class="descname">LayerException</code><a class="headerlink" href="#outline.exception.LayerException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer exception</p>
+<p>This exception is raised when there is a problem
+setting up or executing a layer entity.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="outline.exception.ShellCommandFailureException">
+<em class="property">exception </em><code class="descclassname">outline.exception.</code><code class="descname">ShellCommandFailureException</code><span class="sig-paren">(</span><em>msg</em>, <em>status</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.exception.ShellCommandFailureException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Thrown when layer.system() fails with an exit
+status greater than 1.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="outline.exception.SessionException">
+<em class="property">exception </em><code class="descclassname">outline.exception.</code><code class="descname">SessionException</code><a class="headerlink" href="#outline.exception.SessionException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Session exception.</p>
+<p>This exception is raised when there is a problem
+reading/writing/finding the job session.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="outline.exception.FileSpecException">
+<em class="property">exception </em><code class="descclassname">outline.exception.</code><code class="descname">FileSpecException</code><a class="headerlink" href="#outline.exception.FileSpecException" title="Permalink to this definition">¶</a></dt>
+<dd><p>An exception to describe issues with the io.FileSpec class.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="outline.exception.FailImmediately">
+<em class="property">exception </em><code class="descclassname">outline.exception.</code><code class="descname">FailImmediately</code><a class="headerlink" href="#outline.exception.FailImmediately" title="Permalink to this definition">¶</a></dt>
+<dd><p>Throwing this exception will fail the frame immediately,
+even from within a plugin</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-outline.executor">
+<span id="outline-executor-module"></span><h2>outline.executor module<a class="headerlink" href="#module-outline.executor" title="Permalink to this headline">¶</a></h2>
+<p>A simple python thread pool.</p>
+<dl class="class">
+<dt id="outline.executor.TaskExecutor">
+<em class="property">class </em><code class="descclassname">outline.executor.</code><code class="descname">TaskExecutor</code><span class="sig-paren">(</span><em>threads</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.executor.TaskExecutor" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="outline.executor.TaskExecutor.execute">
+<code class="descname">execute</code><span class="sig-paren">(</span><em>callable_</em>, <em>*args</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.executor.TaskExecutor.execute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Queue up a function for execution by the thread pool.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.executor.TaskExecutor.wait">
+<code class="descname">wait</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.executor.TaskExecutor.wait" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wait until all work in the pool is complete and then
+return. Optionally stop the thread pool.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.executor.TaskExecutor.worker">
+<code class="descname">worker</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.executor.TaskExecutor.worker" title="Permalink to this definition">¶</a></dt>
+<dd><p>Code that gets executed by the worker thread
+run() function.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-outline.io">
+<span id="outline-io-module"></span><h2>outline.io module<a class="headerlink" href="#module-outline.io" title="Permalink to this headline">¶</a></h2>
+<p>Handle input and output.</p>
+<dl class="class">
+<dt id="outline.io.FileSpec">
+<em class="property">class </em><code class="descclassname">outline.io.</code><code class="descname">FileSpec</code><span class="sig-paren">(</span><em>path</em>, <em>**args</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.io.FileSpec" title="Permalink to this definition">¶</a></dt>
+<dd><p>A path to an image or sequence of images.  Path must be a
+standard image path.</p>
+<dl class="method">
+<dt id="outline.io.FileSpec.exists">
+<code class="descname">exists</code><span class="sig-paren">(</span><em>frame_set=None</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.io.FileSpec.exists" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return true if the image or all images in
+the sequence exist.</p>
+<p>&#64;rtype:  boolean
+&#64;return: true if image(s) exist</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.io.FileSpec.get_basename">
+<code class="descname">get_basename</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.io.FileSpec.get_basename" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the base name of the image.  The
+basename does not include the frame range
+or file extension.</p>
+<p>&#64;rtype:  string
+&#64;return: the base name of the image</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.io.FileSpec.get_colorspace">
+<code class="descname">get_colorspace</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.io.FileSpec.get_colorspace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the color space.</p>
+<p>&#64;rtype:  string
+&#64;return: the image color space</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.io.FileSpec.get_dirname">
+<code class="descname">get_dirname</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.io.FileSpec.get_dirname" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the path to the directory for this image.</p>
+<p>&#64;rtype:  string
+&#64;return: the full directory path</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.io.FileSpec.get_element_dir">
+<code class="descname">get_element_dir</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.io.FileSpec.get_element_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the element directory path.</p>
+<p>&#64;rtype:  string
+&#64;return: the element directory.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.io.FileSpec.get_ext">
+<code class="descname">get_ext</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.io.FileSpec.get_ext" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the file extention.</p>
+<p>&#64;rtype:  string
+&#64;return: the file extension.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.io.FileSpec.get_file_spec">
+<code class="descname">get_file_spec</code><span class="sig-paren">(</span><em>fs=None</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.io.FileSpec.get_file_spec" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the base file specification.  By default, the
+result has no frame range.  If the fs argument is specified,
+the result will contain a frame range.</p>
+<p>&#64;rtype: str
+&#64;return: A file spec.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.io.FileSpec.get_frame_path">
+<code class="descname">get_frame_path</code><span class="sig-paren">(</span><em>num</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.io.FileSpec.get_frame_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the path to a particular frame of this FileSpec.</p>
+<p>&#64;rtype: FrameSet
+&#64;return: A path to an individual frame with this file spec.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.io.FileSpec.get_frame_set">
+<code class="descname">get_frame_set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.io.FileSpec.get_frame_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the sequence’s frame set object.</p>
+<p>&#64;rtype: FrameSet
+&#64;return: The current framet set.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.io.FileSpec.get_rep">
+<code class="descname">get_rep</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.io.FileSpec.get_rep" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the repesentation.  The repesentation is
+the oav_resolution_colorspace.</p>
+<p>&#64;rtype:  string
+&#64;return: the repesentation.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.io.FileSpec.get_res">
+<code class="descname">get_res</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.io.FileSpec.get_res" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the resolution data for this image.</p>
+<p>&#64;rtype:  ResolutionTableEntry
+&#64;return: The resolution table entry.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.io.FileSpec.get_size">
+<code class="descname">get_size</code><span class="sig-paren">(</span><em>frame_set=None</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.io.FileSpec.get_size" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the size of the file or path.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.io.FileSpec.get_temp_file_spec">
+<code class="descname">get_temp_file_spec</code><span class="sig-paren">(</span><em>path=None</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.io.FileSpec.get_temp_file_spec" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a path to the the file spec in a temporary location
+or a supplied path.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.io.FileSpec.get_temp_frame_path">
+<code class="descname">get_temp_frame_path</code><span class="sig-paren">(</span><em>num</em>, <em>path=None</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.io.FileSpec.get_temp_frame_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the path to a particular frame of this Filespec
+in a temporary location.  Optionally provide a bash path
+for the temporary file.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="outline.io.Path">
+<em class="property">class </em><code class="descclassname">outline.io.</code><code class="descname">Path</code><span class="sig-paren">(</span><em>path</em>, <em>**args</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.io.Path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Any non-image shot tree path, trunk, or branch.</p>
+<p>Depending on the type of file that Path represents, iterating
+over this object will do one of three things.</p>
+<blockquote>
+<div><ul class="simple">
+<li>file - iterates over the single path.</li>
+<li>dir - iterates over all files in the directory.</li>
+<li>unknown/non-exist - throw IOException</li>
+</ul>
+</div></blockquote>
+<dl class="method">
+<dt id="outline.io.Path.exists">
+<code class="descname">exists</code><span class="sig-paren">(</span><em>frame_set=None</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.io.Path.exists" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return true if the path exists.</p>
+<p>&#64;rtype: boolean
+&#64;return: true if path exists.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.io.Path.get_attribute">
+<code class="descname">get_attribute</code><span class="sig-paren">(</span><em>name</em>, <em>default=None</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.io.Path.get_attribute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a named attribute from the given name.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.io.Path.get_attributes">
+<code class="descname">get_attributes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.io.Path.get_attributes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a copy of the attribute map.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.io.Path.get_basename">
+<code class="descname">get_basename</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.io.Path.get_basename" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the file’s base name.</p>
+<p>&#64;rtype: string
+&#64;return: the base name of the path.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.io.Path.get_dirname">
+<code class="descname">get_dirname</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.io.Path.get_dirname" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the file’s directory.  If the path is a
+directory, it retrns itself.</p>
+<p>&#64;rtype: string
+&#64;return: the full path to the directory</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.io.Path.get_ext">
+<code class="descname">get_ext</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.io.Path.get_ext" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the file extention.</p>
+<p>&#64;rtype:  string
+&#64;return: the file extension.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.io.Path.get_path">
+<code class="descname">get_path</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.io.Path.get_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the full path.</p>
+<p>&#64;rtype: string
+&#64;return: full path to this file</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.io.Path.get_size">
+<code class="descname">get_size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.io.Path.get_size" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the size of the file or path.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.io.Path.mkdir">
+<code class="descname">mkdir</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.io.Path.mkdir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create the path</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.io.Path.set_attribute">
+<code class="descname">set_attribute</code><span class="sig-paren">(</span><em>name</em>, <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.io.Path.set_attribute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set a named attribute to the name/value.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="outline.io.file_spec_constructor">
+<code class="descclassname">outline.io.</code><code class="descname">file_spec_constructor</code><span class="sig-paren">(</span><em>loader</em>, <em>node</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.io.file_spec_constructor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unserializes a yamlized FileSpec.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="outline.io.file_spec_serializer">
+<code class="descclassname">outline.io.</code><code class="descname">file_spec_serializer</code><span class="sig-paren">(</span><em>dumper</em>, <em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.io.file_spec_serializer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serialize a FileSpec object.  This is required for Yaml
+to serialize a FileSpec properly.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="outline.io.prep_shell_command">
+<code class="descclassname">outline.io.</code><code class="descname">prep_shell_command</code><span class="sig-paren">(</span><em>cmd</em>, <em>frame=None</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.io.prep_shell_command" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prepare a shell command by ensuring that its
+an array, all elements are strings, and by replacing
+any frame range tokens.  Return the new shell command.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="outline.io.resolve">
+<code class="descclassname">outline.io.</code><code class="descname">resolve</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.io.resolve" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resolve a realtive path or shot tree URI to a full path.</p>
+<p>&#64;rtype: str
+&#64;return: the full path</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="outline.io.system">
+<code class="descclassname">outline.io.</code><code class="descname">system</code><span class="sig-paren">(</span><em>cmd</em>, <em>ignore_error=False</em>, <em>frame=None</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.io.system" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shell out to the given command and wait for it to finish.</p>
+<p>&#64;type  cmd: list&lt;str&gt;
+&#64;param cmd: The command to execute.</p>
+<p>&#64;type ignore_error: boolean
+&#64;param ignore_error: Ignore any L{OSError} or shell command failures.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-outline.layer">
+<span id="outline-layer-module"></span><h2>outline.layer module<a class="headerlink" href="#module-outline.layer" title="Permalink to this headline">¶</a></h2>
+<p>Base classes for all outline modules.</p>
+<dl class="class">
+<dt id="outline.layer.Layer">
+<em class="property">class </em><code class="descclassname">outline.layer.</code><code class="descname">Layer</code><span class="sig-paren">(</span><em>name</em>, <em>**args</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer" title="Permalink to this definition">¶</a></dt>
+<dd><p>The base class for all outline modules.</p>
+<dl class="method">
+<dt id="outline.layer.Layer.add_child">
+<code class="descname">add_child</code><span class="sig-paren">(</span><em>layer</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.add_child" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a child layer to this layer. Child layers are
+executed  after the parent layer.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.add_input">
+<code class="descname">add_input</code><span class="sig-paren">(</span><em>name</em>, <em>inpt</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.add_input" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add an input to this layer.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.add_output">
+<code class="descname">add_output</code><span class="sig-paren">(</span><em>name</em>, <em>output</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.add_output" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add an output to this layer.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.add_preprocess_layer">
+<code class="descname">add_preprocess_layer</code><span class="sig-paren">(</span><em>preprocess</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.add_preprocess_layer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a pre-process layer created by this layer.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.after_execute">
+<code class="descname">after_execute</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.after_execute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Executed after the execute() method has been run even if the
+frame failed. Used for doing cleanup operations that should
+run even after a frame failure.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.after_init">
+<code class="descname">after_init</code><span class="sig-paren">(</span><em>ol</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.after_init" title="Permalink to this definition">¶</a></dt>
+<dd><p>Executed after a layer has been initialized and added to an outline.
+Emits an event.AFTER_INIT signal.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.after_parented">
+<code class="descname">after_parented</code><span class="sig-paren">(</span><em>parent</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.after_parented" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method should be implemented by a subclass. Automatically
+called if this Layer instance is parented to another layer instance.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.before_execute">
+<code class="descname">before_execute</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.before_execute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Executed before all execute checks are started.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.check_input">
+<code class="descname">check_input</code><span class="sig-paren">(</span><em>frame_set=None</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.check_input" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check the existance of all required input.  Raise a LayerException
+if input is missing.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.check_output">
+<code class="descname">check_output</code><span class="sig-paren">(</span><em>frame_set=None</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.check_output" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check the existance of all required output.  Raise a LayerException
+if input is missing.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.check_required_args">
+<code class="descname">check_required_args</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.check_required_args" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check on required properies.
+If a required property does not exist throw a LayerException.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.copy_args_from">
+<code class="descname">copy_args_from</code><span class="sig-paren">(</span><em>layer</em>, <em>*names</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.copy_args_from" title="Permalink to this definition">¶</a></dt>
+<dd><p>Copy args from the given layer into this layer.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.depend_all">
+<code class="descname">depend_all</code><span class="sig-paren">(</span><em>on_layer</em>, <em>propigate=False</em>, <em>any_frame=False</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.depend_all" title="Permalink to this definition">¶</a></dt>
+<dd><p>Setup a layer on layer depend on the given layer.</p>
+<p>&#64;type on_layer: L{Layer}
+&#64;param on_layer: The L{Layer} to depend on.</p>
+<p>&#64;type propigate: boolean
+&#64;param propigate: Whether or not to propigate the depend to</p>
+<blockquote>
+<div>other layers. Default to False.</div></blockquote>
+<p>&#64;type any_frame: boolean
+&#64;param any_frame: Wheaether or not to setup a depend any.</p>
+<blockquote>
+<div>Default to False.</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.depend_on">
+<code class="descname">depend_on</code><span class="sig-paren">(</span><em>on_layer</em>, <em>depend_type='FRAME_BY_FRAME'</em>, <em>propigate=False</em>, <em>any_frame=False</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.depend_on" title="Permalink to this definition">¶</a></dt>
+<dd><p>Setup a frame by frame on layer depend on the given layer.</p>
+<p>&#64;type on_layer: L{Layer}
+&#64;param on_layer: The L{Layer} to depend on.</p>
+<p>&#64;type propigate: boolean
+&#64;param propigate: Whether or not to propigate the depend to</p>
+<blockquote>
+<div>other layers. Default to False.</div></blockquote>
+<p>&#64;type any_frame: boolean
+&#64;param any_frame: Wheaether or not to setup a depend any.</p>
+<blockquote>
+<div>Default to False.</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.depend_previous">
+<code class="descname">depend_previous</code><span class="sig-paren">(</span><em>on_layer</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.depend_previous" title="Permalink to this definition">¶</a></dt>
+<dd><p>Setup a previous frame depende on the given layer.</p>
+<p>&#64;type on_layer: L{Layer}
+&#64;param on_layer: The L{Layer} to depend on.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.execute">
+<code class="descname">execute</code><span class="sig-paren">(</span><em>frame</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.execute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Executes the local frame set.  This typically happens
+on a cluster node.</p>
+<p>&#64;type    frame: int
+&#64;param   frame: The frame to execute.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.get_arg">
+<code class="descname">get_arg</code><span class="sig-paren">(</span><em>key</em>, <em>default=None</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.get_arg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the value associated with the specified key.
+If the value does not exist, return default.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.get_args">
+<code class="descname">get_args</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.get_args" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the arg dictionary.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.get_children">
+<code class="descname">get_children</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.get_children" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of this layer’s child layers.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.get_chunk_size">
+<code class="descname">get_chunk_size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.get_chunk_size" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the chunk size</p>
+<p>&#64;rtype: int
+&#64;returns: The event’s chunk size.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.get_data">
+<code class="descname">get_data</code><span class="sig-paren">(</span><em>key</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.get_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve a previously saved variable from the session.</p>
+<p>&#64;type  key: string
+&#64;param key: the name that was used to store the value.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.get_default_args">
+<code class="descname">get_default_args</code><span class="sig-paren">(</span><em>merge=None</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.get_default_args" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create and return a default argument hash.  Optionally merge
+the specified dictionary into the result.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.get_dependents">
+<code class="descname">get_dependents</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.get_dependents" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of dependencies that depend on this layer.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.get_depends">
+<code class="descname">get_depends</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.get_depends" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a tuple of dependencies this layer depends on.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.get_env">
+<code class="descname">get_env</code><span class="sig-paren">(</span><em>key</em>, <em>default=None</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.get_env" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the value of the env var that will be set before execute.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.get_event_handler">
+<code class="descname">get_event_handler</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.get_event_handler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the layer’s internal EventHandler.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.get_file">
+<code class="descname">get_file</code><span class="sig-paren">(</span><em>name</em>, <em>check=True</em>, <em>new=False</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.get_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve the sesion path path to the given file.  The
+file does not have to exist.</p>
+<p>&#64;type name: str
+&#64;param name: The base name of the file.</p>
+<p>&#64;type check: boolean&lt;True&gt;
+&#64;param check: If check is set, an exception is thrown if</p>
+<blockquote>
+<div>the file does not exist.</div></blockquote>
+<p>&#64;type new: boolean &lt;False&gt;
+&#64;param new: If new is set and the file your getting already</p>
+<blockquote>
+<div>exists, a SessionException is thrown.  This ensures
+if your getting a new path to open in the session that
+the file does not already exist. If new is specified,
+check is automatically set to false.</div></blockquote>
+<p>&#64;rtype: str
+&#64;return: the full path to the file stored under the given name.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.get_frame_range">
+<code class="descname">get_frame_range</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.get_frame_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the layer’s frame range.  If the layer and its
+parent outline file have incompatible frame ranges,
+return None.</p>
+<p>&#64;rtype:    String
+&#64;return:   The layer’s frame range;</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.get_input">
+<code class="descname">get_input</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.get_input" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the named input.</p>
+<p>&#64;rtype:  outline.io.Path
+&#64;return: the assoicated io.Path object from the given name.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.get_inputs">
+<code class="descname">get_inputs</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.get_inputs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return dictionary of registered inputs.</p>
+<p>&#64;rtype:  dict
+&#64;return: dictionary of registered inputs.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.get_limits">
+<code class="descname">get_limits</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.get_limits" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list limits for this layer.
+&#64;rtype: string
+&#64;return: list of limits</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.get_local_frame_set">
+<code class="descname">get_local_frame_set</code><span class="sig-paren">(</span><em>start_frame</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.get_local_frame_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the local frame set.  The local frame set is the frame
+list that must be handled by the execute() function.  The local
+frame set can have more than one frame when chunk_size is greater
+than 1.</p>
+<p>&#64;type    start_frame: int
+&#64;param   start_frame: the starting of the frame set.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.get_name">
+<code class="descname">get_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.get_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the layer name.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.get_outline">
+<code class="descname">get_outline</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.get_outline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the parent outline object.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.get_output">
+<code class="descname">get_output</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.get_output" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the named output.</p>
+<p>&#64;rtype:  outline.io.Path
+&#64;return: the assoicated io.Path object from the given name.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.get_outputs">
+<code class="descname">get_outputs</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.get_outputs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return dictionary of registered outputs.</p>
+<p>&#64;rtype: dict
+&#64;return: dictionary of registered outputs.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.get_parent">
+<code class="descname">get_parent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.get_parent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the parent Layer.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.get_path">
+<code class="descname">get_path</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.get_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the session path for the layer.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.get_preprocess_layers">
+<code class="descname">get_preprocess_layers</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.get_preprocess_layers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return all preprocess layers created by this layer.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.get_service">
+<code class="descname">get_service</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.get_service" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the layer’s service name.  The service
+is the primary application being run in the
+layer.</p>
+<p>&#64;rtype: str
+&#64;return: Name of service.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.get_session">
+<code class="descname">get_session</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.get_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return outline’s session variable.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.get_temp_dir">
+<code class="descname">get_temp_dir</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.get_temp_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the path to the current temporary directory.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.get_type">
+<code class="descname">get_type</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.get_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the general scope or purpose of the Layer.  Allowed
+types are:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Render: a general purpose rendering layer, has inputs and outputs.</li>
+<li>Util: a setup/cleanup frame or trival shell command.</li>
+<li>Post: a post layer which is kicked off after all other layers have completed.</li>
+</ul>
+</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.is_arg_set">
+<code class="descname">is_arg_set</code><span class="sig-paren">(</span><em>key</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.is_arg_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return true if the key exits in the arg hash.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.load_outputs">
+<code class="descname">load_outputs</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.load_outputs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Detects the existance of an ol:outputs file and adds each
+element of the file into this layer’s output hash.  The data
+in ol:outputs is usually written from a pre-process.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.put_data">
+<code class="descname">put_data</code><span class="sig-paren">(</span><em>key</em>, <em>value</em>, <em>force=False</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.put_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Copy a variable into the layer’s session.</p>
+<p>&#64;type   key: string
+&#64;param  key: a unique name for the data.
+&#64;type   value: object
+&#64;param  value: the variable you wish to store.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.put_file">
+<code class="descname">put_file</code><span class="sig-paren">(</span><em>src</em>, <em>rename=None</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.put_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Copy the given file into the layer’s session path.  If
+the optional rename argument is set, the file will be
+renamed during the copy.</p>
+<p>&#64;type src:  string
+&#64;param src: The path to the source file.</p>
+<p>&#64;type rename: string
+&#64;param rename: Rename the src file during the copy.</p>
+<p>&#64;rtype: str
+&#64;return: The full path to the new file in the session.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.require_arg">
+<code class="descname">require_arg</code><span class="sig-paren">(</span><em>key</em>, <em>rtype=None</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.require_arg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Require the specified key to be present.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.set_arg">
+<code class="descname">set_arg</code><span class="sig-paren">(</span><em>key</em>, <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.set_arg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the value of key.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.set_chunk_size">
+<code class="descname">set_chunk_size</code><span class="sig-paren">(</span><em>size</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.set_chunk_size" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the event’s chunk size.  The chunk size determines how many frames
+each execute is going to handle.</p>
+<p>&#64;type    size: int
+&#64;param   size: The size of the chunks</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.set_default_arg">
+<code class="descname">set_default_arg</code><span class="sig-paren">(</span><em>key</em>, <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.set_default_arg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the value for the given argument if and only if the
+argument has not already been set.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.set_env">
+<code class="descname">set_env</code><span class="sig-paren">(</span><em>key</em>, <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.set_env" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set an env var to be set before execute.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.set_frame_range">
+<code class="descname">set_frame_range</code><span class="sig-paren">(</span><em>frame_range</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.set_frame_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the layer’s frame range.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.set_input_attribute">
+<code class="descname">set_input_attribute</code><span class="sig-paren">(</span><em>name</em>, <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.set_input_attribute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the given attribute on all registered input.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.set_limits">
+<code class="descname">set_limits</code><span class="sig-paren">(</span><em>limits</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.set_limits" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the limits for this layer.
+&#64;type  limits: string
+&#64;param limits: list of Limit names</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.set_name">
+<code class="descname">set_name</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.set_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the layer’s name.</p>
+<p>&#64;type name: str
+&#64;param name: A name for the layer.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.set_outline">
+<code class="descname">set_outline</code><span class="sig-paren">(</span><em>outline</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.set_outline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set this layer’s parent outline to the given outline object.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.set_output_attribute">
+<code class="descname">set_output_attribute</code><span class="sig-paren">(</span><em>name</em>, <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.set_output_attribute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the given attribute on all registered output.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.set_parent">
+<code class="descname">set_parent</code><span class="sig-paren">(</span><em>layer</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.set_parent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the parent layer.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.set_service">
+<code class="descname">set_service</code><span class="sig-paren">(</span><em>service</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.set_service" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the service for this layer.  The service
+is the name of the primary application being
+run in the layer.</p>
+<p>&#64;type service: string
+&#64;param service: The name of the primary application.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.set_type">
+<code class="descname">set_type</code><span class="sig-paren">(</span><em>t</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.set_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the general scope/purpose of this layer.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.setup">
+<code class="descname">setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.setup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Setup is run once before the job is launched
+to the render farm.  This method would be used for
+any pre-launch operations that may be required.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.setup_args_override">
+<code class="descname">setup_args_override</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.setup_args_override" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the args_override data from the session and set them as the args.
+Useful for when you don’t know some args until after launching.
+They are created using:
+layer.put_data(‘args_override’, {‘katana_node’: ‘blah.blah’})</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.sym_file">
+<code class="descname">sym_file</code><span class="sig-paren">(</span><em>src</em>, <em>layer=None</em>, <em>rename=None</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.sym_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Symlink the given file into the layer’s session path.  If
+the optional rename argument is set, the file will be
+renamed during the copy.</p>
+<p>&#64;type src:  string
+&#64;param src: The path to the source file.</p>
+<p>&#64;type rename: string
+&#64;param rename: Rename the src file during the symlink.</p>
+<p>&#64;rtype: str
+&#64;return: The full path to the new file in the session.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.system">
+<code class="descname">system</code><span class="sig-paren">(</span><em>cmd</em>, <em>ignore_error=False</em>, <em>frame=None</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.system" title="Permalink to this definition">¶</a></dt>
+<dd><p>A convinience method for calling io.system().  Shell out
+to the given command and wait for it to finish.</p>
+<p>&#64;see: L{io.system}</p>
+<p>&#64;type  cmd: list&lt;str&gt;
+&#64;param cmd: The command to execute.</p>
+<p>&#64;type ignore_error: boolean
+&#64;param ignore_error: Ignore any L{OSError} or shell command failures.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Layer.undepend">
+<code class="descname">undepend</code><span class="sig-paren">(</span><em>depend</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Layer.undepend" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove the given dependency.  If the dependency does not exist
+no exception is thrown.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="outline.layer.Frame">
+<em class="property">class </em><code class="descclassname">outline.layer.</code><code class="descname">Frame</code><span class="sig-paren">(</span><em>name</em>, <em>**args</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Frame" title="Permalink to this definition">¶</a></dt>
+<dd><p>A frame is a layer with a single frame.  The frame number
+defaults to the first frame of the job.</p>
+<dl class="method">
+<dt id="outline.layer.Frame.get_frame_range">
+<code class="descname">get_frame_range</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Frame.get_frame_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the frame’s number.  This overrides the
+get_frame_range implementation in Layer so it always
+returns a single frame. Frames are immune to being
+removed from the job if they do not instersect with
+the job’s frame range.</p>
+<p>&#64;rtype:    String
+&#64;return:   The frame number.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.Frame.set_frame_range">
+<code class="descname">set_frame_range</code><span class="sig-paren">(</span><em>frame_range</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.Frame.set_frame_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calling this method does nothing.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="outline.layer.LayerPreProcess">
+<em class="property">class </em><code class="descclassname">outline.layer.</code><code class="descname">LayerPreProcess</code><span class="sig-paren">(</span><em>creator</em>, <em>**args</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.LayerPreProcess" title="Permalink to this definition">¶</a></dt>
+<dd><p>A subclass of Frame which must run before the specifed
+parent layer is unlocked. The resulting object is automatically named
+“parent_preprocess”.  A dependency is automatically setup between
+the preprocess and its parent.</p>
+<dl class="method">
+<dt id="outline.layer.LayerPreProcess.execute">
+<code class="descname">execute</code><span class="sig-paren">(</span><em>frame</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.LayerPreProcess.execute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform pre-propcess execute methods and call
+the super class’s exceute method.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.LayerPreProcess.get_creator">
+<code class="descname">get_creator</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.LayerPreProcess.get_creator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the parent layer.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.layer.LayerPreProcess.get_frame_range">
+<code class="descname">get_frame_range</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.LayerPreProcess.get_frame_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the frame’s number.  This overrides the
+get_frame_range implementation in Frame so it always
+returns a single frame. If the pre-process’s creator
+layer has no valid range then the pre-process
+range should be None as well.</p>
+<p>&#64;rtype:    String
+&#64;return:   The frame number.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="outline.layer.LayerPostProcess">
+<em class="property">class </em><code class="descclassname">outline.layer.</code><code class="descname">LayerPostProcess</code><span class="sig-paren">(</span><em>creator</em>, <em>propigate=True</em>, <em>**args</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.LayerPostProcess" title="Permalink to this definition">¶</a></dt>
+<dd><p>A subclass of Frame which always runs after the
+specified parent.  The resulting object is automatically named
+“parent_postprocess”.  A dependency is automatically setup between
+the parent and the post process.</p>
+<dl class="method">
+<dt id="outline.layer.LayerPostProcess.get_creator">
+<code class="descname">get_creator</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.LayerPostProcess.get_creator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the layer that creeated this Postprocess.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="outline.layer.OutlinePostCommand">
+<em class="property">class </em><code class="descclassname">outline.layer.</code><code class="descname">OutlinePostCommand</code><span class="sig-paren">(</span><em>name</em>, <em>**args</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.layer.OutlinePostCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>A post command is a special frame that kicks off after the
+outline is complete, even if the outline has failed.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-outline.loader">
+<span id="outline-loader-module"></span><h2>outline.loader module<a class="headerlink" href="#module-outline.loader" title="Permalink to this headline">¶</a></h2>
+<p>Load and parse outline scripts.</p>
+<dl class="class">
+<dt id="outline.loader.Outline">
+<em class="property">class </em><code class="descclassname">outline.loader.</code><code class="descname">Outline</code><span class="sig-paren">(</span><em>name=None</em>, <em>frame_range=None</em>, <em>path=None</em>, <em>serialize=True</em>, <em>name_unique=False</em>, <em>current=False</em>, <em>shot=None</em>, <em>show=None</em>, <em>user=None</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.Outline" title="Permalink to this definition">¶</a></dt>
+<dd><p>The outline class represents a single outline script.</p>
+<dl class="method">
+<dt id="outline.loader.Outline.add_layer">
+<code class="descname">add_layer</code><span class="sig-paren">(</span><em>layer</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.Outline.add_layer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a new layer.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.loader.Outline.get_arg">
+<code class="descname">get_arg</code><span class="sig-paren">(</span><em>key</em>, <em>default=None</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.Outline.get_arg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the value assoiciated with the given key.  Throw an
+OutlineException if the key does not exist.  If a default value
+is provided then that value is returned instead of throwing
+an OutlineException.</p>
+<p>If the default value is None, an OutlineException is thrown.</p>
+<p>&#64;type  key:  string
+&#64;param key: The name of the argument.</p>
+<p>&#64;rtype: mixed
+&#64;return: The value associated with the given key.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.loader.Outline.get_args">
+<code class="descname">get_args</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.Outline.get_args" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the full dictionary of user defined outline arguments.</p>
+<p>&#64;rtype: dict
+&#64;return: a dict of arbitrary user defined outline arguments.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.loader.Outline.get_data">
+<code class="descname">get_data</code><span class="sig-paren">(</span><em>key</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.Outline.get_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve a previously saved variable from the session.</p>
+<p>&#64;type  key: string
+&#64;param key: the name that was used to store the value.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.loader.Outline.get_env">
+<code class="descname">get_env</code><span class="sig-paren">(</span><em>key=None</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.Outline.get_env" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the environement hash setup using set_env.</p>
+<p>&#64;rtype: dict
+&#64;return: the dictionary of values that will be propigated into</p>
+<blockquote>
+<div>every frame’s environement on the cue.</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.loader.Outline.get_file">
+<code class="descname">get_file</code><span class="sig-paren">(</span><em>name</em>, <em>check=True</em>, <em>new=False</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.Outline.get_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve the sesion path path to the given file.  The
+file does not have to exist.</p>
+<p>&#64;type name: str
+&#64;param name: The base name of the file.</p>
+<p>&#64;type check: boolean&lt;True&gt;
+&#64;param check: If check is set, an exception is thrown if</p>
+<blockquote>
+<div>the file does not exist.</div></blockquote>
+<p>&#64;type new: boolean &lt;False&gt;
+&#64;param new: If new is set and the file your getting already</p>
+<blockquote>
+<div>exists, a SessionException is thrown.  This ensures
+if your getting a new path to open in the session that
+the file does not already exist. If new is specified,
+check is automatically set to false.</div></blockquote>
+<p>&#64;rtype: str
+&#64;return: the full path to the file stored under the given name.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.loader.Outline.get_frame_range">
+<code class="descname">get_frame_range</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.Outline.get_frame_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the outline’s default frame range.</p>
+<p>&#64;rtype: String
+&#64;return: The full frame range for the outline.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.loader.Outline.get_full_name">
+<code class="descname">get_full_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.Outline.get_full_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the full name of the Outline instance, which
+includes the show, shot, user, and file name.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.loader.Outline.get_layer">
+<code class="descname">get_layer</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.Outline.get_layer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return an later by name.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.loader.Outline.get_layers">
+<code class="descname">get_layers</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.Outline.get_layers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the outline’s layers</p>
+<p>Modifying the result of this method will not alter the actual
+layer list.  To add a new layer, use register_layer.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.loader.Outline.get_mode">
+<code class="descname">get_mode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.Outline.get_mode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the current mode of this outline object.</p>
+<p>See constants for a list of possible modes.  The mode
+cannot be set from outside of the module.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.loader.Outline.get_name">
+<code class="descname">get_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.Outline.get_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the name of the outline.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.loader.Outline.get_path">
+<code class="descname">get_path</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.Outline.get_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the path to the outline file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.loader.Outline.get_session">
+<code class="descname">get_session</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.Outline.get_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the session object.  An OutlineException is raised if the
+session has not been setup.</p>
+<p>&#64;rtype: Session
+&#64;return: The outline’s session object.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.loader.Outline.get_shot">
+<code class="descname">get_shot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.Outline.get_shot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the shot for this outline.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.loader.Outline.get_show">
+<code class="descname">get_show</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.Outline.get_show" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the show for this outline.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.loader.Outline.get_user">
+<code class="descname">get_user</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.Outline.get_user" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the user for this outline.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.loader.Outline.is_layer">
+<code class="descname">is_layer</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.Outline.is_layer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return true if a layer exists with the specified name.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.loader.Outline.load_session">
+<code class="descname">load_session</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.Outline.load_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reloads the session</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.loader.Outline.parse_outline_script">
+<code class="descname">parse_outline_script</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.Outline.parse_outline_script" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse an outline script and add the resulting layers
+to this instance.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.loader.Outline.put_data">
+<code class="descname">put_data</code><span class="sig-paren">(</span><em>key</em>, <em>value</em>, <em>force=False</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.Outline.put_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Copy a variable into the layer’s session.</p>
+<p>&#64;type   key: string
+&#64;param  key: a unique name for the data.
+&#64;type   value: object
+&#64;param  value: the variable you wish to store.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.loader.Outline.put_file">
+<code class="descname">put_file</code><span class="sig-paren">(</span><em>src</em>, <em>rename=None</em>, <em>symlink=False</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.Outline.put_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Copy the given file into the job’s session path.  If
+the optional rename argument is set, the file will be
+renamed during the copy.</p>
+<p>&#64;type src:  string
+&#64;param src: The path to the source file.</p>
+<p>&#64;type rename: string
+&#64;param rename: Rename the src file during the copy.</p>
+<p>&#64;rtype: str
+&#64;return: The full path to the new file in the session.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.loader.Outline.remove_layer">
+<code class="descname">remove_layer</code><span class="sig-paren">(</span><em>layer</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.Outline.remove_layer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove an existing layer.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.loader.Outline.set_arg">
+<code class="descname">set_arg</code><span class="sig-paren">(</span><em>key</em>, <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.Outline.set_arg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Associate a value with the given key.  Print a warning
+if the key is already associated with another value.</p>
+<p>&#64;type  key:  string
+&#64;param key: Name for the argument.</p>
+<p>&#64;type value: mixed
+&#64;param value: Value to associate with the given key.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.loader.Outline.set_env">
+<code class="descname">set_env</code><span class="sig-paren">(</span><em>key</em>, <em>value</em>, <em>pre=False</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.Outline.set_env" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set an environment variable that is propigated to
+every frame.</p>
+<p>&#64;type  key:  str
+&#64;param key: Name of environement variable.</p>
+<p>&#64;type value: str
+&#64;param value: Value to associate with the name.</p>
+<p>&#64;type pre: boolean
+&#64;param pre: If this value is set to true, the environement</p>
+<blockquote>
+<div>variable is applied pre-setshot.  The default
+is for the environment variable to be set
+post set shot.</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.loader.Outline.set_frame_range">
+<code class="descname">set_frame_range</code><span class="sig-paren">(</span><em>frame_range</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.Outline.set_frame_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the outline’s frame set.  The frame set must be
+assigned before the outline can go into the setup phase.</p>
+<p>&#64;type   frame_range: str or list or set or tuple or FileSequence.FrameSet
+&#64;param  frame_range: The frame range for this outline.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.loader.Outline.set_mode">
+<code class="descname">set_mode</code><span class="sig-paren">(</span><em>mode</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.Outline.set_mode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the current mode of the outline.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.loader.Outline.set_name">
+<code class="descname">set_name</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.Outline.set_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the name of this outline.</p>
+<p>The name is usually based on the name of the outline
+script but its possible to set it manually.  Do not
+include the show-shot-user prefix when setting the
+name.</p>
+<p>Once the outline is setup to launch, changing
+the name has no effect.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.loader.Outline.set_path">
+<code class="descname">set_path</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.Outline.set_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the path to the outline file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.loader.Outline.set_shot">
+<code class="descname">set_shot</code><span class="sig-paren">(</span><em>shot</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.Outline.set_shot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the shot name for this outline instance.</p>
+<p>&#64;type shot: string
+&#64;param shot: The name of shot to set.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.loader.Outline.set_show">
+<code class="descname">set_show</code><span class="sig-paren">(</span><em>show</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.Outline.set_show" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the show name for this outline instance.</p>
+<p>&#64;type show: string
+&#64;param show: The name of show to set.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.loader.Outline.set_user">
+<code class="descname">set_user</code><span class="sig-paren">(</span><em>user</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.Outline.set_user" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the user name for this outline instance.</p>
+<p>&#64;type user: string
+&#64;param user: The name of user to set.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.loader.Outline.setup">
+<code class="descname">setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.Outline.setup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets up the outline to run frames.</p>
+<p>A new session is created for the outline and setup()
+methods are run for each layer.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Creates a new session</li>
+<li>Checks require arguments on all layers.</li>
+<li>Runs tge setup() method for all layers.</li>
+<li>Serializes outline structure into the session.</li>
+<li>Sets the outline state to READY.</li>
+</ul>
+</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.loader.Outline.setup_depends">
+<code class="descname">setup_depends</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.Outline.setup_depends" title="Permalink to this definition">¶</a></dt>
+<dd><p>Iterate through layers and setup any dependencies passed in
+via the “require” argument.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="outline.loader.load_outline">
+<code class="descclassname">outline.loader.</code><code class="descname">load_outline</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.load_outline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load an outline script. The path can be either an
+outline script or serialized outline script.</p>
+<p>&#64;type  path: str
+&#64;param path: The path to the outline file. Serialized
+outline files must be named with the .yaml extension.
+Anything else is considered a python outline script.</p>
+<p>&#64;rtype: L{Outline}
+&#64;return: The resutling Outline object.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="outline.loader.load_json">
+<code class="descclassname">outline.loader.</code><code class="descname">load_json</code><span class="sig-paren">(</span><em>json</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.load_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse a json repesentation of an outline file.</p>
+<p>&#64;type  json: str
+&#64;param json: A json string.</p>
+<p>&#64;rtype: L{Outline}
+&#64;return: The resulting outline object.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="outline.loader.parse_outline_script">
+<code class="descclassname">outline.loader.</code><code class="descname">parse_outline_script</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.parse_outline_script" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse a native outline script and add any layers to
+the current outline’s layer list. The current outline
+is optionally set when an outline oject is created by
+passing current=True to the constructor.</p>
+<p>Once the current outline is set, you can execute as many
+outline scripts as you want and the resulting layers become
+part of the current outline.</p>
+<p>&#64;type  path: str
+&#64;param path: The path to the outline file.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="outline.loader.current_outline">
+<code class="descclassname">outline.loader.</code><code class="descname">current_outline</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.loader.current_outline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the current outline. The current outline is where all
+new layers are registered. If the current outline is None and
+a new layer is created, you have to explicitiy register the
+layer with an outline object.</p>
+<p>Example:
+I{outline = Outline()}
+I{outline.add_layer(Shell(“shell_cmd”,[“/bin/ls”]))}</p>
+<p>&#64;rtype: L{Outline}
+&#64;return: The current Outline object.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-outline.session">
+<span id="outline-session-module"></span><h2>outline.session module<a class="headerlink" href="#module-outline.session" title="Permalink to this headline">¶</a></h2>
+<p>Global storage and data exchange.</p>
+<dl class="function">
+<dt id="outline.session.is_session_path">
+<code class="descclassname">outline.session.</code><code class="descname">is_session_path</code><span class="sig-paren">(</span><em>folder</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.session.is_session_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return true if the specified folder contains an outline session.</p>
+<p>&#64;type  folder: str
+&#64;param folder: The folder to check.</p>
+<p>&#64;rtype: boolean
+&#64;return: true if the given folder contains an outline session.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="outline.session.Session">
+<em class="property">class </em><code class="descclassname">outline.session.</code><code class="descname">Session</code><span class="sig-paren">(</span><em>ol</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.session.Session" title="Permalink to this definition">¶</a></dt>
+<dd><p>The session provides global storage space for an outline.  This
+global storage space is usually located in <cite>cue/cue_archive</cite> but
+may be in a different location based on L{outline.config}.</p>
+<p>Using put_file, get_file you can copy files into this location which
+can be used by all frames. Using <a class="reference internal" href="#outline.session.Session.put_data" title="outline.session.Session.put_data"><code class="xref py py-meth docutils literal notranslate"><span class="pre">put_data()</span></code></a>,
+<a class="reference internal" href="#outline.session.Session.get_data" title="outline.session.Session.get_data"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_data()</span></code></a> you can serialize and unserialize
+data into this session than can be used by all frames.</p>
+<dl class="method">
+<dt id="outline.session.Session.get_data">
+<code class="descname">get_data</code><span class="sig-paren">(</span><em>name</em>, <em>layer=None</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.session.Session.get_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve previously stored session data stored
+under the specified name.</p>
+<p>&#64;type  name: str
+&#64;param name: The name given to the data.
+&#64;type  layer: L{Layer} or str
+&#64;param layer: The layer the data was stored under. [Optional]</p>
+<p>&#64;rtype: mixed
+&#64;return: Previously stored data.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.session.Session.get_file">
+<code class="descname">get_file</code><span class="sig-paren">(</span><em>name</em>, <em>layer=None</em>, <em>check=True</em>, <em>new=False</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.session.Session.get_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve the full path to the given file name previously stored
+with put_file.</p>
+<p>&#64;type  name: str
+&#64;param name: The unique identifier for the file.</p>
+<p>&#64;type  layer: L{Layer} or str
+&#64;param layer: Layer or name of layer.  [Optional]</p>
+<p>&#64;type check: boolean&lt;True&gt;
+&#64;param check: If check is set, an exception is thrown if</p>
+<blockquote>
+<div>the file does not exist.</div></blockquote>
+<p>&#64;type new: boolean &lt;False&gt;
+&#64;param new: If new is set and the file your getting already</p>
+<blockquote>
+<div>exists, a SessionException is thrown.  This ensures
+if your getting a new path to open in the session that
+the file does not already exist. If new is specified,
+check is automatically set to false.</div></blockquote>
+<p>&#64;rtype: str
+&#64;return: the full path to the file stored under the</p>
+<blockquote>
+<div>given name.</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.session.Session.get_name">
+<code class="descname">get_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.session.Session.get_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the name of the session.  The session name format is:
+I{non-unique id/unique uuid}</p>
+<p>&#64;rtype: str
+&#64;return: The name of the session.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.session.Session.get_path">
+<code class="descname">get_path</code><span class="sig-paren">(</span><em>layer=None</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.session.Session.get_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the session path for the current job.  If a layer is
+specified, will return the session path for the layer.</p>
+<p>The session path can be used for temporary file storage on
+the shot tree. See L{Layer} get_temp_dir() for a a way to obtain
+a temporary directory on the local hard drive.</p>
+<p>Note: get_path() creates the layer session paths on demand.
+So, you must use get_path(layer) to obtain the layer session path
+or it may not exist if you construct the path on your own.</p>
+<p>&#64;type  layer: L{Layer} or str
+&#64;param layer: Specifiy the layer to get its sesstion path. [Optional]</p>
+<p>&#64;rtype: str
+&#64;return: The path where session data is stored.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.session.Session.put_data">
+<code class="descname">put_data</code><span class="sig-paren">(</span><em>name</em>, <em>data</em>, <em>layer=None</em>, <em>force=False</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.session.Session.put_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serialize a primitive variable or structure and store
+it into the session under the specified name.</p>
+<p>This can be used to pass data from frame to frame.</p>
+<p>&#64;type  name: str
+&#64;param name: A unique name for the data
+&#64;type  data: mixed
+&#64;param data: Any python object that can be pickled.
+&#64;type  layer: L{Layer} or str
+&#64;param layer: The layer to store the data under. Leave this</p>
+<blockquote>
+<div>as None if the data is for the whole job.
+[Optional]</div></blockquote>
+<p>&#64;type  force: boolean
+&#64;param force: Overwrite data with the same name if it exists.</p>
+<blockquote>
+<div>[Optional]</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.session.Session.put_file">
+<code class="descname">put_file</code><span class="sig-paren">(</span><em>src</em>, <em>layer=None</em>, <em>rename=None</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.session.Session.put_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Copy a file into the session and return the new path.  This
+is used to create local versions of input files for the
+job to use while its running.</p>
+<p>For example, if you had a scene file of some kind, you could:</p>
+<blockquote>
+<div><ul class="simple">
+<li>I{session.put_file(“comp/chambers/comp_v1.nuke”,rename=”scene”)}</li>
+</ul>
+</div></blockquote>
+<p>Using, get_file, you could obtain the new full path to this file.</p>
+<blockquote>
+<div><ul class="simple">
+<li>I{path = session.get_file(“scene”)}</li>
+</ul>
+</div></blockquote>
+<p>&#64;type  src: str
+&#64;param src: The source path for the file to copy.</p>
+<p>&#64;type  layer: L{Layer} or str
+&#64;param layer: Layer to copy file into. [Optional]</p>
+<p>&#64;type  rename: str
+&#64;param rename: A new name for the file. [Optional]</p>
+<p>&#64;rtype: str
+&#64;return: The full path to the new file in the session.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.session.Session.save">
+<code class="descname">save</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.session.Session.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save the current session file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="outline.session.Session.sym_file">
+<code class="descname">sym_file</code><span class="sig-paren">(</span><em>src</em>, <em>layer=None</em>, <em>rename=None</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.session.Session.sym_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Symlink a file into the session and return the path
+of the symlink. If the destination file already
+exists it will be deleted first.</p>
+<p>&#64;type  src: str
+&#64;param src: The source path for the file to symlink.</p>
+<p>&#64;type  layer: L{Layer} or str
+&#64;param layer: Layer to copy file into. [Optional]</p>
+<p>&#64;type  rename: str
+&#64;param rename: A new name for the file. [Optional]</p>
+<p>&#64;rtype: str
+&#64;return: The full path to the new file in the session.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-outline.util">
+<span id="outline-util-module"></span><h2>outline.util module<a class="headerlink" href="#module-outline.util" title="Permalink to this headline">¶</a></h2>
+<p>Common utility functions.</p>
+<dl class="function">
+<dt id="outline.util.deaggregate_frame_set">
+<code class="descclassname">outline.util.</code><code class="descname">deaggregate_frame_set</code><span class="sig-paren">(</span><em>frameset</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.util.deaggregate_frame_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deaggregates a FileSequence.FrameSet into its individual frames
+and removes duplicates.  FrameSet objects can have duplicates if
+the user specifies duplicates, which they tend to do even though
+they don’t want duplicates.</p>
+<p>&#64;type    frameset: FileSequence.FrameSet
+&#64;param   frameset: The frameset to deaggregate
+&#64;rtype:            List
+&#64;return:           The list of deaggregated frames.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="outline.util.get_shot">
+<code class="descclassname">outline.util.</code><code class="descname">get_shot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.util.get_shot" title="Permalink to this definition">¶</a></dt>
+<dd><p>A shortcut for getting the shot from the environment.</p>
+<p>Raises an Exception if the shot environment is not found
+alluding to a setshot error.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="outline.util.get_show">
+<code class="descclassname">outline.util.</code><code class="descname">get_show</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.util.get_show" title="Permalink to this definition">¶</a></dt>
+<dd><p>A shortcut for getting the show from the environment.</p>
+<p>Raises an Exception if the shot environment is not found
+alluding to a setshot error.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="outline.util.get_slice">
+<code class="descclassname">outline.util.</code><code class="descname">get_slice</code><span class="sig-paren">(</span><em>frame_range</em>, <em>frames</em>, <em>items</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.util.get_slice" title="Permalink to this definition">¶</a></dt>
+<dd><p>Given the full frame range, local frame range, and a array items,
+return the slice of the items array.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="outline.util.get_uid">
+<code class="descclassname">outline.util.</code><code class="descname">get_uid</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.util.get_uid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the current users id</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="outline.util.get_user">
+<code class="descclassname">outline.util.</code><code class="descname">get_user</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#outline.util.get_user" title="Permalink to this definition">¶</a></dt>
+<dd><p>A shortcut for getting the shot from the environment.</p>
+<p>Raises an Exception if the shot environment is not found
+alluding to a setshot error.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="outline.util.intersect_frame_set">
+<code class="descclassname">outline.util.</code><code class="descname">intersect_frame_set</code><span class="sig-paren">(</span><em>range1</em>, <em>range2</em>, <em>normalize=True</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.util.intersect_frame_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the intersection of two FileSequence.FrameSet objects
+as a FileSequence.FrameSet.  By default, the net frameset is
+normalized and duplicates are removed.  If no intersection
+can be found then None is returned.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="outline.util.make_frame_set">
+<code class="descclassname">outline.util.</code><code class="descname">make_frame_set</code><span class="sig-paren">(</span><em>frames</em>, <em>normalize=True</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.util.make_frame_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Takes an array of integers and makes a normalized
+FrameSet object.</p>
+<p>&#64;type  frames: List&lt;int&gt;
+&#64;param frames: The frame list to change into a FrameSet</p>
+<p>&#64;rtype: FrameSet
+&#64;return: a normalized FileSequence.FrameSet</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Academy Software Foundation.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> and ❤️  using a custom <a href="https://github.com/LinxiFan/Sphinx-theme">theme</a> based on <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.1234',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/language_data.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

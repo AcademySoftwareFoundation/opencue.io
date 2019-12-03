@@ -1,0 +1,283 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>outline.backend package &mdash; OpenCue 0.1234 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="OpenCue 0.1234 documentation" href="../index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> OpenCue
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <!-- Local TOC -->
+                <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">outline.backend package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-outline.backend.cue">outline.backend.cue module</a></li>
+<li><a class="reference internal" href="#module-outline.backend.local">outline.backend.local module</a></li>
+<li><a class="reference internal" href="#module-outline.backend">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">OpenCue</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>outline.backend package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/modules/outline.backend.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="outline-backend-package">
+<h1>outline.backend package<a class="headerlink" href="#outline-backend-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-outline.backend.cue">
+<span id="outline-backend-cue-module"></span><h2>outline.backend.cue module<a class="headerlink" href="#module-outline.backend.cue" title="Permalink to this headline">¶</a></h2>
+<p>OpenCue integration module.</p>
+<dl class="function">
+<dt id="outline.backend.cue.launch">
+<code class="descclassname">outline.backend.cue.</code><code class="descname">launch</code><span class="sig-paren">(</span><em>launcher</em>, <em>use_pycuerun=True</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.backend.cue.launch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Launch the given L{OutlineLauncher}.</p>
+<p>&#64;type launcher: L{OutlineLauncher}
+&#64;param launcher: The OutlineLauncher to launch.
+&#64;type use_pycuerun: bool
+&#64;param use_pycuerun: Enable/Disable pycuerun.</p>
+<p>&#64;rtype: opencue.Entity.Job
+&#64;return: The opencue job that was launched.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-outline.backend.local">
+<span id="outline-backend-local-module"></span><h2>outline.backend.local module<a class="headerlink" href="#module-outline.backend.local" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="outline.backend.local.Dispatcher">
+<em class="property">class </em><code class="descclassname">outline.backend.local.</code><code class="descname">Dispatcher</code><span class="sig-paren">(</span><em>ol</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.backend.local.Dispatcher" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="outline.backend.local.build_command">
+<code class="descclassname">outline.backend.local.</code><code class="descname">build_command</code><span class="sig-paren">(</span><em>ol</em>, <em>layer</em>, <em>frame</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.backend.local.build_command" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build and return a pycurun shell command for the given layer frame.</p>
+<p>&#64;type  layer : Layer
+&#64;param layer : The layer to build a command for.</p>
+<p>&#64;rtype: string
+&#64;return: The shell command to run for a the given layer.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="outline.backend.local.build_frame_range">
+<code class="descclassname">outline.backend.local.</code><code class="descname">build_frame_range</code><span class="sig-paren">(</span><em>frame_range</em>, <em>chunk_size</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.backend.local.build_frame_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return an array of frames with no duplicates and chunking applied.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="outline.backend.local.launch">
+<code class="descclassname">outline.backend.local.</code><code class="descname">launch</code><span class="sig-paren">(</span><em>launcher</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.backend.local.launch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Start the local dispatcher.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="outline.backend.local.serialize">
+<code class="descclassname">outline.backend.local.</code><code class="descname">serialize</code><span class="sig-paren">(</span><em>launcher</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.backend.local.serialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a local dispatcher object.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="outline.backend.local.serialize_simple">
+<code class="descclassname">outline.backend.local.</code><code class="descname">serialize_simple</code><span class="sig-paren">(</span><em>launcher</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.backend.local.serialize_simple" title="Permalink to this definition">¶</a></dt>
+<dd><p>For local we can call the regular serialize function.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-outline.backend">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-outline.backend" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Academy Software Foundation.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> and ❤️  using a custom <a href="https://github.com/LinxiFan/Sphinx-theme">theme</a> based on <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.1234',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/language_data.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
