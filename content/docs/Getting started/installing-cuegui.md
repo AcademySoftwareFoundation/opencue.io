@@ -87,6 +87,7 @@ To install a published release:
     tar xvzf "$CUEGUI_TAR"
     cd "$CUEGUI_DIR"
     pip install -r requirements.txt
+    pip install -r requirements_gui.txt
     python setup.py install
     cd ..
     rm -rf "$CUEGUI_DIR"
@@ -106,6 +107,7 @@ and your current directory is the root of the checked out source.
 
 ```shell
 pip install -r requirements.txt
+pip install -r requirements_gui.txt
 cd cuegui
 ```
 
