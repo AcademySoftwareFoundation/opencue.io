@@ -79,6 +79,7 @@ inside.
     tar xvzf "$CUESUBMIT_TAR"
     cd "$CUESUBMIT_DIR"
     pip install -r requirements.txt
+    pip install -r requirements_gui.txt
     python setup.py install
     ```
 
@@ -96,6 +97,7 @@ and your current directory is the root of the checked out source.
 
 ```shell
 pip install -r requirements.txt
+pip install -r requirements_gui.txt
 cd cuesubmit
 ```
 
