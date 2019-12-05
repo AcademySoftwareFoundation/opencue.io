@@ -37,9 +37,15 @@ To review the sample `Dockerfile`:
 
 1.  Open a terminal.
 
+1.  Change to the directory you cloned or downloaded the OpenCue
+    repository to. For example, if `OpenCue`` directory is in
+    in your home directory, run the following command:
+
+        cd ~/OpenCue
+
 1.  Run the following command to review the sample `Dockerfile`:
 
-    cat samples/rqd/blender/blender2.79-docker/Dockerfile
+        cat samples/rqd/blender/blender2.79-docker/Dockerfile
 
     The command outputs the contents of the `Dockerfile`.
 
@@ -68,6 +74,7 @@ To review the sample `Dockerfile`:
             zlib-devel \
             libXinerama-devel \
             libXrandr-devel
+    ```
 
     The final section downloads and extracts the archive for Blender 2.79
     to `/usr/local/blender`:
@@ -102,14 +109,14 @@ To update the sandbox environment to build and run the sample `Dockerfile`:
 1.  Open the `sandbox/docker-compose.yml` file in your preferred text
     editor or development environment.
 
-1.  Replace the following lines:
+1.  Find the following lines:
 
     ```yaml
       rqd:
         image: opencue/rqd
     ```
 
-    With the following code:
+1.  Replace the lines from the previous step with the following code:
 
     ```yaml
       rqd:
@@ -139,8 +146,8 @@ To run a sample rendering job, you'll need a sample `.blend` Blender file. If
 you don't have an existing `.blend` file, the Blender project publishes a
 variety of  [demo resources](https://www.blender.org/download/demo-files/).
 
-{{% alert title="Note" color="info"%}}Make sure you download a demo file that works
-with Blender 2.79 or earlier.{{% /alert %}}
+{{% alert title="Note" color="info"%}}Make sure you download a demo file that
+works with version 2.79 of Blender or earlier.{{% /alert %}}
 
 After you download a suitable `.blend` Blender file, move it to the
 `/tmp/rqd/shots` directory. The sandbox environment is configured so that both
