@@ -285,5 +285,7 @@ from the second shell:
 
 ## What's next?
 
+*   To test submitting a Blender rendering job, see
+    [Customizing RQD rendering hosts](/docs/other-guides/customizing-rqd).
 *   Learn more about [OpenCue concepts and terminology](/docs/concepts/).
 *   Install the full [OpenCue infrastructure](/docs/getting-started/).
