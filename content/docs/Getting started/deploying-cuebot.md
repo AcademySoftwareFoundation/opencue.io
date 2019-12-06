@@ -99,7 +99,7 @@ To download and run the Cuebot Docker image:
 1.  To start Cuebot, run the Docker image:
 
     ```shell
-    docker run -td --name cuebot -p 8080:8080 -p 8443:8443 opencue/cuebot --datasource.cueDataSource.url=jdbc:postgresql://$DB_HOST_IN_DOCKER/$DB_NAME --datasource.cueDataSource.username=$DB_USER --datasource.cueDataSource.password=$DB_PASS
+    docker run -td --name cuebot -p 8080:8080 -p 8443:8443 opencue/cuebot --datasource.cue-data-source.jdbc-url=jdbc:postgresql://$DB_HOST_IN_DOCKER/$DB_NAME --datasource.cue-data-source.username=$DB_USER --datasource.cue-data-source.password=$DB_PASS
     ```
 
 ### Option 2: Build and run the Cuebot Docker image from source
@@ -119,7 +119,7 @@ To build and run the Cuebot Docker image:
 1.  To start Cuebot, run the Docker image:
 
     ```shell
-    docker run -td --name cuebot -p 8080:8080 -p 8443:8443 opencue/cuebot --datasource.cueDataSource.url=jdbc:postgresql://$DB_HOST_IN_DOCKER/$DB_NAME --datasource.cueDataSource.username=$DB_USER --datasource.cueDataSource.password=$DB_PASS
+    docker run -td --name cuebot -p 8080:8080 -p 8443:8443 opencue/cuebot --datasource.cue-data-source.jdbc-url=jdbc:postgresql://$DB_HOST_IN_DOCKER/$DB_NAME --datasource.cue-data-source.username=$DB_USER --datasource.cue-data-source.password=$DB_PASS
     ```
 
 ### Option 3: Manually install from the published release
@@ -147,7 +147,7 @@ from the latest release's Assets.
 
     ```shell
     export JAR_PATH=<path to Cuebot JAR>
-    java -jar $JAR_PATH --datasource.cueDataSource.url=jdbc:postgresql://$DB_HOST/$DB_NAME --datasource.cueDataSource.username=$DB_USER --datasource.cueDataSource.password=$DB_PASS
+    java -jar $JAR_PATH --datasource.cue-data-source.jdbc-url=jdbc:postgresql://$DB_HOST/$DB_NAME --datasource.cue-data-source.username=$DB_USER --datasource.cue-data-source.password=$DB_PASS
     ```
 
 ### Option 4: Build from source
@@ -183,7 +183,7 @@ and your current directory is the root of the checked out source.
 1.  Finally, use your JRE to run the Cuebot JAR:
 
     ```shell
-    java -jar build/libs/cuebot-all.jar --datasource.cueDataSource.url=jdbc:postgresql://$DB_HOST/$DB_NAME --datasource.cueDataSource.username=$DB_USER --datasource.cueDataSource.password=$DB_PASS
+    java -jar build/libs/cuebot-all.jar --datasource.cue-data-source.jdbc-url=jdbc:postgresql://$DB_HOST/$DB_NAME --datasource.cue-data-source.username=$DB_USER --datasource.cue-data-source.password=$DB_PASS
     ```
 
 ## Verifying your install
