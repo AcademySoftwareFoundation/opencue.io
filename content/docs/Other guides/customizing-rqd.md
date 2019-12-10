@@ -151,7 +151,36 @@ works with version 2.79 of Blender or earlier.{{% /alert %}}
 
 After you download a suitable `.blend` Blender file, move it to the
 `/tmp/rqd/shots` directory. The sandbox environment is configured so that both
-your host machine and the RQD container can both access this directory.
+your host machine and the RQD container can access the `/tmp/rqd/shots`
+directory.
+
+If you're starting CueSubmit and CueGUI in the OpenCue sandbox, you need
+to set the values of the following environment variables in your Python
+environment:
+
+        source venv/bin/activate
+        export OL_CONFIG=pyoutline/etc/outline.cfg
+        export CUEBOT_HOSTS=localhost
+
+If you want to submit a Blender job type in the sandbox environment, then
+you must also update the CueSubmit configuration:
+
+1.  Copy the example CueSubmit config file:
+
+        cp cuesubmit/cuesubmit_config.example.yaml sandbox/cuesubmit_config.yaml
+
+1.  Open `sandbox/cuesubmit_config.yaml` in your preferred text editor.
+
+1.  Update the value of `BLENDER_RENDER_CMD` to match the installation
+    location in the RQD container image:
+
+    ```yaml
+    BLENDER_RENDER_CMD : "/usr/local/blender/blender"
+    ```
+
+1.  Set the value of the following environment variable:
+
+        export CUESUBMIT_CONFIG_FILE=sandbox/cuesubmit_config.yaml
 
 To test submitting a Blender job to OpenCue, see
 [Submitting jobs](/docs/user-guides/submitting-jobs/).
