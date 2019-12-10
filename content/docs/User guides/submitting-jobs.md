@@ -33,7 +33,7 @@ are very similar but will vary depending on the configuration choices
 your OpenCue admin has made.
 
 To learn how to install Blender in the OpenCue sandbox environment,
-see [Customizing RQD rendering hosts](/docs/other-guides/customizing-rqd/)
+see [Customizing RQD rendering hosts](/docs/other-guides/customizing-rqd/).
 
 If you're working in a production environment, make sure your OpenCue admin
 has [installed CueSubmit](/docs/getting-started/installing-cuesubmit/).

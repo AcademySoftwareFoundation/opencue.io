@@ -2,7 +2,7 @@
 title: "Customizing RQD rendering hosts"
 linkTitle: "Customizing RQD rendering hosts"
 weight: 1
-date: 2019-12-05
+date: 2019-12-10
 description: >
   Build custom RQD container images to deploy as OpenCue rendering hosts
 ---
@@ -41,11 +41,15 @@ To review the sample `Dockerfile`:
     repository to. For example, if `OpenCue`` directory is in
     in your home directory, run the following command:
 
-        cd ~/OpenCue
+    ```bash
+    cd ~/OpenCue
+    ```
 
 1.  Run the following command to review the sample `Dockerfile`:
 
-        cat samples/rqd/blender/blender2.79-docker/Dockerfile
+    ```bash
+    cat samples/rqd/blender/blender2.79-docker/Dockerfile
+    ```
 
     The command outputs the contents of the `Dockerfile`.
 
@@ -107,7 +111,7 @@ files for a container management platform, such as Kubernetes.
 To update the sandbox environment to build and run the sample `Dockerfile`:
 
 1.  Open the `sandbox/docker-compose.yml` file in your preferred text
-    editor or development environment.
+    editor.
 
 1.  Find the following lines:
 
@@ -134,11 +138,15 @@ To update the sandbox environment to build and run the sample `Dockerfile`:
 1.  Before you start Docker Compose, delete any existing OpenCue sandbox
     environment containers:
 
-        docker-compose --project-directory . -f sandbox/docker-compose.yml rm
+    ```bash
+    docker-compose --project-directory . -f sandbox/docker-compose.yml rm
+    ```
 
 1.  To re-deploy the sandbox environment, run the following command:
 
-        docker-compose --project-directory . -f sandbox/docker-compose.yml up
+    ```bash
+    docker-compose --project-directory . -f sandbox/docker-compose.yml up
+    ```
 
 ## Submitting a rendering job
 
@@ -158,16 +166,20 @@ If you're starting CueSubmit and CueGUI in the OpenCue sandbox, you need
 to set the values of the following environment variables in your Python
 environment:
 
-        source venv/bin/activate
-        export OL_CONFIG=pyoutline/etc/outline.cfg
-        export CUEBOT_HOSTS=localhost
+```bash
+source venv/bin/activate
+export OL_CONFIG=pyoutline/etc/outline.cfg
+export CUEBOT_HOSTS=localhost
+```
 
 If you want to submit a Blender job type in the sandbox environment, then
 you must also update the CueSubmit configuration:
 
 1.  Copy the example CueSubmit config file:
 
-        cp cuesubmit/cuesubmit_config.example.yaml sandbox/cuesubmit_config.yaml
+    ```bash
+    cp cuesubmit/cuesubmit_config.example.yaml sandbox/cuesubmit_config.yaml
+    ```
 
 1.  Open `sandbox/cuesubmit_config.yaml` in your preferred text editor.
 
@@ -180,7 +192,15 @@ you must also update the CueSubmit configuration:
 
 1.  Set the value of the following environment variable:
 
-        export CUESUBMIT_CONFIG_FILE=sandbox/cuesubmit_config.yaml
+    ```bash
+    export CUESUBMIT_CONFIG_FILE=sandbox/cuesubmit_config.yaml
+    ```
+
+1.  Run the following command to start CueSubmit:
+
+    ```bash
+    cuesubmit &
+    ```
 
 To test submitting a Blender job to OpenCue, see
 [Submitting jobs](/docs/user-guides/submitting-jobs/).
@@ -195,11 +215,15 @@ from a shell:
 
 1.  To stop the sandbox environment, run the following command:
 
-        docker-compose --project-directory . -f sandbox/docker-compose.yml stop
+    ```bash
+    docker-compose --project-directory . -f sandbox/docker-compose.yml stop
+    ```
 
 1.  To free up storage space, delete the containers:
 
-        docker-compose --project-directory . -f sandbox/docker-compose.yml rm
+    ```bash
+    docker-compose --project-directory . -f sandbox/docker-compose.yml rm
+    ```
 
 ## What's next?
 
