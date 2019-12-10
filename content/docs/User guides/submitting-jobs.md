@@ -115,7 +115,7 @@ To submit a Blender job to OpenCue:
 1.  Review the summary information in **Submission Details** to verify your
     settings, as illustrated by the following screenshot:
     
-    ![CueSubmit submission details summary](/docs/images/cuesubmit__blender_submission_details.png)
+    ![CueSubmit submission details summary](/docs/images/cuesubmit_blender_submission_details.png)
 
 1.  Optionally, to add more layers to this job, click **+**.
 
