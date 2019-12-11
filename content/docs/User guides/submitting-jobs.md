@@ -32,8 +32,9 @@ running Blender. The steps for submitting jobs in a production environment
 are very similar but will vary depending on the configuration choices
 your OpenCue admin has made.
 
-To learn how to install Blender in the OpenCue sandbox environment,
-see [Customizing RQD rendering hosts](/docs/other-guides/customizing-rqd/).
+To learn how to install Blender and similar software in the OpenCue sandbox
+environment, see
+[Customizing RQD rendering hosts](/docs/other-guides/customizing-rqd/).
 
 If you're working in a production environment, make sure your OpenCue admin
 has [installed CueSubmit](/docs/getting-started/installing-cuesubmit/).

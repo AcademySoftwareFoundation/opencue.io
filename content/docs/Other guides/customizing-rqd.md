@@ -12,8 +12,8 @@ on Docker Hub](https://hub.docker.com/r/opencue/rqd). The default RQD container
 image doesn't include any rendering software. This guide explains how to create
 a custom Dockerfile that builds on the basic `opencue/rqd` image to install
 rendering software. The sample code illustrates the steps using version 2.79 of
-Blender, but you can adapt the basic ideas in this guide for many other types
-of software, including commercial rendering packages, such as Maya.
+Blender. You can adapt the basic ideas in this guide for many other types of
+software, including commercial rendering packages, such as Maya.
 
 ## Before you begin
 
@@ -38,7 +38,7 @@ To review the sample `Dockerfile`:
 1.  Open a terminal.
 
 1.  Change to the directory you cloned or downloaded the OpenCue
-    repository to. For example, if `OpenCue`` directory is in
+    repository to. For example, if the `OpenCue` directory is in
     in your home directory, run the following command:
 
     ```bash
@@ -64,7 +64,7 @@ To review the sample `Dockerfile`:
 
     The next section installs all of the dependencies required
     to run Blender 2.79 on the CentOS operating system installed in the
-    `opencue/rqd`:
+    `opencue/rqd` container image:
 
     ```Dockerfile
     # Install dependencies to run Blender on the opencue/rqd image
@@ -97,7 +97,7 @@ To review the sample `Dockerfile`:
     ```
 
     If you'd like to learn more about the configuration of the default
-    `opencue/rqd` container image, view the
+    `opencue/rqd` container image, view the source code for
     [`rqd/Dockerfile`](https://github.com/AcademySoftwareFoundation/OpenCue/blob/master/rqd/Dockerfile)
     in the `master` branch on GitHub.
 
@@ -108,7 +108,8 @@ to update the `docker-compose.yml` file that defines the deployment. For a
 production system, you might make a similar change to update the configuration
 files for a container management platform, such as Kubernetes.
 
-To update the sandbox environment to build and run the sample `Dockerfile`:
+Complete the following steps to configure the sandbox environment to build and
+run the sample `Dockerfile`:
 
 1.  Open the `sandbox/docker-compose.yml` file in your preferred text
     editor.
@@ -163,8 +164,8 @@ your host machine and the RQD container can access the `/tmp/rqd/shots`
 directory.
 
 If you're starting CueSubmit and CueGUI in the OpenCue sandbox, you need
-to set the values of the following environment variables in your Python
-environment:
+to set the values of the following environment variables in the Python
+`venv` environment you created in the quick start:
 
 ```bash
 source venv/bin/activate
@@ -190,7 +191,9 @@ you must also update the CueSubmit configuration:
     BLENDER_RENDER_CMD : "/usr/local/blender/blender"
     ```
 
-1.  Set the value of the following environment variable:
+1.  Set the value of the following environment variable to
+    update the location of your custom CueSubmit configuration
+    file:
 
     ```bash
     export CUESUBMIT_CONFIG_FILE=sandbox/cuesubmit_config.yaml
