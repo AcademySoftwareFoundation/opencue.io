@@ -5,6 +5,18 @@ date: 2019-12-12
 description: "OpenCue v0.3.6 release notes"
 ---
 
+The database schema was updated with this release, please be sure to run the migrations on any existing database to pick up these changes. See [Applying Database Migrations](https://www.opencue.io/docs/other-guides/applying-database-migrations/) for more info.
+
+This release also updates the Spring Boot dependencies, which forced us to make some changes to the command line flags used when starting cuebot. To specify the database url, username and password for cuebot use the following flags:
+
+'''
+--datasource.cue-data-source.jdbc-url
+--datasource.cue-data-source.username
+--datasource.cue-data-source.password
+'''
+For more information, please see [Deploying Cuebot](https://www.opencue.io/docs/getting-started/deploying-cuebot/).
+
+
 [v0.3.6 of OpenCue](https://github.com/AcademySoftwareFoundation/OpenCue/releases/tag/0.3.6)
 includes the following changes and updates:
 
