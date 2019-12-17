@@ -132,8 +132,14 @@ To install the Maya plug-in:
 
     ```shell
     # Point Maya to the CueSubmit install.
+    # If you're on Windows, use the following two lines and delete the Mac/Linux version.
     PYTHONPATH=$PYTHONPATH;<cuesubmit install path>/plugins/maya
     XBMLANGPATH=$XBMLANGPATH;<cuesubmit install path>/plugins/maya
+    # If you're on MacOS or Linux, use the following two lines and delete the above Windows version.
+    PYTHONPATH=$PYTHONPATH:<cuesubmit install path>/plugins/maya
+    XBMLANGPATH=$XBMLANGPATH:<cuesubmit install path>/plugins/maya
+
+    # The following works on all operating systems:
     # Help OpenCue find the library dependencies it needs.
     CUE_PYTHONPATH=<path to virtualenv>/lib/python2.7/site-packages
     # The hostname of your Cuebot instance.
