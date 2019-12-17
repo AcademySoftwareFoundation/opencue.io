@@ -128,17 +128,31 @@ To install the Maya plug-in:
 1.  Create or locate your `Maya.env` file as described in
     [Setting environment variables using Maya.env](https://knowledge.autodesk.com/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2018/ENU/Maya-EnvVar/files/GUID-8EFB1AC1-ED7D-4099-9EEE-624097872C04-htm.html).
 
-1.  Add the following content:
+1.  Add one of the following blocks of code, depending on your operating system:
 
-    ```shell
-    # Point Maya to the CueSubmit install.
-    PYTHONPATH=$PYTHONPATH;<cuesubmit install path>/plugins/maya
-    XBMLANGPATH=$XBMLANGPATH;<cuesubmit install path>/plugins/maya
-    # Help OpenCue find the library dependencies it needs.
-    CUE_PYTHONPATH=<path to virtualenv>/lib/python2.7/site-packages
-    # The hostname of your Cuebot instance.
-    CUEBOT_HOSTS=localhost
-    ```
+    - For macOS and Linux:
+    
+      ```shell
+      # Point Maya to the CueSubmit install.
+      PYTHONPATH=$PYTHONPATH:<cuesubmit install path>/plugins/maya
+      XBMLANGPATH=$XBMLANGPATH:<cuesubmit install path>/plugins/maya
+      # Help OpenCue find the required library dependencies.
+      CUE_PYTHONPATH=<path to virtualenv>/lib/python2.7/site-packages
+      # The hostname of your Cuebot instance.
+      CUEBOT_HOSTS=localhost
+      ```
+
+    - For Windows:
+
+      ```shell
+      # Point Maya to the CueSubmit install.
+      PYTHONPATH=$PYTHONPATH;<cuesubmit install path>/plugins/maya
+      XBMLANGPATH=$XBMLANGPATH;<cuesubmit install path>/plugins/maya
+      # Help OpenCue find the required library dependencies.
+      CUE_PYTHONPATH=<path to virtualenv>/lib/python2.7/site-packages
+      # The hostname of your Cuebot instance.
+      CUEBOT_HOSTS=localhost
+      ```
 
 1.  Restart Maya.
 
