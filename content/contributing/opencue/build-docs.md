@@ -1,6 +1,6 @@
 ---
 title: "Building the OpenCue Python APIs reference docs"
-linkTitle: "Building the reference docs"
+linkTitle: "Building the API reference docs"
 date: 2019-12-20
 weight: 3
 description: >
