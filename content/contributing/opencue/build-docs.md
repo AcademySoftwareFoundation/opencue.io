@@ -8,11 +8,12 @@ description: >
 ---
 
 This guide explains how to set up your development environment to build the
-HTML reference docs for the various Python packages and modules in OpenCue. The
-project is also working on publishing the generated API reference docs on
-[www.opencue.io](https://www.opencue.io), but in the meantime you can build
-the reference HTML locally. This guide is also useful if you want to build the
-HTML reference during development.
+HTML reference docs for the various Python packages and modules in OpenCue.
+OpenCue is configured to generate Python API reference docs using
+[Sphinx](http://www.sphinx-doc.org/). The project is also working on publishing
+the generated API reference docs on [www.opencue.io](https://www.opencue.io),
+but in the meantime you can build the reference HTML locally. This guide is
+also useful if you want to build the HTML reference during development.
 
 Currently, OpenCue supports building HTML reference docs for the
 `FileSequence`, `opencue`, and `outline` packages. The `outline` package
