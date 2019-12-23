@@ -107,8 +107,8 @@ To deploy the OpenCue sandbox environment:
 
 1.  Build the RQD container from source:
 
-       {{% alert title="Note" color="info"%}}This is a temporary workaround
-	   due to a bug related to RQD in version 0.3.6 of OpenCue.{{% /alert %}}
+    {{% alert title="Note" color="info"%}}This is a temporary workaround
+    due to a bug related to RQD in version 0.3.6 of OpenCue.{{% /alert %}}
 
        docker build -t opencue/rqd -f rqd/Dockerfile .
 
