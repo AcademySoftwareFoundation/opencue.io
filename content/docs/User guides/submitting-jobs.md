@@ -105,9 +105,9 @@ To submit a Blender job to OpenCue:
     and an interleave. To add multiple ranges together, separate them
     by commas. For detailed examples of the frame spec syntax, click **?**.
 
-1.  Select the required **Services** from the available list for your job.
-
-    OpenCue matches jobs with machines, based on the selected service.
+1.  Optionally, select the required **Services** from the available list for
+    your job. OpenCue matches jobs with machines, based on the selected
+    service.
     
     The following screenshot illustrates a completed layer info form:
 
@@ -193,9 +193,9 @@ To submit a shell job to OpenCue:
     and an interleave. To add multiple ranges together, separate them
     by commas. For detailed examples of the frame spec syntax, click **?**.
 
-1.  Select the required **Services** from the available list for your job.
-
-    OpenCue matches jobs with machines, based on the selected service.
+1.  Optionally, select the required **Services** from the available list for
+    your job. OpenCue matches jobs with machines, based on the selected
+    service.
     
     The following screenshot illustrates a completed layer info form:
 
