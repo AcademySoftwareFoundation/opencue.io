@@ -107,7 +107,7 @@ To deploy the OpenCue sandbox environment:
     {{% alert title="Note" color="info"%}}This is a temporary workaround
     due to a bug related to RQD in version 0.3.6 of OpenCue.{{% /alert %}}
 
-       docker build -t opencue/rqd -f rqd/Dockerfile .
+        docker build -t opencue/rqd -f rqd/Dockerfile .
 
 1.  To deploy the sandbox environment, run the `docker-compose` command:
 
