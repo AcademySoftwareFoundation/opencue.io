@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting rendering"
 linkTitle: "Troubleshooting rendering"
-weight: 1
+weight: 4
 date: 2019-02-22
 description: >
   Troubleshoot common rendering problems

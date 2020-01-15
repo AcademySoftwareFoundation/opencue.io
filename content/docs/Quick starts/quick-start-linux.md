@@ -105,6 +105,13 @@ To deploy the OpenCue sandbox environment:
 
         export POSTGRES_PASSWORD=<REPLACE-WITH-A-PASSWORD>
 
+1.  Build the RQD container from source:
+
+    {{% alert title="Note" color="info"%}}This is a temporary workaround
+    due to a bug related to RQD in version 0.3.6 of OpenCue.{{% /alert %}}
+
+        docker build -t opencue/rqd -f rqd/Dockerfile .
+
 1.  To deploy the sandbox environment, run the `docker-compose` command:
 
         docker-compose --project-directory . -f sandbox/docker-compose.yml up
@@ -288,5 +295,7 @@ from the second shell:
 
 ## What's next?
 
+*   To test submitting a Blender rendering job, see
+    [Customizing RQD rendering hosts](/docs/other-guides/customizing-rqd).
 *   Learn more about [OpenCue concepts and terminology](/docs/concepts/).
 *   Install the full [OpenCue infrastructure](/docs/getting-started/).
