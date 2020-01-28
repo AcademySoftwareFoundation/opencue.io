@@ -197,9 +197,7 @@ To create a database:
     the following similar command to grant privileges on all **existing**
     tables:
 
-      ```shell
-      psql -c "GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO $DB_USER" $DB_NAME
-      ```
+    psql -c "GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO $DB_USER" $DB_NAME
 
     {{% /alert %}}
 
