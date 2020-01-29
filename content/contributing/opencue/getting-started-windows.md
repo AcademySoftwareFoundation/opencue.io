@@ -175,7 +175,7 @@ the RQD host in CueGUI (in the “Monitor Hosts” section, check the “Auto-re
 
 Next, you can check that you can run a job by running CueSubmit. Fill out Job, Shot,
 and Layer Name as you like, and set the Command to `ping opencue.io`. Set Frame Spec to
-$1`, then hit “Submit”:
+`1`, then hit “Submit”:
 
 ![A screenshot of CueSubmit with correct values](/docs/images/windows/verify_submit.png)
 
