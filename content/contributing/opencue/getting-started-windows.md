@@ -7,8 +7,6 @@ description: >
   A guide to setting up an end-to-end development environment on Windows.
 ---
 
-<!---DO NOT MODIFY THIS LINE--->
-
 This is a guide to setting up a development environment on Windows that will allow 
 you to run the entire OpenCue system from end-to-end (Cuebot, Cuesubmit, CueGUI, RQD)
 and make changes to any part of it.
