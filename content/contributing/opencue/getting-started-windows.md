@@ -30,6 +30,37 @@ It is also useful to have IDEs installed. JetBrains has free versions of both:
 After installing Postgres you will need to create a database and user for OpenCue
 (specifically CueBot) to use.
 
+To do this you can either use the pgAdmin GUI (included with Postgres on Windows),
+or the commandline Postgres client.
+
+### Using the commandline
+
+Download the `schema-*.sql` and `demo-*.sql` files from the [the releases page](https://github.com/AcademySoftwareFoundation/OpenCue/releases).
+
+Open Powershell, then run `psql`:
+
+```powershell
+# Change the following path depending on what version of Postgres you have:
+$psql = 'C:\Program Files\PostgreSQL\12\bin\psql.exe'
+& $psql -U postgres
+```
+
+You will need to enter the password you set during Postgres installation.
+Next, enter the following `psql` commands to set up the user and database:
+
+```psql
+create user opencue with password 'INSERT PASSWORD HERE';
+create database opencue;
+\connect opencue
+alter default privileges in schema public grant all privileges on tables to opencue;
+\include schema-*.sql # actual filename will change depending on version
+set search_path = public;
+\include demo_data-*.sql # actual filename will change depending on version
+\quit
+```
+
+### Using the pgAdmin GUI
+
 1. **Start pgAdmin**: Open pgAdmin from the Start menu. This will add an icon to the system tray. 
    Right-click the pgAdmin icon and select **New pgAdmin window…**, which will open 
    in your browser. Sign in with your Postgres admin user credentials that you selected during
@@ -38,8 +69,7 @@ After installing Postgres you will need to create a database and user for OpenCu
    **Create→Login/Group Role…**. Name the user `opencue` and choose a secure password. Under
    the **Privileges** tab, enable **Can login?**, then hit **Save**.
 1. **Create Database**: From the tree-view on the left, find **Databases**. Right-click it and
-   select **Create→Database…**. Name the database `opencue` and select the `opencue` user as
-   the owner, then hit **Save**.
+   select **Create→Database…**. Name the database `opencue`, then hit **Save**.
 1. **Populate Database**: Next you will need to populate the database. Following the instructions on the
    [Setting up the Database](/docs/getting-started/setting-up-the-database/) 
    page to populate the database, you can:
@@ -48,17 +78,34 @@ After installing Postgres you will need to create a database and user for OpenCu
    1. In the Query Editor click the **📂 Open File** icon and open the `.sql` file you downloaded.
    1. Click the **▶ Execute** icon to populate the database.
 1. **Insert Demo Data**: You will also need the demo data to run the full environment locally.
-   Download the latest `demo-*.sql` from the releases page and run it against the `opencue` database as in the previous step.
+   Download the latest `demo_data-*.sql` from the releases page and run it against the `opencue` database as in the previous step.
 1. **Grant Permissions**: In pgAdmin, right click on the `opencue` database and select **Grant Wizard**.
    Use the select-all box to select all items, then select **Next**. Add the `opencue` user and select `ALL` privileges,
    then select **Next** again, and finally **Finish**.
-1. **Configure Cuebot**: Add the database and user credentials into `cuebot/src/main/resources/opencue.properties`, e.g.:
-    ```
-    datasource.cue-data-source.driver-class-name=org.postgresql.Driver
-    datasource.cue-data-source.jdbc-url=jdbc:postgresql://localhost/opencue
-    datasource.cue-data-source.username=opencue
-    datasource.cue-data-source.password=xxxxxx
-    ```
+
+## Configure Cuebot for local database access
+
+Add the database and user credentials into `cuebot/src/main/resources/opencue.properties`, e.g.:
+
+```
+datasource.cue-data-source.driver-class-name=org.postgresql.Driver
+datasource.cue-data-source.jdbc-url=jdbc:postgresql://localhost/opencue
+datasource.cue-data-source.username=opencue
+datasource.cue-data-source.password=xxxxxx
+```
+
+## Configure PyCue for local CueBot server
+
+You will need to change the default servers for the `opencue` Python library, so that
+it can find your local CueBot server. Open `pycue/opencue/default.yaml`, and edit
+the end of the file to look like:
+
+```yaml
+cuebot.facility_default: local
+cuebot.facility:
+  local:
+  - localhost:8443
+```
 
 ## Generate gRPC .proto files
 
@@ -100,19 +147,6 @@ To build and run it with IntelliJ IDEA:
 1. Ensure that the output window doesn’t show any errors. If it does, double-check that you
    have set up the database correctly, including permissions, and have placed the connection
    settings into `main/resources/opencue.properties` (see above).
-
-## Configuring PyCue
-
-You will need to change the default servers for the `opencue` Python library, so that
-it can find your local CueBot server. Open `pycue/opencue/default.yaml`, and edit
-the end of the file to look like:
-
-```yaml
-cuebot.facility_default: local
-cuebot.facility:
-  local:
-  - localhost:8443
-```
 
 ## Running CueSubmit
 
