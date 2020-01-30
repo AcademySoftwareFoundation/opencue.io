@@ -16,14 +16,14 @@ and make changes to any part of it.
 First, clone the [OpenCue git repository](https://github.com/AcademySoftwareFoundation/OpenCue)
 to your machine. You will then need to download & install three core dependencies:
 
-- [Postgres](https://www.postgresql.org/download/windows/)
+- [Postgres ≥ 9](https://www.postgresql.org/download/windows/)
 - [Python 3.x](https://www.python.org/downloads/) 
-- [Java SE JDK](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
+- [Java SE JDK ≥ 11](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
-It is also useful to have IDEs installed. JetBrains has free versions of both:
+It is also useful to have IDEs installed. JetBrains has free (“Community”) versions of both:
 
-- [PyCharm](https://www.jetbrains.com/pycharm/)
-- [IntelliJ IDEA](https://www.jetbrains.com/idea/)
+- [PyCharm](https://www.jetbrains.com/pycharm/) for Python
+- [IntelliJ IDEA](https://www.jetbrains.com/idea/) for Java
 
 ## Database setup
 
