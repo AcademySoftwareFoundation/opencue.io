@@ -7,7 +7,7 @@ description: "OpenCue v0.3.33 release notes"
 
 This release includes alpha-level support for Windows jobs and hosts. More
 information on Windows support has been posted to the
-[opencue-user mailing list](https://lists.aswf.io/g/opencue-user).
+[opencue-user mailing list](https://lists.aswf.io/g/opencue-user/topic/windows_support_alpha/70232740).
 
 [v0.3.33 of OpenCue](https://github.com/AcademySoftwareFoundation/OpenCue/releases/tag/0.3.33)
 includes the following changes and updates:
