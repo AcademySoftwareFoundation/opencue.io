@@ -200,7 +200,8 @@ To get set up and run it with PyCharm:
 ## Verify end-to-end
 
 Once you are running CueBot, CueGUI, and RQD simultaneously, you should be able to see
-the RQD host in CueGUI (in the **Monitor Hosts** section, check the **Auto-refresh** box):
+the RQD host in CueGUI (from the **Views/Plugins** menu, select **Cuecommander→Monitor Hosts**,
+then in the **Monitor Hosts** section, check the **Auto-refresh** box):
 
 ![A screenshot of CueGUI showing host](/docs/images/windows/verify_host.png)
 
