@@ -66,8 +66,7 @@ set search_path = public;
    in your browser. Sign in with your Postgres admin user credentials that you selected during
    Postgres installation.
 1. **Create User**: From the tree-view on the left, find **Login/Group Roles**. Right-click it and select
-   **Create→Login/Group Role…**. Name the user `opencue` and choose a secure password. Under
-   the **Privileges** tab, enable **Can login?**, then hit **Save**.
+   **Create→Login/Group Role…**. Name the user `opencue` and choose a secure password, then hit **Save**.
 1. **Create Database**: From the tree-view on the left, find **Databases**. Right-click it and
    select **Create→Database…**. Name the database `opencue`, then hit **Save**.
 1. **Populate Database**: Next you will need to populate the database. Following the instructions on the
