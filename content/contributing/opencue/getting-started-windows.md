@@ -16,7 +16,7 @@ and make changes to any part of it.
 First, clone the [OpenCue git repository](https://github.com/AcademySoftwareFoundation/OpenCue)
 to your machine. You will then need to download & install three core dependencies:
 
-- [Postgres ≥ 9](https://www.postgresql.org/download/windows/)
+- [PostgreSQL ≥ 9](https://www.postgresql.org/download/windows/)
 - [Python 3.x](https://www.python.org/downloads/) 
 - [Java SE JDK ≥ 11](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
@@ -27,11 +27,11 @@ It is also useful to have IDEs installed. JetBrains has free (“Community”) v
 
 ## Database setup
 
-After installing Postgres you will need to create a database and user for OpenCue
+After installing PostgreSQL you will need to create a database and user for OpenCue
 (specifically CueBot) to use.
 
-To do this you can either use the pgAdmin GUI (included with Postgres on Windows),
-or the commandline Postgres client.
+To do this you can either use the pgAdmin GUI (included with PostgreSQL on Windows),
+or the commandline PostgreSQL client.
 
 ### Using the commandline
 
@@ -40,12 +40,12 @@ Download the `schema-*.sql` and `demo-*.sql` files from the [the releases page](
 Open Powershell, then run `psql`:
 
 ```powershell
-# Change the following path depending on what version of Postgres you have:
+# Change the following path depending on what version of PostgreSQL you have:
 $psql = 'C:\Program Files\PostgreSQL\12\bin\psql.exe'
 & $psql -U postgres
 ```
 
-You will need to enter the password you set during Postgres installation.
+You will need to enter the password you set during PostgreSQL installation.
 Next, enter the following `psql` commands to set up the user and database:
 
 ```psql
@@ -63,8 +63,8 @@ set search_path = public;
 
 1. **Start pgAdmin**: Open pgAdmin from the Start menu. This will add an icon to the system tray. 
    Right-click the pgAdmin icon and select **New pgAdmin window…**, which will open 
-   in your browser. Sign in with your Postgres admin user credentials that you selected during
-   Postgres installation.
+   in your browser. Sign in with your PostgreSQL admin user credentials that you selected during
+   PostgreSQL installation.
 1. **Create User**: From the tree-view on the left, find **Login/Group Roles**. Right-click it and select
    **Create→Login/Group Role…**. Name the user `opencue` and choose a secure password, then hit **Save**.
 1. **Create Database**: From the tree-view on the left, find **Databases**. Right-click it and
