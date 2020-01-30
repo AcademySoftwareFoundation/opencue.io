@@ -1,6 +1,6 @@
 ---
-title: "Development Environment setup on Windows"
-linkTitle: "Development Environment setup on Windows"
+title: "Setting up a development environment on Windows"
+linkTitle: "Setting up a development environment on Windows"
 date: 2020-01-29
 weight: 2
 description: >
