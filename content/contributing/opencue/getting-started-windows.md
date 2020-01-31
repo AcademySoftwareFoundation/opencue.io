@@ -290,16 +290,17 @@ To get set up and run it with PyCharm:
 After you are running CueBot, CueGUI, and RQD simultaneously, you should be
 able to see the RQD host in CueGUI:
 
-1. From the **Views/Plugins** menu, click **Cuecommander→Monitor Hosts**.
+1. From the **Views/Plugins** menu, click **Cuecommander** > **Monitor Hosts**.
 
 1. In the **Monitor Hosts** section, check the **Auto-refresh** box as
 illustrated by the following screenshot:
 
    ![A screenshot of CueGUI showing host](/docs/images/windows/verify_host.png)
 
-Next, you can check that you can run a job by running CueSubmit:
+    Next, check that you can run a job by using CueSubmit.
 
-1. Fill out Job, Shot, and Layer Name as you like.
+1. Switch to CueSubmit and fill out Job, Shot, and Layer Name fields as
+   you like.
 
 1. Set the Command to `ping opencue.io`.
 
