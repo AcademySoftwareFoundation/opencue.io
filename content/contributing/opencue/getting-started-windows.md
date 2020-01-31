@@ -304,7 +304,7 @@ illustrated by the following screenshot:
 
 1. Set the Command to `ping opencue.io`.
 
-1. Set Frame Spec to `1`
+1. Set Frame Spec to `1`.
 
 1. Click **Submit**:
 
