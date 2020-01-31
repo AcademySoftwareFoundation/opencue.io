@@ -171,7 +171,8 @@ currently a manual process. To generate the `.proto` files:
     ```
 
     The `.proto` files also need some post-processing to make them compatible
-	with Python 3. The easiest way to do this is to run `2to3`: 
+    with Python 3. The easiest way to do this is to install and run the `2to3`
+    package.
 
 1. Run the following commands to install the `2to3` package and complete the
 post-processing:
@@ -257,8 +258,8 @@ To set up CueGUI and run it with PyCharm:
    PySide2 can take some time to install.
 
 1. You need to add additional content roots to find the `opencue` library.
-   Under **File** > **Settings**, find **Project: cuegui/Project Structure**;
-   click the ➕ (plus icon) next to **Add Content Root** and add the `pycue`
+   Under **File** > **Settings**, find **Project: cuegui/Project Structure**,
+   then click the ➕ (plus icon) next to **Add Content Root** and add the `pycue`
    folder.
 
 1. Select **OK** to exit.
@@ -279,30 +280,37 @@ To get set up and run it with PyCharm:
 
 1. PyCharm should prompt you to install ‘Package requirements’. If not,
    open the `setup.py` and the banner should appear.
-   
+
 1. Select **Install Requirements** and wait for the packages to be installed.
 
 1. Right-click `rqd/__main__.py` and click **Run**.
 
-## Verify end-to-end
+## Verify your installation
 
 After you are running CueBot, CueGUI, and RQD simultaneously, you should be
-able to see the RQD host in CueGUI.
+able to see the RQD host in CueGUI:
 
-From the **Views/Plugins** menu, click **Cuecommander→Monitor Hosts**.
-Then in the **Monitor Hosts** section, check the **Auto-refresh** box as
+1. From the **Views/Plugins** menu, click **Cuecommander→Monitor Hosts**.
+
+1. In the **Monitor Hosts** section, check the **Auto-refresh** box as
 illustrated by the following screenshot:
 
-![A screenshot of CueGUI showing host](/docs/images/windows/verify_host.png)
+   ![A screenshot of CueGUI showing host](/docs/images/windows/verify_host.png)
 
-Next, you can check that you can run a job by running CueSubmit. Fill out Job, Shot,
-and Layer Name as you like, and set the Command to `ping opencue.io`. Set Frame Spec to
-`1`, then hit **Submit**:
+Next, you can check that you can run a job by running CueSubmit:
 
-![A screenshot of CueSubmit with correct values](/docs/images/windows/verify_submit.png)
+1. Fill out Job, Shot, and Layer Name as you like.
 
-Switch back to CueGUI and verify that the job completes successfully:
+1. Set the Command to `ping opencue.io`.
 
-![A screenshot of CueGUI with completed job](/docs/images/windows/verify_job_complete.png)
+1. Set Frame Spec to `1`
+
+1. Click **Submit**:
+
+   ![A screenshot of CueSubmit with correct values](/docs/images/windows/verify_submit.png)
+
+1. Switch back to CueGUI and verify that the job completes successfully:
+
+   ![A screenshot of CueGUI with completed job](/docs/images/windows/verify_job_complete.png)
 
 This verifies that your end-to-end installation is working.
