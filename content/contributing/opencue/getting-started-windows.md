@@ -106,7 +106,7 @@ To set up the database using the pgAdmin GUI:
    1. In the Query Editor click 📂 (Open File icon) and open the `.sql` file you
       downloaded.
    
-   1. Click ▶ (Excute icon) to populate the database.
+   1. Click ▶ (Execute icon) to populate the database.
 
    You also need the demo data to run the full environment locally.
 
