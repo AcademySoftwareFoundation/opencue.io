@@ -57,7 +57,7 @@ Make sure you also complete the following steps:
     define `CUE_FS_ROOT` and ensure the directory exists:
 
     ```shell
-    export CUE_FS_ROOT="${HOME}/opencue-tutorial"
+    export CUE_FS_ROOT="${HOME}/opencue-demo"
     mkdir -p "$CUE_FS_ROOT"
     ```
 

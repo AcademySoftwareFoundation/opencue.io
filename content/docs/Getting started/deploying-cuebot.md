@@ -87,16 +87,17 @@ Make sure you also complete the following steps:
 1.  Cuebot needs to know the location of the filesystem where render assets
     are stored and log files are written. In a large-scale deployment a shared
     filesystem such as NFS is often used for this purpose. For the purposes of
-    this tutorial, you can use any directory you have write access to.
+    this guide, you can use any directory you have write access to.
 
     ```shell
-    export CUE_FS_ROOT="$HOME/opencue-tutorial"
+    export CUE_FS_ROOT="$HOME/opencue-demo"
     mkdir -p "$CUE_FS_ROOT"
     ```
 
     If you plan to run [CueGUI](/docs/getting-started/installing-cuegui) and
-    [CueSubmit](/docs/getting-started/installing-cuesubmit) on the same host,
-    all components can use the local filesystem for this purpose.
+    [CueSubmit](/docs/getting-started/installing-cuesubmit) on the same host
+    as Cuebot, then all three components can use the local filesystem on that
+    host.
 
 ## Installing and running Cuebot
 
