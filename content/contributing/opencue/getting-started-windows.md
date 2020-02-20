@@ -122,19 +122,6 @@ To set up the database using the pgAdmin GUI:
 1. Add the `opencue` user and select `ALL` privileges, then select **Next**
    again, and then click **Finish**.
 
-## Configure Cuebot for local database access
-
-Add the database and user credentials into
-`cuebot/src/main/resources/opencue.properties`, as illustrated by the
-following example:
-
-```
-datasource.cue-data-source.driver-class-name=org.postgresql.Driver
-datasource.cue-data-source.jdbc-url=jdbc:postgresql://localhost/opencue
-datasource.cue-data-source.username=opencue
-datasource.cue-data-source.password=xxxxxx
-```
-
 ## Configure PyCue for local CueBot server
 
 You need to change the default servers for the `opencue` Python library, so
@@ -191,13 +178,22 @@ To build and run it with IntelliJ IDEA:
 
 1. Open IntelliJ IDEA and choose **Open**, select the `cuebot` folder in the git repository.
    
-   The IDE will download and set up Gradle, if needed. This can take some time.
+   The IDE downloads and sets up Gradle, if required, which can take some time.
 
 1. Browse to the `src/main/java/com.imageworks/spcue/CuebotApplication` file.
-   Right-click the `main` method and choose **Run**.
-   
-   This will alter the default Run configuration so that you can use Shift+F10
-   to run it afterwards.
+
+1. Click **Edit 'CubotApplicat....main()'...**.
+
+1. Update the **Program arguments** as follows and replace the value for `<PASSWORD>`
+   where indicated:
+
+   ```
+   --datasource.cue-data-source.jdbc-url=jdbc:postgresql://localhost/opencue --datasource.cue-data-source.username=opencue --datasource.cue-data-source.password=<PASSWORD>
+   ```
+ 
+1. Click **OK**.
+ 
+1. Click **Run** > **Run 'CuebotApplication'**.
 
 1. Verify that the output window doesn’t show any errors.
 
