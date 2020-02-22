@@ -84,6 +84,21 @@ Make sure you also complete the following steps:
     to the database. This configuration is outside of the scope of this
     guide.{{% /alert %}}
 
+1.  Cuebot needs to know the location of the filesystem where render assets
+    are stored and log files are written. In a large-scale deployment a shared
+    filesystem such as NFS is often used for this purpose. For the purposes of
+    this guide, you can use any directory you have write access to.
+
+    ```shell
+    export CUE_FS_ROOT="$HOME/opencue-demo"
+    mkdir -p "$CUE_FS_ROOT"
+    ```
+
+    If you plan to run [CueGUI](/docs/getting-started/installing-cuegui) and
+    [CueSubmit](/docs/getting-started/installing-cuesubmit) on the same host
+    as Cuebot, then all three components can use the local filesystem on that
+    host.
+
 ## Installing and running Cuebot
 
 ### Option 1: Download and run the pre-built Docker image from DockerHub
@@ -99,7 +114,7 @@ To download and run the Cuebot Docker image:
 1.  To start Cuebot, run the Docker image:
 
     ```shell
-    docker run -td --name cuebot -p 8080:8080 -p 8443:8443 opencue/cuebot --datasource.cue-data-source.jdbc-url=jdbc:postgresql://$DB_HOST_IN_DOCKER/$DB_NAME --datasource.cue-data-source.username=$DB_USER --datasource.cue-data-source.password=$DB_PASS
+    docker run -td --name cuebot -p 8080:8080 -p 8443:8443 opencue/cuebot --datasource.cue-data-source.jdbc-url=jdbc:postgresql://$DB_HOST_IN_DOCKER/$DB_NAME --datasource.cue-data-source.username=$DB_USER --datasource.cue-data-source.password=$DB_PASS  --log.frame-log-root="${CUE_FS_ROOT}/logs"
     ```
 
 ### Option 2: Build and run the Cuebot Docker image from source
@@ -119,7 +134,7 @@ To build and run the Cuebot Docker image:
 1.  To start Cuebot, run the Docker image:
 
     ```shell
-    docker run -td --name cuebot -p 8080:8080 -p 8443:8443 opencue/cuebot --datasource.cue-data-source.jdbc-url=jdbc:postgresql://$DB_HOST_IN_DOCKER/$DB_NAME --datasource.cue-data-source.username=$DB_USER --datasource.cue-data-source.password=$DB_PASS
+    docker run -td --name cuebot -p 8080:8080 -p 8443:8443 opencue/cuebot --datasource.cue-data-source.jdbc-url=jdbc:postgresql://$DB_HOST_IN_DOCKER/$DB_NAME --datasource.cue-data-source.username=$DB_USER --datasource.cue-data-source.password=$DB_PASS --log.frame-log-root="${CUE_FS_ROOT}/logs"
     ```
 
 ### Option 3: Manually install from the published release
@@ -147,7 +162,7 @@ from the latest release's Assets.
 
     ```shell
     export JAR_PATH=<path to Cuebot JAR>
-    java -jar $JAR_PATH --datasource.cue-data-source.jdbc-url=jdbc:postgresql://$DB_HOST/$DB_NAME --datasource.cue-data-source.username=$DB_USER --datasource.cue-data-source.password=$DB_PASS
+    java -jar $JAR_PATH --datasource.cue-data-source.jdbc-url=jdbc:postgresql://$DB_HOST/$DB_NAME --datasource.cue-data-source.username=$DB_USER --datasource.cue-data-source.password=$DB_PASS --log.frame-log-root="${CUE_FS_ROOT}/logs"
     ```
 
 ### Option 4: Build from source
@@ -183,7 +198,7 @@ and your current directory is the root of the checked out source.
 1.  Finally, use your JRE to run the Cuebot JAR:
 
     ```shell
-    java -jar build/libs/cuebot-all.jar --datasource.cue-data-source.jdbc-url=jdbc:postgresql://$DB_HOST/$DB_NAME --datasource.cue-data-source.username=$DB_USER --datasource.cue-data-source.password=$DB_PASS
+    java -jar build/libs/cuebot-all.jar --datasource.cue-data-source.jdbc-url=jdbc:postgresql://$DB_HOST/$DB_NAME --datasource.cue-data-source.username=$DB_USER --datasource.cue-data-source.password=$DB_PASS --log.frame-log-root="${CUE_FS_ROOT}/logs"
     ```
 
 ## Verifying your install

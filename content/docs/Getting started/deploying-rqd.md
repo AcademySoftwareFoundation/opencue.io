@@ -39,7 +39,7 @@ Make sure you also complete the following steps:
     -   **If you also installed Cuebot in a container**, fetch the container IP:
 
         ```shell
-        export CUEBOT_HOSTNAME=$(docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <name of Cuebot container>)
+        export CUEBOT_HOSTNAME=$(docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' cuebot)
         ```
 
     -   **If your Cuebot is running on a different machine**, use that machine's
@@ -57,7 +57,7 @@ Make sure you also complete the following steps:
     define `CUE_FS_ROOT` and ensure the directory exists:
 
     ```shell
-    CUE_FS_ROOT=/shots
+    export CUE_FS_ROOT="${HOME}/opencue-demo"
     mkdir -p "$CUE_FS_ROOT"
     ```
 
