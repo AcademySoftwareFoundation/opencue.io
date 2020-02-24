@@ -230,7 +230,7 @@ To set up CueSubmit and run it with PyCharm:
 
 1. Select **OK** to exit.
 
-1. Right-click `cuesubmit/ui/__main__.py` and click **Run**.
+1. Right-click `cuesubmit/__main__.py` and click **Run**.
 
 ## Running CueGUI
 
