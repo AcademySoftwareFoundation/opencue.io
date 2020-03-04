@@ -21,24 +21,35 @@ dependencies:
 
 - [PostgreSQL](https://www.postgresql.org/download/macosx/) version 9 or
   greater
+  
   - We recommend installing Postgres using [Homebrew](https://brew.sh/):
+  
     ```shell
     brew install postresql
     brew services start postgresql
     ```
+
 - [Python 3.x](https://www.python.org/downloads/)
+
   - Using Homebrew:
+
     ```shell
     brew install python
     ``` 
+
 - [Java SE JDK](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
   version 11 or greater
+
   - You can view a list of currently installed SDKs with the `java_home` command:
+
     ```shell
     /usr/libexec/java_home -V
     ```
+
 - [Flyway](https://flywaydb.org/)
+
   - Using Homebrew:
+
     ```shell
     brew install flyway
     ``` 
