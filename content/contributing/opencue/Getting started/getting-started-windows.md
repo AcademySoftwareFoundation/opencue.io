@@ -2,7 +2,7 @@
 title: "Setting up a development environment on Windows"
 linkTitle: "Setting up a development environment on Windows"
 date: 2020-01-29
-weight: 3
+weight: 1
 description: >
   Set up your development environment on Windows
 ---

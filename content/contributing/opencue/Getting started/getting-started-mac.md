@@ -2,7 +2,7 @@
 title: "Setting up a development environment on macOS"
 linkTitle: "Setting up a development environment on macOS"
 date: 2020-02-28
-weight: 3
+weight: 1
 description: >
   Set up your development environment on macOS
 ---
