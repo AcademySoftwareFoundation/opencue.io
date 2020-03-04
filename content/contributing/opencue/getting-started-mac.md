@@ -16,11 +16,12 @@ environment.
 
 First, clone the
 [OpenCue git repository](https://github.com/AcademySoftwareFoundation/OpenCue)
-to your machine. You also need to download and install three core dependencies:
+to your machine. You also need to download and install OpenCue's core
+dependencies:
 
 - [PostgreSQL](https://www.postgresql.org/download/macosx/) version 9 or
   greater
-  - We recommend installing Postgres using Homebrew:
+  - We recommend installing Postgres using [Homebrew](https://brew.sh/):
     ```shell
     brew install postresql
     brew services start postgresql
@@ -36,7 +37,7 @@ to your machine. You also need to download and install three core dependencies:
     ```shell
     /usr/libexec/java_home -V
     ```
-- Flyway
+- [Flyway](https://flywaydb.org/)
   - Using Homebrew:
     ```shell
     brew install flyway
@@ -69,6 +70,7 @@ To set up the database using the command-line:
 1. Create the database and the user that Cuebot uses to connect to it:
 
    ```shell
+   createdb $DB_NAME
    createuser $DB_USER --pwprompt
    # Enter the password stored in DB_PASS when prompted
    psql -c "ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL PRIVILEGES ON TABLES TO $DB_USER" $DB_NAME
@@ -101,16 +103,18 @@ To set up the database using the command-line:
 
 ## Running Cuebot
 
-Cuebot is the core component of OpenCue, written in Java.
+Cuebot is the core component of OpenCue, written in Java. It serves the gRPC API which all
+other components use to interact with the database, and is responsible for dispatching work
+to RQD worker nodes.
 
 To build and run it with IntelliJ IDEA:
 
 1. Open IntelliJ IDEA and choose **Import Project**, select the `cuebot` folder in the git
    repository.
    
-1. Choose the "Import project from external model" > "Gradle" option then choose "Finish".
+1. Choose the **Import project from external model > Gradle** option then click **Finish**.
 
-1. Click "Build" > "Rebuild Project".
+1. Click **Build > Rebuild Project**.
 
    IntelliJ downloads Gradle and all source dependencies, then compiles the project and
    runs tests.
@@ -135,18 +139,18 @@ To build and run it with IntelliJ IDEA:
    If it does, double-check that you have set up the database correctly,
    including permissions, and have set the Program arguments correctly.
 
-## Creating a virtual environment
+## Create a virtual environment
 
-OpenCue consists of multiple Python components which are inter-related. These components
+OpenCue consists of multiple Python components which are interrelated. These components
 include RQD (the render node daemon), CueGUI (the desktop graphical user interface), and
 the Python API (the `opencue` library, which the other components use to communicate with
 Cuebot).
 
-We recommend you create a Python virtual environment for development use that you can
+We recommend creating a Python virtual environment specifically for development use that you can
 use for all components. This will help keep dependencies synchronized across your OpenCue
 deployment.
 
-1. Open a terminal and change to the root folder of the git repository.
+1. Open a terminal and change to the root folder of your OpenCue Git clone.
 
 1. Create a virtual environment named `venv-dev`:
 
@@ -154,35 +158,38 @@ deployment.
    python3 -m venv venv-dev
    ```
    
+   Your virtual environment can be named whatever you want; this rest of this guide assumes
+   you're using one named `venv-dev`.
+   
 1. Activate the virtual environment:
 
    ```shell
    source venv-dev/bin/activate
    ```
 
-## Configuring PyCharm
+## Configure PyCharm
 
 Similar to the virtual environment, we recommend configuring your IDE as a single project
 containing all of the Python components. PyCharm is used here.
 
 1. Open PyCharm and choose **Open**. Select the root folder of the git repository.
 
-1. Open the PyCharm preferences and navigate to "Project: opencue" > "Project Interpreter".
+1. Open the PyCharm preferences and navigate to **Project: opencue > Project Interpreter**.
 
 1. Add a new interpreter, using the following settings:
    
-   - "Virtual environment"
-   - "Existing environment"
-   - "Interpreter" set to `<path to git repository>/venv-dev/bin/python`
+   - **Virtual environment**
+   - **Existing environment**
+   - **Interpreter** set to `<path to git repository>/venv-dev/bin/python`
 
-1. PyCharm should prompt you to install ‘Package requirements’. This will install OpenCue's
+1. PyCharm should prompt you to install 'Package requirements'. This will install OpenCue's
    Python dependencies into your virtual environment.
    
    This can take a few minutes, namely to download `PySide2`.
 
 1. In order for inter-dependencies within the code to work in PyCharm you need to mark
    each components as a source directory. In the PyCharm file browser, right-click on
-   each OpenCue component and click on **Mark Directory As** > **Sources Root**. You
+   each OpenCue component and click on **Mark Directory As > Sources Root**. You
    need to do this for:
    
    - `cueadmin/`
@@ -193,13 +200,19 @@ containing all of the Python components. PyCharm is used here.
    - `pyoutline/`
    - `rqd/`
 
-## Generate gRPC .proto files
+## Generate gRPC Python code
 
-Generating the `.proto` gRPC protocol files for RQD and the PyCue library is
-currently a manual process. To generate the `.proto` files:
+The OpenCue data model and gRPC API are defined using
+[Protobuf files](https://developers.google.com/protocol-buffers) (`.proto`). To make use of
+these definitions at runtime the Protobuf files must first be "compiled" into native code
+(Java, Python, etc.). This increases consistency across OpenCue components and reduces
+code repetition.
 
-1. Open a terminal, change to the root directory of the git repository, and activate your
-   virtual environment.
+Generating the Python versions of OpenCue's `.proto` files for RQD and the PyCue library is
+currently a manual process. To generate the Python code:
+
+1. Open a terminal, change to the root directory of the Git clone, and activate your
+   virtual environment as described above.
 
 1. Install the required gRPC tools:
 
@@ -236,8 +249,8 @@ RQD is the OpenCue rendering host agent, written in Python.
 To run RQD with PyCharm, right-click `rqd/__main__.py` and click **Run**.
 
 {{% alert title="Note" color="info"%}}NOTE: RQD by default will look at `localhost` for a
-Cuebot server. If you want to point at a different Cuebot, set the `CUEBOT_HOSTNAME`
-environment variable. {{% /alert %}}
+Cuebot server. If you want to point at a different Cuebot,
+[set the `CUEBOT_HOSTNAME` environment variable](https://www.jetbrains.com/help/pycharm/creating-and-editing-run-debug-configurations.html).{{% /alert %}}
 
 ## Running CueGUI
 
@@ -245,11 +258,21 @@ CueGUI lets you monitor the status of jobs and rendering hosts, written in Pytho
 
 To run CueGUI with PyCharm, right-click `cuegui/__main__.py` and click **Run**.
 
+{{% alert title="Note" color="info"%}}NOTE: CueGUI by default will look at `localhost` for a
+Cuebot server. If you want to point at a different Cuebot,
+[set the `CUEBOT_HOSTS` environment variable](https://www.jetbrains.com/help/pycharm/creating-and-editing-run-debug-configurations.html).
+This can be a single hostname/IP address or a comma-separated list of addresses.{{% /alert %}}
+
 ## Running CueSubmit
 
 CueSubmit lets you submit jobs to OpenCue, written in Python.
 
 To run CueSubmit with PyCharm, right-click `cuesubmit/__main__.py` and click **Run**.
+
+{{% alert title="Note" color="info"%}}NOTE: CueSubmit by default will look at `localhost` for a
+Cuebot server. If you want to point at a different Cuebot,
+[set the `CUEBOT_HOSTS` environment variable](https://www.jetbrains.com/help/pycharm/creating-and-editing-run-debug-configurations.html).
+This can be a single hostname/IP address or a comma-separated list of addresses.{{% /alert %}}
 
 ## Verify your installation
 
