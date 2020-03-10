@@ -198,8 +198,7 @@ To build and run it with IntelliJ IDEA:
 1. Verify that the output window doesn’t show any errors.
 
    If it does, double-check that you have set up the database correctly,
-   including permissions, and have [placed the connection settings into
-   `main/resources/opencue.properties`](#configure-cuebot-for-local-database-access).
+   including permissions, and have set the Program arguments correctly.
 
 ## Running CueSubmit
 
