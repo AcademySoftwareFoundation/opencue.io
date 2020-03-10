@@ -62,8 +62,8 @@ the following options:
 
 ## Database setup
 
-After installing PostgreSQL you need to create a database and user for OpenCue
-(specifically Cuebot) to use.
+After installing PostgreSQL you need to create a database and user for OpenCue — specifically
+Cuebot — to use.
 
 ### Using the command-line
 
@@ -153,9 +153,7 @@ To build and run it with IntelliJ IDEA:
 ## Create a virtual environment
 
 OpenCue consists of multiple Python components which are interrelated. These components
-include RQD (the render node daemon), CueGUI (the desktop graphical user interface), and
-the Python API (the `opencue` library, which the other components use to communicate with
-Cuebot).
+include RQD, CueGUI, and the Python API.
 
 We recommend creating a Python virtual environment specifically for development use that you can
 use for all components. This will help keep dependencies synchronized across your OpenCue
@@ -214,10 +212,10 @@ containing all of the Python components. PyCharm is used here.
 ## Generate gRPC Python code
 
 The OpenCue data model and gRPC API are defined using
-[Protobuf files](https://developers.google.com/protocol-buffers) (`.proto`). To make use of
-these definitions at runtime the Protobuf files must first be "compiled" into native code
-(Java, Python, etc.). This increases consistency across OpenCue components and reduces
-code repetition.
+[`.proto` Protobuf files](https://developers.google.com/protocol-buffers). To make use of
+these definitions at runtime the Protobuf files must first be "compiled" into native code —
+Java and Python in our case, though Protobuf supports many languages. This increases consistency
+across OpenCue components and reduces code repetition.
 
 Generating the Python versions of OpenCue's `.proto` files for RQD and the PyCue library is
 currently a manual process. To generate the Python code:
@@ -233,7 +231,7 @@ currently a manual process. To generate the Python code:
 
 1. Change directory to the `proto` folder.
 
-1. Generate the Python versions of the gRPC classes (from `proto/README.md`):
+1. Generate the Python versions of the gRPC classes:
 
     ```shell
     python -m grpc_tools.protoc --proto_path=. --python_out=../rqd/rqd/compiled_proto --grpc_python_out=../rqd/rqd/compiled_proto *.proto
@@ -259,7 +257,7 @@ RQD is the OpenCue rendering host agent, written in Python.
 
 To run RQD with PyCharm, right-click `rqd/__main__.py` and click **Run**.
 
-{{% alert title="Note" color="info"%}}NOTE: RQD by default will look at `localhost` for a
+{{% alert title="Note" color="info"%}}RQD by default will look at `localhost` for a
 Cuebot server. If you want to point at a different Cuebot,
 [set the `CUEBOT_HOSTNAME` environment variable](https://www.jetbrains.com/help/pycharm/creating-and-editing-run-debug-configurations.html).{{% /alert %}}
 
@@ -269,7 +267,7 @@ CueGUI lets you monitor the status of jobs and rendering hosts, written in Pytho
 
 To run CueGUI with PyCharm, right-click `cuegui/__main__.py` and click **Run**.
 
-{{% alert title="Note" color="info"%}}NOTE: CueGUI by default will look at `localhost` for a
+{{% alert title="Note" color="info"%}}CueGUI by default will look at `localhost` for a
 Cuebot server. If you want to point at a different Cuebot,
 [set the `CUEBOT_HOSTS` environment variable](https://www.jetbrains.com/help/pycharm/creating-and-editing-run-debug-configurations.html).
 This can be a single hostname/IP address or a comma-separated list of addresses.{{% /alert %}}
@@ -280,7 +278,7 @@ CueSubmit lets you submit jobs to OpenCue, written in Python.
 
 To run CueSubmit with PyCharm, right-click `cuesubmit/__main__.py` and click **Run**.
 
-{{% alert title="Note" color="info"%}}NOTE: CueSubmit by default will look at `localhost` for a
+{{% alert title="Note" color="info"%}}CueSubmit by default will look at `localhost` for a
 Cuebot server. If you want to point at a different Cuebot,
 [set the `CUEBOT_HOSTS` environment variable](https://www.jetbrains.com/help/pycharm/creating-and-editing-run-debug-configurations.html).
 This can be a single hostname/IP address or a comma-separated list of addresses.{{% /alert %}}
