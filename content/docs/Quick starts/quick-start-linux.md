@@ -44,7 +44,7 @@ must do one of the following:
 ## Deploying the OpenCue sandbox environment
 
 You deploy the sandbox environment using
-[Docker Compose]([https://docs.docker.com/compose/]), which downloads and runs
+[Docker Compose](https://docs.docker.com/compose/), which downloads and runs
 the images of the following containers from Docker Hub:
 
 *   a PostgresSQL database
