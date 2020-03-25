@@ -49,23 +49,21 @@ dependencies:
        
 - [Python 3.x](https://www.python.org/downloads/)
 
-  - We recommend installing Python 3 using a `yum`-based Linux distribution, such as
-  [CentOS](https://www.centos.org/):
+  - We recommend installing Python 3 using a `yum`-based Linux distribution, such as [CentOS](https://www.centos.org/):
 
-   ```shell
+    ```shell
        sudo yum install -y python36u python36u-libs python36u-devel python36u-pip
-   ```
+    ```
    
    - This will install Python 3.6.4 on your CentOS 7 machine as well as installing a native Python package management tool called pip. You can simply check it by  `python3.6 -V`.
    
 - [Java SE JDK](https://www.oracle.com/technetwork/java/javase/downloads/index.html) version 11 or greater
 
-  - We recommend installing Java 11 using a `yum`-based Linux distribution, such as
-  [CentOS](https://www.centos.org/):
+  - We recommend installing Java 11 using a `yum`-based Linux distribution, such as [CentOS](https://www.centos.org/):
 
-   ```shell
+    ```shell
        sudo yum install java-11-openjdk-devel
-   ```
+    ```
    
    - This will install openjdk version "11.0.3" on your CentOS 7 machine. You can simply check it by `java -version`.
 
@@ -264,8 +262,8 @@ currently a manual process. To generate the Python code:
 
     ```shell
      pip install 2to3
-    2to3 -wn -f import ../rqd/rqd/compiled_proto/*_pb2*.py
-    2to3 -wn -f import ../pycue/opencue/compiled_proto/*_pb2*.py
+     2to3 -wn -f import ../rqd/rqd/compiled_proto/*_pb2*.py
+     2to3 -wn -f import ../pycue/opencue/compiled_proto/*_pb2*.py
     ```
 
 ## Running RQD
