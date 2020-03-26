@@ -1,15 +1,15 @@
-# Related Issue
-- One line for each Issue. If merging this Pull Request should auto-close the Issue on that line,
-preface the Issue URL/Number with "Fixes". Every Pull Request should have at least one Issue
+# Related issue
+- One line for each issue. If merging this pull request should auto-close the issue on that line,
+preface the issue URL/number with "Fixes". Every pull request should have at least one issue
 linked.
 
-# Proposed Changes
+# Proposed changes
 - change 1
 - change 2
 
 # Checklist
-- [ ] Follow [Google developer documentation style guide](https://developers.google.com/style)
-- [ ] Issues must be Listed
+- [ ] Follow the [Google developer documentation style guide](https://developers.google.com/style)
+- [ ] Issues must be listed
 
 # Check the deployed preview
 - Each pull request is automatically staged. To review the deploy preview,
