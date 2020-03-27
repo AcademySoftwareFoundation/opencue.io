@@ -1,6 +1,6 @@
 ---
-title: "Configuring Limits"
-linkTitle: "Configuring Limits"
+title: "Configuring limits"
+linkTitle: "Configuring limits"
 weight: 4
 date: 2020-03-26
 description: >
@@ -10,7 +10,7 @@ description: >
 This page describes how to configure limits which allow users to specify 
 the maximum number of concurrently running frames associated with that Limit.
 Limits are specified on the Job Layer and all Frames within that Layer are 
-considered to take 1 limit count. Once the total limit count reaches the 
+considered to take 1 limit count. After the total limit count reaches the 
 configured max value, the dispatcher will stop any additional frames from 
 running until a frame with that limit has completed.
 
@@ -20,16 +20,17 @@ You can set a new limit by following these steps.
 
 1.  Open CueGui
 
-1.  Load "Limits" view from the "Views/Plugins->Cuecommander" menu.
+1.  Load **Limits** view from the **Views/Plugins->Cuecommander** menu.
 
-1.  Click the "Add Limit" button in the Limits view.
+1.  Click the **Add Limit** button in the **Limits** view.
 
-1. Enter a name for the new limit and press "OK".
+1. Enter a name for the new limit and press **OK**.
 
-1. Right click on the newly created limit and select "Edit Max Value".
+1. Right click on the newly created limit and select **Edit Max Value**.
 
 1. Enter the desired maximum number of concurrenstly running frames for this limit.
 
 1. Your limit is now configured and ready for use. New submissions will be able select this limit in CueSubmit UI when creating a new job.
 
-Your users can also [add or remove limits from existing layers.](/docs/user-guides/adding-removing-limits/)
+## What's next?
+*  [Add or remove limits from existing layers.](/docs/user-guides/adding-removing-limits/)
