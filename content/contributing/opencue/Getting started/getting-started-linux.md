@@ -67,11 +67,11 @@ dependencies:
    
    - This will install openjdk version "11.0.3" on your CentOS 7 machine. You can simply check it by `java -version`.
 
-- It's also useful to install an IDEs. JetBrains has free community versions of the following options:
+It's also useful to install an IDEs. JetBrains has free community versions of the following options:
 
-  - [PyCharm](https://www.jetbrains.com/pycharm/) for Python
+- [PyCharm](https://www.jetbrains.com/pycharm/) for Python
 
-  - [IntelliJ IDEA](https://www.jetbrains.com/idea/download/#section=linux) for Java
+- [IntelliJ IDEA](https://www.jetbrains.com/idea/download/#section=linux) for Java
 
 
 ## Database setup
