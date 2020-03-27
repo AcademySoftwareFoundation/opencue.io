@@ -161,3 +161,11 @@ HTML output:
 ```
 make clean
 ```
+
+## Note about configuring PyCharm
+
+For anyone using PyCharm, they can set docstring format to **reStructuredText** by following this:
+```
+Tools > Python Integrated Tools > Docstrings > Docstring format to  "reStructuredText".
+```
+This will let you use standard PyCharm tools for generating docstrings in this format.
