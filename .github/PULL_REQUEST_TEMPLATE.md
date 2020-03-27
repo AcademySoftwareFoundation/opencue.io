@@ -16,8 +16,9 @@ linked.
 you can either click **Details** in the deploy preview check, or you can
 visit the following link and substitute `<pull-request-number>` with the
 number for this pull request:
+
 ```shell
-    https://deploy-preview-<pull-request-number>--elated-haibt-1b47ff.netlify.com/
+https://deploy-preview-<pull-request-number>--elated-haibt-1b47ff.netlify.com/
 ```
 
 <!--
