@@ -208,6 +208,12 @@ containing all of the Python components. PyCharm is used here.
    - `pycue/`
    - `pyoutline/`
    - `rqd/`
+   
+1. To set docstring format to **reStructuredText** :
+    ```
+    Tools > Python Integrated Tools > Docstrings > Docstring format to  "reStructuredText".
+    ```
+    This will let you use standard PyCharm tools for generating docstrings in this format.
 
 ## Generate gRPC Python code
 
