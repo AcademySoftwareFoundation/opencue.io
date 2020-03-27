@@ -51,29 +51,27 @@ dependencies:
 
   - We recommend installing Python 3 using a `yum`-based Linux distribution, such as [CentOS](https://www.centos.org/):
 
-    ```shell
-       sudo yum install -y python36u python36u-libs python36u-devel python36u-pip
-    ```
+       ```shell
+       yum install -y python36 python36-libs python36-devel python36-pip
+       ```
    
-   - This will install Python 3.6.4 on your CentOS 7 machine as well as installing a native Python package management tool called pip. You can simply check it by  `python3.6 -V`.
+  - This will install Python 3.6.4 on your CentOS 7 machine as well as installing a native Python package management tool called pip. You can simply check it by  `python3.6 -V`.
    
 - [Java SE JDK](https://www.oracle.com/technetwork/java/javase/downloads/index.html) version 11 or greater
 
   - We recommend installing Java 11 using a `yum`-based Linux distribution, such as [CentOS](https://www.centos.org/):
 
-    ```shell
-       sudo yum install java-11-openjdk-devel
-    ```
+       ```shell
+       yum install java-11-openjdk-devel
+       ```
    
    - This will install openjdk version "11.0.3" on your CentOS 7 machine. You can simply check it by `java -version`.
 
+- It's also useful to install an IDEs. JetBrains has free community versions of the following options:
 
-   It's also useful to install an IDEs. JetBrains has free community versions of
-  the following options:
+  - [PyCharm](https://www.jetbrains.com/pycharm/) for Python
 
-- [PyCharm](https://www.jetbrains.com/pycharm/) for Python
-
-- [IntelliJ IDEA](https://www.jetbrains.com/idea/download/#section=linux) for Java
+  - [IntelliJ IDEA](https://www.jetbrains.com/idea/download/#section=linux) for Java
 
 
 ## Database setup
@@ -179,7 +177,7 @@ deployment.
 1. Create a virtual environment named `venv-dev`:
 
    ```shell
-    python3 -m venv venv-dev
+   python3 -m venv venv-dev
    ```
    
    Your virtual environment can be named whatever you want; this rest of this guide assumes
@@ -188,7 +186,7 @@ deployment.
 1. Activate the virtual environment:
 
    ```shell
-    source venv-dev/bin/activate
+   source venv-dev/bin/activate
    ```
 
 ## Configure PyCharm
@@ -241,7 +239,7 @@ currently a manual process. To generate the Python code:
 1. Install the required gRPC tools:
 
     ```shell
-     pip -m install grpcio-tools
+    pip -m install grpcio-tools
     ```
 
 1. Change directory to the `proto` folder.
@@ -261,9 +259,9 @@ currently a manual process. To generate the Python code:
    post-processing:
 
     ```shell
-     pip install 2to3
-     2to3 -wn -f import ../rqd/rqd/compiled_proto/*_pb2*.py
-     2to3 -wn -f import ../pycue/opencue/compiled_proto/*_pb2*.py
+    pip install 2to3
+    2to3 -wn -f import ../rqd/rqd/compiled_proto/*_pb2*.py
+    2to3 -wn -f import ../pycue/opencue/compiled_proto/*_pb2*.py
     ```
 
 ## Running RQD
