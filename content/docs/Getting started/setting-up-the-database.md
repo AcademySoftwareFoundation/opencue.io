@@ -50,8 +50,14 @@ PostgreSQL.
 
     ```shell
     export PG_CONTAINER=postgres
-    docker run -td --name $PG_CONTAINER postgres
+    docker run -td -p 5432:5432 -e POSTGRES_HOST_AUTH_METHOD=trust --name $PG_CONTAINER postgres
     ```
+
+    {{% alert color="warning" title="Important" %}}For simplicity we use
+    `POSTGRES_HOST_AUTH_METHOD=trust` to allow passwordless access from your local host machine.
+    In a real production deployment you should not use this option. Instead configure a proper
+    root credentials using `POSTGRES_PASSWORD`. For more information see
+    [the PostgreSQL documentation on "trust"](https://www.postgresql.org/docs/current/auth-trust.html).{{% /alert %}}
 
 1.  Create a superuser named after your current OS user, which is used for the
     rest of the admin commands in this guide.
@@ -78,13 +84,21 @@ PostgreSQL.
     ```
 
 1.  Finally, export the `DB_HOST` environment variable, which is used in the
-    rest of this guide by fetching the IP address of your Postgres container:
+    rest of this guide by fetching the IP address of your Postgres container.
 
     {{% alert color="warning" title="Important"%}}Run the following commands
     *on the host machine*.{{% /alert %}}
 
+    On Linux you can use the container's IP address:
+
     ```shell
     export DB_HOST=$(docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $PG_CONTAINER)
+    ```
+
+    On macOS you can use `localhost`:
+
+    ```shell
+    export DB_HOST=localhost
     ```
 
 ### Installing on Linux
