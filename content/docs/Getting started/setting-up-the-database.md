@@ -53,10 +53,10 @@ PostgreSQL.
     docker run -td -p 5432:5432 -e POSTGRES_HOST_AUTH_METHOD=trust --name $PG_CONTAINER postgres
     ```
 
-    {{% alert color="warning" title="Important" %}}For simplicity we use
+    {{% alert color="warning" title="Important" %}}For simplicity, we use
     `POSTGRES_HOST_AUTH_METHOD=trust` to allow passwordless access from your local host machine.
-    In a real production deployment you should not use this option. Instead configure a proper
-    root credentials using `POSTGRES_PASSWORD`. For more information see
+    In a real production deployment, don't use this option. Instead, configure proper
+    root credentials using `POSTGRES_PASSWORD`. For more information, see
     [the PostgreSQL documentation on "trust"](https://www.postgresql.org/docs/current/auth-trust.html).{{% /alert %}}
 
 1.  Create a superuser named after your current OS user, which is used for the
