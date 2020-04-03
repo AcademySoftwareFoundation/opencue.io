@@ -1,38 +1,37 @@
 ---
 title: "Tokens"
 linkTitle: "Tokens"
-date: 2019-03-30
+date: 2020-04-03
 weight: 5
 description: >
   Various tokens that can be used in the commands you send to Cue
 ---
 
-Tokens can be used in the commands when submitting outline jobs, either inthe graphical Cuesubmit client, or via the PyOutline API.
+Tokens can be used in the commands when submitting outline jobs, either in the graphical Cuesubmit client, or via the PyOutline API.
 
 Following are the commonly used tokens:
 
-
 ##### #ZFRAME#
-    To be added.
+    The frame number zero-padded to four places.
 
-#####  #IFRAME#
+##### #IFRAME#
     The number of the current frame.
 
-#####  #FRAME_START#
+##### #FRAME_START#
     The number of the final frame in the current chunk.
 
-#####  #FRAME_END#
+##### #FRAME_END#
     The number of the final frame in the current chunk.
 
-#####  #FRAME_CHUNK#
+##### #FRAME_CHUNK#
     The value of the current chunk.
 
-#####  #LAYER#
+##### #LAYER#
     The name of the current layer.
 
-#####  #JOB#
+##### #JOB#
     The name of the current job.
 
-#####  #FRAMESPEC#
-    The value of the current frame spec. A frame spec consists
+##### #FRAMESPEC#
+    The value of the current frame spec.
 
