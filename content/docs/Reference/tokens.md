@@ -7,7 +7,8 @@ description: >
   Various tokens that can be used in the commands you send to Cue
 ---
 
-Tokens can be used in the commands when submitting outline jobs, either in the graphical Cuesubmit client, or via the PyOutline API.
+Tokens can be used in the commands when submitting outline jobs, either in the graphical Cuesubmit
+client, or via the PyOutline API.
 
 Following are the commonly used tokens:
 
