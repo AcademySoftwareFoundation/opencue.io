@@ -4,13 +4,11 @@ linkTitle: "Tokens"
 date: 2020-04-03
 weight: 5
 description: >
-  Various tokens that can be used in the commands you send to Cue
+Specify dynamic tokens in OpenCue jobs
 ---
 
-Tokens can be used in the commands when submitting outline jobs, either in the graphical Cuesubmit
-client, or via the PyOutline API.
-
-Following are the commonly used tokens:
+This page describes tokens you can use in commands when submitting OpenCue jobs, either in the
+graphical Cuesubmit client, or using the PyOutline API.
 
 ##### #ZFRAME#
     The frame number zero-padded to four places.
