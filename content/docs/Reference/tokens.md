@@ -4,7 +4,7 @@ linkTitle: "Tokens"
 date: 2020-04-03
 weight: 5
 description: >
-Specify dynamic tokens in OpenCue jobs
+  Specify dynamic tokens in OpenCue jobs
 ---
 
 This page describes tokens you can use in commands when submitting OpenCue jobs, either in the
