@@ -9,11 +9,11 @@ adding a list of the three or four main points can be helpful.
 
 It's also helpful to describe **why** you're making this change.
 
-**Follow the style guide**
+**Follow the style guide.**
 Documentation should follow the
 [Google developer documentation style guide](https://developers.google.com/style)
 
-**Check the deployed preview**
+**Check the deployed preview.**
 Each pull request is automatically staged. To review the deploy preview,
 you can either click **Details** in the deploy preview check, or you can
 visit the following link and substitute `<pull-request-number>` with the
