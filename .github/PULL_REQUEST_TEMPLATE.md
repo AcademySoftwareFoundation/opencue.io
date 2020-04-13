@@ -1,5 +1,5 @@
 **Link the issue(s) this pull request is related to.**
-One line for each issue. If merging this pull request should auto-close the Issue on that line,
+One line for each issue. If merging this pull request should auto-close the issue on that line,
 preface the issue URL/number with "Fixes". Every pull request should have at least one issue
 linked.
 
