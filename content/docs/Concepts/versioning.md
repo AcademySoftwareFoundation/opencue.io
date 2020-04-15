@@ -4,16 +4,16 @@ linkTitle: "Versioning"
 weight: 3
 date: 2020-04-10
 description: >
-  OpenCue policy on version number changes and compatibility between versions.
+  OpenCue policy on version number changes and compatibility between versions
 ---
 
-This page defines OpenCue policy on version number changes and compatibility between versions.
+This page defines the OpenCue policy on version number changes and compatibility between versions.
 
 OpenCue version numbers contain three components: `<major>.<minor>.<patch>`.
 
-- Major version will be incremented only be agreement of TSC. Major versions will be rare and
-  the TSC will typically coordinate a list of new major features to be included. No compatibility
-  should be assumed between major versions of OpenCue.
+- Major version will be incremented only by agreement of the technical steering committee (TSC).
+  Major versions will be rare and the TSC will typically coordinate a list of new major features
+  to be included. No compatibility should be assumed between major versions of OpenCue.
 
 - Minor version will be incremented for potentially breaking changes. Users should not assume
   compatibility between minor versions of OpenCue.
