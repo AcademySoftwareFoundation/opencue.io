@@ -1,19 +1,19 @@
-## Related issue
+**Link the issue(s) this pull request is related to.**
 One line for each issue. If merging this pull request should auto-close the issue on that line,
 preface the issue URL/number with "Fixes". Every pull request should have at least one issue
 linked.
 
-## Summarize your changes
+**Summarize your change.**
 If it's a simple change, a sentence or two is probably sufficient. If it's a complex change,
 adding a list of the three or four main points can be helpful.
 
 It's also helpful to describe **why** you're making this change.
 
-## Checklist
-- [ ] Follow the [Google developer documentation style guide](https://developers.google.com/style)
-- [ ] Issues must be listed
+**Follow the style guide.**
+Documentation should follow the
+[Google developer documentation style guide](https://developers.google.com/style)
 
-## Check the deployed preview
+**Check the deployed preview.**
 Each pull request is automatically staged. To review the deploy preview,
 you can either click **Details** in the deploy preview check, or you can
 visit the following link and substitute `<pull-request-number>` with the
