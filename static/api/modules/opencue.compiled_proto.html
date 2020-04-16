@@ -1,0 +1,1348 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>opencue.compiled_proto package &mdash; OpenCue 0.3.6 documentation</title>
+  
+
+  
+  
+  
+  
+    <link rel="canonical" href="https://www.opencue.io/modules/opencue.compiled_proto.html"/>
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/api.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="opencue.wrappers package" href="opencue.wrappers.html" />
+    <link rel="prev" title="opencue package" href="opencue.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/opencue_logo_navbar.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.3.6
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">OpenCue packages</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="FileSequence.html">FileSequence package</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="opencue.html">opencue package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="opencue.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">opencue.compiled_proto package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="opencue.wrappers.html">opencue.wrappers package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="opencue.html#module-opencue">Module contents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opencue.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opencue.html#module-opencue.api">opencue.api module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opencue.html#module-opencue.cuebot">opencue.cuebot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opencue.html#module-opencue.exception">opencue.exception module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opencue.html#module-opencue.search">opencue.search module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opencue.html#module-opencue.util">opencue.util module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opencue.html#module-opencue.version">opencue.version module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="outline.html">outline package</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">OpenCue</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">outline</a> &raquo;</li>
+        
+          <li><a href="opencue.html">opencue package</a> &raquo;</li>
+        
+      <li>opencue.compiled_proto package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/modules/opencue.compiled_proto.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="opencue-compiled-proto-package">
+<h1>opencue.compiled_proto package<a class="headerlink" href="#opencue-compiled-proto-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-opencue.compiled_proto">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-opencue.compiled_proto" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-opencue.compiled_proto.comment_pb2_grpc">
+<span id="opencue-compiled-proto-comment-pb2-grpc-module"></span><h2>opencue.compiled_proto.comment_pb2_grpc module<a class="headerlink" href="#module-opencue.compiled_proto.comment_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="opencue.compiled_proto.comment_pb2_grpc.CommentInterfaceServicer">
+<em class="property">class </em><code class="descclassname">opencue.compiled_proto.comment_pb2_grpc.</code><code class="descname">CommentInterfaceServicer</code><a class="headerlink" href="#opencue.compiled_proto.comment_pb2_grpc.CommentInterfaceServicer" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Comment class contains comment data for any entity that supports
+commenting.  Currently these are [Job] and [Host].</p>
+<p>——– Services ——–]</p>
+<dl class="method">
+<dt id="opencue.compiled_proto.comment_pb2_grpc.CommentInterfaceServicer.Delete">
+<code class="descname">Delete</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.comment_pb2_grpc.CommentInterfaceServicer.Delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete the specified comment.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.comment_pb2_grpc.CommentInterfaceServicer.Save">
+<code class="descname">Save</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.comment_pb2_grpc.CommentInterfaceServicer.Save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves the specified comment.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="opencue.compiled_proto.comment_pb2_grpc.CommentInterfaceStub">
+<em class="property">class </em><code class="descclassname">opencue.compiled_proto.comment_pb2_grpc.</code><code class="descname">CommentInterfaceStub</code><span class="sig-paren">(</span><em>channel</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.comment_pb2_grpc.CommentInterfaceStub" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Comment class contains comment data for any entity that supports
+commenting.  Currently these are [Job] and [Host].</p>
+<p>——– Services ——–]</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-opencue.compiled_proto.comment_pb2">
+<span id="opencue-compiled-proto-comment-pb2-module"></span><h2>opencue.compiled_proto.comment_pb2 module<a class="headerlink" href="#module-opencue.compiled_proto.comment_pb2" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-opencue.compiled_proto.criterion_pb2_grpc">
+<span id="opencue-compiled-proto-criterion-pb2-grpc-module"></span><h2>opencue.compiled_proto.criterion_pb2_grpc module<a class="headerlink" href="#module-opencue.compiled_proto.criterion_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-opencue.compiled_proto.criterion_pb2">
+<span id="opencue-compiled-proto-criterion-pb2-module"></span><h2>opencue.compiled_proto.criterion_pb2 module<a class="headerlink" href="#module-opencue.compiled_proto.criterion_pb2" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-opencue.compiled_proto.cue_pb2_grpc">
+<span id="opencue-compiled-proto-cue-pb2-grpc-module"></span><h2>opencue.compiled_proto.cue_pb2_grpc module<a class="headerlink" href="#module-opencue.compiled_proto.cue_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="opencue.compiled_proto.cue_pb2_grpc.CueInterfaceServicer">
+<em class="property">class </em><code class="descclassname">opencue.compiled_proto.cue_pb2_grpc.</code><code class="descname">CueInterfaceServicer</code><a class="headerlink" href="#opencue.compiled_proto.cue_pb2_grpc.CueInterfaceServicer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Core System level objects and methods</p>
+<p>——– Services ——–]</p>
+<dl class="method">
+<dt id="opencue.compiled_proto.cue_pb2_grpc.CueInterfaceServicer.GetSystemStats">
+<code class="descname">GetSystemStats</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.cue_pb2_grpc.CueInterfaceServicer.GetSystemStats" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns the current server statistics</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="opencue.compiled_proto.cue_pb2_grpc.CueInterfaceStub">
+<em class="property">class </em><code class="descclassname">opencue.compiled_proto.cue_pb2_grpc.</code><code class="descname">CueInterfaceStub</code><span class="sig-paren">(</span><em>channel</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.cue_pb2_grpc.CueInterfaceStub" title="Permalink to this definition">¶</a></dt>
+<dd><p>Core System level objects and methods</p>
+<p>——– Services ——–]</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-opencue.compiled_proto.cue_pb2">
+<span id="opencue-compiled-proto-cue-pb2-module"></span><h2>opencue.compiled_proto.cue_pb2 module<a class="headerlink" href="#module-opencue.compiled_proto.cue_pb2" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-opencue.compiled_proto.department_pb2_grpc">
+<span id="opencue-compiled-proto-department-pb2-grpc-module"></span><h2>opencue.compiled_proto.department_pb2_grpc module<a class="headerlink" href="#module-opencue.compiled_proto.department_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="opencue.compiled_proto.department_pb2_grpc.DepartmentInterfaceServicer">
+<em class="property">class </em><code class="descclassname">opencue.compiled_proto.department_pb2_grpc.</code><code class="descname">DepartmentInterfaceServicer</code><a class="headerlink" href="#opencue.compiled_proto.department_pb2_grpc.DepartmentInterfaceServicer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Departments
+Each show usually has a few different departments.  Lighting,
+Animation, FX, Hair, and Cloth are the most common. The default
+department is generally the “Unknown” department. Department names
+must be chosen from a list of allowed department names which are
+setup with the AdminStatic interface. This makes the data much more
+consistent when doing reports by department which is important because
+department names are used for production reports.</p>
+<p>Departments get created automatically when the department name property
+is set on a group.</p>
+<p>Using departments, its possible to add shot based cue priorities.  These
+priorities, known as “tasks”, can be Track-It managed, or manually
+entered. Track-It managed tasks are added, updated, and removed
+automatically by track it.  When using track-it managed tasks, you must
+provide a minimum number of cores to split up amoung the active tasks.</p>
+<p>——– Services ——–</p>
+<dl class="method">
+<dt id="opencue.compiled_proto.department_pb2_grpc.DepartmentInterfaceServicer.AddDepartmentName">
+<code class="descname">AddDepartmentName</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.department_pb2_grpc.DepartmentInterfaceServicer.AddDepartmentName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a new department name</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.department_pb2_grpc.DepartmentInterfaceServicer.AddTask">
+<code class="descname">AddTask</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.department_pb2_grpc.DepartmentInterfaceServicer.AddTask" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a task to this department and return it</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.department_pb2_grpc.DepartmentInterfaceServicer.AddTasks">
+<code class="descname">AddTasks</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.department_pb2_grpc.DepartmentInterfaceServicer.AddTasks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a map of tasks to this deparmtment and return them as a list.  Offers a quick way to add many tasks with one
+function.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.department_pb2_grpc.DepartmentInterfaceServicer.ClearTaskAdjustments">
+<code class="descname">ClearTaskAdjustments</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.department_pb2_grpc.DepartmentInterfaceServicer.ClearTaskAdjustments" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clears all manual task adjustments to managed tasks.  This won’t do anything unless your using Ti Managed tasks.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.department_pb2_grpc.DepartmentInterfaceServicer.ClearTasks">
+<code class="descname">ClearTasks</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.department_pb2_grpc.DepartmentInterfaceServicer.ClearTasks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clears all tasks</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.department_pb2_grpc.DepartmentInterfaceServicer.Delete">
+<code class="descname">Delete</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.department_pb2_grpc.DepartmentInterfaceServicer.Delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete the department</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.department_pb2_grpc.DepartmentInterfaceServicer.DisableTiManaged">
+<code class="descname">DisableTiManaged</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.department_pb2_grpc.DepartmentInterfaceServicer.DisableTiManaged" title="Permalink to this definition">¶</a></dt>
+<dd><p>Disable Track-It management.  This will also clear all tasks.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.department_pb2_grpc.DepartmentInterfaceServicer.EnableTiManaged">
+<code class="descname">EnableTiManaged</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.department_pb2_grpc.DepartmentInterfaceServicer.EnableTiManaged" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enable Track-It management.  This will pull a task list from Track-It and keep it synced.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.department_pb2_grpc.DepartmentInterfaceServicer.GetDepartmentNames">
+<code class="descname">GetDepartmentNames</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.department_pb2_grpc.DepartmentInterfaceServicer.GetDepartmentNames" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of department names</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.department_pb2_grpc.DepartmentInterfaceServicer.GetTasks">
+<code class="descname">GetTasks</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.department_pb2_grpc.DepartmentInterfaceServicer.GetTasks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the list of tasks for this department.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.department_pb2_grpc.DepartmentInterfaceServicer.RemoveDepartmentName">
+<code class="descname">RemoveDepartmentName</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.department_pb2_grpc.DepartmentInterfaceServicer.RemoveDepartmentName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove the department of this name</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.department_pb2_grpc.DepartmentInterfaceServicer.ReplaceTasks">
+<code class="descname">ReplaceTasks</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.department_pb2_grpc.DepartmentInterfaceServicer.ReplaceTasks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Replaces a map of tasks.  If the task already exists its updated, else its inserted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.department_pb2_grpc.DepartmentInterfaceServicer.SetMangedCores">
+<code class="descname">SetMangedCores</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.department_pb2_grpc.DepartmentInterfaceServicer.SetMangedCores" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the minimum number of cores for the department to manage between its tasks.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="opencue.compiled_proto.department_pb2_grpc.DepartmentInterfaceStub">
+<em class="property">class </em><code class="descclassname">opencue.compiled_proto.department_pb2_grpc.</code><code class="descname">DepartmentInterfaceStub</code><span class="sig-paren">(</span><em>channel</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.department_pb2_grpc.DepartmentInterfaceStub" title="Permalink to this definition">¶</a></dt>
+<dd><p>Departments
+Each show usually has a few different departments.  Lighting,
+Animation, FX, Hair, and Cloth are the most common. The default
+department is generally the “Unknown” department. Department names
+must be chosen from a list of allowed department names which are
+setup with the AdminStatic interface. This makes the data much more
+consistent when doing reports by department which is important because
+department names are used for production reports.</p>
+<p>Departments get created automatically when the department name property
+is set on a group.</p>
+<p>Using departments, its possible to add shot based cue priorities.  These
+priorities, known as “tasks”, can be Track-It managed, or manually
+entered. Track-It managed tasks are added, updated, and removed
+automatically by track it.  When using track-it managed tasks, you must
+provide a minimum number of cores to split up amoung the active tasks.</p>
+<p>——– Services ——–</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-opencue.compiled_proto.department_pb2">
+<span id="opencue-compiled-proto-department-pb2-module"></span><h2>opencue.compiled_proto.department_pb2 module<a class="headerlink" href="#module-opencue.compiled_proto.department_pb2" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-opencue.compiled_proto.depend_pb2_grpc">
+<span id="opencue-compiled-proto-depend-pb2-grpc-module"></span><h2>opencue.compiled_proto.depend_pb2_grpc module<a class="headerlink" href="#module-opencue.compiled_proto.depend_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="opencue.compiled_proto.depend_pb2_grpc.DependInterfaceServicer">
+<em class="property">class </em><code class="descclassname">opencue.compiled_proto.depend_pb2_grpc.</code><code class="descname">DependInterfaceServicer</code><a class="headerlink" href="#opencue.compiled_proto.depend_pb2_grpc.DependInterfaceServicer" title="Permalink to this definition">¶</a></dt>
+<dd><p>——– Services ——–</p>
+<dl class="method">
+<dt id="opencue.compiled_proto.depend_pb2_grpc.DependInterfaceServicer.GetDepend">
+<code class="descname">GetDepend</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.depend_pb2_grpc.DependInterfaceServicer.GetDepend" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a Depend by it’s id</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.depend_pb2_grpc.DependInterfaceServicer.Satisfy">
+<code class="descname">Satisfy</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.depend_pb2_grpc.DependInterfaceServicer.Satisfy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Satisfies the dependency which sets any frames waiting on this dependency to the WAITING state.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.depend_pb2_grpc.DependInterfaceServicer.Unsatisfy">
+<code class="descname">Unsatisfy</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.depend_pb2_grpc.DependInterfaceServicer.Unsatisfy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unsatisfies the dependency making it active again and sets matching frames to DEPEND</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="opencue.compiled_proto.depend_pb2_grpc.DependInterfaceStub">
+<em class="property">class </em><code class="descclassname">opencue.compiled_proto.depend_pb2_grpc.</code><code class="descname">DependInterfaceStub</code><span class="sig-paren">(</span><em>channel</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.depend_pb2_grpc.DependInterfaceStub" title="Permalink to this definition">¶</a></dt>
+<dd><p>——– Services ——–</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-opencue.compiled_proto.depend_pb2">
+<span id="opencue-compiled-proto-depend-pb2-module"></span><h2>opencue.compiled_proto.depend_pb2 module<a class="headerlink" href="#module-opencue.compiled_proto.depend_pb2" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-opencue.compiled_proto.facility_pb2_grpc">
+<span id="opencue-compiled-proto-facility-pb2-grpc-module"></span><h2>opencue.compiled_proto.facility_pb2_grpc module<a class="headerlink" href="#module-opencue.compiled_proto.facility_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="opencue.compiled_proto.facility_pb2_grpc.FacilityInterfaceServicer">
+<em class="property">class </em><code class="descclassname">opencue.compiled_proto.facility_pb2_grpc.</code><code class="descname">FacilityInterfaceServicer</code><a class="headerlink" href="#opencue.compiled_proto.facility_pb2_grpc.FacilityInterfaceServicer" title="Permalink to this definition">¶</a></dt>
+<dd><p>——– Services ——–</p>
+<dl class="method">
+<dt id="opencue.compiled_proto.facility_pb2_grpc.FacilityInterfaceServicer.Create">
+<code class="descname">Create</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.facility_pb2_grpc.FacilityInterfaceServicer.Create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a facility.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.facility_pb2_grpc.FacilityInterfaceServicer.Delete">
+<code class="descname">Delete</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.facility_pb2_grpc.FacilityInterfaceServicer.Delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>A facility is never really deleted, just make inactive.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.facility_pb2_grpc.FacilityInterfaceServicer.Get">
+<code class="descname">Get</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.facility_pb2_grpc.FacilityInterfaceServicer.Get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Look up a facility by name.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.facility_pb2_grpc.FacilityInterfaceServicer.GetAllocations">
+<code class="descname">GetAllocations</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.facility_pb2_grpc.FacilityInterfaceServicer.GetAllocations" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get Allocations associated with this facility.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.facility_pb2_grpc.FacilityInterfaceServicer.Rename">
+<code class="descname">Rename</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.facility_pb2_grpc.FacilityInterfaceServicer.Rename" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rename the facility to a given name.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="opencue.compiled_proto.facility_pb2_grpc.FacilityInterfaceStub">
+<em class="property">class </em><code class="descclassname">opencue.compiled_proto.facility_pb2_grpc.</code><code class="descname">FacilityInterfaceStub</code><span class="sig-paren">(</span><em>channel</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.facility_pb2_grpc.FacilityInterfaceStub" title="Permalink to this definition">¶</a></dt>
+<dd><p>——– Services ——–</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-opencue.compiled_proto.facility_pb2">
+<span id="opencue-compiled-proto-facility-pb2-module"></span><h2>opencue.compiled_proto.facility_pb2 module<a class="headerlink" href="#module-opencue.compiled_proto.facility_pb2" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-opencue.compiled_proto.filter_pb2_grpc">
+<span id="opencue-compiled-proto-filter-pb2-grpc-module"></span><h2>opencue.compiled_proto.filter_pb2_grpc module<a class="headerlink" href="#module-opencue.compiled_proto.filter_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="opencue.compiled_proto.filter_pb2_grpc.ActionInterfaceServicer">
+<em class="property">class </em><code class="descclassname">opencue.compiled_proto.filter_pb2_grpc.</code><code class="descname">ActionInterfaceServicer</code><a class="headerlink" href="#opencue.compiled_proto.filter_pb2_grpc.ActionInterfaceServicer" title="Permalink to this definition">¶</a></dt>
+<dd><p>——– Services ——–</p>
+<dl class="method">
+<dt id="opencue.compiled_proto.filter_pb2_grpc.ActionInterfaceServicer.Commit">
+<code class="descname">Commit</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.filter_pb2_grpc.ActionInterfaceServicer.Commit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets new properties for the [Action] on the server side using a [ActionData] object.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.filter_pb2_grpc.ActionInterfaceServicer.Delete">
+<code class="descname">Delete</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.filter_pb2_grpc.ActionInterfaceServicer.Delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete this [Action]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.filter_pb2_grpc.ActionInterfaceServicer.GetParentFilter">
+<code class="descname">GetParentFilter</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.filter_pb2_grpc.ActionInterfaceServicer.GetParentFilter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the [Filter] this action is part of.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="opencue.compiled_proto.filter_pb2_grpc.ActionInterfaceStub">
+<em class="property">class </em><code class="descclassname">opencue.compiled_proto.filter_pb2_grpc.</code><code class="descname">ActionInterfaceStub</code><span class="sig-paren">(</span><em>channel</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.filter_pb2_grpc.ActionInterfaceStub" title="Permalink to this definition">¶</a></dt>
+<dd><p>——– Services ——–</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-opencue.compiled_proto.filter_pb2">
+<span id="opencue-compiled-proto-filter-pb2-module"></span><h2>opencue.compiled_proto.filter_pb2 module<a class="headerlink" href="#module-opencue.compiled_proto.filter_pb2" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-opencue.compiled_proto.host_pb2_grpc">
+<span id="opencue-compiled-proto-host-pb2-grpc-module"></span><h2>opencue.compiled_proto.host_pb2_grpc module<a class="headerlink" href="#module-opencue.compiled_proto.host_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="opencue.compiled_proto.host_pb2_grpc.DeedInterfaceServicer">
+<em class="property">class </em><code class="descclassname">opencue.compiled_proto.host_pb2_grpc.</code><code class="descname">DeedInterfaceServicer</code><a class="headerlink" href="#opencue.compiled_proto.host_pb2_grpc.DeedInterfaceServicer" title="Permalink to this definition">¶</a></dt>
+<dd><p>——– Services ——–]</p>
+<dl class="method">
+<dt id="opencue.compiled_proto.host_pb2_grpc.DeedInterfaceServicer.Delete">
+<code class="descname">Delete</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.host_pb2_grpc.DeedInterfaceServicer.Delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove the deed</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.host_pb2_grpc.DeedInterfaceServicer.GetHost">
+<code class="descname">GetHost</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.host_pb2_grpc.DeedInterfaceServicer.GetHost" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the full host for these settings.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.host_pb2_grpc.DeedInterfaceServicer.GetOwner">
+<code class="descname">GetOwner</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.host_pb2_grpc.DeedInterfaceServicer.GetOwner" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the owner for these settings.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.host_pb2_grpc.DeedInterfaceServicer.SetBlackoutTime">
+<code class="descname">SetBlackoutTime</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.host_pb2_grpc.DeedInterfaceServicer.SetBlackoutTime" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets a blackout time for the host.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.host_pb2_grpc.DeedInterfaceServicer.SetBlackoutTimeEnabled">
+<code class="descname">SetBlackoutTimeEnabled</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.host_pb2_grpc.DeedInterfaceServicer.SetBlackoutTimeEnabled" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enable/Disable blackout time without changing the times.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="opencue.compiled_proto.host_pb2_grpc.DeedInterfaceStub">
+<em class="property">class </em><code class="descclassname">opencue.compiled_proto.host_pb2_grpc.</code><code class="descname">DeedInterfaceStub</code><span class="sig-paren">(</span><em>channel</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.host_pb2_grpc.DeedInterfaceStub" title="Permalink to this definition">¶</a></dt>
+<dd><p>——– Services ——–]</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-opencue.compiled_proto.host_pb2">
+<span id="opencue-compiled-proto-host-pb2-module"></span><h2>opencue.compiled_proto.host_pb2 module<a class="headerlink" href="#module-opencue.compiled_proto.host_pb2" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-opencue.compiled_proto.job_pb2_grpc">
+<span id="opencue-compiled-proto-job-pb2-grpc-module"></span><h2>opencue.compiled_proto.job_pb2_grpc module<a class="headerlink" href="#module-opencue.compiled_proto.job_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="opencue.compiled_proto.job_pb2_grpc.FrameInterfaceServicer">
+<em class="property">class </em><code class="descclassname">opencue.compiled_proto.job_pb2_grpc.</code><code class="descname">FrameInterfaceServicer</code><a class="headerlink" href="#opencue.compiled_proto.job_pb2_grpc.FrameInterfaceServicer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Job related messages and services
+This includes Job, Layer, Frame, and Group objects</p>
+<p>——– Services ——–]</p>
+<dl class="method">
+<dt id="opencue.compiled_proto.job_pb2_grpc.FrameInterfaceServicer.AddRenderPartition">
+<code class="descname">AddRenderPartition</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.job_pb2_grpc.FrameInterfaceServicer.AddRenderPartition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a render partition to the frame.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.job_pb2_grpc.FrameInterfaceServicer.CreateDependencyOnFrame">
+<code class="descname">CreateDependencyOnFrame</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.job_pb2_grpc.FrameInterfaceServicer.CreateDependencyOnFrame" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets up and returns a FrameOnFrame dependency.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.job_pb2_grpc.FrameInterfaceServicer.CreateDependencyOnJob">
+<code class="descname">CreateDependencyOnJob</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.job_pb2_grpc.FrameInterfaceServicer.CreateDependencyOnJob" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets up and returns a FrameOnJob dependency.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.job_pb2_grpc.FrameInterfaceServicer.CreateDependencyOnLayer">
+<code class="descname">CreateDependencyOnLayer</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.job_pb2_grpc.FrameInterfaceServicer.CreateDependencyOnLayer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets up and returns a FrameOnLayer dependency.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.job_pb2_grpc.FrameInterfaceServicer.DropDepends">
+<code class="descname">DropDepends</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.job_pb2_grpc.FrameInterfaceServicer.DropDepends" title="Permalink to this definition">¶</a></dt>
+<dd><p>Drops every dependendy that is causing this frame not to run.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.job_pb2_grpc.FrameInterfaceServicer.Eat">
+<code class="descname">Eat</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.job_pb2_grpc.FrameInterfaceServicer.Eat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Eating a frame will stop rendering and will not try to coninue processing the frame.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.job_pb2_grpc.FrameInterfaceServicer.FindFrame">
+<code class="descname">FindFrame</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.job_pb2_grpc.FrameInterfaceServicer.FindFrame" title="Permalink to this definition">¶</a></dt>
+<dd><p>Finds a frame in a pending job based on the job, layer, and frame number.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.job_pb2_grpc.FrameInterfaceServicer.GetFrame">
+<code class="descname">GetFrame</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.job_pb2_grpc.FrameInterfaceServicer.GetFrame" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a frame from its unique id</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.job_pb2_grpc.FrameInterfaceServicer.GetFrames">
+<code class="descname">GetFrames</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.job_pb2_grpc.FrameInterfaceServicer.GetFrames" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a frame from search criteria</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.job_pb2_grpc.FrameInterfaceServicer.GetWhatDependsOnThis">
+<code class="descname">GetWhatDependsOnThis</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.job_pb2_grpc.FrameInterfaceServicer.GetWhatDependsOnThis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of dependencies setup to depend on this frame.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.job_pb2_grpc.FrameInterfaceServicer.GetWhatThisDependsOn">
+<code class="descname">GetWhatThisDependsOn</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.job_pb2_grpc.FrameInterfaceServicer.GetWhatThisDependsOn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of dependencies that this frame depends on.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.job_pb2_grpc.FrameInterfaceServicer.Kill">
+<code class="descname">Kill</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.job_pb2_grpc.FrameInterfaceServicer.Kill" title="Permalink to this definition">¶</a></dt>
+<dd><p>Kills the frame if it is running</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.job_pb2_grpc.FrameInterfaceServicer.MarkAsDepend">
+<code class="descname">MarkAsDepend</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.job_pb2_grpc.FrameInterfaceServicer.MarkAsDepend" title="Permalink to this definition">¶</a></dt>
+<dd><p>Will recount the number of active dependencies on the frame and put it back into the Depend state if that count
+is greater than 0.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.job_pb2_grpc.FrameInterfaceServicer.MarkAsWaiting">
+<code class="descname">MarkAsWaiting</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.job_pb2_grpc.FrameInterfaceServicer.MarkAsWaiting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Changes the frame’s dependency count to 0, which will put the frame into the waiting state.  Retrying the frame
+will put it back into the waiting state.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.job_pb2_grpc.FrameInterfaceServicer.Retry">
+<code class="descname">Retry</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.job_pb2_grpc.FrameInterfaceServicer.Retry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retries the frame by setting it as waiting</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.job_pb2_grpc.FrameInterfaceServicer.SetCheckpointState">
+<code class="descname">SetCheckpointState</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.job_pb2_grpc.FrameInterfaceServicer.SetCheckpointState" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates the state of the frame’s checkpoint status.  If the checkpoint status is complete, then the frame’s
+checkpointCoreSeconds is updated with the amount of render time that was checkpointed.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="opencue.compiled_proto.job_pb2_grpc.FrameInterfaceStub">
+<em class="property">class </em><code class="descclassname">opencue.compiled_proto.job_pb2_grpc.</code><code class="descname">FrameInterfaceStub</code><span class="sig-paren">(</span><em>channel</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.job_pb2_grpc.FrameInterfaceStub" title="Permalink to this definition">¶</a></dt>
+<dd><p>Job related messages and services
+This includes Job, Layer, Frame, and Group objects</p>
+<p>——– Services ——–]</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-opencue.compiled_proto.job_pb2">
+<span id="opencue-compiled-proto-job-pb2-module"></span><h2>opencue.compiled_proto.job_pb2 module<a class="headerlink" href="#module-opencue.compiled_proto.job_pb2" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-opencue.compiled_proto.limit_pb2_grpc">
+<span id="opencue-compiled-proto-limit-pb2-grpc-module"></span><h2>opencue.compiled_proto.limit_pb2_grpc module<a class="headerlink" href="#module-opencue.compiled_proto.limit_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="opencue.compiled_proto.limit_pb2_grpc.LimitInterfaceServicer">
+<em class="property">class </em><code class="descclassname">opencue.compiled_proto.limit_pb2_grpc.</code><code class="descname">LimitInterfaceServicer</code><a class="headerlink" href="#opencue.compiled_proto.limit_pb2_grpc.LimitInterfaceServicer" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Limit class contains data that allows users to place limits
+on the maximum number of running frames for a certain type of layer.</p>
+<p>——– Services ——–]</p>
+<dl class="method">
+<dt id="opencue.compiled_proto.limit_pb2_grpc.LimitInterfaceServicer.Create">
+<code class="descname">Create</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.limit_pb2_grpc.LimitInterfaceServicer.Create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new limit with a name and max value</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.limit_pb2_grpc.LimitInterfaceServicer.Delete">
+<code class="descname">Delete</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.limit_pb2_grpc.LimitInterfaceServicer.Delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete the specified limit.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.limit_pb2_grpc.LimitInterfaceServicer.Find">
+<code class="descname">Find</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.limit_pb2_grpc.LimitInterfaceServicer.Find" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find a limit by name</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.limit_pb2_grpc.LimitInterfaceServicer.Get">
+<code class="descname">Get</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.limit_pb2_grpc.LimitInterfaceServicer.Get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a limit by id</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.limit_pb2_grpc.LimitInterfaceServicer.GetAll">
+<code class="descname">GetAll</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.limit_pb2_grpc.LimitInterfaceServicer.GetAll" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all limits</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.limit_pb2_grpc.LimitInterfaceServicer.Rename">
+<code class="descname">Rename</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.limit_pb2_grpc.LimitInterfaceServicer.Rename" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rename an existing limit</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="opencue.compiled_proto.limit_pb2_grpc.LimitInterfaceStub">
+<em class="property">class </em><code class="descclassname">opencue.compiled_proto.limit_pb2_grpc.</code><code class="descname">LimitInterfaceStub</code><span class="sig-paren">(</span><em>channel</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.limit_pb2_grpc.LimitInterfaceStub" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Limit class contains data that allows users to place limits
+on the maximum number of running frames for a certain type of layer.</p>
+<p>——– Services ——–]</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-opencue.compiled_proto.limit_pb2">
+<span id="opencue-compiled-proto-limit-pb2-module"></span><h2>opencue.compiled_proto.limit_pb2 module<a class="headerlink" href="#module-opencue.compiled_proto.limit_pb2" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-opencue.compiled_proto.renderPartition_pb2_grpc">
+<span id="opencue-compiled-proto-renderpartition-pb2-grpc-module"></span><h2>opencue.compiled_proto.renderPartition_pb2_grpc module<a class="headerlink" href="#module-opencue.compiled_proto.renderPartition_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="opencue.compiled_proto.renderPartition_pb2_grpc.RenderPartitionInterfaceServicer">
+<em class="property">class </em><code class="descclassname">opencue.compiled_proto.renderPartition_pb2_grpc.</code><code class="descname">RenderPartitionInterfaceServicer</code><a class="headerlink" href="#opencue.compiled_proto.renderPartition_pb2_grpc.RenderPartitionInterfaceServicer" title="Permalink to this definition">¶</a></dt>
+<dd><p>——– Services ——–]</p>
+<dl class="method">
+<dt id="opencue.compiled_proto.renderPartition_pb2_grpc.RenderPartitionInterfaceServicer.Delete">
+<code class="descname">Delete</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.renderPartition_pb2_grpc.RenderPartitionInterfaceServicer.Delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes the host local setup.  Any proc that is running from this should be killed or else the counts
+could be off.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.renderPartition_pb2_grpc.RenderPartitionInterfaceServicer.SetMaxResources">
+<code class="descname">SetMaxResources</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.renderPartition_pb2_grpc.RenderPartitionInterfaceServicer.SetMaxResources" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reset the maximum amount of cores and memory for this render partition.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="opencue.compiled_proto.renderPartition_pb2_grpc.RenderPartitionInterfaceStub">
+<em class="property">class </em><code class="descclassname">opencue.compiled_proto.renderPartition_pb2_grpc.</code><code class="descname">RenderPartitionInterfaceStub</code><span class="sig-paren">(</span><em>channel</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.renderPartition_pb2_grpc.RenderPartitionInterfaceStub" title="Permalink to this definition">¶</a></dt>
+<dd><p>——– Services ——–]</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-opencue.compiled_proto.renderPartition_pb2">
+<span id="opencue-compiled-proto-renderpartition-pb2-module"></span><h2>opencue.compiled_proto.renderPartition_pb2 module<a class="headerlink" href="#module-opencue.compiled_proto.renderPartition_pb2" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-opencue.compiled_proto.report_pb2_grpc">
+<span id="opencue-compiled-proto-report-pb2-grpc-module"></span><h2>opencue.compiled_proto.report_pb2_grpc module<a class="headerlink" href="#module-opencue.compiled_proto.report_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="opencue.compiled_proto.report_pb2_grpc.RqdReportInterfaceServicer">
+<em class="property">class </em><code class="descclassname">opencue.compiled_proto.report_pb2_grpc.</code><code class="descname">RqdReportInterfaceServicer</code><a class="headerlink" href="#opencue.compiled_proto.report_pb2_grpc.RqdReportInterfaceServicer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Interface to handle RQD pings.</p>
+<p>——– Services ——–]</p>
+<dl class="method">
+<dt id="opencue.compiled_proto.report_pb2_grpc.RqdReportInterfaceServicer.ReportRqdStartup">
+<code class="descname">ReportRqdStartup</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.report_pb2_grpc.RqdReportInterfaceServicer.ReportRqdStartup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send in when RQD starts up to announce new idle procs to the cue.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.report_pb2_grpc.RqdReportInterfaceServicer.ReportRunningFrameCompletion">
+<code class="descname">ReportRunningFrameCompletion</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.report_pb2_grpc.RqdReportInterfaceServicer.ReportRunningFrameCompletion" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reports in a running frame</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.report_pb2_grpc.RqdReportInterfaceServicer.ReportStatus">
+<code class="descname">ReportStatus</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.report_pb2_grpc.RqdReportInterfaceServicer.ReportStatus" title="Permalink to this definition">¶</a></dt>
+<dd><p>An incremental status report sent by RQD</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="opencue.compiled_proto.report_pb2_grpc.RqdReportInterfaceStub">
+<em class="property">class </em><code class="descclassname">opencue.compiled_proto.report_pb2_grpc.</code><code class="descname">RqdReportInterfaceStub</code><span class="sig-paren">(</span><em>channel</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.report_pb2_grpc.RqdReportInterfaceStub" title="Permalink to this definition">¶</a></dt>
+<dd><p>Interface to handle RQD pings.</p>
+<p>——– Services ——–]</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-opencue.compiled_proto.report_pb2">
+<span id="opencue-compiled-proto-report-pb2-module"></span><h2>opencue.compiled_proto.report_pb2 module<a class="headerlink" href="#module-opencue.compiled_proto.report_pb2" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-opencue.compiled_proto.rqd_pb2_grpc">
+<span id="opencue-compiled-proto-rqd-pb2-grpc-module"></span><h2>opencue.compiled_proto.rqd_pb2_grpc module<a class="headerlink" href="#module-opencue.compiled_proto.rqd_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="opencue.compiled_proto.rqd_pb2_grpc.RqdInterfaceServicer">
+<em class="property">class </em><code class="descclassname">opencue.compiled_proto.rqd_pb2_grpc.</code><code class="descname">RqdInterfaceServicer</code><a class="headerlink" href="#opencue.compiled_proto.rqd_pb2_grpc.RqdInterfaceServicer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Interface for issuing commands to an RQD instance.</p>
+<p>——– Services ——–]</p>
+<p>Implemented by the Rqd server. Called by cuebot and tools.</p>
+<dl class="method">
+<dt id="opencue.compiled_proto.rqd_pb2_grpc.RqdInterfaceServicer.GetRunFrame">
+<code class="descname">GetRunFrame</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.rqd_pb2_grpc.RqdInterfaceServicer.GetRunFrame" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the RunFrame by id</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.rqd_pb2_grpc.RqdInterfaceServicer.GetRunningFrameStatus">
+<code class="descname">GetRunningFrameStatus</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.rqd_pb2_grpc.RqdInterfaceServicer.GetRunningFrameStatus" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the RunningFrameStatus report</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.rqd_pb2_grpc.RqdInterfaceServicer.KillRunningFrame">
+<code class="descname">KillRunningFrame</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.rqd_pb2_grpc.RqdInterfaceServicer.KillRunningFrame" title="Permalink to this definition">¶</a></dt>
+<dd><p>Kill the running frame by frame id</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.rqd_pb2_grpc.RqdInterfaceServicer.LaunchFrame">
+<code class="descname">LaunchFrame</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.rqd_pb2_grpc.RqdInterfaceServicer.LaunchFrame" title="Permalink to this definition">¶</a></dt>
+<dd><p>Launch a new running frame</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.rqd_pb2_grpc.RqdInterfaceServicer.Lock">
+<code class="descname">Lock</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.rqd_pb2_grpc.RqdInterfaceServicer.Lock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lock a number of cores</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.rqd_pb2_grpc.RqdInterfaceServicer.LockAll">
+<code class="descname">LockAll</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.rqd_pb2_grpc.RqdInterfaceServicer.LockAll" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lock all</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.rqd_pb2_grpc.RqdInterfaceServicer.NimbyOff">
+<code class="descname">NimbyOff</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.rqd_pb2_grpc.RqdInterfaceServicer.NimbyOff" title="Permalink to this definition">¶</a></dt>
+<dd><p>Disable NIMBY on host</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.rqd_pb2_grpc.RqdInterfaceServicer.NimbyOn">
+<code class="descname">NimbyOn</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.rqd_pb2_grpc.RqdInterfaceServicer.NimbyOn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enable NIMBY on host</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.rqd_pb2_grpc.RqdInterfaceServicer.RebootIdle">
+<code class="descname">RebootIdle</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.rqd_pb2_grpc.RqdInterfaceServicer.RebootIdle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reboot the host when it becomes idle</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.rqd_pb2_grpc.RqdInterfaceServicer.RebootNow">
+<code class="descname">RebootNow</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.rqd_pb2_grpc.RqdInterfaceServicer.RebootNow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reboot the host now</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.rqd_pb2_grpc.RqdInterfaceServicer.ReportStatus">
+<code class="descname">ReportStatus</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.rqd_pb2_grpc.RqdInterfaceServicer.ReportStatus" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the HostReport</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.rqd_pb2_grpc.RqdInterfaceServicer.RestartRqdIdle">
+<code class="descname">RestartRqdIdle</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.rqd_pb2_grpc.RqdInterfaceServicer.RestartRqdIdle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Restart the rqd process when it becomes idle</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.rqd_pb2_grpc.RqdInterfaceServicer.RestartRqdNow">
+<code class="descname">RestartRqdNow</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.rqd_pb2_grpc.RqdInterfaceServicer.RestartRqdNow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Restart rqd process now</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.rqd_pb2_grpc.RqdInterfaceServicer.ShutdownRqdIdle">
+<code class="descname">ShutdownRqdIdle</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.rqd_pb2_grpc.RqdInterfaceServicer.ShutdownRqdIdle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn off rqd when it becomes idle</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.rqd_pb2_grpc.RqdInterfaceServicer.ShutdownRqdNow">
+<code class="descname">ShutdownRqdNow</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.rqd_pb2_grpc.RqdInterfaceServicer.ShutdownRqdNow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stop rqd now</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.rqd_pb2_grpc.RqdInterfaceServicer.Unlock">
+<code class="descname">Unlock</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.rqd_pb2_grpc.RqdInterfaceServicer.Unlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unlock a number of cores</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.rqd_pb2_grpc.RqdInterfaceServicer.UnlockAll">
+<code class="descname">UnlockAll</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.rqd_pb2_grpc.RqdInterfaceServicer.UnlockAll" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unlock all cores</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="opencue.compiled_proto.rqd_pb2_grpc.RqdInterfaceStub">
+<em class="property">class </em><code class="descclassname">opencue.compiled_proto.rqd_pb2_grpc.</code><code class="descname">RqdInterfaceStub</code><span class="sig-paren">(</span><em>channel</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.rqd_pb2_grpc.RqdInterfaceStub" title="Permalink to this definition">¶</a></dt>
+<dd><p>Interface for issuing commands to an RQD instance.</p>
+<p>——– Services ——–]</p>
+<p>Implemented by the Rqd server. Called by cuebot and tools.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="opencue.compiled_proto.rqd_pb2_grpc.RunningFrameServicer">
+<em class="property">class </em><code class="descclassname">opencue.compiled_proto.rqd_pb2_grpc.</code><code class="descname">RunningFrameServicer</code><a class="headerlink" href="#opencue.compiled_proto.rqd_pb2_grpc.RunningFrameServicer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Implemented by the Rqd server. Called by cuebot and tools.</p>
+<dl class="method">
+<dt id="opencue.compiled_proto.rqd_pb2_grpc.RunningFrameServicer.Kill">
+<code class="descname">Kill</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.rqd_pb2_grpc.RunningFrameServicer.Kill" title="Permalink to this definition">¶</a></dt>
+<dd><p>Kill the provided running frame</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.rqd_pb2_grpc.RunningFrameServicer.Status">
+<code class="descname">Status</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.rqd_pb2_grpc.RunningFrameServicer.Status" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the status of the running frame</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="opencue.compiled_proto.rqd_pb2_grpc.RunningFrameStub">
+<em class="property">class </em><code class="descclassname">opencue.compiled_proto.rqd_pb2_grpc.</code><code class="descname">RunningFrameStub</code><span class="sig-paren">(</span><em>channel</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.rqd_pb2_grpc.RunningFrameStub" title="Permalink to this definition">¶</a></dt>
+<dd><p>Implemented by the Rqd server. Called by cuebot and tools.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-opencue.compiled_proto.rqd_pb2">
+<span id="opencue-compiled-proto-rqd-pb2-module"></span><h2>opencue.compiled_proto.rqd_pb2 module<a class="headerlink" href="#module-opencue.compiled_proto.rqd_pb2" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-opencue.compiled_proto.service_pb2_grpc">
+<span id="opencue-compiled-proto-service-pb2-grpc-module"></span><h2>opencue.compiled_proto.service_pb2_grpc module<a class="headerlink" href="#module-opencue.compiled_proto.service_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="opencue.compiled_proto.service_pb2_grpc.ServiceInterfaceServicer">
+<em class="property">class </em><code class="descclassname">opencue.compiled_proto.service_pb2_grpc.</code><code class="descname">ServiceInterfaceServicer</code><a class="headerlink" href="#opencue.compiled_proto.service_pb2_grpc.ServiceInterfaceServicer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Interface for managing Service objects</p>
+<p>——– Services ——–]</p>
+<dl class="method">
+<dt id="opencue.compiled_proto.service_pb2_grpc.ServiceInterfaceServicer.CreateService">
+<code class="descname">CreateService</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.service_pb2_grpc.ServiceInterfaceServicer.CreateService" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new service.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.service_pb2_grpc.ServiceInterfaceServicer.Delete">
+<code class="descname">Delete</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.service_pb2_grpc.ServiceInterfaceServicer.Delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete the provided service</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.service_pb2_grpc.ServiceInterfaceServicer.GetDefaultServices">
+<code class="descname">GetDefaultServices</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.service_pb2_grpc.ServiceInterfaceServicer.GetDefaultServices" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a the list of default services.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.service_pb2_grpc.ServiceInterfaceServicer.GetService">
+<code class="descname">GetService</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.service_pb2_grpc.ServiceInterfaceServicer.GetService" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the given service using its name or unique id.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.service_pb2_grpc.ServiceInterfaceServicer.Update">
+<code class="descname">Update</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.service_pb2_grpc.ServiceInterfaceServicer.Update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update the provided service</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="opencue.compiled_proto.service_pb2_grpc.ServiceInterfaceStub">
+<em class="property">class </em><code class="descclassname">opencue.compiled_proto.service_pb2_grpc.</code><code class="descname">ServiceInterfaceStub</code><span class="sig-paren">(</span><em>channel</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.service_pb2_grpc.ServiceInterfaceStub" title="Permalink to this definition">¶</a></dt>
+<dd><p>Interface for managing Service objects</p>
+<p>——– Services ——–]</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-opencue.compiled_proto.service_pb2">
+<span id="opencue-compiled-proto-service-pb2-module"></span><h2>opencue.compiled_proto.service_pb2 module<a class="headerlink" href="#module-opencue.compiled_proto.service_pb2" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-opencue.compiled_proto.show_pb2_grpc">
+<span id="opencue-compiled-proto-show-pb2-grpc-module"></span><h2>opencue.compiled_proto.show_pb2_grpc module<a class="headerlink" href="#module-opencue.compiled_proto.show_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer">
+<em class="property">class </em><code class="descclassname">opencue.compiled_proto.show_pb2_grpc.</code><code class="descname">ShowInterfaceServicer</code><a class="headerlink" href="#opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shows are the top level object for work.</p>
+<p>——– Services ——–]</p>
+<dl class="method">
+<dt id="opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.CreateFilter">
+<code class="descname">CreateFilter</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.CreateFilter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a new empty filter</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.CreateOwner">
+<code class="descname">CreateOwner</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.CreateOwner" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new owner.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.CreateServiceOverride">
+<code class="descname">CreateServiceOverride</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.CreateServiceOverride" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a new service overrides.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.CreateShow">
+<code class="descname">CreateShow</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.CreateShow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a show with the specified name and returns it.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.CreateSubscription">
+<code class="descname">CreateSubscription</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.CreateSubscription" title="Permalink to this definition">¶</a></dt>
+<dd><p>creates a new subscription</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.Delete">
+<code class="descname">Delete</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.Delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes a show if no jobs were ever launched for the show</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.EnableBooking">
+<code class="descname">EnableBooking</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.EnableBooking" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enables/disables automated resource assignment. If this is disabled no new resources will be assigned but
+existing resources will continue to dispatch.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.EnableDispatching">
+<code class="descname">EnableDispatching</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.EnableDispatching" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enables/disables job dispatching.  If this is disabled then new resources are assigned but existing resources
+are always unbooked after each completed frame.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.FindFilter">
+<code class="descname">FindFilter</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.FindFilter" title="Permalink to this definition">¶</a></dt>
+<dd><p>finds a filter by name</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.FindShow">
+<code class="descname">FindShow</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.FindShow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find a show with the specified name.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.GetActiveShows">
+<code class="descname">GetActiveShows</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.GetActiveShows" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of all active shows.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.GetDeeds">
+<code class="descname">GetDeeds</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.GetDeeds" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return all the host deeds for the specified show.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.GetDepartment">
+<code class="descname">GetDepartment</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.GetDepartment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the department manager for the specified department</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.GetDepartments">
+<code class="descname">GetDepartments</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.GetDepartments" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of all active departments</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.GetFilters">
+<code class="descname">GetFilters</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.GetFilters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Grabs a list of show filters</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.GetGroups">
+<code class="descname">GetGroups</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.GetGroups" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns a list of job groups</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.GetJobWhiteboard">
+<code class="descname">GetJobWhiteboard</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.GetJobWhiteboard" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns the show’s job whiteboard</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.GetJobs">
+<code class="descname">GetJobs</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.GetJobs" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns a flat list of jobs</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.GetRootGroup">
+<code class="descname">GetRootGroup</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.GetRootGroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns the root group</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.GetServiceOverride">
+<code class="descname">GetServiceOverride</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.GetServiceOverride" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a service override based on its name or id.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.GetServiceOverrides">
+<code class="descname">GetServiceOverrides</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.GetServiceOverrides" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of service overrides for this show.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.GetShows">
+<code class="descname">GetShows</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.GetShows" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of all shows</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.GetSubscriptions">
+<code class="descname">GetSubscriptions</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.GetSubscriptions" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns a list of a shows subscriptions</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.SetActive">
+<code class="descname">SetActive</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.SetActive" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set a show’s active to enabled/disabled. Active shows can be queried using the getActiveShows() method.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.SetCommentEmail">
+<code class="descname">SetCommentEmail</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.SetCommentEmail" title="Permalink to this definition">¶</a></dt>
+<dd><p>If set, all comments on a show are echoed to the given list of email addresses.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.SetDefaultMaxCores">
+<code class="descname">SetDefaultMaxCores</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.SetDefaultMaxCores" title="Permalink to this definition">¶</a></dt>
+<dd><p>sets a show’s default max procs</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.SetDefaultMinCores">
+<code class="descname">SetDefaultMinCores</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.show_pb2_grpc.ShowInterfaceServicer.SetDefaultMinCores" title="Permalink to this definition">¶</a></dt>
+<dd><p>sets a show’s default min procs</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="opencue.compiled_proto.show_pb2_grpc.ShowInterfaceStub">
+<em class="property">class </em><code class="descclassname">opencue.compiled_proto.show_pb2_grpc.</code><code class="descname">ShowInterfaceStub</code><span class="sig-paren">(</span><em>channel</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.show_pb2_grpc.ShowInterfaceStub" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shows are the top level object for work.</p>
+<p>——– Services ——–]</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-opencue.compiled_proto.show_pb2">
+<span id="opencue-compiled-proto-show-pb2-module"></span><h2>opencue.compiled_proto.show_pb2 module<a class="headerlink" href="#module-opencue.compiled_proto.show_pb2" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-opencue.compiled_proto.subscription_pb2_grpc">
+<span id="opencue-compiled-proto-subscription-pb2-grpc-module"></span><h2>opencue.compiled_proto.subscription_pb2_grpc module<a class="headerlink" href="#module-opencue.compiled_proto.subscription_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="opencue.compiled_proto.subscription_pb2_grpc.SubscriptionInterfaceServicer">
+<em class="property">class </em><code class="descclassname">opencue.compiled_proto.subscription_pb2_grpc.</code><code class="descname">SubscriptionInterfaceServicer</code><a class="headerlink" href="#opencue.compiled_proto.subscription_pb2_grpc.SubscriptionInterfaceServicer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Subscriptions
+A subscription is what a show sets up when they want to use hosts in
+an allocation.</p>
+<p>——– Services ——–]</p>
+<dl class="method">
+<dt id="opencue.compiled_proto.subscription_pb2_grpc.SubscriptionInterfaceServicer.Delete">
+<code class="descname">Delete</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.subscription_pb2_grpc.SubscriptionInterfaceServicer.Delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete a subscription</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.subscription_pb2_grpc.SubscriptionInterfaceServicer.Find">
+<code class="descname">Find</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.subscription_pb2_grpc.SubscriptionInterfaceServicer.Find" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find a subscription by name</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.subscription_pb2_grpc.SubscriptionInterfaceServicer.Get">
+<code class="descname">Get</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.subscription_pb2_grpc.SubscriptionInterfaceServicer.Get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Locate a subscription by id</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.subscription_pb2_grpc.SubscriptionInterfaceServicer.SetBurst">
+<code class="descname">SetBurst</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.subscription_pb2_grpc.SubscriptionInterfaceServicer.SetBurst" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the burst size of a subscription</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.subscription_pb2_grpc.SubscriptionInterfaceServicer.SetSize">
+<code class="descname">SetSize</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.subscription_pb2_grpc.SubscriptionInterfaceServicer.SetSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the size of a subscription</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="opencue.compiled_proto.subscription_pb2_grpc.SubscriptionInterfaceStub">
+<em class="property">class </em><code class="descclassname">opencue.compiled_proto.subscription_pb2_grpc.</code><code class="descname">SubscriptionInterfaceStub</code><span class="sig-paren">(</span><em>channel</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.subscription_pb2_grpc.SubscriptionInterfaceStub" title="Permalink to this definition">¶</a></dt>
+<dd><p>Subscriptions
+A subscription is what a show sets up when they want to use hosts in
+an allocation.</p>
+<p>——– Services ——–]</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-opencue.compiled_proto.subscription_pb2">
+<span id="opencue-compiled-proto-subscription-pb2-module"></span><h2>opencue.compiled_proto.subscription_pb2 module<a class="headerlink" href="#module-opencue.compiled_proto.subscription_pb2" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-opencue.compiled_proto.task_pb2_grpc">
+<span id="opencue-compiled-proto-task-pb2-grpc-module"></span><h2>opencue.compiled_proto.task_pb2_grpc module<a class="headerlink" href="#module-opencue.compiled_proto.task_pb2_grpc" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="opencue.compiled_proto.task_pb2_grpc.TaskInterfaceServicer">
+<em class="property">class </em><code class="descclassname">opencue.compiled_proto.task_pb2_grpc.</code><code class="descname">TaskInterfaceServicer</code><a class="headerlink" href="#opencue.compiled_proto.task_pb2_grpc.TaskInterfaceServicer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tasks
+Tasks are shot priorities for a specific dept</p>
+<p>——– Services ——–]</p>
+<dl class="method">
+<dt id="opencue.compiled_proto.task_pb2_grpc.TaskInterfaceServicer.ClearAdjustments">
+<code class="descname">ClearAdjustments</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.task_pb2_grpc.TaskInterfaceServicer.ClearAdjustments" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clear any min core adjustments that have been made</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.task_pb2_grpc.TaskInterfaceServicer.Delete">
+<code class="descname">Delete</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.task_pb2_grpc.TaskInterfaceServicer.Delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes the task.  If the department is managed the task is likely to come back upon the next update.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="opencue.compiled_proto.task_pb2_grpc.TaskInterfaceServicer.SetMinCores">
+<code class="descname">SetMinCores</code><span class="sig-paren">(</span><em>request</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.task_pb2_grpc.TaskInterfaceServicer.SetMinCores" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the minimum number of cores.  If the task is being managed, then the min core value is adjusted
+but the original is not changed.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="opencue.compiled_proto.task_pb2_grpc.TaskInterfaceStub">
+<em class="property">class </em><code class="descclassname">opencue.compiled_proto.task_pb2_grpc.</code><code class="descname">TaskInterfaceStub</code><span class="sig-paren">(</span><em>channel</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.compiled_proto.task_pb2_grpc.TaskInterfaceStub" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tasks
+Tasks are shot priorities for a specific dept</p>
+<p>——– Services ——–]</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-opencue.compiled_proto.task_pb2">
+<span id="opencue-compiled-proto-task-pb2-module"></span><h2>opencue.compiled_proto.task_pb2 module<a class="headerlink" href="#module-opencue.compiled_proto.task_pb2" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          
+<footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="opencue.wrappers.html" class="btn btn-neutral float-right" title="opencue.wrappers package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="opencue.html" class="btn btn-neutral float-left" title="opencue package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Contributors to the OpenCue Project
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  <div class="text-center order-sm-2">
+          <a href="https://www.aswf.io"><img src="/images/aswf_aqua.png" alt="Academy Software Foundation logo"></a><br>
+          <small class="text-white">Documentation Distributed under CC BY 4.0</small><br>
+          <small class="text-white">LF Projects, LLC uses various trademarks.
+          For our trademark, privacy and antitrust policies, code of conduct,
+          and terms of use, please click the applicable link below or see
+          <a href="https://lfprojects.org">https://www.lfprojects.org</a>.
+          <br>
+          <a href="https://lfprojects.org/policies/trademark-policy/">Trademark Policy</a> |
+          <a href="https://lfprojects.org/policies/privacy-policy/">Privacy Conduct</a> |
+          <a href="https://lfprojects.org/policies/antitrust-policy/">Antitrust Policy</a> |
+          <a href="https://lfprojects.org/policies/code-of-conduct/">Code of Conduct</a> |
+          <a href="https://lfprojects.org/policies/terms-of-use/">Terms of Use</a></small>
+        </div>
+        <a href="https://www.netlify.com">
+            <img src="https://www.netlify.com/img/global/badges/netlify-light.svg" alt="Netlify logo">
+         </a>
+   
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

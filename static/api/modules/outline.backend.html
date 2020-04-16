@@ -1,0 +1,348 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>outline.backend package &mdash; OpenCue 0.3.6 documentation</title>
+  
+
+  
+  
+  
+  
+    <link rel="canonical" href="https://www.opencue.io/modules/outline.backend.html"/>
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/api.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="outline.modules package" href="outline.modules.html" />
+    <link rel="prev" title="outline package" href="outline.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/opencue_logo_navbar.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.3.6
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">OpenCue packages</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="FileSequence.html">FileSequence package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.html">opencue package</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="outline.html">outline package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="outline.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">outline.backend package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="outline.modules.html">outline.modules package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="outline.plugins.html">outline.plugins package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="outline.versions.html">outline.versions package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="outline.html#module-outline">Module contents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="outline.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="outline.html#module-outline.config">outline.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="outline.html#module-outline.constants">outline.constants module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="outline.html#module-outline.cuerun">outline.cuerun module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="outline.html#module-outline.depend">outline.depend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="outline.html#module-outline.event">outline.event module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="outline.html#module-outline.exception">outline.exception module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="outline.html#module-outline.executor">outline.executor module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="outline.html#module-outline.io">outline.io module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="outline.html#module-outline.layer">outline.layer module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="outline.html#module-outline.loader">outline.loader module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="outline.html#module-outline.session">outline.session module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="outline.html#module-outline.util">outline.util module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">OpenCue</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">outline</a> &raquo;</li>
+        
+          <li><a href="outline.html">outline package</a> &raquo;</li>
+        
+      <li>outline.backend package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/modules/outline.backend.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="outline-backend-package">
+<h1>outline.backend package<a class="headerlink" href="#outline-backend-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-outline.backend">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-outline.backend" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-outline.backend.cue">
+<span id="outline-backend-cue-module"></span><h2>outline.backend.cue module<a class="headerlink" href="#module-outline.backend.cue" title="Permalink to this headline">¶</a></h2>
+<p>OpenCue integration module.</p>
+<dl class="function">
+<dt id="outline.backend.cue.launch">
+<code class="descclassname">outline.backend.cue.</code><code class="descname">launch</code><span class="sig-paren">(</span><em>launcher</em>, <em>use_pycuerun=True</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.backend.cue.launch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Launch the given L{OutlineLauncher}.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>launcher</strong> (<em>L{OutlineLauncher}</em>) – The OutlineLauncher to launch.</li>
+<li><strong>use_pycuerun</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><em>bool</em></a>) – Enable/Disable pycuerun.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">opencue.Entity.Job</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The opencue job that was launched.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-outline.backend.local">
+<span id="outline-backend-local-module"></span><h2>outline.backend.local module<a class="headerlink" href="#module-outline.backend.local" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="outline.backend.local.Dispatcher">
+<em class="property">class </em><code class="descclassname">outline.backend.local.</code><code class="descname">Dispatcher</code><span class="sig-paren">(</span><em>ol</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.backend.local.Dispatcher" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="outline.backend.local.build_command">
+<code class="descclassname">outline.backend.local.</code><code class="descname">build_command</code><span class="sig-paren">(</span><em>ol</em>, <em>layer</em>, <em>frame</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.backend.local.build_command" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build and return a pycurun shell command for the given layer frame.</p>
+<p>:type  layer : Layer
+:param layer : The layer to build a command for.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">string</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The shell command to run for a the given layer.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="outline.backend.local.build_frame_range">
+<code class="descclassname">outline.backend.local.</code><code class="descname">build_frame_range</code><span class="sig-paren">(</span><em>frame_range</em>, <em>chunk_size</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.backend.local.build_frame_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return an array of frames with no duplicates and chunking applied.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="outline.backend.local.launch">
+<code class="descclassname">outline.backend.local.</code><code class="descname">launch</code><span class="sig-paren">(</span><em>launcher</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.backend.local.launch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Start the local dispatcher.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="outline.backend.local.serialize">
+<code class="descclassname">outline.backend.local.</code><code class="descname">serialize</code><span class="sig-paren">(</span><em>launcher</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.backend.local.serialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a local dispatcher object.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="outline.backend.local.serialize_simple">
+<code class="descclassname">outline.backend.local.</code><code class="descname">serialize_simple</code><span class="sig-paren">(</span><em>launcher</em><span class="sig-paren">)</span><a class="headerlink" href="#outline.backend.local.serialize_simple" title="Permalink to this definition">¶</a></dt>
+<dd><p>For local we can call the regular serialize function.</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          
+<footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="outline.modules.html" class="btn btn-neutral float-right" title="outline.modules package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="outline.html" class="btn btn-neutral float-left" title="outline package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Contributors to the OpenCue Project
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  <div class="text-center order-sm-2">
+          <a href="https://www.aswf.io"><img src="/images/aswf_aqua.png" alt="Academy Software Foundation logo"></a><br>
+          <small class="text-white">Documentation Distributed under CC BY 4.0</small><br>
+          <small class="text-white">LF Projects, LLC uses various trademarks.
+          For our trademark, privacy and antitrust policies, code of conduct,
+          and terms of use, please click the applicable link below or see
+          <a href="https://lfprojects.org">https://www.lfprojects.org</a>.
+          <br>
+          <a href="https://lfprojects.org/policies/trademark-policy/">Trademark Policy</a> |
+          <a href="https://lfprojects.org/policies/privacy-policy/">Privacy Conduct</a> |
+          <a href="https://lfprojects.org/policies/antitrust-policy/">Antitrust Policy</a> |
+          <a href="https://lfprojects.org/policies/code-of-conduct/">Code of Conduct</a> |
+          <a href="https://lfprojects.org/policies/terms-of-use/">Terms of Use</a></small>
+        </div>
+        <a href="https://www.netlify.com">
+            <img src="https://www.netlify.com/img/global/badges/netlify-light.svg" alt="Netlify logo">
+         </a>
+   
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

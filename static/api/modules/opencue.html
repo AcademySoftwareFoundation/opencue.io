@@ -1,0 +1,1473 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>opencue package &mdash; OpenCue 0.3.6 documentation</title>
+  
+
+  
+  
+  
+  
+    <link rel="canonical" href="https://www.opencue.io/modules/opencue.html"/>
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/api.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="opencue.compiled_proto package" href="opencue.compiled_proto.html" />
+    <link rel="prev" title="FileSequence package" href="FileSequence.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/opencue_logo_navbar.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.3.6
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">OpenCue packages</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="FileSequence.html">FileSequence package</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">opencue package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="opencue.compiled_proto.html">opencue.compiled_proto package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="opencue.wrappers.html">opencue.wrappers package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-opencue">Module contents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-opencue.api">opencue.api module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-opencue.cuebot">opencue.cuebot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-opencue.exception">opencue.exception module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-opencue.search">opencue.search module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#usage-examples">Usage examples</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-opencue.util">opencue.util module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-opencue.version">opencue.version module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="outline.html">outline package</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">OpenCue</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">outline</a> &raquo;</li>
+        
+      <li>opencue package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/modules/opencue.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="opencue-package">
+<h1>opencue package<a class="headerlink" href="#opencue-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="opencue.compiled_proto.html">opencue.compiled_proto package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="opencue.compiled_proto.html#module-opencue.compiled_proto">Module contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.compiled_proto.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.compiled_proto.html#module-opencue.compiled_proto.comment_pb2_grpc">opencue.compiled_proto.comment_pb2_grpc module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.compiled_proto.html#module-opencue.compiled_proto.comment_pb2">opencue.compiled_proto.comment_pb2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.compiled_proto.html#module-opencue.compiled_proto.criterion_pb2_grpc">opencue.compiled_proto.criterion_pb2_grpc module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.compiled_proto.html#module-opencue.compiled_proto.criterion_pb2">opencue.compiled_proto.criterion_pb2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.compiled_proto.html#module-opencue.compiled_proto.cue_pb2_grpc">opencue.compiled_proto.cue_pb2_grpc module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.compiled_proto.html#module-opencue.compiled_proto.cue_pb2">opencue.compiled_proto.cue_pb2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.compiled_proto.html#module-opencue.compiled_proto.department_pb2_grpc">opencue.compiled_proto.department_pb2_grpc module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.compiled_proto.html#module-opencue.compiled_proto.department_pb2">opencue.compiled_proto.department_pb2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.compiled_proto.html#module-opencue.compiled_proto.depend_pb2_grpc">opencue.compiled_proto.depend_pb2_grpc module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.compiled_proto.html#module-opencue.compiled_proto.depend_pb2">opencue.compiled_proto.depend_pb2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.compiled_proto.html#module-opencue.compiled_proto.facility_pb2_grpc">opencue.compiled_proto.facility_pb2_grpc module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.compiled_proto.html#module-opencue.compiled_proto.facility_pb2">opencue.compiled_proto.facility_pb2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.compiled_proto.html#module-opencue.compiled_proto.filter_pb2_grpc">opencue.compiled_proto.filter_pb2_grpc module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.compiled_proto.html#module-opencue.compiled_proto.filter_pb2">opencue.compiled_proto.filter_pb2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.compiled_proto.html#module-opencue.compiled_proto.host_pb2_grpc">opencue.compiled_proto.host_pb2_grpc module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.compiled_proto.html#module-opencue.compiled_proto.host_pb2">opencue.compiled_proto.host_pb2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.compiled_proto.html#module-opencue.compiled_proto.job_pb2_grpc">opencue.compiled_proto.job_pb2_grpc module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.compiled_proto.html#module-opencue.compiled_proto.job_pb2">opencue.compiled_proto.job_pb2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.compiled_proto.html#module-opencue.compiled_proto.limit_pb2_grpc">opencue.compiled_proto.limit_pb2_grpc module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.compiled_proto.html#module-opencue.compiled_proto.limit_pb2">opencue.compiled_proto.limit_pb2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.compiled_proto.html#module-opencue.compiled_proto.renderPartition_pb2_grpc">opencue.compiled_proto.renderPartition_pb2_grpc module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.compiled_proto.html#module-opencue.compiled_proto.renderPartition_pb2">opencue.compiled_proto.renderPartition_pb2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.compiled_proto.html#module-opencue.compiled_proto.report_pb2_grpc">opencue.compiled_proto.report_pb2_grpc module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.compiled_proto.html#module-opencue.compiled_proto.report_pb2">opencue.compiled_proto.report_pb2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.compiled_proto.html#module-opencue.compiled_proto.rqd_pb2_grpc">opencue.compiled_proto.rqd_pb2_grpc module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.compiled_proto.html#module-opencue.compiled_proto.rqd_pb2">opencue.compiled_proto.rqd_pb2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.compiled_proto.html#module-opencue.compiled_proto.service_pb2_grpc">opencue.compiled_proto.service_pb2_grpc module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.compiled_proto.html#module-opencue.compiled_proto.service_pb2">opencue.compiled_proto.service_pb2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.compiled_proto.html#module-opencue.compiled_proto.show_pb2_grpc">opencue.compiled_proto.show_pb2_grpc module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.compiled_proto.html#module-opencue.compiled_proto.show_pb2">opencue.compiled_proto.show_pb2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.compiled_proto.html#module-opencue.compiled_proto.subscription_pb2_grpc">opencue.compiled_proto.subscription_pb2_grpc module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.compiled_proto.html#module-opencue.compiled_proto.subscription_pb2">opencue.compiled_proto.subscription_pb2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.compiled_proto.html#module-opencue.compiled_proto.task_pb2_grpc">opencue.compiled_proto.task_pb2_grpc module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.compiled_proto.html#module-opencue.compiled_proto.task_pb2">opencue.compiled_proto.task_pb2 module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="opencue.wrappers.html">opencue.wrappers package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="opencue.wrappers.html#module-opencue.wrappers">Module contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.wrappers.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.wrappers.html#module-opencue.wrappers.allocation">opencue.wrappers.allocation module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.wrappers.html#module-opencue.wrappers.comment">opencue.wrappers.comment module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.wrappers.html#module-opencue.wrappers.deed">opencue.wrappers.deed module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.wrappers.html#module-opencue.wrappers.depend">opencue.wrappers.depend module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.wrappers.html#module-opencue.wrappers.filter">opencue.wrappers.filter module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.wrappers.html#module-opencue.wrappers.frame">opencue.wrappers.frame module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.wrappers.html#module-opencue.wrappers.group">opencue.wrappers.group module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.wrappers.html#module-opencue.wrappers.host">opencue.wrappers.host module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.wrappers.html#module-opencue.wrappers.job">opencue.wrappers.job module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.wrappers.html#module-opencue.wrappers.layer">opencue.wrappers.layer module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.wrappers.html#module-opencue.wrappers.limit">opencue.wrappers.limit module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.wrappers.html#module-opencue.wrappers.owner">opencue.wrappers.owner module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.wrappers.html#module-opencue.wrappers.proc">opencue.wrappers.proc module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.wrappers.html#module-opencue.wrappers.service">opencue.wrappers.service module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.wrappers.html#module-opencue.wrappers.show">opencue.wrappers.show module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.wrappers.html#module-opencue.wrappers.subscription">opencue.wrappers.subscription module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.wrappers.html#module-opencue.wrappers.task">opencue.wrappers.task module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opencue.wrappers.html#module-opencue.wrappers.util">opencue.wrappers.util module</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="module-opencue">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-opencue" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-opencue.api">
+<span id="opencue-api-module"></span><h2>opencue.api module<a class="headerlink" href="#module-opencue.api" title="Permalink to this headline">¶</a></h2>
+<p>The opencue Static API.  This is exported into the package namespace.</p>
+<p>Project: opencue Library</p>
+<dl class="function">
+<dt id="opencue.api.createAllocation">
+<code class="descclassname">opencue.api.</code><code class="descname">createAllocation</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.createAllocation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates and returns an allocation.
+The host tag will be the lowercase of the allocation name.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – the name of the allocation</li>
+<li><strong>tag</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – the tag for the allocation</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><a class="reference internal" href="opencue.wrappers.html#opencue.wrappers.allocation.Allocation" title="opencue.wrappers.allocation.Allocation">Allocation</a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">the newly created Allocation object</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.createFacility">
+<code class="descclassname">opencue.api.</code><code class="descname">createFacility</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.createFacility" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a given facility by name or unique ID.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – a facility name or unique ID</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">Facility</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a facility object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.createLimit">
+<code class="descclassname">opencue.api.</code><code class="descname">createLimit</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.createLimit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new Limit with the given name and max value.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – the name of the new Limit</li>
+<li><strong>maxValue</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – the maximum number of running frames for this limit</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><a class="reference internal" href="opencue.wrappers.html#opencue.wrappers.limit.Limit" title="opencue.wrappers.limit.Limit">opencue.wrappers.limit.Limit</a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">the newly created Limit</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.createService">
+<code class="descclassname">opencue.api.</code><code class="descname">createService</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.createService" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create the provided service and return it.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> (<a class="reference internal" href="opencue.wrappers.html#opencue.wrappers.service.Service" title="opencue.wrappers.service.Service"><em>Service</em></a>) – Service object to create</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="opencue.wrappers.html#opencue.wrappers.service.Service" title="opencue.wrappers.service.Service">Service</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.createShow">
+<code class="descclassname">opencue.api.</code><code class="descname">createShow</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.createShow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a new show.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>show</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – a new show name to create</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="opencue.wrappers.html#opencue.wrappers.show.Show" title="opencue.wrappers.show.Show">Show</a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the created show object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.deleteFacility">
+<code class="descclassname">opencue.api.</code><code class="descname">deleteFacility</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.deleteFacility" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete a given facility by name or unique ID.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – a facility name or unique ID</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.deleteShow">
+<code class="descclassname">opencue.api.</code><code class="descname">deleteShow</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.deleteShow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes a show.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>show_id</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – a show ID to delete</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.findAllocation">
+<code class="descclassname">opencue.api.</code><code class="descname">findAllocation</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.findAllocation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the Allocation object that matches the name.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – the name of the allocation</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="opencue.wrappers.html#opencue.wrappers.allocation.Allocation" title="opencue.wrappers.allocation.Allocation">Allocation</a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">an Allocation object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.findFilter">
+<code class="descclassname">opencue.api.</code><code class="descname">findFilter</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.findFilter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the matching filter (for testing).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>show_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – a show name</li>
+<li><strong>filter_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – a filter name</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><a class="reference internal" href="opencue.wrappers.html#opencue.wrappers.filter.Filter" title="opencue.wrappers.filter.Filter">Filter</a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">the matching Filter object</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.findFrame">
+<code class="descclassname">opencue.api.</code><code class="descname">findFrame</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.findFrame" title="Permalink to this definition">¶</a></dt>
+<dd><p>Finds and returns a layer from the specified pending job.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>job</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – the job name</li>
+<li><strong>layer</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – the layer name</li>
+<li><strong>number</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – the frame number</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><a class="reference internal" href="opencue.wrappers.html#opencue.wrappers.frame.Frame" title="opencue.wrappers.frame.Frame">opencue.wrappers.frame.Frame</a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">the frame matching the query</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.findGroup">
+<code class="descclassname">opencue.api.</code><code class="descname">findGroup</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.findGroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a group object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>show</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – the name of a show</li>
+<li><strong>group</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – the name of a group</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><a class="reference internal" href="opencue.wrappers.html#opencue.wrappers.group.Group" title="opencue.wrappers.group.Group">Group</a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">the matching group object</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.findHost">
+<code class="descclassname">opencue.api.</code><code class="descname">findHost</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.findHost" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the host for the matching hostname.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – the unique name of a host</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="opencue.wrappers.html#opencue.wrappers.host.Host" title="opencue.wrappers.host.Host">Host</a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The matching host object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.findJob">
+<code class="descclassname">opencue.api.</code><code class="descname">findJob</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.findJob" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a Job object for the given job name.
+This will only return one or zero active job.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – a job name</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="opencue.wrappers.html#opencue.wrappers.job.Job" title="opencue.wrappers.job.Job">Job</a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a Job object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.findLayer">
+<code class="descclassname">opencue.api.</code><code class="descname">findLayer</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.findLayer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Finds and returns a layer from the specified pending job.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>job</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – the job name</li>
+<li><strong>layer</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – the layer name</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><a class="reference internal" href="opencue.wrappers.html#opencue.wrappers.layer.Layer" title="opencue.wrappers.layer.Layer">opencue.wrappers.layer.Layer</a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">the layer matching the query</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.findShow">
+<code class="descclassname">opencue.api.</code><code class="descname">findShow</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.findShow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of show objects.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – a string that represents a show to return</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="opencue.wrappers.html#opencue.wrappers.show.Show" title="opencue.wrappers.show.Show">Show</a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the matching Show object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.findSubscription">
+<code class="descclassname">opencue.api.</code><code class="descname">findSubscription</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.findSubscription" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the subscription object that matches the name.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – the name of the subscription</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="opencue.wrappers.html#opencue.wrappers.subscription.Subscription" title="opencue.wrappers.subscription.Subscription">Subscription</a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a Subscription object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.getActiveShows">
+<code class="descclassname">opencue.api.</code><code class="descname">getActiveShows</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.getActiveShows" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of all active shows.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)">list</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a list of Show objects</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.getAllocation">
+<code class="descclassname">opencue.api.</code><code class="descname">getAllocation</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.getAllocation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the Allocation object that matches the ID.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>allocId</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – the ID of the allocation</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="opencue.wrappers.html#opencue.wrappers.allocation.Allocation" title="opencue.wrappers.allocation.Allocation">Allocation</a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">an Allocation object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.getAllocations">
+<code class="descclassname">opencue.api.</code><code class="descname">getAllocations</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.getAllocations" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of allocation objects.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)">list</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a list of Allocation objects</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.getDefaultServices">
+<code class="descclassname">opencue.api.</code><code class="descname">getDefaultServices</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.getDefaultServices" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the default service list.  Services
+define the default application features.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)">list</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">List of Service objects</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.getDepartmentNames">
+<code class="descclassname">opencue.api.</code><code class="descname">getDepartmentNames</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.getDepartmentNames" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of the known department names.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)">list</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a list of str department names</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.getDepend">
+<code class="descclassname">opencue.api.</code><code class="descname">getDepend</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.getDepend" title="Permalink to this definition">¶</a></dt>
+<dd><p>Finds a dependency from its unique ID.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>id</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – the unique ID of the Depend object</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="opencue.wrappers.html#opencue.wrappers.depend.Depend" title="opencue.wrappers.depend.Depend">opencue.wrappers.depend.Depend</a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a dependency</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.getFacility">
+<code class="descclassname">opencue.api.</code><code class="descname">getFacility</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.getFacility" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a given facility by name or unique ID.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – a facility name or unique ID</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">Facility</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a facility object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.getFrame">
+<code class="descclassname">opencue.api.</code><code class="descname">getFrame</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.getFrame" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a Frame object from the unique ID.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>uniq</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – a unique frame identifier</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="opencue.wrappers.html#opencue.wrappers.frame.Frame" title="opencue.wrappers.frame.Frame">opencue.wrappers.frame.Frame</a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a Frame object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.getFrames">
+<code class="descclassname">opencue.api.</code><code class="descname">getFrames</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.getFrames" title="Permalink to this definition">¶</a></dt>
+<dd><p>Finds frames in a job that match the search critieria.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>job</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – the job name</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)">list</a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a list of matching Frame objects</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.getGroup">
+<code class="descclassname">opencue.api.</code><code class="descname">getGroup</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.getGroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a Group object from its unique ID.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>uniq</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – a unique group identifier</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="opencue.wrappers.html#opencue.wrappers.group.Group" title="opencue.wrappers.group.Group">Group</a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the matching group object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.getHost">
+<code class="descclassname">opencue.api.</code><code class="descname">getHost</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.getHost" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a Host object from a unique identifier.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>uniq</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – a unique host identifier</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="opencue.wrappers.html#opencue.wrappers.host.Host" title="opencue.wrappers.host.Host">Host</a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A Host object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.getHostWhiteboard">
+<code class="descclassname">opencue.api.</code><code class="descname">getHostWhiteboard</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.getHostWhiteboard" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">list&lt;Host&gt;</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">NestedHost</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.getHosts">
+<code class="descclassname">opencue.api.</code><code class="descname">getHosts</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.getHosts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns an array of Hroc objects using
+optional search criteria. Search criteria is
+supplied as a variable list of arguments.</p>
+<p>For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># returns all vrack procs</span>
+<span class="n">getHosts</span><span class="p">(</span><span class="n">match</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;vrack&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+<dl class="docutils">
+<dt>Possible args:</dt>
+<dd><ul class="first last simple">
+<li>host: host names - list</li>
+<li>match: host name substring match - str</li>
+<li>regex: a host name search by regular expression - str</li>
+<li>id: a search by unique id - str</li>
+<li>alloc: search by allocation. - list</li>
+</ul>
+</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)">list</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a list of Host objects</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.getJob">
+<code class="descclassname">opencue.api.</code><code class="descname">getJob</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.getJob" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a Job object for the given job ID.
+This will only return one or zero active job.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>uniq</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – a unique job identifier</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="opencue.wrappers.html#opencue.wrappers.job.Job" title="opencue.wrappers.job.Job">Job</a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a Job object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.getJobNames">
+<code class="descclassname">opencue.api.</code><code class="descname">getJobNames</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.getJobNames" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of job names that match the search parameters.
+See getJobs for the job query options.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>options</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)"><em>dict</em></a>) – a variable list of search criteria</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)">list</a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of matching str job names</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.getJobs">
+<code class="descclassname">opencue.api.</code><code class="descname">getJobs</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.getJobs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns an array of Job objects using
+optional search criteria. Search criteria is
+supplied as a variable list of arguments.</p>
+<p>For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># returns only pipe jobs.</span>
+<span class="n">getJobs</span><span class="p">(</span><span class="n">show</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;pipe&quot;</span><span class="p">])</span> 
+</pre></div>
+</div>
+<dl class="docutils">
+<dt>Possible args:</dt>
+<dd><ul class="first last simple">
+<li>job: job names - list</li>
+<li>match:  job name substring match - str</li>
+<li>regex: a job name search by regular expression - str</li>
+<li>id: a job search by unique id - str</li>
+<li>show: show names - list</li>
+<li>shot: shot names - list</li>
+<li>user: user names - list</li>
+</ul>
+</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)">list</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a list of Job objects</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.getLayer">
+<code class="descclassname">opencue.api.</code><code class="descname">getLayer</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.getLayer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a Layer object for the given layer ID.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>uniq</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – a unique layer identifier</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="opencue.wrappers.html#opencue.wrappers.layer.Layer" title="opencue.wrappers.layer.Layer">opencue.wrappers.layer.Layer</a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a Layer object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.getLimits">
+<code class="descclassname">opencue.api.</code><code class="descname">getLimits</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.getLimits" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of all known Limit objects.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)">list</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a list of Limit objects</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.getOwner">
+<code class="descclassname">opencue.api.</code><code class="descname">getOwner</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.getOwner" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return an Owner object from the ID or name.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>id</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – a unique owner identifier or name</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="opencue.wrappers.html#opencue.wrappers.owner.Owner" title="opencue.wrappers.owner.Owner">Owner</a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">An Owner object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.getProcs">
+<code class="descclassname">opencue.api.</code><code class="descname">getProcs</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.getProcs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns an array of Proc objects using
+optional search criteria. Search criteria is
+supplied as a variable list of arguments.</p>
+<p>For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># returns procs running pipe jobs</span>
+<span class="n">getProcs</span><span class="p">(</span><span class="n">show</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;pipe&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+<dl class="docutils">
+<dt>Possible args:</dt>
+<dd><ul class="first last simple">
+<li>host: host names - list</li>
+<li>jobs: job names - list</li>
+<li>layer: layer names - list</li>
+<li>show: show names - list</li>
+<li>alloc: allocation names - list</li>
+<li>memory: used memory in gigabytes - str
+- “gt5” is greater than 5 gigs
+- “lt5” is less than 5 gigs
+- “5-10” is range of 5 to 10 gigs</li>
+<li>duration: run time in hours - str
+- “gt5” is greater than 5 hours
+- “lt5” is less than 5 hours
+- “5-10” is range of 5 to 10 hours</li>
+</ul>
+</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)">list</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a list of Proc objects</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.getService">
+<code class="descclassname">opencue.api.</code><code class="descname">getService</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.getService" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the service with the provided name.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – the name of the service</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="opencue.wrappers.html#opencue.wrappers.service.Service" title="opencue.wrappers.service.Service">Service</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.getShows">
+<code class="descclassname">opencue.api.</code><code class="descname">getShows</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.getShows" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of show objects.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)">list</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a list of Show objects</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.getSubscription">
+<code class="descclassname">opencue.api.</code><code class="descname">getSubscription</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.getSubscription" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a Subscription object from a unique identifier.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>uniq</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – a unique subscription identifier</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="opencue.wrappers.html#opencue.wrappers.subscription.Subscription" title="opencue.wrappers.subscription.Subscription">Subscription</a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a Subscription object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.getSystemStats">
+<code class="descclassname">opencue.api.</code><code class="descname">getSystemStats</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.getSystemStats" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the system stats for a random
+OpenCue server in the cluster. This is used
+mainly by admins for troubleshooting OpenCue
+problems.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">SystemStats</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a struct of OpenCue application information.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.isJobPending">
+<code class="descclassname">opencue.api.</code><code class="descname">isJobPending</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.isJobPending" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns true if there is an active job in the cue
+in the pending state.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – a job name</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)">bool</a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">true if the job exists</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.launchSpec">
+<code class="descclassname">opencue.api.</code><code class="descname">launchSpec</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.launchSpec" title="Permalink to this definition">¶</a></dt>
+<dd><p>Launch a new job with the given spec xml data.
+This call returns immediately but there is guarantee that
+the job was written to the database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>spec</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – XML string containing job spec</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)">list</a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of str job names that were submitted</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.launchSpecAndWait">
+<code class="descclassname">opencue.api.</code><code class="descname">launchSpecAndWait</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.launchSpecAndWait" title="Permalink to this definition">¶</a></dt>
+<dd><p>Launch a new job with the given spec xml data.
+This call waits on the server until the job is committed
+in the database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>spec</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – XML string containing job spec</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)">list</a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of Job objects that were submitted</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.api.renameFacility">
+<code class="descclassname">opencue.api.</code><code class="descname">renameFacility</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.api.renameFacility" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rename a given facility by name or unique ID.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>facility</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – an existing facility name or unique ID</li>
+<li><strong>new_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – a new facility name or unique ID</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-opencue.cuebot">
+<span id="opencue-cuebot-module"></span><h2>opencue.cuebot module<a class="headerlink" href="#module-opencue.cuebot" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="opencue.cuebot.Cuebot">
+<em class="property">class </em><code class="descclassname">opencue.cuebot.</code><code class="descname">Cuebot</code><a class="headerlink" href="#opencue.cuebot.Cuebot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Used to manage the connection to the Cuebot.  Normally the connection
+to the Cuebot is made automatically as needed so you don’t have to explicitly
+call Cuebot.connect().</p>
+<p>If you need to change the host(s) in which the library is connecting to,
+you have a couple options.  You can set it programmatically with
+Cuebot.setHosts or set the CUEBOT_HOSTS environment variable
+to a comma delimited list of host names.</p>
+<dl class="staticmethod">
+<dt id="opencue.cuebot.Cuebot.closeChannel">
+<em class="property">static </em><code class="descname">closeChannel</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#opencue.cuebot.Cuebot.closeChannel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Close the gRPC channel, delete it and reset it to None.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="opencue.cuebot.Cuebot.getStub">
+<em class="property">classmethod </em><code class="descname">getStub</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.cuebot.Cuebot.getStub" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the matching stub from the SERVICE_MAP.
+Reuse an existing one if possible.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – name of stub key for SERVICE_MAP</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="opencue.cuebot.Cuebot.init">
+<em class="property">static </em><code class="descname">init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#opencue.cuebot.Cuebot.init" title="Permalink to this definition">¶</a></dt>
+<dd><p>Main init method for setting up the Cuebot object.
+Sets the communication channel and hosts.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="opencue.cuebot.Cuebot.resetChannel">
+<em class="property">static </em><code class="descname">resetChannel</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#opencue.cuebot.Cuebot.resetChannel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Close and reopen the gRPC channel.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="opencue.cuebot.Cuebot.setChannel">
+<em class="property">static </em><code class="descname">setChannel</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#opencue.cuebot.Cuebot.setChannel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the gRPC channel connection</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="opencue.cuebot.Cuebot.setFacility">
+<em class="property">static </em><code class="descname">setFacility</code><span class="sig-paren">(</span><em>facility</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.cuebot.Cuebot.setFacility" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the facility to connect to. If an unknown facility is provided,
+it will fall back to the one listed in cuebot.facility_default</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>facility</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – a facility named in the config file</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="opencue.cuebot.Cuebot.setHosts">
+<em class="property">static </em><code class="descname">setHosts</code><span class="sig-paren">(</span><em>hosts</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.cuebot.Cuebot.setHosts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the cuebot host names to connect to.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>hosts</strong> (<em>list&lt;str&gt;</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – a list of hosts or a host</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="opencue.cuebot.Cuebot.setTimeout">
+<em class="property">static </em><code class="descname">setTimeout</code><span class="sig-paren">(</span><em>timeout</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.cuebot.Cuebot.setTimeout" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the default network timeout.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>timeout</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – The network connection timeout in millis.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-opencue.exception">
+<span id="opencue-exception-module"></span><h2>opencue.exception module<a class="headerlink" href="#module-opencue.exception" title="Permalink to this headline">¶</a></h2>
+<p>Project: opencue Library</p>
+<p>Module: exception.py - Provides opencue access to exceptions</p>
+<dl class="exception">
+<dt id="opencue.exception.ConnectionException">
+<em class="property">exception </em><code class="descclassname">opencue.exception.</code><code class="descname">ConnectionException</code><a class="headerlink" href="#opencue.exception.ConnectionException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Raised when unable to connect to grpc server.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="opencue.exception.CueException">
+<em class="property">exception </em><code class="descclassname">opencue.exception.</code><code class="descname">CueException</code><a class="headerlink" href="#opencue.exception.CueException" title="Permalink to this definition">¶</a></dt>
+<dd><p>A Base class for all client side cue exceptions</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="opencue.exception.CueInternalErrorException">
+<em class="property">exception </em><code class="descclassname">opencue.exception.</code><code class="descname">CueInternalErrorException</code><a class="headerlink" href="#opencue.exception.CueInternalErrorException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Raised when the server encountered a catchable error</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="opencue.exception.DeadlineExceededException">
+<em class="property">exception </em><code class="descclassname">opencue.exception.</code><code class="descname">DeadlineExceededException</code><a class="headerlink" href="#opencue.exception.DeadlineExceededException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Raised when the deadline for response has been exceeded.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="opencue.exception.EntityAlreadyExistsException">
+<em class="property">exception </em><code class="descclassname">opencue.exception.</code><code class="descname">EntityAlreadyExistsException</code><a class="headerlink" href="#opencue.exception.EntityAlreadyExistsException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Raised when the entity was not created because it already exists on the server</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="opencue.exception.EntityNotFoundException">
+<em class="property">exception </em><code class="descclassname">opencue.exception.</code><code class="descname">EntityNotFoundException</code><a class="headerlink" href="#opencue.exception.EntityNotFoundException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Raised when the entity was not found on the server.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.exception.getRetryCount">
+<code class="descclassname">opencue.exception.</code><code class="descname">getRetryCount</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#opencue.exception.getRetryCount" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the configured number of retries a cuebot call can make.
+If not specified in the config, all retryable calls will be called once and retried 3 times.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-opencue.search">
+<span id="opencue-search-module"></span><h2>opencue.search module<a class="headerlink" href="#module-opencue.search" title="Permalink to this headline">¶</a></h2>
+<p>Client side implementation of search criteria.
+This module provides some easy factory
+methods to do common search operations. It also exposes
+lower level RPC functionality for procedural searches.</p>
+<div class="section" id="usage-examples">
+<h3>Usage examples<a class="headerlink" href="#usage-examples" title="Permalink to this headline">¶</a></h3>
+<p>The following example illustrates searching using the high level API:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jobs</span> <span class="o">=</span> <span class="n">getJobs</span><span class="p">(</span><span class="n">show</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;pipe&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>An example of a procedural search:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="n">JobSearch</span><span class="p">()</span>
+<span class="n">s</span><span class="o">.</span><span class="n">shows</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;pipe&quot;</span><span class="p">)</span>
+<span class="n">s</span><span class="o">.</span><span class="n">users</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;chambers&quot;</span><span class="p">)</span>
+<span class="n">jobs</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">find</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>A procedural example searching by regular expression:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="n">JobSearch</span><span class="p">()</span>
+<span class="n">s</span><span class="o">.</span><span class="n">includeFinished</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">s</span><span class="o">.</span><span class="n">regex</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;blah&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">job</span> <span class="ow">in</span> <span class="n">s</span><span class="o">.</span><span class="n">find</span><span class="p">():</span>
+    <span class="nb">print</span> <span class="n">job</span>
+</pre></div>
+</div>
+<p>Another procedural example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">job</span> <span class="ow">in</span> <span class="n">JobSearch</span><span class="o">.</span><span class="n">byUser</span><span class="p">([</span><span class="s2">&quot;chambers&quot;</span><span class="p">,</span><span class="s2">&quot;jwelborn&quot;</span><span class="p">]):</span>
+    <span class="n">job</span><span class="o">.</span><span class="n">proxy</span><span class="o">.</span><span class="n">kill</span><span class="p">()</span>
+</pre></div>
+</div>
+<dl class="class">
+<dt id="opencue.search.BaseSearch">
+<em class="property">class </em><code class="descclassname">opencue.search.</code><code class="descname">BaseSearch</code><span class="sig-paren">(</span><em>**options</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.search.BaseSearch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="opencue.search.ProcSearch">
+<em class="property">class </em><code class="descclassname">opencue.search.</code><code class="descname">ProcSearch</code><span class="sig-paren">(</span><em>**options</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.search.ProcSearch" title="Permalink to this definition">¶</a></dt>
+<dd><p>See: help(opencue.getProcs)</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="opencue.search.FrameSearch">
+<em class="property">class </em><code class="descclassname">opencue.search.</code><code class="descname">FrameSearch</code><span class="sig-paren">(</span><em>**options</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.search.FrameSearch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="opencue.search.HostSearch">
+<em class="property">class </em><code class="descclassname">opencue.search.</code><code class="descname">HostSearch</code><span class="sig-paren">(</span><em>**options</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.search.HostSearch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="opencue.search.JobSearch">
+<em class="property">class </em><code class="descclassname">opencue.search.</code><code class="descname">JobSearch</code><span class="sig-paren">(</span><em>**options</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.search.JobSearch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-opencue.util">
+<span id="opencue-util-module"></span><h2>opencue.util module<a class="headerlink" href="#module-opencue.util" title="Permalink to this headline">¶</a></h2>
+<p>Project: opencue Library
+Module: util.py</p>
+<dl class="function">
+<dt id="opencue.util.grpcExceptionParser">
+<code class="descclassname">opencue.util.</code><code class="descname">grpcExceptionParser</code><span class="sig-paren">(</span><em>grpcFunc</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.util.grpcExceptionParser" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decorator to wrap functions making GRPC calls.
+Attempts to throw the appropriate exception based on grpc status code.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.util.id">
+<code class="descclassname">opencue.util.</code><code class="descname">id</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.util.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>extract(entity)
+extracts a string unique ID from a opencue entity or
+list of opencue entities.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.util.logPath">
+<code class="descclassname">opencue.util.</code><code class="descname">logPath</code><span class="sig-paren">(</span><em>job</em>, <em>frame=None</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.util.logPath" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extracts the log path from a job or a job/frame</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.util.proxy">
+<code class="descclassname">opencue.util.</code><code class="descname">proxy</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.util.proxy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Helper function for getting proto objects back from Cuebot.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>idOrObject</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a><em>, </em><em>list&lt;str&gt;</em><em>, </em><em>protobuf Message</em><em>, </em><em>list&lt;protobuf Message&gt;</em>) – The id/item, or list of ids/items to look up</li>
+<li><strong>cls</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – The Name of the protobuf message class to use.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">protobuf Message or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)">list</a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Cue object or list of objects</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opencue.util.rep">
+<code class="descclassname">opencue.util.</code><code class="descname">rep</code><span class="sig-paren">(</span><em>entity</em><span class="sig-paren">)</span><a class="headerlink" href="#opencue.util.rep" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extracts a string repesentation of a opencue entity</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-opencue.version">
+<span id="opencue-version-module"></span><h2>opencue.version module<a class="headerlink" href="#module-opencue.version" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          
+<footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="opencue.compiled_proto.html" class="btn btn-neutral float-right" title="opencue.compiled_proto package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="FileSequence.html" class="btn btn-neutral float-left" title="FileSequence package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Contributors to the OpenCue Project
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  <div class="text-center order-sm-2">
+          <a href="https://www.aswf.io"><img src="/images/aswf_aqua.png" alt="Academy Software Foundation logo"></a><br>
+          <small class="text-white">Documentation Distributed under CC BY 4.0</small><br>
+          <small class="text-white">LF Projects, LLC uses various trademarks.
+          For our trademark, privacy and antitrust policies, code of conduct,
+          and terms of use, please click the applicable link below or see
+          <a href="https://lfprojects.org">https://www.lfprojects.org</a>.
+          <br>
+          <a href="https://lfprojects.org/policies/trademark-policy/">Trademark Policy</a> |
+          <a href="https://lfprojects.org/policies/privacy-policy/">Privacy Conduct</a> |
+          <a href="https://lfprojects.org/policies/antitrust-policy/">Antitrust Policy</a> |
+          <a href="https://lfprojects.org/policies/code-of-conduct/">Code of Conduct</a> |
+          <a href="https://lfprojects.org/policies/terms-of-use/">Terms of Use</a></small>
+        </div>
+        <a href="https://www.netlify.com">
+            <img src="https://www.netlify.com/img/global/badges/netlify-light.svg" alt="Netlify logo">
+         </a>
+   
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
