@@ -192,13 +192,13 @@ and your current directory is the root of the checked out source.
 
     ```shell
     cd cuebot
-    ./gradlew shadowJar
+    ./gradlew build
     ```
 
 1.  Finally, use your JRE to run the Cuebot JAR:
 
     ```shell
-    java -jar build/libs/cuebot-all.jar --datasource.cue-data-source.jdbc-url=jdbc:postgresql://$DB_HOST/$DB_NAME --datasource.cue-data-source.username=$DB_USER --datasource.cue-data-source.password=$DB_PASS --log.frame-log-root="${CUE_FS_ROOT}/logs"
+    java -jar build/libs/cuebot.jar --datasource.cue-data-source.jdbc-url=jdbc:postgresql://$DB_HOST/$DB_NAME --datasource.cue-data-source.username=$DB_USER --datasource.cue-data-source.password=$DB_PASS --log.frame-log-root="${CUE_FS_ROOT}/logs"
     ```
 
 ## Verifying your install
