@@ -2,6 +2,16 @@
 
 @import 'theme.css';       /* for the Read the Docs theme */
 
+.aswf-logo {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.footer-logo {
+  margin-bottom: 1em;
+  margin-top: 2em;
+}
+
 .wy-side-nav-search>div.version {
   color: black;
 }
