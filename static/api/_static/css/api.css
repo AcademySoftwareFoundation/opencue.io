@@ -3,8 +3,6 @@
 @import 'theme.css';       /* for the Read the Docs theme */
 
 .aswf-logo {
-  margin-left: 2em;
-  margin-right: 2em;
   width: 200px;
 }
 
