@@ -133,6 +133,7 @@ similar methods when needed to elevate your session to root-level permissions.{{
     ```shell
     cp /var/lib/pgsql/data/pg_hba.conf /var/lib/pgsql/data/pg_hba.conf.backup
     echo -e "local all all peer\nhost all all 127.0.0.1/32 trust\nhost all all ::1/128 trust" | tee /var/lib/pgsql/data/pg_hba.conf
+    systemctl reload postgresql.service
     ```
     
     {{% alert color="warning" title="Important" %}}For simplicity, in this guide we use
