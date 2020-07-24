@@ -109,6 +109,10 @@ The following steps assume a `yum`-based Linux distribution, such as
 See [the Postgres docs](https://www.postgresql.org/download/) for instructions
 for other distributions.
 
+{{% alert color="warning" title="Important"%}}This section assumes that your user has
+root-level permissions on the database machine. If that's not the case, use `sudo` or
+similar methods when needed to elevate your session to root-level permissions.{{% /alert %}}
+
 1.  First, run `yum` to install the required Postgres packages:
 
     ```shell
@@ -123,6 +127,21 @@ for other distributions.
     systemctl enable postgresql.service
     systemctl start postgresql.service
     ```
+    
+1.  Set Postgres to `trust` method for authentication:
+
+    ```shell
+    cp /var/lib/pgsql/data/pg_hba.conf /var/lib/pgsql/data/pg_hba.conf.backup
+    echo -e "local all all peer\nhost all all 127.0.0.1/32 trust\nhost all all ::1/128 trust" | tee /var/lib/pgsql/data/pg_hba.conf
+    ```
+    
+    {{% alert color="warning" title="Important" %}}For simplicity, in this guide we use
+    `trust` to allow passwordless superuser access to the Postgres server.
+    In a real production deployment, this should not be used. Instead, configure proper
+    superuser credentials with a password. This is outside the scope of this guide; see
+    [the PostgreSQL documentation on "trust"](https://www.postgresql.org/docs/current/auth-trust.html)
+    and [the `createuser` reference](https://www.postgresql.org/docs/current/app-createuser.html)
+    for more information.{{% /alert %}}
 
 1.  Create a superuser named after your current OS user, which is used for the
     rest of the admin commands in this guide:
