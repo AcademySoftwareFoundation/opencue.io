@@ -14,29 +14,5 @@ if [[ ! -d ${BUILD_DIR} ]]; then
   git clone $OPENCUE_REPO ${BUILD_DIR}
 fi
 
-if [[ -f ${BUILD_DIR}/CONTRIBUTING.md ]]; then
-
-  # Copy the specified file into a temporary file.
-  # Copies from the first line until the first comment.
-  # This script overwrites the remainder of the original contents.
-  sed '/<!---/q' content/contributing/opencue/contributing.md \
-    > contributing.tmp
-
-  cd ${BUILD_DIR}
-
-  # Determine when the file in the repo was last updated
-  LAST_UPDATE=$(git log -n 1 --date=short CONTRIBUTING.md | grep "^Date:" | awk -F " " '{print $2}')
-
-  cd ..
-
-  # Update the publication date for the page
-  sed -i '4s/20[0-9]\{2\}-[0-9]\{1,2\}-[0-9]\{1,2\}/'${LAST_UPDATE}'/' contributing.tmp
-
-  # Copy most of the source file into the temporary file
-  tail -n +2 ${BUILD_DIR}/CONTRIBUTING.md >> contributing.tmp
-
-  mv contributing.tmp content/contributing/opencue/contributing.md
-fi
-
 # Build the site
 hugo

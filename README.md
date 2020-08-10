@@ -14,9 +14,8 @@ run, to propose changes to the OpenCue documentation.
 ### Before you begin
 
 To learn about the process for contributing to OpenCue, see
-[Contributing to OpenCue](https://github.com/AcademySoftwareFoundation/OpenCue/blob/master/CONTRIBUTING.md)
-on the primary OpenCue repository. This page provides additional help and
-information about contributing to the OpenCue documentation.
+[Contributing to OpenCue](https://www.opencue.io/contributing/opencue/contributing/). This page
+provides additional help and information about contributing to the OpenCue documentation.
 
 As with all changes to OpenCue, you also need to be familiar with common Git
 workflows.
