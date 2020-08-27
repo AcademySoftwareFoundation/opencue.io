@@ -23,7 +23,13 @@ A [Design Document](https://docs.google.com/document/d/1cCPrZsM8fRbcluTppcuPFQ6_
 about the initial design was then shared with the community for feedback and review which included the specs of the API
  (which changed over the course of 3 months) and the API matrix which shows what the parallels in each provider are
  
- 
+## Cloud plugin source code
+
+The code base for this plugin is currently a [Pull Request](https://github.com/AcademySoftwareFoundation/OpenCue/pull/725)
+that will be merged into the [cloudplugin](https://github.com/AcademySoftwareFoundation/OpenCue/tree/cloud-plugin) branch 
+of the repo
+
+
 ## Cloud Plugin Setup
 
 #### Google Compute Engine setup
@@ -71,7 +77,7 @@ dialog that will allow you to create a cloud group
 ![Cloud Plugin Context Menu](/blog/images/CloudPluginContextMenu.png)
 
 
-
+## Further work and updates
 
 
 
