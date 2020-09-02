@@ -4,14 +4,18 @@ linkTitle: "Google Summer of Code '20 - Cloud Plugin"
 date: 2020-08-27
 weight: 1
 description: >
-  A starter to the CueCommander cloud plugin; work done for Google Summer of Code '20 by [Shiva Kannan](https://github.com/shiva-kannan).
-  Please feel free to contact [opencue-user@lists.aswf.io](opencue-user@lists.aswf.io) if you have any questions about this work.
-  
+  A starter to the CueCommander cloud plugin; work done for Google Summer of Code '20
 ---
 
 A blog post and starter material for the Cloud Plugin - work done during Google Summer of Code '20 on creating a CueCommander
- plugin that can be used to manage cloud pools from OpenCue.
- 
+plugin that can be used to manage cloud pools from OpenCue.
+
+Author : [Shiva Kannan](https://github.com/shiva-kannan)
+
+Please feel free to reach out at [opencue-user@lists.aswf.io](opencue-user@lists.aswf.io) if you have questions/feedback about this work.
+
+---
+
 ## Summer of code proposal
 
 The main proposal consisted of the plan of action for the 3 months of development, which included research about
@@ -28,7 +32,7 @@ about the initial design was then shared with the community for feedback and rev
  
 ## Cloud plugin source code
 
-The code base for this plugin is currently on the [cloudplugin](https://github.com/AcademySoftwareFoundation/OpenCue/tree/cloud-plugin)
+The code base for this plugin is currently on the [cloud-plugin](https://github.com/AcademySoftwareFoundation/OpenCue/tree/cloud-plugin)
 branch of the OpenCue repo.
 
 ## Design overview
@@ -40,7 +44,7 @@ managed as a single entity instead of managing separate instances.
 They go by different names in different providers:
 [Instance Groups (GCP)](https://cloud.google.com/compute/docs/instance-groups),
 [Scale Sets (Azure)](https://azure.microsoft.com/en-us/services/virtual-machine-scale-sets),
-[Auto Scaling Groups (AWS)](https://docs.aws.amazon.com/autoscaling/ec2/userguide/AutoScalingGroup.html)
+[Auto Scaling Groups (AWS)](https://docs.aws.amazon.com/autoscaling/ec2/userguide/AutoScalingGroup.html).
 
 The design takes into consideration how each of the cloud provider's API handle creation/scaling/deletion of these entities
 and how they will be used by the plugin's single interface to manage multiple cloud provider's entities.
@@ -170,3 +174,7 @@ A draft PR for the same can be found here: [Azure Plugin PR](https://github.com/
 3. [AWS integration](https://github.com/AcademySoftwareFoundation/OpenCue/issues/774) for the cloud plugin.
 
 4. Better integration with the MonitorHosts plugin: [Cloud group source for MonitorHosts plugin](https://github.com/AcademySoftwareFoundation/OpenCue/issues/775).
+
+---
+
+>Please feel free to contact [opencue-user@lists.aswf.io](opencue-user@lists.aswf.io) if you have any questions/feedback about this work.
