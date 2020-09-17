@@ -8,10 +8,9 @@ name: OpenCue Release Blog Post
 # It can be triggered manually by sending an HTTP request:
 #   $ curl \
 #       -X POST
-#       -u "${{ secrets.PAT_USERNAME}}:${{secrets.PAT_TOKEN}}" \
 #       -H "Accept: application/vnd.github.v3+json" \
 #       -H "Content-Type: application/json" \
-#       https://api.github.com/repos/AcademySoftwareFoundation/opencue.io/actions/workflows/2618928/dispatches \
+#       https://${GITHUB_PAT}@api.github.com/repos/AcademySoftwareFoundation/opencue.io/actions/workflows/2618928/dispatches \
 #       --data '{"ref": "master", "inputs": {"release_version": "vX.X.X"}}'
 #
 # The main OpenCue release pipeline uses this to trigger a new blog post when
@@ -28,9 +27,21 @@ jobs:
   create_blog_post:
     runs-on: ubuntu-latest
     name: Create Blog Post
+    env:
+      REPO_ROOT: /repos/AcademySoftwareFoundation/OpenCue
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Print release version
         run: echo "Creating blog post for release ${{ github.event.inputs.release_version }}"
+      - name: Generate blog post
+        env:
+          GITHUB_PAT: ${{ secrets.OPENCUE_AUTO_PAT }}
+        run: |
+          set -e
 
+          tag_name=${{ github.event.inputs.release_version }}
+          release_url="https://${GITHUB_PAT}@api.github.com${REPO_ROOT}/releases/tags/${tag_name}
+          changelist=$(curl -s -L ${release_url} | jq '.body' | sed 's/.*## Changes://')
+
+          echo ${changelist}
