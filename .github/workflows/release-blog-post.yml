@@ -17,11 +17,12 @@ name: OpenCue Release Blog Post
 # The main OpenCue release pipeline uses this to trigger a new blog post when
 # the release is created on the main code repository.
 
-on: workflow_dispatch
-  inputs:
-    release_version:
-      description: 'OpenCue release version for which a blog post will be created'
-      required: true
+on:
+  workflow_dispatch:
+    inputs:
+      release_version:
+        description: 'OpenCue release version for which a blog post will be created'
+        required: true
 
 jobs:
   create_blog_post:
