@@ -1,0 +1,40 @@
+name: OpenCue Release Blog Post
+
+# Workflow to automate the creation of a blog post for an OpenCue release.
+#
+# This workflow is triggered externally via the `workflow_dispatch` event sent via the
+# GitHub REST API.
+#
+# It can be triggered manually by sending an HTTP request:
+#   $ curl \
+#       -X POST
+#       -u "${{ secrets.PAT_USERNAME}}:${{secrets.PAT_TOKEN}}" \
+#       -H "Accept: application/vnd.github.v3+json" \
+#       -H "Content-Type: application/json" \
+#       https://api.github.com/repos/AcademySoftwareFoundation/opencue.io/actions/workflows/{workflow id}/dispatches \
+#       --data '{"ref": "master", "inputs": {"releaseVersion": "vX.X.X"}}'
+#
+# The main OpenCue release pipeline uses this to trigger a new blog post when
+# the release is created on the main code repository.
+
+#on: workflow_dispatch
+
+on:
+  push:
+    branches: [ blog-post-workflow ]
+
+inputs:
+  releaseVersion:
+    description: 'OpenCue release version for which a blog post will be created'
+    required: true
+
+jobs:
+  create_blog_post:
+    runs-on: ubuntu-latest
+    name: Create Blog Post
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Print release version
+        run: echo ${INPUT_RELEASEVERSION}
+
