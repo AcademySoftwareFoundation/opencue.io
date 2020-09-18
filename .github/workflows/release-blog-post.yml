@@ -44,6 +44,8 @@ jobs:
           repo_root="https://${GITHUB_PAT}@api.github.com/repos/AcademySoftwareFoundation/OpenCue"
           release_url="${repo_root}/releases/tags/${tag_name}"
 
+          release_date="$(curl -s -L ${release_url} | jq -r '.published_at' | sed 's/T[0-9:]\+Z//')"
+
           # What's going on here:
           # 1. We fetch the GitHub release data via the GitHub REST API
           # 2. We use the `jq` JSON parser to get only the body text.
@@ -60,7 +62,7 @@ jobs:
           ---
           title: "Announcing the release of OpenCue ${tag_name}"
           linkTitle: "${tag_name} release"
-          date: 2020-05-07
+          date: ${release_date}
           description: "OpenCue ${tag_name} release notes"
           ---
 
