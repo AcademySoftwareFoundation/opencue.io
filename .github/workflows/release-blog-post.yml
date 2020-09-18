@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Create Blog Post
     env:
-      REPO_ROOT: /repos/AcademySoftwareFoundation/OpenCue
+      MAIN_REPO: AcademySoftwareFoundation/OpenCue
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -41,7 +41,13 @@ jobs:
           set -e
 
           tag_name=${{ github.event.inputs.release_version }}
-          release_url="https://${GITHUB_PAT}@api.github.com${REPO_ROOT}/releases/tags/${tag_name}"
-          changelist=$(curl -s -L ${release_url} | jq '.body' | sed 's/.*## Changes://')
+          repo_root="https://${GITHUB_PAT}@api.github.com/repos/AcademySoftwareFoundation/OpenCue"
+          release_url="${repo_root}/releases/tags/${tag_name}"
+
+          changelist=$(curl -s -L ${release_url} \
+            | jq -r '.body' \
+            | egrep "^\* ([a-f0-9]+) " \
+            | sed 's/^* [a-f0-9]\+ /*   /' \
+            | sed 's/(\(#[0-9]\+\))/[\1](https:\/\/github.com\/AcademySoftwareFoundation\/OpenCue\/pull\/\1)/g'
 
           echo ${changelist}
