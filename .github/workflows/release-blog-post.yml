@@ -40,7 +40,7 @@ jobs:
         run: |
           set -e
 
-          tag_name=${{ github.event.inputs.release_version }}
+          tag_name="${{ github.event.inputs.release_version }}"
           repo_root="https://${GITHUB_PAT}@api.github.com/repos/AcademySoftwareFoundation/OpenCue"
           release_url="${repo_root}/releases/tags/${tag_name}"
 
@@ -48,6 +48,6 @@ jobs:
             | jq -r '.body' \
             | egrep "^\* ([a-f0-9]+) " \
             | sed 's/^* [a-f0-9]\+ /*   /' \
-            | sed 's/(\(#[0-9]\+\))/[\1](https:\/\/github.com\/AcademySoftwareFoundation\/OpenCue\/pull\/\1)/g'
+            | sed 's/(\(#[0-9]\+\))/[\1](https:\/\/github.com\/AcademySoftwareFoundation\/OpenCue\/pull\/\1)/g')
 
           echo ${changelist}
