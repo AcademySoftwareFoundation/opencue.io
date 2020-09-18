@@ -58,9 +58,9 @@ jobs:
             | sed 's/[a-f0-9]\{40\}/ /' \
             | sed 's/(#\([0-9]\+\))/[#\1](https:\/\/github.com\/AcademySoftwareFoundation\/OpenCue\/pull\/\1)/g')"
 
-          file_name="content/releases/announcing-opencue-${tag_name}-release.md"
+          file_name="content/blog/releases/announcing-opencue-${tag_name}-release.md"
 
-          cat <<BLOG_POST_CONTENTS >> ${file_name}
+          cat <<BLOG_POST_CONTENTS > ${file_name}
           ---
           title: "Announcing the release of OpenCue ${tag_name}"
           linkTitle: "${tag_name} release"
