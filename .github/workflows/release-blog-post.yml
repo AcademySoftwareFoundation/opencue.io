@@ -44,10 +44,30 @@ jobs:
           repo_root="https://${GITHUB_PAT}@api.github.com/repos/AcademySoftwareFoundation/OpenCue"
           release_url="${repo_root}/releases/tags/${tag_name}"
 
+          # What's going on here:
+          # 1. We fetch the GitHub release data via the GitHub REST API
+          # 2. We use the `jq` JSON parser to get only the body text.
+          # 3. Pre-filter the body text for only the changelist lines.
+          # 4. Remove the leading commit hashes, they aren't useful outside of a GitHub context.
+          # 5. Turn Pull Request numbers into links to the PRs themselves.
           changelist="$(curl -s -L ${release_url} \
             | jq -r '.body' \
             | egrep '^\* ([a-f0-9]+) ' \
             | sed 's/[a-f0-9]\{40\}/ /' \
             | sed 's/(#\([0-9]\+\))/[#\1](https:\/\/github.com\/AcademySoftwareFoundation\/OpenCue\/pull\/\1)/g')"
 
-          echo "${changelist}"
+          cat <<BLOG_POST_CONTENTS >> foo.txt
+          ---
+          title: "Announcing the release of OpenCue ${tag_name}"
+          linkTitle: "${tag_name} release"
+          date: 2020-05-07
+          description: "OpenCue ${tag_name} release notes"
+          ---
+
+          [${tag_name} of OpenCue](https://github.com/AcademySoftwareFoundation/OpenCue/releases/tag/${tag_name})
+          includes the following changes and updates:
+
+          ${changelist}
+          BLOG_POST_CONTENTS
+
+          cat foo.txt
