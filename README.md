@@ -3,13 +3,13 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bef98bd8-69d2-4c22-a49e-c1c3897638ac/deploy-status)](https://app.netlify.com/sites/elated-haibt-1b47ff/deploys)
 
 Welcome to the repository for the OpenCue documentation and website. This
-repository hosts all of the code and resources to build the OpenCue
+repository hosts all types of code and resources to build the OpenCue
 documentation and website. We welcome contributions to the docs.
 
 ## Contributing to the documentation
 
-This section describes the process you need to follow, and the tools you need to
-run, to propose changes to the OpenCue documentation.
+This section describes the process you need to follow and the tools you need to
+run to propose changes to the OpenCue documentation.
 
 ### Before you begin
 
@@ -17,8 +17,7 @@ To learn about the process for contributing to OpenCue, see
 [Contributing to OpenCue](https://www.opencue.io/contributing/opencue/contributing/). This page
 provides additional help and information about contributing to the OpenCue documentation.
 
-As with all changes to OpenCue, you also need to be familiar with common Git
-workflows.
+As with all changes to OpenCue, you also need to be familiar with the workflow of basic Git.
 
 ### Website infrastructure
 
@@ -80,7 +79,7 @@ To set up a local copy of the OpenCue website:
     ```
     
 You can now create a Git branch in your copy of the repository to experiment
-with making changes. To preview your changes in a browser, run the `hugo server`
+with the changes you made. To preview your changes in a browser, run the `hugo server`
 command. When you're ready to push your changes to the opencue.io repository,
 create a [pull request](https://help.github.com/en/articles/about-pull-requests).
 
