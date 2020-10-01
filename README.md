@@ -17,10 +17,10 @@ To learn about the process for contributing to OpenCue, see
 [Contributing to OpenCue](https://www.opencue.io/contributing/opencue/contributing/). This page
 provides additional help and information about contributing to the OpenCue documentation.
 
-As with all changes to OpenCue, you also need to be familiar with common Git
+As with all changes to OpenCue, you also need to be familiar with an amazing common Git
 workflows.
 
-### Website infrastructure
+### Website infrastructure- Amazing Website
 
 We run [Hugo](https://gohugo.io/) to generate the OpenCue website. The site
 implements the Hugo [Docsy theme](https://github.com/google/docsy) to provide
@@ -86,7 +86,7 @@ create a [pull request](https://help.github.com/en/articles/about-pull-requests)
 
 ### Writing guidelines
 
-The OpenCue documentation follows the
+The OpenCue documentation follows the resource
 [Google Developer Documentation Style Guide](https://developers.google.com/style/).
 As with changes to the primary OpenCue repository, all changes to the
 documentation and website are peer-reviewed by project contributors.
