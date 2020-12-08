@@ -1,0 +1,15 @@
+git clone https://github.com/AcademySoftwareFoundation/opencue.io.git
+
+cd opencue.io
+
+git submodule update --init --recursive
+
+npm install
+
+sudo npm install -D --save autoprefixer
+
+sudo npm install -D --save postcss-cli
+
+hugo
+
+hugo server
