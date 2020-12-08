@@ -102,6 +102,13 @@ To set up a local copy of the OpenCue website:
     hugo
     ```
     
+9. Run the `hugo server` command to serve the static content and view it in your browser:   
+    
+     ```
+    hugo server
+    ```
+    
+   
 You can now create a Git branch in your copy of the repository to experiment
 with making changes. To preview your changes in a browser, run the `hugo server`
 command. When you're ready to push your changes to the opencue.io repository,
