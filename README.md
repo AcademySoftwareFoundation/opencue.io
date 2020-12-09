@@ -49,19 +49,19 @@ To set up a local copy of the OpenCue website:
 1. Install Hugo for your system from [here](https://github.com/gohugoio/hugo/releases).
 
 
-2.  Clone the opencue.io repository:
+1.  Clone the opencue.io repository:
 
     ```shell
     git clone https://github.com/AcademySoftwareFoundation/opencue.io.git
     ```
 
-3.  Change to the `opencue.io` directory:
+1.  Change to the `opencue.io` directory:
 
     ```shell
     cd opencue.io
     ```
 
-4.  Recursively update all Git submodules in the repository to install Docsy and
+1.  Recursively update all Git submodules in the repository to install Docsy and
     related dependencies:
 
     **NOTE:** Docsy relies on additional submodules, such as Bootstrap. If you
@@ -71,38 +71,31 @@ To set up a local copy of the OpenCue website:
     git submodule update --init --recursive
     ```
 
-5.  Run the npm command to install any required Node.js dependencies:
+1.  Run the npm command to install any required Node.js dependencies:
 
     ```
     npm install
     ```
-    
-    
-    
-    
-6. Install `AutoPrefixer` to parse the CSS files.
+  
+1. Install `AutoPrefixer` to parse the CSS files.
 
     ```shell
    sudo npm install -D --save autoprefixer
      ```
 
-
-
-7. Install `PostCSS` so that the site build can create the final CSS assets.
+1. Install `PostCSS` so that the site build can create the final CSS assets.
 
     ```shell
    sudo npm install -D --save postcss-cli
      ```
 
-
-
-8.  Run the `hugo` command to verify the installation steps were successful:
+1.  Run the `hugo` command to verify the installation steps were successful:
 
     ```
     hugo
     ```
     
-9. Run the `hugo server` command to serve the static content and view it in your browser:   
+1. Run the `hugo server` command to serve the static content and view it in your browser:   
     
      ```
     hugo server
