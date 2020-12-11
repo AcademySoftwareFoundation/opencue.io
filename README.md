@@ -47,7 +47,8 @@ To set up a local copy of the OpenCue website:
 
 1. Make sure NPM (Node Package Manager) is installed on your system.
 
-1.  Install Hugo for your system from [here](https://github.com/gohugoio/hugo/releases).
+1.  Follow these steps to [install Hugo](https://gohugo.io/getting-started/installing/) for your operating system.
+    Or, you can follow these steps to [install from binaries](https://github.com/gohugoio/hugo/releases).
 
 1.  Clone the opencue.io repository:
 
@@ -77,13 +78,13 @@ To set up a local copy of the OpenCue website:
     npm install
     ```
   
-1. Install `AutoPrefixer` to parse the CSS files.
+1. Install `AutoPrefixer` to parse the CSS files:
 
     ```shell
    sudo npm install -D --save autoprefixer
      ```
 
-1. Install `PostCSS` so that the site build can create the final CSS assets.
+1. Install `PostCSS` so that the site build can create the final CSS assets:
 
     ```shell
    sudo npm install -D --save postcss-cli
