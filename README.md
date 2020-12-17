@@ -81,13 +81,13 @@ To set up a local copy of the OpenCue website:
 1. Install `AutoPrefixer` to parse the CSS files:
 
     ```shell
-   sudo npm install -D --save autoprefixer
+   npm install autoprefixer
      ```
 
 1. Install `PostCSS` so that the site build can create the final CSS assets:
 
     ```shell
-   sudo npm install -D --save postcss-cli
+   npm install postcss-cli
      ```
 
 1.  Run the `hugo` command to verify the installation steps were successful:
