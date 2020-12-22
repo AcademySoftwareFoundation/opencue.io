@@ -3,7 +3,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bef98bd8-69d2-4c22-a49e-c1c3897638ac/deploy-status)](https://app.netlify.com/sites/elated-haibt-1b47ff/deploys)
 
 Welcome to the repository for the OpenCue documentation and website. This
-repository hosts all of the code and resources to build the OpenCue
+repository hosts all the code and resources to build the OpenCue
 documentation and website. We welcome contributions to the docs.
 
 ## Contributing to the documentation
@@ -45,6 +45,11 @@ information, see the [Docsy documentation](https://github.com/google/docsy).
 
 To set up a local copy of the OpenCue website:
 
+1. Make sure NPM (Node Package Manager) is installed on your system.
+
+1.  Follow these steps to [install Hugo](https://gohugo.io/getting-started/installing/) for your operating system.
+    Or, you can follow these steps to [install from binaries](https://github.com/gohugoio/hugo/releases).
+
 1.  Clone the opencue.io repository:
 
     ```shell
@@ -72,11 +77,29 @@ To set up a local copy of the OpenCue website:
     ```
     npm install
     ```
+  
+1. Install `AutoPrefixer` to parse the CSS files:
+
+    ```shell
+   npm install autoprefixer
+     ```
+
+1. Install `PostCSS` so that the site build can create the final CSS assets:
+
+    ```shell
+   npm install postcss-cli
+     ```
 
 1.  Run the `hugo` command to verify the installation steps were successful:
 
     ```
     hugo
+    ```
+    
+1. Run the `hugo server` command to serve the static content and view it in your browser:   
+    
+     ```
+    hugo server
     ```
     
 You can now create a Git branch in your copy of the repository to experiment
