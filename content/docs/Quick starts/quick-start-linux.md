@@ -27,7 +27,8 @@ You must have the following software installed on your machine:
 *   Python version 2.7 or greater
 *   The Python [`pip` command](https://pypi.org/project/pip/)
 *   The Python [virtualenv tool](https://pypi.org/project/virtualenv/)
-*   The ```python-dev``` (Ubuntu/Debian) or ```python-devel```(Fedora/Cent-OS) package 
+*   If you're using Ubuntu or Debian, the `python-dev` package
+*   If you're using Fedora or Cent-OS, the `python-devel` package
 *   [Docker](https://docs.docker.com/install/)
 *   [Docker Compose](https://docs.docker.com/compose/install/)
 
