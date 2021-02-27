@@ -25,7 +25,7 @@ dependencies:
   - We recommend installing Postgres using [Homebrew](https://brew.sh/):
   
     ```shell
-    brew install postresql
+    brew install postgresql
     brew services start postgresql
     ```
 
