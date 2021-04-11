@@ -104,7 +104,9 @@ To set up the database using the command-line:
 1.  Change your current directory to the root of your OpenCue Git clone.
 
 1.  Visit https://github.com/AcademySoftwareFoundation/OpenCue/releases and download the SQL files
-    from the latest release's Assets. There should be two - a `schema` file and a `demo_data` file.
+    from the latest release's Assets. There should be two - a `schema` file and a `seed_data` file.
+    
+    {{% alert title="Note" color="info"%}}In older releases `seed_data.sql` is called `demo_data.sql`.{{% /alert %}}
 
 1.  Populate the database schema and some initial data, run the `psql`
     command:
@@ -113,13 +115,13 @@ To set up the database using the command-line:
     psql -h $DB_HOST -f <path to schema SQL file> $DB_NAME
     ```
 
-1.  The `demo_data` SQL file contains a series of SQL commands to insert some
+1.  The `seed_data` SQL file contains a series of SQL commands to insert some
     sample data into the Cuebot database, which helps demonstrate various
     features of the software. To execute the SQL statements, run the `psql`
     command:
 
     ```shell
-    psql -h $DB_HOST -f <path to demo_data SQL file> $DB_NAME
+    psql -h $DB_HOST -f <path to seed_data SQL file> $DB_NAME
     ```
     To see a list of flags for the `psql` tool, run the `psql --help` command. For example, if
     your database is running on a remote host, specify the `-h` flag. If you need to specify a
