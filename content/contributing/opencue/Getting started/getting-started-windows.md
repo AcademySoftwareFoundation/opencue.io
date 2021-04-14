@@ -42,8 +42,10 @@ PostgreSQL on Windows, or the command-line PostgreSQL client.
 
 To set up the database using the command-line:
 
-1. Download the `schema-*.sql` and `demo-*.sql` files from the
+1. Download the `schema-*.sql` and `seed_data-*.sql` files from the
 [the releases page](https://github.com/AcademySoftwareFoundation/OpenCue/releases).
+   
+{{% alert title="Note" color="info"%}}In older releases `seed_data.sql` is called `demo_data.sql`.{{% /alert %}}
 
 1. Open Powershell, then run `psql`:
 
@@ -64,7 +66,7 @@ create database opencue;
 alter default privileges in schema public grant all privileges on tables to opencue;
 \include schema-*.sql # actual filename changes depending on version
 set search_path = public;
-\include demo_data-*.sql # actual filename changes depending on version
+\include seed_data-*.sql # actual filename changes depending on version
 \quit
 ```
 
@@ -110,9 +112,11 @@ To set up the database using the pgAdmin GUI:
 
    You also need the demo data to run the full environment locally.
 
-1. To insert demo data, download the latest `demo_data-*.sql` from the
+1. To insert demo data, download the latest `seed_data-*.sql` from the
    [releases page](https://github.com/AcademySoftwareFoundation/OpenCue/releases)
    and run it against the `opencue` database as described in the previous step.
+   
+   {{% alert title="Note" color="info"%}}In older releases `seed_data.sql` is called `demo_data.sql`.{{% /alert %}}
 
 1. To grant permissions, in pgAdmin, right-click on the `opencue` database and
    select **Grant Wizard**.

@@ -99,14 +99,16 @@ To set up the database using the command-line:
    files which the database administrator can apply incrementally to construct the full database
    schema.
    
-1.  The OpenCue repository also includes the PostgreSQL `demo_data.sql` file. This file
+1.  The OpenCue repository also includes the PostgreSQL `seed_data.sql` file. This file
     contains a series of SQL commands to insert some sample data into the Cuebot database,
     which helps demonstrate various features of the software. To execute the SQL statements,
     run the `psql` command:
 
     ```shell
-    psql -h $DB_HOST -f cuebot/src/main/resources/conf/ddl/postgres/demo_data.sql $DB_NAME
+    psql -h $DB_HOST -f cuebot/src/main/resources/conf/ddl/postgres/seed_data.sql $DB_NAME
     ```
+
+    {{% alert title="Note" color="info"%}}In older releases `seed_data.sql` is called `demo_data.sql`.{{% /alert %}}
 
     To see a list of flags for the `psql` tool, run the `psql --help` command. For example, if
     your database is running on a remote host, specify the `-h` flag. If you need to specify a

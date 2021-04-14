@@ -241,7 +241,9 @@ To create a database:
 
 Visit https://github.com/AcademySoftwareFoundation/OpenCue/releases and download the SQL files
 from the latest release's Assets. There should be two - a `schema` file and a
-`demo_data` file.
+`seed_data` file.
+
+{{% alert title="Note" color="info"%}}In older releases `seed_data.sql` is called `demo_data.sql`.{{% /alert %}}
 
 To populate the database:
 
@@ -256,13 +258,13 @@ To populate the database:
     For example, if your database is running on a remote host, specify the `-h`
     flag. If you need to specify a different username, specify the `-U` flag.
 
-1.  The `demo_data` SQL file contains a series of SQL commands to insert some
+1.  The `seed_data` SQL file contains a series of SQL commands to insert some
     sample data into the Cuebot database, which helps demonstrate various
     features of the software. To execute the SQL statements, run the `psql`
     command:
 
     ```shell
-    psql -h $DB_HOST -f <path to demo_data SQL file> $DB_NAME
+    psql -h $DB_HOST -f <path to seed_data SQL file> $DB_NAME
     ```
 
 ### Option 2: Apply migrations from source
@@ -303,13 +305,13 @@ To apply the migrations:
     flyway -url=jdbc:postgresql://$DB_HOST/$DB_NAME -user=$USER -n -locations=filesystem:cuebot/src/main/resources/conf/ddl/postgres/migrations migrate
     ```
 
-1.  The OpenCue repository also includes the PostgreSQL `demo_data.sql` file.
+1.  The OpenCue repository also includes the PostgreSQL `seed_data.sql` file.
     This file contains a series of SQL commands to insert some sample data into
     the Cuebot database, which helps demonstrate various features of the
     software. To execute the SQL statements, run the `psql` command:
 
     ```shell
-    psql -h $DB_HOST -f cuebot/src/main/resources/conf/ddl/postgres/demo_data.sql $DB_NAME
+    psql -h $DB_HOST -f cuebot/src/main/resources/conf/ddl/postgres/seed_data.sql $DB_NAME
     ```
 
     To see a list of flags for the `psql` tool, run the `psql --help` command.
