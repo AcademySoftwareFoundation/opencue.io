@@ -89,29 +89,13 @@ To deploy the OpenCue sandbox environment:
 
         cd OpenCue
 
-1.  To deploy the OpenCue sandbox environment, export the `CUE_FRAME_LOG_DIR`
-    environment variable:
+1.  Build the Cuebot container from source:
 
-    {{% alert title="Note" color="info"%}}You must export all environment
-    variables each time you start the sandbox.{{% /alert %}}
-
-        export CUE_FRAME_LOG_DIR=/tmp/rqd/logs
-
-1.  To specify a password for the database, export the `POSTGRES_PASSWORD`
-    environment variable:
-
-        export POSTGRES_PASSWORD=<REPLACE-WITH-A-PASSWORD>
-
-1.  Build the RQD container from source:
-
-    {{% alert title="Note" color="info"%}}This is a temporary workaround
-    due to a bug related to RQD in version 0.3.6 of OpenCue.{{% /alert %}}
-
-        docker build -t opencue/rqd -f rqd/Dockerfile .
+        docker build -t opencue/cuebot -f cuebot/Dockerfile .
 
 1.  To deploy the sandbox environment, run the `docker-compose` command:
 
-        docker-compose --project-directory . -f sandbox/docker-compose.yml up
+        docker-compose up
 
     The command produces a lot of output. When the setup process completes,
     you see output similar to the following example:
@@ -280,11 +264,15 @@ from the second shell:
 
 1.  To stop the sandbox environment, run the following command:
 
-        docker-compose --project-directory . -f sandbox/docker-compose.yml stop
+        docker-compose stop
 
 1.  To free up storage space, delete the containers:
 
-        docker-compose --project-directory . -f sandbox/docker-compose.yml rm
+        docker-compose rm
+
+1.  To delete the PostgreSQL data directory created by the database setup process:
+
+        rm -rf sandbox/db-data
 
 1.  To delete the virtual environment for the Python client packages:
 
