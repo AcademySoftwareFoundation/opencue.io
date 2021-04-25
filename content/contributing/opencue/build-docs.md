@@ -51,16 +51,10 @@ To build and view the HTML reference docs:
     source venv/bin/activate
     ```
 
-1.  Install Sphinx:
+1.  Install dependencies for building the docs, along with OpenCue's other standard dependencies:
 
     ```
-    pip install sphinx sphinx-theme
-    ```
-
-1.  Install all other dependencies:
-
-    ```
-    pip install -r requirements.txt
+    pip install -r docs/requirements.txt -r requirements.txt -r requirements_gui.txt
     ```
 
 1.  Compile the OpenCue Cuebot protos, as these are dependencies for the
@@ -70,6 +64,7 @@ To build and view the HTML reference docs:
     cd proto
     python -m grpc_tools.protoc -I=. --python_out=../pycue/opencue/compiled_proto --grpc_python_out=../pycue/opencue/compiled_proto ./*.proto
     cd ..
+    2to3 -wn -f import pycue/opencue/compiled_proto/*_pb2*.py
     ```
 
 1.  Change to the `docs` directory:
