@@ -85,6 +85,20 @@ To deploy the OpenCue sandbox environment:
 
 1.  Start the Terminal app.
 
+1.  Docker Compose mounts volumes for the RQD rendering server on the host
+    operating system under `/tmp/rqd/logs` and `/tmp/rqd/shots`. RQD saves
+    logs to the `logs` directory. You specify the `shots` directory to save
+    RQD output when creating OpenCue jobs.
+
+    To create the mount points with the required permissions, run the
+    following command:
+
+    {{% alert title="Note" color="info"%}}If you skip this step, the root
+    account of the host operating system might incorrectly own the mount point
+    directories.{{% /alert %}}
+
+        mkdir -p /tmp/rqd/logs /tmp/rqd/shots
+
 1.  Change to the root of the OpenCue source code directory:
 
         cd OpenCue
@@ -92,11 +106,6 @@ To deploy the OpenCue sandbox environment:
 1.  Build the Cuebot container from source:
 
         docker build -t opencue/cuebot -f cuebot/Dockerfile .
-
-1.  Create the shared directories used for storing job output:
-
-        mkdir -p /tmp/rqd/logs && chmod 777 /tmp/rqd/logs
-        mkdir -p /tmp/rqd/shots && chmod 777 /tmp/rqd/shots
 
 1.  To deploy the sandbox environment, run the `docker-compose` command:
 
