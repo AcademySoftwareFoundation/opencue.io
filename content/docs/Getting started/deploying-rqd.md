@@ -164,5 +164,4 @@ started up:
 
 ## What's next?
 
-*   [Checking out the source
-    code](/docs/getting-started/checking-out-the-source-code)
+*   [Installing PyCue and PyOutline](/docs/getting-started/installing-pycue-and-pyoutline)
