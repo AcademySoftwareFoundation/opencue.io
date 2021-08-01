@@ -93,6 +93,11 @@ To deploy the OpenCue sandbox environment:
 
         docker build -t opencue/cuebot -f cuebot/Dockerfile .
 
+1.  Create the shared directories used for storing job output:
+
+        mkdir -p /tmp/rqd/logs && chmod 777 /tmp/rqd/logs
+        mkdir -p /tmp/rqd/shots && chmod 777 /tmp/rqd/shots
+
 1.  To deploy the sandbox environment, run the `docker-compose` command:
 
         docker-compose up
