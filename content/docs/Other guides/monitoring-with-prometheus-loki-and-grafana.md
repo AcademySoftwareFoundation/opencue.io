@@ -46,16 +46,16 @@ To deploy the sandbox environment:
 
 4.   To deploy the sandbox environment, run the `docker-compose` command:
 
-        docker-compose --project-directory . -f ./docker-compose.yml -f sandbox/docker-compose.monitoring.yml up
+         docker-compose --project-directory . -f ./docker-compose.yml -f sandbox/docker-compose.monitoring.yml up
 
      The command produces a lot of output. When the setup process completes, you see output similar to
      the following example:
 
-        rqd_1     | 2019-09-03 16:56:09,906 WARNING   rqd3-__main__   RQD Starting Up
-        rqd_1     | 2019-09-03 16:56:10,395 WARNING   rqd3-rqcore     RQD Started
-        cuebot_1  | 2019-09-03 16:56:10,405 WARN pool-1-thread-1 com.imageworks.spcue.dispatcher.HostReportHandler - Unable
-         to find host 172.18.0.5,org.springframework.dao.EmptyResultDataAccessException: Failed to find host 172.18.0.5 , c
-        reating host.
+         rqd_1     | 2019-09-03 16:56:09,906 WARNING   rqd3-__main__   RQD Starting Up
+         rqd_1     | 2019-09-03 16:56:10,395 WARNING   rqd3-rqcore     RQD Started
+         cuebot_1  | 2019-09-03 16:56:10,405 WARN pool-1-thread-1 com.imageworks.spcue.dispatcher.HostReportHandler - Unable
+          to find host 172.18.0.5,org.springframework.dao.EmptyResultDataAccessException: Failed to find host 172.18.0.5 , c
+          reating host.
 
 Leave this shell running in the background.
 
@@ -64,7 +64,7 @@ Leave this shell running in the background.
 To view the data exported by the monitoring stack, log into the Grafana endpoint provided by the
 sandbox environment.
 
-1.   Open your browser and visit http://localhost:3000/.
+1.   Open your browser and visit <http://localhost:3000/>.
 2.   Log in with the default admin account:
        *   User: admin
        *   Password: admin
