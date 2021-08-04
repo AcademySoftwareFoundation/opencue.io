@@ -11,7 +11,7 @@ Brian Cipriano from Google gave a project update, shared some of our upcoming de
 showed some of the integration with third-party monitoring services we've been working on.
 
 Diego Tavares from Sony Picture Imageworks shared how SPI has been using OpenCue in production and
-some of the tweaks they've made, and showed how SPI is using OpenCue's new Promtheus/Grafana
+some of the tweaks they've made, and showed how SPI is using OpenCue's new Prometheus/Grafana
 integration.
 
 [Our slides from the talk are now posted online.](https://docs.google.com/presentation/d/1XSTts__F4DHmK_ivNRricxsd4dMflGid-J9xSxFZ2_k/edit?usp=sharing)
