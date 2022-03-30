@@ -24,9 +24,8 @@ This quick start takes approximately 20 minutes to complete.
 
 You must have the following software installed on your machine:
 
-*   Python version 2.7 or greater
+*   Python version 3.7 or greater
 *   The Python [`pip` command](https://pypi.org/project/pip/)
-*   The Python [virtualenv tool](https://pypi.org/project/virtualenv/)
 *   [Docker](https://docs.docker.com/install/)
 *   [Docker Compose](https://docs.docker.com/compose/install/)
 *   The `wget` command
@@ -151,7 +150,7 @@ To install the OpenCue client packages:
 
 1.  Create a virtual environment for the Python packages:
 
-        virtualenv venv
+        python3 -m venv venv
 
 1.  Activate the `venv` virtual environment:
 
@@ -162,7 +161,7 @@ To install the OpenCue client packages:
     the version numbers for
     [OpenCue releases on GitHub](https://github.com/AcademySoftwareFoundation/OpenCue/releases).
 
-        export VERSION=0.2.65
+        export VERSION=0.14.5
 
 1.  Install the Python dependencies and client packages in the `venv` virtual
     environment:
@@ -178,27 +177,8 @@ To install the OpenCue client packages:
 
 ## Testing the sandbox environment
 
-To connect to the sandbox environment, you must first configure your local
-client packages to:
-
-*   Locate the `outline.cfg` PyOutline configuration file included in the
-    OpenCue Git repository.
-*   Locate the Cuebot server running in a Docker container on your machine.
-
 To test the sandbox environment, run the following commands from the second
 Terminal window:
-
-1.  Set the location of the PyOutline configuration file:
-
-    {{% alert title="Note" color="info"%}}You must export all environment
-    variables each time you start the client packages.{{% /alert %}}
-
-        export OL_CONFIG=pyoutline/etc/outline.cfg
-
-1.  The Cuebot docker container is forwarding the gRPC ports to your
-    localhost, so you can connect to it as `localhost`:
-    
-        export CUEBOT_HOSTS=localhost
 
 1.  To verify the successful installation of the sandbox environment, as well
     as the connection between the client packages and sandbox, you can run the
