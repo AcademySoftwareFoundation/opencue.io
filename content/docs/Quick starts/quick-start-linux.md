@@ -154,7 +154,7 @@ To install the OpenCue client packages:
     the version numbers for
     [OpenCue releases on GitHub](https://github.com/AcademySoftwareFoundation/OpenCue/releases).
 
-        export VERSION=0.2.65
+        export VERSION=0.15.22
 
 1.  Install the Python dependencies and client packages in the `venv` virtual
     environment:
