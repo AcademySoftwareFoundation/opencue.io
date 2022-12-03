@@ -241,7 +241,7 @@ currently a manual process. To generate the Python code:
 1. Install the required gRPC tools:
 
     ```shell
-    pip -m install grpcio-tools
+    pip install grpcio-tools
     ```
 
 1. Change directory to the `proto` folder.
