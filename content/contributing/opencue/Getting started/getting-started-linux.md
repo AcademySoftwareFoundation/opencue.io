@@ -46,7 +46,8 @@ dependencies:
        ```shell
        su -c "createuser -s $USER" postgres
        ```
-       
+
+   - Postgres can be installed via `apt-get` on Debian based distributions such as Ubuntu by following the steps on this [link](https://www.postgresql.org/download/linux/ubuntu/).   
 - [Python 3.x](https://www.python.org/downloads/)
 
   - We recommend installing Python 3 using a `yum`-based Linux distribution, such as [CentOS](https://www.centos.org/):
@@ -56,6 +57,8 @@ dependencies:
        ```
    
   - This will install Python 3.6.4 on your CentOS 7 machine as well as installing a native Python package management tool called pip. You can simply check it by  `python3.6 -V`.
+
+  - Recent Ubuntu releases and other versions of Debian Linux ship with Python 3 pre-installed. It can be accessed with the `python3` prompt.
    
 - [Java SE JDK](https://www.oracle.com/technetwork/java/javase/downloads/index.html) version 11 or greater
 
@@ -66,6 +69,15 @@ dependencies:
        ```
    
    - This will install openjdk version "11.0.3" on your CentOS 7 machine. You can simply check it by `java -version`.
+
+   - The runtime environment of OpenJDK can be installed via `apt-get` on Ubuntu and other Debian based distros by following the steps on this [link](https://ubuntu.com/tutorials/install-jre#2-installing-openjdk-jre). 
+   
+      The JDK in addition to the JRE is needed in order to compile and run some specific Java-based software:
+
+      ```shell
+       sudo apt install default-jdk
+       ```
+
 
 It's also useful to install an IDEs. JetBrains has free community versions of the following options:
 
