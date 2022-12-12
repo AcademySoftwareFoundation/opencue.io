@@ -72,7 +72,7 @@ dependencies:
 
    - The runtime environment of OpenJDK can be installed via `apt-get` on Ubuntu and other Debian based distros by following the steps on this [link](https://ubuntu.com/tutorials/install-jre#2-installing-openjdk-jre). 
    
-      In addition to the JRE the JDK is needed in order to compile and run some specific Java-based software:
+      In addition to the JRE, the JDK is needed to compile and run some specific Java-based software:
 
       ```shell
        sudo apt install -y default-jdk
