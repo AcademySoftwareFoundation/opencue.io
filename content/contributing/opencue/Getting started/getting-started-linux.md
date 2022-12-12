@@ -72,10 +72,10 @@ dependencies:
 
    - The runtime environment of OpenJDK can be installed via `apt-get` on Ubuntu and other Debian based distros by following the steps on this [link](https://ubuntu.com/tutorials/install-jre#2-installing-openjdk-jre). 
    
-      The JDK in addition to the JRE is needed in order to compile and run some specific Java-based software:
+      In addition to the JRE the JDK is needed in order to compile and run some specific Java-based software:
 
       ```shell
-       sudo apt install default-jdk
+       sudo apt install -y default-jdk
        ```
 
 
@@ -196,6 +196,12 @@ deployment.
    
    Your virtual environment can be named whatever you want; this rest of this guide assumes
    you're using one named `venv-dev`.
+
+   If unavailable, `venv-dev` can be installed on Ubuntu and other Debian based distros via `apt-get`:
+
+   ```shell
+   sudo apt install -y python3-venv
+   ```
    
 1. Activate the virtual environment:
 
