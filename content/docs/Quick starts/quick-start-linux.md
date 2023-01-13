@@ -2,7 +2,7 @@
 title: "Quick start for Linux"
 linkTitle: "Quick start for Linux"
 weight: 1
-date: 2019-09-020
+date: 2023-01-13
 description: >
   Try OpenCue in the sandbox environment on Linux
 ---
@@ -24,11 +24,11 @@ This quick start takes approximately 20 minutes to complete.
 
 You must have the following software installed on your machine:
 
-*   Python version 2.7 or greater
+*   Python version 3.7 or greater
 *   The Python [`pip` command](https://pypi.org/project/pip/)
-*   The Python [virtualenv tool](https://pypi.org/project/virtualenv/)
-*   If you're using Ubuntu or Debian, the `python-dev` package
-*   If you're using Fedora or Cent-OS, the `python-devel` package
+    * On some systems this command may be installed as `pip3`
+*   If you're using Ubuntu or Debian, the `python3-dev` package
+*   If you're using Fedora or Cent-OS, the `python3-devel` package
 *   [Docker](https://docs.docker.com/install/)
 *   [Docker Compose](https://docs.docker.com/compose/install/)
 
@@ -143,21 +143,21 @@ To install the OpenCue client packages:
 
 1.  Create a virtual environment for the Python packages:
 
-        virtualenv venv
+        python3 -m venv sandbox-venv
 
-1.  Activate the `venv` virtual environment:
+1.  Activate the `sandbox-venv` virtual environment:
 
-        source venv/bin/activate
+        source sandbox-venv/bin/activate
 
 1.  To install the lastest versions of the OpenCue client packages, you must
     configure the installation script with the version number. You can look up
     the version numbers for
     [OpenCue releases on GitHub](https://github.com/AcademySoftwareFoundation/OpenCue/releases).
 
-        export VERSION=0.15.22
+        export VERSION=$(sandbox/get-release-tag.sh)
 
-1.  Install the Python dependencies and client packages in the `venv` virtual
-    environment:
+1.  Install the Python dependencies and client packages in the `sandbox-venv`
+    virtual environment:
 
         sandbox/install-client-archives.sh
 
@@ -170,27 +170,8 @@ To install the OpenCue client packages:
 
 ## Testing the sandbox environment
 
-To connect to the sandbox environment, you must first configure your local
-client packages to:
-
-*   Locate the `outline.cfg` PyOutline configuration file included in the
-    OpenCue Git repository.
-*   Locate the Cuebot server running in a Docker container on your machine.
-
 To test the sandbox environment, run the following commands from the second
 Terminal window:
-
-1.  Set the location of the PyOutline configuration file:
-
-    {{% alert title="Note" color="info"%}}You must export all environment
-    variables each time you start the client packages.{{% /alert %}}
-
-        export OL_CONFIG=pyoutline/etc/outline.cfg
-
-1.  The Cuebot docker container is forwarding the gRPC ports to your
-    localhost, so you can connect to it as `localhost`:
-
-        export CUEBOT_HOSTS=localhost
 
 1.  To verify the successful installation of the sandbox environment, as well
     as the connection between the client packages and sandbox, you can run the
@@ -282,7 +263,7 @@ from the second shell:
 
 1.  To delete the virtual environment for the Python client packages:
 
-        rm -rf venv
+        rm -rf sandbox-venv
 
 ## What's next?
 
