@@ -2,7 +2,7 @@
 title: "Quick start for macOS"
 linkTitle: "Quick start for macOS"
 weight: 2
-date: 2019-09-04
+date: 2023-01-13
 description: >
   Try OpenCue in the sandbox environment on macOS
 ---
@@ -26,6 +26,7 @@ You must have the following software installed on your machine:
 
 *   Python version 3.7 or greater
 *   The Python [`pip` command](https://pypi.org/project/pip/)
+    * On some systems this command may be installed as `pip3`
 *   [Docker](https://docs.docker.com/install/)
 *   [Docker Compose](https://docs.docker.com/compose/install/)
 *   The `wget` command
@@ -150,21 +151,22 @@ To install the OpenCue client packages:
 
 1.  Create a virtual environment for the Python packages:
 
-        python3 -m venv venv
+        python3 -m venv sandbox-venv
 
-1.  Activate the `venv` virtual environment:
+1.  Activate the `sandbox-venv` virtual environment:
 
-        source venv/bin/activate
+        source sandbox-venv/bin/activate
 
-1.  To install the lastest versions of the OpenCue client packages, you must
-    configure the installation script with the version number. You can look up
-    the version numbers for
+1.  To install the latest versions of the OpenCue client packages, you must
+    configure the installation script with the version number. The script
+    `sandbox/get-latest-release-tag.sh` will automatically fetch this for you,
+    but you can also look up the version numbers for
     [OpenCue releases on GitHub](https://github.com/AcademySoftwareFoundation/OpenCue/releases).
 
-        export VERSION=0.15.22
+        export VERSION=$(sandbox/get-latest-release-tag.sh)
 
-1.  Install the Python dependencies and client packages in the `venv` virtual
-    environment:
+1.  Install the Python dependencies and client packages in the `sandbox-venv`
+    virtual environment:
 
         sandbox/install-client-archives.sh
 
@@ -270,7 +272,7 @@ from the second shell:
 
 1.  To delete the virtual environment for the Python client packages:
 
-        rm -rf venv
+        rm -rf sandbox-venv
 
 ## What's next?
 
