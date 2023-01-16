@@ -159,11 +159,11 @@ To install the OpenCue client packages:
 
 1.  To install the latest versions of the OpenCue client packages, you must
     configure the installation script with the version number. The script
-    `sandbox/get-release-tag.sh` will automatically fetch this for you, but
-    you can also look up the version numbers for
+    `sandbox/get-latest-release-tag.sh` will automatically fetch this for you,
+    but you can also look up the version numbers for
     [OpenCue releases on GitHub](https://github.com/AcademySoftwareFoundation/OpenCue/releases).
 
-        export VERSION=$(sandbox/get-release-tag.sh)
+        export VERSION=$(sandbox/get-latest-release-tag.sh)
 
 1.  Install the Python dependencies and client packages in the `sandbox-venv`
     virtual environment:
