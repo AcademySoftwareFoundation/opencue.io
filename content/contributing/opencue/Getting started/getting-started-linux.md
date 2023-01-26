@@ -209,6 +209,13 @@ deployment.
    source venv-dev/bin/activate
    ```
 
+1. To install OpenCue's Python dependencies run the following command in the IDE terminal:
+
+   ```shell
+   pip install -r requirements.txt -r requirements_gui.txt
+   ```
+   This can take a few minutes, namely to download `PySide2`.
+
 ## Configure PyCharm
 
 Similar to the virtual environment, we recommend configuring your IDE as a single project
@@ -223,13 +230,6 @@ containing all of the Python components. PyCharm is used here.
    - **Virtual environment**
    - **Existing environment**
    - **Interpreter** set to `<path to git repository>/venv-dev/bin/python`
-
-1. To install OpenCue's Python dependencies run the following command in the IDE terminal:
-
-   ```shell
-      pip install -r requirements.txt
-   ```
-   This can take a few minutes, namely to download `PySide2`.
    
 
 1. In order for inter-dependencies within the code to work in PyCharm you need to mark
