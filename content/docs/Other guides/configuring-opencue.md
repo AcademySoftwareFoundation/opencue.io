@@ -4,7 +4,7 @@ linkTitle: "Configuring OpenCue"
 weight: 1
 date: 2023-01-26
 description: >
-Configure OpenCue with custom settings for your environment
+  Configure OpenCue with custom settings for your environment
 ---
 
 This guide describes how to customize OpenCue's configuration settings for your environment.
@@ -123,3 +123,8 @@ To override these settings, create a file `cuesubmit.yaml` following the same fo
 This file may be stored in:
 - the [shared config directory](#shared-config-directory)
 - or at a path of your choosing, specified via the `CUESUBMIT_CONFIG_FILE` environment variable.
+
+### cueadmin
+
+The `cueadmin` commandline tool does not utilize any additional settings beyond what is configured
+by the [`opencue` module](#opencue-module).
