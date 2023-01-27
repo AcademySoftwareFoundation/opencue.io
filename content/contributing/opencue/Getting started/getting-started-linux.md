@@ -256,15 +256,6 @@ across OpenCue components and reduces code repetition.
 Generating the Python versions of OpenCue's `.proto` files for RQD and the PyCue library is
 currently a manual process. To generate the Python code:
 
-1. Open a terminal, change to the root directory of the Git clone, and activate your
-   virtual environment as described above.
-
-1. Install the required gRPC tools:
-
-    ```shell
-    pip install grpcio-tools
-    ```
-
 1. Change directory to the `proto` folder.
 
 1. Generate the Python versions of the gRPC classes:
@@ -275,14 +266,12 @@ currently a manual process. To generate the Python code:
     ```
 
     The `.proto` files also need some post-processing to make them compatible
-    with Python 3. The easiest way to do this is to install and run the `2to3`
+    with Python 3. The easiest way to do this is to run the `2to3`
     package.
 
-1. Run the following commands to install the `2to3` package and complete the
-   post-processing:
+1. Run the following commands to complete the post-processing:
 
     ```shell
-    pip install 2to3
     2to3 -wn -f import ../rqd/rqd/compiled_proto/*_pb2*.py
     2to3 -wn -f import ../pycue/opencue/compiled_proto/*_pb2*.py
     ```
