@@ -70,8 +70,10 @@ Restart RQD to have the new settings take effect.
 
 All of these tools share a single directory where configuration may be stored:
 
-* On Windows, `%APPDATA%/opencue` (typically `C:/Users/<username>/AppData`)
+* On Windows, `%APPDATA%/opencue` (typically `C:/Users/<username>/AppData/opencue`)
 * On macOS and Linux, `~/.config/opencue`
+
+Create this directory if it does not already exist.
 
 ### opencue module
 
@@ -85,8 +87,8 @@ lists all default settings and provides an example for your own file.
 To override these settings, create a file `opencue.yaml` following the same format.
 
 This file may be stored in:
-- the [shared config directory](#shared-config-directory)
-- or at a path of your choosing, specified via the `OPENCUE_CONFIG_FILE` environment variable.
+* the [shared config directory](#shared-config-directory)
+* or at a path of your choosing, specified via the `OPENCUE_CONFIG_FILE` environment variable.
 
 ### outline module
 
@@ -99,8 +101,8 @@ lists default settings and provides an example for your own file.
 To override these settings, create a file `outline.cfg` following the same format.
 
 This file may be stored in:
-- the [shared config directory](#shared-config-directory)
-- or at a path of your choosing, specified via the `OUTLINE_CONFIG_FILE` environment variable.
+* the [shared config directory](#shared-config-directory)
+* or at a path of your choosing, specified via the `OUTLINE_CONFIG_FILE` environment variable.
 
 ### CueGUI
 
@@ -110,8 +112,8 @@ lists default CueGUI settings and provides an example for your own file.
 To override these settings, create a file `cuegui.yaml` following the same format.
 
 This file may be stored in:
-- the [shared config directory](#shared-config-directory)
-- or at a path of your choosing, specified via the `CUEGUI_CONFIG_FILE` environment variable.
+* the [shared config directory](#shared-config-directory)
+* or at a path of your choosing, specified via the `CUEGUI_CONFIG_FILE` environment variable.
 
 ### CueSubmit
 
@@ -121,8 +123,8 @@ lists default CueSubmit settings and provides an example for your own file.
 To override these settings, create a file `cuesubmit.yaml` following the same format.
 
 This file may be stored in:
-- the [shared config directory](#shared-config-directory)
-- or at a path of your choosing, specified via the `CUESUBMIT_CONFIG_FILE` environment variable.
+* the [shared config directory](#shared-config-directory)
+* or at a path of your choosing, specified via the `CUESUBMIT_CONFIG_FILE` environment variable.
 
 ### cueadmin
 
