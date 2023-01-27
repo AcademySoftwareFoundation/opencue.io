@@ -1,7 +1,7 @@
 ---
 title: "Applying database migrations"
 linkTitle: "Applying database migrations"
-weight: 2
+weight: 4
 date: 2019-08-22
 description: >
   Apply new database migrations

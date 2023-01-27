@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting deployment"
 linkTitle: "Troubleshooting deployment"
-weight: 3
+weight: 5
 date: 2019-02-22
 description: >
   Troubleshoot common deployment issues
