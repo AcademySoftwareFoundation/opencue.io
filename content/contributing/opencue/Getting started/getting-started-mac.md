@@ -199,11 +199,6 @@ containing all of the Python components. PyCharm is used here.
    - **Existing environment**
    - **Interpreter** set to `<path to git repository>/venv-dev/bin/python`
 
-<!-- 1. PyCharm should prompt you to install 'Package requirements'. This will install OpenCue's
-   Python dependencies into your virtual environment.
-   
-   This can take a few minutes, namely to download `PySide2`. -->
-
 1. In order for inter-dependencies within the code to work in PyCharm you need to mark
    each components as a source directory. In the PyCharm file browser, right-click on
    each OpenCue component and click on **Mark Directory As > Sources Root**. You
