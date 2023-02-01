@@ -209,6 +209,13 @@ deployment.
    source venv-dev/bin/activate
    ```
 
+1. To install OpenCue's Python dependencies run the following command in the IDE terminal:
+
+   ```shell
+   pip install -r requirements.txt -r requirements_gui.txt
+   ```
+   This can take a few minutes, namely to download `PySide2`.
+
 ## Configure PyCharm
 
 Similar to the virtual environment, we recommend configuring your IDE as a single project
@@ -223,11 +230,7 @@ containing all of the Python components. PyCharm is used here.
    - **Virtual environment**
    - **Existing environment**
    - **Interpreter** set to `<path to git repository>/venv-dev/bin/python`
-
-1. PyCharm should prompt you to install 'Package requirements'. This will install OpenCue's
-   Python dependencies into your virtual environment.
    
-   This can take a few minutes, namely to download `PySide2`.
 
 1. In order for inter-dependencies within the code to work in PyCharm you need to mark
    each components as a source directory. In the PyCharm file browser, right-click on
@@ -253,15 +256,6 @@ across OpenCue components and reduces code repetition.
 Generating the Python versions of OpenCue's `.proto` files for RQD and the PyCue library is
 currently a manual process. To generate the Python code:
 
-1. Open a terminal, change to the root directory of the Git clone, and activate your
-   virtual environment as described above.
-
-1. Install the required gRPC tools:
-
-    ```shell
-    pip install grpcio-tools
-    ```
-
 1. Change directory to the `proto` folder.
 
 1. Generate the Python versions of the gRPC classes:
@@ -272,14 +266,12 @@ currently a manual process. To generate the Python code:
     ```
 
     The `.proto` files also need some post-processing to make them compatible
-    with Python 3. The easiest way to do this is to install and run the `2to3`
+    with Python 3. The easiest way to do this is to run the `2to3`
     package.
 
-1. Run the following commands to install the `2to3` package and complete the
-   post-processing:
+1. Run the following commands to complete the post-processing:
 
     ```shell
-    pip install 2to3
     2to3 -wn -f import ../rqd/rqd/compiled_proto/*_pb2*.py
     2to3 -wn -f import ../pycue/opencue/compiled_proto/*_pb2*.py
     ```
