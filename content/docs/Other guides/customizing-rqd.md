@@ -11,7 +11,7 @@ This guide describes how to customize the default [RQD container image published
 on Docker Hub](https://hub.docker.com/r/opencue/rqd). The default RQD container
 image doesn't include any rendering software. This guide explains how to create
 a custom Dockerfile that builds on the basic `opencue/rqd` image to install
-rendering software. The sample code illustrates the steps using version 2.79 of
+rendering software. The sample code illustrates the steps using version 3.3 of
 Blender. You can adapt the basic ideas in this guide for many other types of
 software, including commercial rendering packages, such as Maya.
 
@@ -48,7 +48,7 @@ To review the sample `Dockerfile`:
 1.  Run the following command to review the sample `Dockerfile`:
 
     ```bash
-    cat samples/rqd/blender/blender2.79-docker/Dockerfile
+    cat samples/rqd/blender/Dockerfile
     ```
 
     The command outputs the contents of the `Dockerfile`.
@@ -80,20 +80,37 @@ To review the sample `Dockerfile`:
             libXrandr-devel
     ```
 
-    The final section downloads and extracts the archive for Blender 2.79
-    to `/usr/local/blender`:
+    The next section sets up parameters for the Blender installation directory and download source.
 
     ```Dockerfile
-    # Download and install Blender 2.79
-    RUN mkdir /usr/local/blender
-    RUN curl -SL https://download.blender.org/release/Blender2.79/blender-2.79-linux-glibc219-x86_64.tar.bz2 \
-            -o blender.tar.bz2
+    # Set Blender install directory
+    ARG BLENDER_INSTALL_DIR=/usr/local/blender
+
+    # Set Blender download source
+    ARG BLENDER_DOWNLOAD_SRC=https://download.blender.org/release/Blender3.3/blender-3.3.3-linux-x64.tar.xz
+    ```
     
-    RUN tar -jxvf blender.tar.bz2 \
-            -C /usr/local/blender \
+    The final section downloads and extracts the archive for Blender 3.3
+    to the provided installation directory, in this case `/usr/local/blender`:
+
+    ```Dockerfile
+    # Download and install Blender
+    RUN mkdir ${BLENDER_INSTALL_DIR}
+    RUN curl -SL ${BLENDER_DOWNLOAD_SRC} \
+            -o blender.tar.xz
+
+    RUN tar -xvf blender.tar.xz \
+            -C ${BLENDER_INSTALL_DIR} \
             --strip-components=1
-    
-    RUN rm blender.tar.bz2
+
+    RUN rm blender.tar.xz
+    ```
+
+    The final command verifies the Blender installation.
+
+    ```Dockerfile
+    # Verify Blender installation
+    RUN ${BLENDER_INSTALL_DIR}/blender --version
     ```
 
     If you'd like to learn more about the configuration of the default
