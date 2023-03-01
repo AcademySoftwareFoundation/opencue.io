@@ -11,8 +11,7 @@ This guide describes how to customize the default [RQD container image published
 on Docker Hub](https://hub.docker.com/r/opencue/rqd). The default RQD container
 image doesn't include any rendering software. This guide explains how to create
 a custom Dockerfile that builds on the basic `opencue/rqd` image to install
-rendering software. The sample code illustrates the steps using version 3.3 of
-Blender. You can adapt the basic ideas in this guide for many other types of
+rendering software. You can adapt the basic ideas in this guide for many other types of
 software, including commercial rendering packages, such as Maya.
 
 ## Before you begin
@@ -90,8 +89,8 @@ To review the sample `Dockerfile`:
     ARG BLENDER_DOWNLOAD_SRC=https://download.blender.org/release/Blender3.3/blender-3.3.3-linux-x64.tar.xz
     ```
     
-    The final section downloads and extracts the archive for Blender 3.3
-    to the provided installation directory, in this case `/usr/local/blender`:
+    The final section downloads and extracts the archive for Blender
+    to the provided installation directory, in this case `/usr/local/blender`.:
 
     ```Dockerfile
     # Download and install Blender
