@@ -34,7 +34,7 @@ export log_frame_log_root_default_os="/path/to/log"
 java -jar cuebot.jar
 ```
 
-Note that environment variable names have all dashes (`-`) and dots (`.`) replaced by underscores. 
+Note that environment variable names have all dashes (`-`) and dots (`.`) replaced by underscores.
 
 ## RQD
 
@@ -70,7 +70,7 @@ Restart RQD to have the new settings take effect.
 
 All of these tools share a single directory where configuration may be stored:
 
-* On Windows, `%APPDATA%/opencue` (typically `C:/Users/<username>/AppData/opencue`)
+* On Windows, `%APPDATA%/opencue` (typically `C:/Users/<username>/AppData/Roaming/opencue`)
 * On macOS and Linux, `~/.config/opencue`
 
 Create this directory if it does not already exist.
