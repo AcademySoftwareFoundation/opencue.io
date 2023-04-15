@@ -132,9 +132,13 @@ To build and run it with IntelliJ IDEA:
    IntelliJ downloads Gradle and all source dependencies, then compiles the project and
    runs tests.
 
-1. Browse to the `src/main/java/com.imageworks/spcue/CuebotApplication` file.
+1. To setup run configurations go to **Run** > **Edit Configurations**
 
-1. Click **Edit 'CubotApplicat....main()'...**.
+1. Click the **+** icon on the top left corner to add a new configuration. Click **Application** on the drop down as shown in the screenshot below.
+
+   ![A screenshot of IntelliJ add config list](/docs/images/cuebot_intellij_add_config.png)
+
+1. Rename your configuration to **CuebotApplication**
 
 1. Update the **Program arguments** as follows and replace the value for `<PASSWORD>`
    where indicated:
@@ -142,6 +146,11 @@ To build and run it with IntelliJ IDEA:
    ```
    --datasource.cue-data-source.jdbc-url=jdbc:postgresql://localhost/cuebot_dev --datasource.cue-data-source.username=cuebot --datasource.cue-data-source.password=<PASSWORD>
    ```
+ 
+1. The finalized run configuration should appear as follows:
+
+   ![A screenshot of IntelliJ run configuration window](/docs/images/cuebot_intellij_run_config.png)
+
  
 1. Click **OK**.
  
