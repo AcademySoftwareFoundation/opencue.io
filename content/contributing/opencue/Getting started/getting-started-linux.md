@@ -161,7 +161,7 @@ To build and run it with IntelliJ IDEA:
 
 1. Click the **+** icon on the top left corner to add a new configuration. Click **Application** on the drop down as shown in the screenshot below.
 
-   ![A screenshot of IntelliJ add config list](/docs/images/windows/cuebot_intellij_add_config.png)
+   ![A screenshot of IntelliJ add config list](/docs/images/cuebot_intellij_add_config.png)
 
 1. Rename your configuration to **CuebotApplication**
 
@@ -174,7 +174,7 @@ To build and run it with IntelliJ IDEA:
  
 1. The finalized run configuration should appear as follows:
 
-   ![A screenshot of IntelliJ run configuration window](/docs/images/windows/cuebot_intellij_run_config.png)
+   ![A screenshot of IntelliJ run configuration window](/docs/images/cuebot_intellij_run_config.png)
 
 1. Click **OK**.
  
