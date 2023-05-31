@@ -82,7 +82,7 @@ command to execute.
 
 ## Outline script
 
-A powerful tool for submitting *jobs* to the *queue*. You can can define an
+A powerful tool for submitting *jobs* to the *queue*. You can define an
 outline script to batch multiple job submissions into a single job, setting up
 dependencies and / or running in parallel. Outline scripts can submit almost any
 type of job to the cue, including Maya, Katana, or even shell commands.
