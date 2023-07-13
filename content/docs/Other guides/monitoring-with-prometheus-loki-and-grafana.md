@@ -1,7 +1,7 @@
 ---
 title: "Monitoring with Prometheus, Loki, and Grafana"
 linkTitle: "Monitoring with Prometheus, Loki, and Grafana"
-weight: 5
+weight: 7
 date: 2021-08-01
 description: >
   Configuring OpenCue with external monitoring services

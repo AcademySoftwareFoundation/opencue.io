@@ -1,7 +1,7 @@
 ---
 title: "Customizing RQD rendering hosts"
 linkTitle: "Customizing RQD rendering hosts"
-weight: 1
+weight: 3
 date: 2019-12-10
 description: >
   Build custom RQD container images to deploy as OpenCue rendering hosts
