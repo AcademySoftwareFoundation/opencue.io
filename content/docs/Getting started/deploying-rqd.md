@@ -49,6 +49,13 @@ Make sure you also complete the following steps:
         export CUEBOT_HOSTNAME=<hostname or IP of the Cuebot machine>
         ```
 
+    -   **If your Cuebot is running locally in your development machine**,
+    use the Docker API to specify the container IP.
+
+        ```shell
+        export CUEBOT_HOSTNAME=host.docker.internal
+        ```
+
 1.  RQD needs access to the filesystem where render assets are stored and log
     files are written. In a large-scale deployment a shared filesystem such as
     NFS is often used for this purpose.
@@ -88,6 +95,12 @@ To build and run the RQD Docker image from source:
 docker build -t opencue/rqd -f rqd/Dockerfile .
 docker run -td --name rqd01 --env CUEBOT_HOSTNAME=${CUEBOT_HOSTNAME} --volume "${CUE_FS_ROOT}:${CUE_FS_ROOT}" opencue/rqd
 ```
+
+-   **In both Option 1 and 2**, if running the RQD container in your local development machine, use the `--add-host` flag on the `docker run` command as follows:
+
+    ```shell
+    docker run -td --name rqd01 --env CUEBOT_HOSTNAME=${CUEBOT_HOSTNAME} --volume "${CUE_FS_ROOT}:${CUE_FS_ROOT}" --add-host host.docker.internal:host-gateway opencue/rqd
+    ```
 
 ### Option 3: Installing from the published release
 
