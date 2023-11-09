@@ -96,7 +96,7 @@ docker build -t opencue/rqd -f rqd/Dockerfile .
 docker run -td --name rqd01 --env CUEBOT_HOSTNAME=${CUEBOT_HOSTNAME} --volume "${CUE_FS_ROOT}:${CUE_FS_ROOT}" opencue/rqd
 ```
 
--   **In both Option 1 and 2**, if running the RQD container in your local development machine, use the `--add-host` flag on the `docker run` command as follows:
+-   **In both Option 1 and 2**, if running the RQD container in your local machine, use the `--add-host` flag on the `docker run` command as follows:
 
     ```shell
     docker run -td --name rqd01 --env CUEBOT_HOSTNAME=${CUEBOT_HOSTNAME} --volume "${CUE_FS_ROOT}:${CUE_FS_ROOT}" --add-host host.docker.internal:host-gateway opencue/rqd
