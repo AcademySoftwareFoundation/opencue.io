@@ -42,8 +42,8 @@ Make sure you also complete the following steps:
         export CUEBOT_HOSTNAME=$(docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' cuebot)
         ```
 
-        **If the Cuebot container is running locally in your machine**,
-    use the Docker API to specify the container IP.
+         **If RQD is running locally in your machine in a container**,
+    use the Docker API to map the host IP.
 
         ```shell
         export CUEBOT_HOSTNAME=host.docker.internal
