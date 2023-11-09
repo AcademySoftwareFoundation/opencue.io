@@ -42,18 +42,18 @@ Make sure you also complete the following steps:
         export CUEBOT_HOSTNAME=$(docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' cuebot)
         ```
 
+        **If the Cuebot container is running locally in your machine**,
+    use the Docker API to specify the container IP.
+
+        ```shell
+        export CUEBOT_HOSTNAME=host.docker.internal
+        ```
+
     -   **If your Cuebot is running on a different machine**, use that machine's
         hostname or IP:
 
         ```shell
         export CUEBOT_HOSTNAME=<hostname or IP of the Cuebot machine>
-        ```
-
-    -   **If your Cuebot is running locally in your development machine**,
-    use the Docker API to specify the container IP.
-
-        ```shell
-        export CUEBOT_HOSTNAME=host.docker.internal
         ```
 
 1.  RQD needs access to the filesystem where render assets are stored and log
