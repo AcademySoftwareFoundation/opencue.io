@@ -22,17 +22,16 @@ through the steps in this guide, make sure you have successfully started the
 OpenCue sandbox environment and run a basic command-line test job. You'll
 also need all of the software and source code you used in the quick start.
 
-## Reviewing a sample Dockerfile
+## Sample Dockerfiles
 
-The Opencue project includes a sample `Dockerfile` to illustrate how to install
-additional software for RQD containers. You can update the sandbox environment
-to build and run the sample `Dockerfile` so that you can submit and run a
-rendering job using Blender than just the basic command-line tools illustrated
-in the quick start. Before you update the sandbox to run the sample
-`Dockerfile`, you might find it useful to review the source code for the
-sample container.
+The Opencue project includes [sample](https://github.com/AcademySoftwareFoundation/OpenCue/tree/master/samples/rqd/) `Dockerfiles` to illustrate how to install
+additional software for RQD containers. 
+OpenCue currently includes sample Dockerfiles showcasing the following:
 
-To review the sample `Dockerfile`:
+- [Blender](https://www.blender.org/) installation
+- [Nvidia CUDA](https://developer.nvidia.com/cuda-toolkit) installation for GPU accellerated rendering
+
+To view the sample `Dockerfiles`:
 
 1.  Open a terminal.
 
@@ -43,15 +42,39 @@ To review the sample `Dockerfile`:
     ```bash
     cd ~/OpenCue
     ```
-
-1.  Run the following command to review the sample `Dockerfile`:
+1. Change to the subdirectory which includes the sample `Dockerfiles`.
 
     ```bash
-    cat samples/rqd/blender/Dockerfile
+    cd samples/rqd
     ```
 
-    The command outputs the contents of the `Dockerfile`.
+The sample `Dockerfiles` are listed within their respective subdirectories.
 
+<!-- 1.  Run the following command to review the sample `Dockerfile`:
+
+    ```bash
+    # For the sample Blender Dockerfile
+    cat blender/Dockerfile
+    # For the sample Nvidia CUDA Dockerfile
+    cat cuda/Dockerfile
+    ```
+
+    The command outputs the contents of the `Dockerfile`. -->
+
+### Reviewing sample Blender Dockerfile
+
+The sample Blender `Dockerfile` showcases the Blender installation process and environment variable setup.
+You can update the sandbox environment to build and run the sample `Dockerfile` so that you can submit and run a rendering job using Blender than just the basic command-line tools illustrated in the quick start. 
+
+Before you update the sandbox to run the sample `Dockerfile`, you might find it useful to review the source code for the sample container.
+
+    Run the following command to review the sample `Dockerfile`:
+
+    ```bash
+    cat blender/Dockerfile
+    ```
+    The command outputs the contents of the Dockerfile.
+    
     The first section of the file indicates that this `Dockerfile`
     builds on the basic `opencue/rqd` container image hosted on
     Docker Hub:
@@ -116,6 +139,18 @@ To review the sample `Dockerfile`:
     `opencue/rqd` container image, view the source code for
     [`rqd/Dockerfile`](https://github.com/AcademySoftwareFoundation/OpenCue/blob/master/rqd/Dockerfile)
     in the `master` branch on GitHub.
+
+### Reviewing sample CUDA Dockerfile
+
+The sample CUDA Dockerfile extends the default RQD container image to support GPU rendering on supported Nvidia Hardware. This requires Nvidia [Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#installing-with-apt) to be installed on render nodes as a prerequisite.
+
+    Run the following command to review the sample `Dockerfile`:
+
+    ```bash
+    cat cuda/Dockerfile
+    ```
+    The command outputs the contents of the Dockerfile.
+
 
 ## Updating the sandbox environment
 
