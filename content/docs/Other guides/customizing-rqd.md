@@ -24,7 +24,7 @@ also need all of the software and source code you used in the quick start.
 
 ## Sample Dockerfiles
 
-The Opencue project includes [sample](https://github.com/AcademySoftwareFoundation/OpenCue/tree/master/samples/rqd/) `Dockerfiles` to illustrate how to install
+The OpenCue project includes [sample](https://github.com/AcademySoftwareFoundation/OpenCue/tree/master/samples/rqd/) `Dockerfiles` to illustrate how to install
 additional software for RQD containers. 
 OpenCue currently includes sample Dockerfiles showcasing the following:
 
@@ -68,77 +68,77 @@ You can update the sandbox environment to build and run the sample `Dockerfile` 
 
 Before you update the sandbox to run the sample `Dockerfile`, you might find it useful to review the source code for the sample container.
 
-    Run the following command to review the sample `Dockerfile`:
+Run the following command to review the sample `Dockerfile`:
 
-    ```bash
-    cat blender/Dockerfile
-    ```
-    The command outputs the contents of the Dockerfile.
-    
-    The first section of the file indicates that this `Dockerfile`
-    builds on the basic `opencue/rqd` container image hosted on
-    Docker Hub:
+```bash
+cat blender/Dockerfile
+```
+The command outputs the contents of the Dockerfile.
 
-    ```Dockerfile
-    # Builds on the latest base image of RQD from Docker Hub
-    FROM opencue/rqd
-    ```
+The first section of the file indicates that this `Dockerfile`
+builds on the basic `opencue/rqd` container image hosted on
+Docker Hub:
 
-    The next section installs all of the dependencies required
-    to run Blender 2.79 on the CentOS operating system installed in the
-    `opencue/rqd` container image:
+```Dockerfile
+# Builds on the latest base image of RQD from Docker Hub
+FROM opencue/rqd
+```
 
-    ```Dockerfile
-    # Install dependencies to run Blender on the opencue/rqd image
-    RUN yum -y update
-    RUN yum -y install \
-            bzip2 \
-            libfreetype6 \
-            libgl1-mesa-dev \
-            libXi-devel  \
-            mesa-libGLU-devel \
-            zlib-devel \
-            libXinerama-devel \
-            libXrandr-devel
-    ```
+The next section installs all of the dependencies required
+to run Blender 2.79 on the CentOS operating system installed in the
+`opencue/rqd` container image:
 
-    The next section sets up parameters for the Blender installation directory and download source.
+```Dockerfile
+# Install dependencies to run Blender on the opencue/rqd image
+RUN yum -y update
+RUN yum -y install \
+        bzip2 \
+        libfreetype6 \
+        libgl1-mesa-dev \
+        libXi-devel  \
+        mesa-libGLU-devel \
+        zlib-devel \
+        libXinerama-devel \
+        libXrandr-devel
+```
 
-    ```Dockerfile
-    # Set Blender install directory
-    ARG BLENDER_INSTALL_DIR=/usr/local/blender
+The next section sets up parameters for the Blender installation directory and download source.
 
-    # Set Blender download source
-    ARG BLENDER_DOWNLOAD_SRC=https://download.blender.org/release/Blender3.3/blender-3.3.3-linux-x64.tar.xz
-    ```
-    
-    The final section downloads and extracts the archive for Blender
-    to the provided installation directory, in this case `/usr/local/blender`.:
+```Dockerfile
+# Set Blender install directory
+ARG BLENDER_INSTALL_DIR=/usr/local/blender
 
-    ```Dockerfile
-    # Download and install Blender
-    RUN mkdir ${BLENDER_INSTALL_DIR}
-    RUN curl -SL ${BLENDER_DOWNLOAD_SRC} \
-            -o blender.tar.xz
+# Set Blender download source
+ARG BLENDER_DOWNLOAD_SRC=https://download.blender.org/release/Blender3.3/blender-3.3.3-linux-x64.tar.xz
+```
 
-    RUN tar -xvf blender.tar.xz \
-            -C ${BLENDER_INSTALL_DIR} \
-            --strip-components=1
+The final section downloads and extracts the archive for Blender
+to the provided installation directory, in this case `/usr/local/blender`.:
 
-    RUN rm blender.tar.xz
-    ```
+```Dockerfile
+# Download and install Blender
+RUN mkdir ${BLENDER_INSTALL_DIR}
+RUN curl -SL ${BLENDER_DOWNLOAD_SRC} \
+        -o blender.tar.xz
 
-    The final command verifies the Blender installation.
+RUN tar -xvf blender.tar.xz \
+        -C ${BLENDER_INSTALL_DIR} \
+        --strip-components=1
 
-    ```Dockerfile
-    # Verify Blender installation
-    RUN ${BLENDER_INSTALL_DIR}/blender --version
-    ```
+RUN rm blender.tar.xz
+```
 
-    If you'd like to learn more about the configuration of the default
-    `opencue/rqd` container image, view the source code for
-    [`rqd/Dockerfile`](https://github.com/AcademySoftwareFoundation/OpenCue/blob/master/rqd/Dockerfile)
-    in the `master` branch on GitHub.
+The final command verifies the Blender installation.
+
+```Dockerfile
+# Verify Blender installation
+RUN ${BLENDER_INSTALL_DIR}/blender --version
+```
+
+If you'd like to learn more about the configuration of the default
+`opencue/rqd` container image, view the source code for
+[`rqd/Dockerfile`](https://github.com/AcademySoftwareFoundation/OpenCue/blob/master/rqd/Dockerfile)
+in the `master` branch on GitHub.
 
 ### Reviewing sample CUDA Dockerfile
 
