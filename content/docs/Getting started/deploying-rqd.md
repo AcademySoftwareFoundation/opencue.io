@@ -165,3 +165,4 @@ started up:
 ## What's next?
 
 *   [Installing PyCue and PyOutline](/docs/getting-started/installing-pycue-and-pyoutline)
+*   [Customizing RQD rendering hosts](/docs/other-guides/customizing-rqd) 
