@@ -118,6 +118,10 @@ similar methods when needed to elevate your session to root-level permissions.{{
     ```shell
     yum install postgresql-server postgresql-contrib
     ```
+    or
+    ```shell
+    apt install postgresql-contrib postgresql
+    ```
 
 1.  Next, initialize your Postgres installation and configure it to run as a
     service:
@@ -213,6 +217,7 @@ To create a database:
     createuser $DB_USER --pwprompt
     # Enter the password stored in DB_PASS when prompted
     psql -c "ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL PRIVILEGES ON TABLES TO $DB_USER" $DB_NAME
+    psql -c "GRANT CREATE ON DATABASE $DB_NAME  TO $DB_USER" $DB_NAME
     ```
 
     **If you are running Postgres in a Docker container**, you will instead need
