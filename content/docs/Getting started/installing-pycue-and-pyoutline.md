@@ -90,7 +90,9 @@ source venv/bin/activate
 pip install -r requirements.txt
 cd proto
 python -m grpc_tools.protoc -I=. --python_out=../pycue/opencue/compiled_proto --grpc_python_out=../pycue/opencue/compiled_proto ./*.proto
-cd ../pycue
+cd ../pycue/opencue/compiled_proto
+2to3 -w -n *
+cd ../..
 python setup.py install
 ```
 
