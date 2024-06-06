@@ -133,13 +133,19 @@ tools. Use of a virtual environment isn't strictly necessary but is
 recommended to avoid conflicts with other installed Python
 libraries.{{% /alert %}}
 
+{{% alert title="Ubuntu" color="tip"%}}You need Ubuntu build enviroment.
+`apt install build-essential python3.10-dev`
+{{% /alert %}}
+
 ```shell
 virtualenv venv
 source venv/bin/activate
 pip install -r requirements.txt
 cd proto
 python -m grpc_tools.protoc -I=. --python_out=../rqd/rqd/compiled_proto --grpc_python_out=../rqd/rqd/compiled_proto ./*.proto
-cd ../rqd
+cd ../rqd/rqd/compiled_proto
+2to3 -w -n *
+cd ../..
 python setup.py install
 ```
 
