@@ -133,10 +133,12 @@ tools. Use of a virtual environment isn't strictly necessary but is
 recommended to avoid conflicts with other installed Python
 libraries.{{% /alert %}}
 
-{{% alert title="Ubuntu" color="tip"%}}You need Ubuntu build enviroment.
-`apt install build-essential python3.10-dev`
-{{% /alert %}}
+Ubuntu 22.04 build enviroment:
+```shell
+sudo apt install build-essential python3.10-venv python3.10-dev 
+```
 
+`rqd` setup:
 ```shell
 virtualenv venv
 source venv/bin/activate
