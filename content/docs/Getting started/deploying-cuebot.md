@@ -179,6 +179,10 @@ and your current directory is the root of the checked out source.
     ```shell
     sudo yum install java-1.8.0-openjdk java-1.8.0-openjdk-devel
     ```
+    On Ubuntu 22.04:
+    ```shell
+    sudo apt install openjdk-11-jdk-headless
+    ```
 
     On macOS you can use Homebrew:
 
