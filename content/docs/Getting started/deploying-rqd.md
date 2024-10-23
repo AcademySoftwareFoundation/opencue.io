@@ -42,6 +42,13 @@ Make sure you also complete the following steps:
         export CUEBOT_HOSTNAME=$(docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' cuebot)
         ```
 
+         **If RQD is running locally in your machine in a container**,
+    use the Docker API to map the host IP.
+
+        ```shell
+        export CUEBOT_HOSTNAME=host.docker.internal
+        ```
+
     -   **If your Cuebot is running on a different machine**, use that machine's
         hostname or IP:
 
@@ -77,7 +84,7 @@ To download and run the pre-built Docker image from DockerHub:
 
 ```shell
 docker pull opencue/rqd
-docker run -td --name rqd01 --env CUEBOT_HOSTNAME=${CUEBOT_HOSTNAME} --volume "${CUE_FS_ROOT}:${CUE_FS_ROOT}" opencue/rqd
+docker run -td --name rqd01 --env CUEBOT_HOSTNAME=${CUEBOT_HOSTNAME} --volume "${CUE_FS_ROOT}:${CUE_FS_ROOT}" --add-host host.docker.internal:host-gateway opencue/rqd
 ```
 
 ### Option 2: Building and running RQD from source
@@ -86,8 +93,14 @@ To build and run the RQD Docker image from source:
 
 ```shell
 docker build -t opencue/rqd -f rqd/Dockerfile .
-docker run -td --name rqd01 --env CUEBOT_HOSTNAME=${CUEBOT_HOSTNAME} --volume "${CUE_FS_ROOT}:${CUE_FS_ROOT}" opencue/rqd
+docker run -td --name rqd01 --env CUEBOT_HOSTNAME=${CUEBOT_HOSTNAME} --volume "${CUE_FS_ROOT}:${CUE_FS_ROOT}" --add-host host.docker.internal:host-gateway opencue/rqd
 ```
+
+<!-- -   **In both Option 1 and 2**, if running the RQD container in your local machine, use the `--add-host` flag on the `docker run` command as follows:
+
+    ```shell
+    docker run -td --name rqd01 --env CUEBOT_HOSTNAME=${CUEBOT_HOSTNAME} --volume "${CUE_FS_ROOT}:${CUE_FS_ROOT}" --add-host host.docker.internal:host-gateway opencue/rqd
+    ``` -->
 
 ### Option 3: Installing from the published release
 
