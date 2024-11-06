@@ -7,17 +7,17 @@ Add styles or override variables from the theme here.
 
 // Theme colors
 
-$primary: #fff;
-$secondary: #000;
+$primary: #303841;
+$secondary: #47555E;
 $info: #30638E;
 
 // Nav colors
 
-$black: #000;
-$navbar-dark-color: rgba($black, 0.75);
-$navbar-dark-hover-color: rgba($black, 0.5);
-$navbar-dark-active-color: $black;
-$navbar-dark-disabled-color: rgba($black, 0.25);
+$white: #EEE;
+$navbar-dark-color: rgba($white, 0.75);
+$navbar-dark-hover-color: rgba($white, 0.5);
+$navbar-dark-active-color: $white;
+$navbar-dark-disabled-color: rgba($white, 0.25);
 
 // Site footer
 
@@ -38,12 +38,17 @@ footer {
 
 .lead p {
   font-weight: 400;
-  color: $secondary;
+  color: $white;
+  margin-top: -1em;
 }
 
 p {
   margin-left: 1em;
   margin-right: 1em;
+}
+
+.td-outer {
+  height: auto;
 }
 
 img.td-cover-logo {
@@ -58,14 +63,14 @@ img.td-cover-logo {
 
   .banner-image {
     display: block;
-    margin-bottom: 2em; 
+    margin-bottom: 2em;
     margin-left: auto;
     margin-right: auto;
     max-width: 75%;
 
     img {
       display: block;
-      height: auto; 
+      height: auto;
       width: 100%;
     }
   }
