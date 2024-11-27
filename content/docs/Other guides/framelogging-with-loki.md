@@ -55,4 +55,4 @@ receive requests. It can be "kickstarted" by accessing the <loki-url>/ready
 (eg. http://localhost:3100/ready)
 
 ## LokiView widget
-![LokiView Widget](../images/lokiview_widget.png)
+![LokiView Widget](/docs/images/lokiview_widget.png)
