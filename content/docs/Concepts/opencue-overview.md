@@ -64,3 +64,13 @@ For information on installing OpenCue components and dependencies, see
 [Getting started](/docs/getting-started).
 
 To learn common terminology used in OpenCue, see the [Glossary](/docs/concepts/glossary).
+
+Watch YouTube videos on the [OpenCue Playlist](https://www.youtube.com/playlist?list=PL9dZxafYCWmzSBEwVT2AQinmZolYqBzdp) of the Academy Software Foundation (ASWF) to learn more.
+
+## Contact us
+
+To join the OpenCue discussion forum for users and admins, join the
+[opencue-user mailing list](https://lists.aswf.io/g/opencue-user) or email the
+group directly at <opencue-user@lists.aswf.io>.
+
+Join the [Opencue Slack channel](https://academysoftwarefdn.slack.com/archives/CMFPXV39Q).
