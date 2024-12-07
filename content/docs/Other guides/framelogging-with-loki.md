@@ -21,6 +21,26 @@ The framelogs being sent to Loki can be read using a custom LokiView widget in c
 ## Requirements
  - Loki version 2.4+
 
+## How to setup Loki
+Latest release can be downloaded from here : https://github.com/grafana/loki/releases
+
+Install the package matching your platform (eg. .deb for Debian/Ubuntu) and architecture (eg. amd64 for x86_64)
+
+This will install Loki with it's configuration file here : `/etc/loki/config.yml`
+
+### Configuring Loki
+By default Loki will not allow to query logs older than 30 days. This limitation can be removed with
+following option :
+```yaml
+limits_config:
+  max_query_length: 0h # Default: 721h
+```
+Refer to the Loki documentation on how to configure Loki
+
+Note : When the Loki instance has just started, it can take a few seconds before it's ready to
+receive requests. It can be "kickstarted" by accessing the <loki-url>/ready 
+(eg. http://localhost:3100/ready)
+
 ## Configuring cuebot
 The cuebot server can be configure to use Loki either by setting command line arguments or using the
 opencue.properties file
@@ -41,18 +61,6 @@ log.loki.enabled=true
 log.loki.url=<loki-url>
 ```
 
-## Configuring Loki
-By default Loki will not allow to query logs older than 30 days. This limitation can be removed with
-following option :
-```yaml
-limits_config:
-  max_query_length: 0h # Default: 721h
-```
-Refer to the Loki documentation on how to configure Loki
-
-Note : When the Loki instance has just started, it can take a few seconds before it's ready to
-receive requests. It can be "kickstarted" by accessing the <loki-url>/ready 
-(eg. http://localhost:3100/ready)
 
 ## LokiView widget
 ![LokiView Widget](/docs/images/lokiview_widget.png)
