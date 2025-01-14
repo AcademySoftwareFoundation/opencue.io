@@ -21,7 +21,7 @@ includes the following changes and updates:
 *   Fix copy functionality in log view plugin. [#864](https://github.com/AcademySoftwareFoundation/OpenCue/pull/864)
 *   Introduce OVERRIDE_HOSTNAME in RQD for manually settings a hostname. [#849](https://github.com/AcademySoftwareFoundation/OpenCue/pull/849)
 *   Example of exporting cuebot metrics. [#844](https://github.com/AcademySoftwareFoundation/OpenCue/pull/844)
-*   Add dockerignore so that the sandbox env can be run mutliple times. [#879](https://github.com/AcademySoftwareFoundation/OpenCue/pull/879)
+*   Add dockerignore so that the sandbox env can be run multiple times. [#879](https://github.com/AcademySoftwareFoundation/OpenCue/pull/879)
 *   Introduce RQD_TAGS for setting tags to RQD host. [#875](https://github.com/AcademySoftwareFoundation/OpenCue/pull/875)
 *   Propagate layer environment variables. [#876](https://github.com/AcademySoftwareFoundation/OpenCue/pull/876)
 *   feat: Add timeout and LLU timeout. [#761](https://github.com/AcademySoftwareFoundation/OpenCue/pull/761)

@@ -32,7 +32,7 @@ includes the following changes and updates:
 *   Update to jdk11 and spring boot 2.2.1 in [#562](https://github.com/AcademySoftwareFoundation/OpenCue/pull/562).
 *   Split graphical requirements out into their own file in [#560](https://github.com/AcademySoftwareFoundation/OpenCue/pull/560).
 *   Bump version to 0.3 in [#561](https://github.com/AcademySoftwareFoundation/OpenCue/pull/561).
-*   Alter table to increase show lengh in [#528](https://github.com/AcademySoftwareFoundation/OpenCue/pull/528).
+*   Alter table to increase show length in [#528](https://github.com/AcademySoftwareFoundation/OpenCue/pull/528).
 *   Add CCLA and ICLA text in [#551](https://github.com/AcademySoftwareFoundation/OpenCue/pull/551).
 *   Fix passing message to kill frame in [#546](https://github.com/AcademySoftwareFoundation/OpenCue/pull/546).
 *   CueSubmit Python 3 support in [#558](https://github.com/AcademySoftwareFoundation/OpenCue/pull/558).

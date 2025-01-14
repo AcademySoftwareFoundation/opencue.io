@@ -51,7 +51,7 @@ To learn how to install and configure OpenCue, see [Getting started](/docs/getti
     [#417](https://github.com/AcademySoftwareFoundation/OpenCue/pull/417).
 *   Updated `setMinCores` to pass a percentage value where 100 = 1 core [#423](https://github.com/AcademySoftwareFoundation/OpenCue/pull/423).
 *   Added a docker-compose sandbox environment in [#427](https://github.com/AcademySoftwareFoundation/OpenCue/pull/427).
-*   Made sure log path is not empty when poping up log view [#415](https://github.com/AcademySoftwareFoundation/OpenCue/pull/415).
+*   Made sure log path is not empty when popping up log view [#415](https://github.com/AcademySoftwareFoundation/OpenCue/pull/415).
 *   Added tests for `FrameMonitorTree` in
     [#412](https://github.com/AcademySoftwareFoundation/OpenCue/pull/412).
 *   Added an initial round of RqCore tests in [#411](https://github.com/AcademySoftwareFoundation/OpenCue/pull/411).

@@ -7,7 +7,7 @@ description: >
   Administer your OpenCue deployment
 ---
 
-This page lists the arguments and flags you can specifiy for the `cueadmin`
+This page lists the arguments and flags you can specify for the `cueadmin`
 command. You can run `cueadmin` to administer and monitor your OpenCue
 deployment from the command line.
 
@@ -235,7 +235,7 @@ Tag allocation.
 Arguments: `SHOW ALLOC SIZE BURST SHOW ALLOC SIZE BURST SHOW ALLOC SIZE BURST
 SHOW ALLOC SIZE BURST`
 
-Create new subcription.
+Create new subscription.
 
 ### `-delete-sub` 
 

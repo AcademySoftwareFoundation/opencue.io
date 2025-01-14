@@ -29,7 +29,7 @@ additional software for RQD containers.
 OpenCue currently includes sample Dockerfiles showcasing the following:
 
 - [Blender](https://www.blender.org/) installation
-- [Nvidia CUDA](https://developer.nvidia.com/cuda-toolkit) installation for GPU accellerated rendering
+- [Nvidia CUDA](https://developer.nvidia.com/cuda-toolkit) installation for GPU accelerated rendering
 
 To view the sample `Dockerfiles`:
 
@@ -272,4 +272,3 @@ from a shell:
 
 *   Learn more about [OpenCue concepts and terminology](/docs/concepts/).
 *   Install the full [OpenCue infrastructure](/docs/getting-started/).
-
