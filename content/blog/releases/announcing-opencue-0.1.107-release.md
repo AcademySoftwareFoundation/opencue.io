@@ -14,7 +14,7 @@ includes the following changes and updates:
     You can now configure the location of log directories by setting the `CUE_FRAME_LOG_DIR` environment
     variable on a Cuebot instance.
 *   [Issue #237](https://github.com/AcademySoftwareFoundation/OpenCue/issues/237) - 
-    Adds support to reuse exsiting gRPC connections between Cuebot and RQD.
+    Adds support to reuse existing gRPC connections between Cuebot and RQD.
 *   [Issue #246](https://github.com/AcademySoftwareFoundation/OpenCue/issues/246) -
     Pycuerun no longer errors after submitting a job and prints submitted job IDs.
 *   [Issue #176](https://github.com/AcademySoftwareFoundation/OpenCue/issues/176) -

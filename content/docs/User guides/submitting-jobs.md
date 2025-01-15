@@ -22,7 +22,7 @@ You can select from the following pre-configured job types:
 
 Alternatively, you can submit shell commands to OpenCue for
 processing on RQD rendering nodes. Your RQD rendering nodes must support
-the neccessary software to complete the job you are submitting otherwise
+the necessary software to complete the job you are submitting otherwise
 the job will fail.
 
 ## Before you begin
@@ -70,7 +70,7 @@ To submit a Blender job to OpenCue:
 
 1.  Enter the name for the **Shot** to send to OpenCue.
 
-    A shot is a series of uninterupted frames you need to render. Choose a
+    A shot is a series of uninterrupted frames you need to render. Choose a
     shot name that describes the shot that this job relates to.
     
     The following screenshot illustrates a completed job info form:
@@ -79,7 +79,7 @@ To submit a Blender job to OpenCue:
 
 1.  For **Job Type**, select **Blender**.
 
-    The CueSubmit layer info dialoge updates the submission form.
+    The CueSubmit layer info dialogue updates the submission form.
 
 1.  Enter a **Layer Name** to name the first layer in your job.
 
@@ -89,7 +89,7 @@ To submit a Blender job to OpenCue:
     Choose a layer name that describes the task the layer is performing,
     such as 'rendering' or 'compositing'.
 
-1.  In **Blender File**, enter the location of a Blener project file
+1.  In **Blender File**, enter the location of a Blender project file
     with the `.blend` extension, such as `/tmp/rqd/shots/myproject.blend`.
 
 1.  In **Output Path**, enter the location that your RQD rendering nodes
@@ -126,7 +126,7 @@ To submit a Blender job to OpenCue:
 
 This section of the guide describes submitting a Blender file for rendering
 as a shell job. You can submit a variety of shell jobs to OpenCue as long as
-the neccessary software is installed on your RQD rendering nodes.
+the necessary software is installed on your RQD rendering nodes.
 
 To submit a shell job to OpenCue:
 
@@ -153,7 +153,7 @@ To submit a shell job to OpenCue:
 
 1.  Enter the name for the **Shot** to send to OpenCue.
 
-    A shot is a series of uninterupted frames you need to render. Choose a
+    A shot is a series of uninterrupted frames you need to render. Choose a
     shot name that describes the shot that this job relates to.
     
     The following screenshot illustrates a completed job info form:
@@ -177,7 +177,7 @@ To submit a shell job to OpenCue:
     specify the frame number in the command to run at render time by
     specifying the `#IFRAME#` variable. For example, to render a range of
     frames using the 3D creation suite Blender, you can specify a command
-    to run simiar to the following:
+    to run similar to the following:
     
     ```bash
     /usr/local/blender/blender -b -noaudio /tmp/rqd/shots/<your-blender-file>.blend -o /tmp/rqd/shots/test-shot.##### -F JPEG -f #IFRAME#

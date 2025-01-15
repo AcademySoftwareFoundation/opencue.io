@@ -214,7 +214,7 @@ To set up CueSubmit and run it with PyCharm:
    repository.
 
 1. For the project interpreter, if you are working on other Python projects, we
-   recommend seting up a virtual environment. Alternatively, you can leave the
+   recommend setting up a virtual environment. Alternatively, you can leave the
    project interpreter set to the default Python interpreter.
 
 1. PyCharm should prompt you to install ‘Package requirements’. If not,
@@ -246,7 +246,7 @@ To set up CueGUI and run it with PyCharm:
 1. Select the `cuegui` folder in the git repository.
 
 1. For the project interpreter, if you are working on other Python projects, we
-   recommend seting up a virtual environment. Alternatively, you can leave the
+   recommend setting up a virtual environment. Alternatively, you can leave the
    project interpreter set to the default Python interpreter.
 
 1. PyCharm should prompt you to install ‘Package requirements’. If not,
@@ -274,7 +274,7 @@ To get set up and run it with PyCharm:
 1. Open PyCharm and choose **Open**, select the `rqd` folder in the git repository.
 
 1. For the project interpreter, if you are working on other Python projects, we
-   recommend seting up a virtual environment. Alternatively, you can leave the
+   recommend setting up a virtual environment. Alternatively, you can leave the
    project interpreter set to the default Python interpreter.
 
 1. PyCharm should prompt you to install ‘Package requirements’. If not,

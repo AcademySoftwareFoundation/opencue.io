@@ -146,7 +146,7 @@ tools. Use of a virtual environment isn't strictly necessary but is
 recommended to avoid conflicts with other installed Python
 libraries.{{% /alert %}}
 
-Ubuntu 22.04 build enviroment:
+Ubuntu 22.04 build environment:
 ```shell
 sudo apt install build-essential python3.10-venv python3.10-dev 
 ```
@@ -186,4 +186,4 @@ started up:
 ## What's next?
 
 *   [Installing PyCue and PyOutline](/docs/getting-started/installing-pycue-and-pyoutline)
-*   [Customizing RQD rendering hosts](/docs/other-guides/customizing-rqd) 
+*   [Customizing RQD rendering hosts](/docs/other-guides/customizing-rqd)

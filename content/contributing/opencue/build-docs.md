@@ -130,7 +130,7 @@ To customize the theme for the generated docs:
     html_theme = 'alabaster'
     ```
 
-1.  Add the followin code, replacing '<name-of-the-theme>' with a theme:
+1.  Add the following code, replacing '<name-of-the-theme>' with a theme:
  
     {{% alert title="Note" color="info"%}}You can browse available
     themes at https://sphinx-themes.org/.{{% /alert %}}

@@ -50,7 +50,7 @@ You deploy the sandbox environment using
 [Docker Compose](https://docs.docker.com/compose/), which downloads and runs
 the images of the following containers from Docker Hub:
 
-*   a PostgresSQL database
+*   a PostgreSQL database
 *   a Cuebot server
 *   an RQD rendering server
 
@@ -63,7 +63,7 @@ release of OpenCue.
 The Docker Compose deployment process also configures the database and applies
 any database migrations. The deployment process creates a `db-data` directory
 in the `sandbox` directory. The `db-data` directory is mounted as a volume in
-the PostgresSQL database container and stores the contents of the database. If
+the PostgreSQL database container and stores the contents of the database. If
 you stop your database container, all data is preserved as long as you don't
 remove this directory. If you need to start from scratch with a fresh
 database, remove the contents of this directory and restart the containers

@@ -27,7 +27,7 @@ provide a set of getting started guides for plugin development. When such a
 doc set exists we can share it with our user base and enable third party users
 and developers to contribute their own plugins.
 
-Particpating in this project could allow you to develop and demonstrate the
+Participating in this project could allow you to develop and demonstrate the
 following skills:
 
 *   Researching a developer's user journey
