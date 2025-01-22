@@ -109,7 +109,7 @@ To deploy the OpenCue sandbox environment:
 
 1.  To deploy the sandbox environment, run the `docker-compose` command:
 
-        docker-compose up
+        docker compose up
 
     The command produces a lot of output. When the setup process completes,
     you see output similar to the following example:
