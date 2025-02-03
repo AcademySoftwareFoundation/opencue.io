@@ -56,7 +56,7 @@ If you want to know the reason why it is not recommend, read this
  To avoid this scenario, you should mount in docker.sock with
 `--mount type=bind,source=/var/run/docker.sock,target=/var/run/docker.sock,ro`.
 This will give rqd in your container access to the docker daemon running on the host.
-Besides that, your should also run with `--pid=host` because rqd needs access to the
+Besides that, you should also run with `--pid=host` because rqd needs access to the
 processes launched from inside of the frame container with their original pid.
 
 But this brings with it one complications. Docker swarm mode doesn't support `--pid=host`
